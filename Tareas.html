@@ -3,222 +3,214 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Panel de tareas — Torre de control</title>
+<title>Panel de tareas del equipo 🌤️</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
 <style>
   :root{
-    --bg:#0B1220;
-    --panel:#121B2E;
-    --panel-line:#232E47;
-    --ink:#E7ECF5;
-    --ink-dim:#8791A8;
-    --diaria:#F2A93B;
-    --diaria-dim:#4A3B1C;
-    --semanal:#35C4C1;
-    --semanal-dim:#1B3D3C;
-    --mensual:#8C7BE0;
-    --mensual-dim:#2C2450;
-    --baja:#5B6478;
-    --baja-dim:#1B2236;
-    --objetivo:#F2A93B;
+    --bg:#FFF8EE;
+    --card:#FFFFFF;
+    --card-line:#F1E4D2;
+    --ink:#332C22;
+    --ink-dim:#9A8E7C;
+
+    --diaria:#FF6B4A;    --diaria-bg:#FFEAE2;   --diaria-dark:#D6472B;
+    --semanal:#1FB6A6;   --semanal-bg:#E1FBF6;  --semanal-dark:#0E8C7E;
+    --mensual:#9575F7;   --mensual-bg:#F1ECFF;  --mensual-dark:#6E4BD1;
+    --baja:#B7AE9E;      --baja-bg:#F6F1E7;
+
+    --sunny:#FFC93C; --sunny-dark:#C98A00;
+    --pink:#FF5D8F;
   }
   *{box-sizing:border-box;margin:0;padding:0;}
   body{
     background:var(--bg);
     color:var(--ink);
-    font-family:'IBM Plex Mono',monospace;
+    font-family:'Nunito',sans-serif;
     min-height:100vh;
-    padding:28px 18px 60px;
+    padding:28px 18px 70px;
+    position:relative;
+    overflow-x:hidden;
   }
-  .wrap{max-width:1100px;margin:0 auto;}
+  /* manchas de color de fondo, sutiles, al estilo Notion/Canva */
+  body::before, body::after{
+    content:''; position:fixed; border-radius:50%; filter:blur(70px); z-index:0; opacity:0.55;
+  }
+  body::before{ width:360px; height:360px; background:#FFD9C4; top:-120px; right:-100px; }
+  body::after{ width:320px; height:320px; background:#CFF3EC; bottom:-100px; left:-100px; }
+  .wrap{max-width:1080px; margin:0 auto; position:relative; z-index:1;}
 
   /* ---- header ---- */
   header{
-    display:flex;
-    justify-content:space-between;
-    align-items:flex-end;
-    flex-wrap:wrap;
-    gap:16px;
-    border-bottom:2px solid var(--panel-line);
-    padding-bottom:18px;
-    margin-bottom:20px;
+    display:flex; justify-content:space-between; align-items:flex-end; flex-wrap:wrap;
+    gap:16px; margin-bottom:22px;
   }
   .title-block h1{
-    font-family:'Space Grotesk',sans-serif;
-    font-weight:700;
-    font-size:26px;
-    letter-spacing:0.02em;
-    text-transform:uppercase;
+    font-family:'Baloo 2',sans-serif; font-weight:800; font-size:30px; color:var(--ink);
   }
-  .title-block .sub{color:var(--ink-dim); font-size:13px; margin-top:4px;}
+  .title-block .sub{color:var(--ink-dim); font-size:14px; font-weight:700; margin-top:2px;}
   .clock{
-    font-family:'Space Grotesk',sans-serif;
-    font-size:28px; font-weight:700; letter-spacing:0.03em;
-    font-variant-numeric:tabular-nums;
+    font-family:'Baloo 2',sans-serif; font-size:26px; font-weight:700; color:var(--ink);
   }
   .clock .date{
-    display:block; font-family:'IBM Plex Mono',monospace; font-size:11px;
-    font-weight:400; color:var(--ink-dim); text-align:right;
-    letter-spacing:0.05em; text-transform:uppercase;
+    display:block; font-family:'Nunito',sans-serif; font-size:12px; font-weight:700;
+    color:var(--ink-dim); text-align:right; text-transform:capitalize;
   }
 
-  /* ---- objetivo del mes ---- */
+  /* ---- objetivo del mes: nota adhesiva ---- */
   .objetivo{
     position:relative;
-    background:linear-gradient(135deg, var(--diaria-dim), var(--panel));
-    border:1px solid var(--objetivo);
-    border-radius:10px;
-    padding:18px 20px;
-    margin-bottom:22px;
-    box-shadow:0 0 0 1px rgba(242,169,59,0.08), 0 8px 24px -12px rgba(242,169,59,0.35);
+    background:var(--sunny);
+    border-radius:16px;
+    padding:22px 24px 20px;
+    margin:10px 0 26px;
+    transform:rotate(-1.1deg);
+    box-shadow:0 14px 30px -16px rgba(201,138,0,0.55), 0 2px 0 rgba(0,0,0,0.04);
+  }
+  .objetivo::before{
+    content:''; position:absolute; top:-10px; left:38px; width:74px; height:22px;
+    background:var(--pink); opacity:0.85; transform:rotate(-6deg);
+    border-radius:3px; box-shadow:0 2px 4px rgba(0,0,0,0.12);
   }
   .objetivo .eyebrow{
-    font-family:'Space Grotesk',sans-serif;
-    font-size:11px; font-weight:700; letter-spacing:0.12em;
-    text-transform:uppercase; color:var(--objetivo);
-    display:flex; align-items:center; gap:8px;
+    font-family:'Baloo 2',sans-serif; font-size:13px; font-weight:700;
+    color:var(--sunny-dark); display:flex; align-items:center; gap:6px;
   }
   .objetivo .texto{
-    font-family:'Space Grotesk',sans-serif;
-    font-size:20px; font-weight:700; color:var(--ink);
-    margin-top:8px; line-height:1.35; max-width:88%;
+    font-family:'Baloo 2',sans-serif; font-size:21px; font-weight:700; color:#3A2A00;
+    margin-top:8px; line-height:1.35; max-width:85%;
   }
-  .objetivo .meta{font-size:11px; color:var(--ink-dim); margin-top:8px;}
+  .objetivo .meta{font-size:12px; font-weight:700; color:#8A6300; margin-top:8px;}
   .objetivo button.edit{
-    position:absolute; top:14px; right:14px;
-    background:transparent; border:1px solid var(--panel-line);
-    color:var(--ink-dim); font-size:11px; font-family:'IBM Plex Mono',monospace;
-    padding:6px 10px; border-radius:5px; cursor:pointer;
+    position:absolute; top:16px; right:16px;
+    background:#FFFFFFCC; border:none; color:#7A5600; font-weight:800;
+    font-family:'Nunito',sans-serif; font-size:12px;
+    padding:7px 14px; border-radius:999px; cursor:pointer;
   }
-  .objetivo button.edit:hover{color:var(--ink); border-color:var(--objetivo);}
+  .objetivo button.edit:hover{background:#FFFFFF;}
 
   /* ---- selector de persona ---- */
   .persona-bar{
     display:flex; align-items:center; gap:10px; flex-wrap:wrap;
-    margin-bottom:14px; font-size:12.5px; color:var(--ink-dim);
+    margin-bottom:14px; font-size:13px; font-weight:700; color:var(--ink-dim);
   }
   .persona-bar select{
-    background:var(--panel); color:var(--ink); border:1px solid var(--panel-line);
-    font-family:'IBM Plex Mono',monospace; font-size:13px; font-weight:600;
-    padding:8px 12px; border-radius:5px; cursor:pointer;
+    background:var(--card); color:var(--ink); border:2px solid var(--card-line);
+    font-family:'Nunito',sans-serif; font-size:13.5px; font-weight:800;
+    padding:8px 14px; border-radius:999px; cursor:pointer;
   }
   .persona-bar select:focus{outline:2px solid var(--semanal);}
 
   /* ---- barra de acciones ---- */
   .actions-bar{
     display:flex; align-items:center; gap:10px; flex-wrap:wrap;
-    background:var(--panel); border:1px solid var(--panel-line);
-    border-radius:6px; padding:10px 14px; margin-bottom:26px; font-size:12.5px;
+    background:var(--card); border:2px solid var(--card-line);
+    border-radius:999px; padding:10px 16px; margin-bottom:28px; font-size:13px; font-weight:700;
+    box-shadow:0 6px 16px -12px rgba(0,0,0,0.15);
   }
-  .actions-bar .dot{width:8px;height:8px;border-radius:50%;background:var(--baja); flex-shrink:0;}
-  .actions-bar .dot.on{background:var(--semanal); box-shadow:0 0 0 4px var(--semanal-dim);}
-  .actions-bar .dot.off{background:var(--diaria); box-shadow:0 0 0 4px var(--diaria-dim);}
+  .actions-bar .dot{width:9px;height:9px;border-radius:50%;background:var(--baja); flex-shrink:0;}
+  .actions-bar .dot.on{background:var(--semanal); box-shadow:0 0 0 4px var(--semanal-bg);}
+  .actions-bar .dot.off{background:var(--diaria); box-shadow:0 0 0 4px var(--diaria-bg);}
   .actions-bar .spacer{flex:1;}
   .btn{
-    background:var(--ink); color:var(--bg); border:none;
-    font-family:'IBM Plex Mono',monospace; font-weight:600; font-size:12px;
-    text-transform:uppercase; letter-spacing:0.05em;
-    padding:8px 14px; border-radius:4px; cursor:pointer;
+    background:var(--diaria); color:#fff; border:none;
+    font-family:'Nunito',sans-serif; font-weight:800; font-size:13px;
+    padding:9px 16px; border-radius:999px; cursor:pointer;
+    transition:transform 0.12s ease, opacity 0.12s ease;
   }
-  .btn:hover{opacity:0.85;}
-  .btn:disabled{opacity:0.4; cursor:default;}
-  .btn.ghost{background:transparent; color:var(--ink); border:1px solid var(--panel-line);}
+  .btn:hover{transform:translateY(-1px) scale(1.02); opacity:0.94;}
+  .btn:disabled{opacity:0.45; cursor:default; transform:none;}
+  .btn.ghost{background:var(--card); color:var(--ink); border:2px solid var(--card-line);}
 
   /* ---- secciones de tareas ---- */
-  section.grupo{margin-bottom:26px;}
-  .grupo-head{
-    display:flex; align-items:center; gap:10px; margin-bottom:12px;
-  }
-  .grupo-head .titulo-grupo{
-    font-family:'Space Grotesk',sans-serif; font-weight:700;
-    text-transform:uppercase; letter-spacing:0.06em;
-  }
+  section.grupo{margin-bottom:28px;}
+  .grupo-head{display:flex; align-items:center; gap:10px; margin-bottom:12px;}
+  .grupo-head .titulo-grupo{font-family:'Baloo 2',sans-serif; font-weight:700;}
   .grupo-head .count{
-    font-family:'IBM Plex Mono',monospace; font-weight:600; font-size:11px;
-    background:rgba(255,255,255,0.08); padding:2px 8px; border-radius:10px;
+    font-family:'Nunito',sans-serif; font-weight:800; font-size:11.5px;
+    background:rgba(0,0,0,0.06); color:var(--ink-dim); padding:2px 10px; border-radius:999px;
   }
-  .grupo-diaria .titulo-grupo{color:var(--diaria); font-size:18px;}
-  .grupo-semanal .titulo-grupo{color:var(--semanal); font-size:15px;}
-  .grupo-mensual .titulo-grupo{color:var(--mensual); font-size:14px;}
-  .grupo-baja .titulo-grupo{color:var(--baja); font-size:13px;}
+  .grupo-diaria .titulo-grupo{color:var(--diaria-dark); font-size:20px;}
+  .grupo-semanal .titulo-grupo{color:var(--semanal-dark); font-size:16px;}
+  .grupo-mensual .titulo-grupo{color:var(--mensual-dark); font-size:15px;}
+  .grupo-baja .titulo-grupo{color:var(--ink-dim); font-size:14px;}
 
-  .grid-diaria{display:grid; grid-template-columns:repeat(auto-fill,minmax(300px,1fr)); gap:12px;}
-  .grid-semanal{display:grid; grid-template-columns:repeat(auto-fill,minmax(260px,1fr)); gap:10px;}
-  .lista-mensual{display:flex; flex-direction:column; gap:6px;}
-  .lista-baja{display:flex; flex-direction:column; gap:6px;}
+  .grid-diaria{display:grid; grid-template-columns:repeat(auto-fill,minmax(300px,1fr)); gap:14px;}
+  .grid-semanal{display:grid; grid-template-columns:repeat(auto-fill,minmax(260px,1fr)); gap:12px;}
+  .lista-mensual{display:flex; flex-direction:column; gap:8px;}
+  .lista-baja{display:flex; flex-direction:column; gap:8px;}
 
   .task{
-    background:var(--panel); border:1px solid var(--panel-line);
-    border-left-width:3px; border-radius:7px; padding:12px 14px;
+    background:var(--card); border:2px solid var(--card-line);
+    border-radius:16px; padding:14px 16px;
+    box-shadow:0 6px 16px -12px rgba(0,0,0,0.12);
+    transition:transform 0.14s ease, box-shadow 0.14s ease;
   }
-  .grid-diaria .task{border-left-color:var(--diaria); padding:16px 18px;}
-  .grid-semanal .task{border-left-color:var(--semanal);}
-  .lista-mensual .task{border-left-color:var(--mensual); padding:9px 12px;}
-  .lista-baja .task{border-left-color:var(--baja); padding:8px 12px; opacity:0.82;}
+  .task:hover{transform:translateY(-3px); box-shadow:0 12px 22px -12px rgba(0,0,0,0.18);}
+  .grid-diaria .task{border-color:var(--diaria); padding:18px 20px; background:linear-gradient(180deg,#fff,var(--diaria-bg) 220%);}
+  .grid-semanal .task{border-color:var(--semanal);}
+  .lista-mensual .task{border-color:var(--mensual); padding:10px 14px; border-radius:12px;}
+  .lista-baja .task{border-color:var(--baja); padding:9px 14px; border-radius:12px; opacity:0.85;}
 
-  .task .t-title{
-    font-family:'Space Grotesk',sans-serif; font-weight:600; line-height:1.3;
-  }
-  .grid-diaria .task .t-title{font-size:16px; margin-bottom:6px;}
-  .grid-semanal .task .t-title{font-size:14px; margin-bottom:5px;}
-  .lista-mensual .task .t-title, .lista-baja .task .t-title{font-size:13px; margin-bottom:3px;}
+  .task .t-title{font-family:'Baloo 2',sans-serif; font-weight:700; line-height:1.3;}
+  .grid-diaria .task .t-title{font-size:17px; margin-bottom:6px;}
+  .grid-semanal .task .t-title{font-size:15px; margin-bottom:5px;}
+  .lista-mensual .task .t-title, .lista-baja .task .t-title{font-size:13.5px; margin-bottom:3px;}
 
-  .task .t-desc{font-size:12px; color:var(--ink-dim); margin-bottom:8px; line-height:1.4;}
+  .task .t-desc{font-size:12.5px; color:var(--ink-dim); font-weight:600; margin-bottom:9px; line-height:1.4;}
   .lista-mensual .t-desc, .lista-baja .t-desc{display:none;}
 
   .task .t-meta{display:flex; flex-wrap:wrap; gap:6px; align-items:center;}
   .badge{
-    font-size:10.5px; padding:2px 8px; border-radius:10px;
-    background:rgba(255,255,255,0.06); color:var(--ink-dim); white-space:nowrap;
+    font-size:11px; font-weight:800; padding:3px 10px; border-radius:999px;
+    background:var(--baja-bg); color:var(--ink-dim); white-space:nowrap;
   }
-  .badge.etiqueta{color:var(--ink); background:rgba(255,255,255,0.1);}
-  .badge.prio-urgent{color:var(--diaria); background:var(--diaria-dim);}
-  .badge.prio-important{color:var(--semanal); background:var(--semanal-dim);}
-  .badge.prio-medium{color:var(--mensual); background:var(--mensual-dim);}
-  .badge.prio-low{color:var(--baja); background:rgba(255,255,255,0.05);}
+  .badge.etiqueta{color:var(--mensual-dark); background:var(--mensual-bg);}
+  .badge.prio-urgent{color:var(--diaria-dark); background:var(--diaria-bg);}
+  .badge.prio-important{color:var(--semanal-dark); background:var(--semanal-bg);}
+  .badge.prio-medium{color:#8A6300; background:#FFF3D6;}
+  .badge.prio-low{color:var(--ink-dim); background:var(--baja-bg);}
 
-  details.grupo-baja{background:transparent;}
-  details summary{cursor:pointer; list-style:none;}
+  details.grupo-baja summary{cursor:pointer; list-style:none;}
   details summary::-webkit-details-marker{display:none;}
   details summary .grupo-head{margin-bottom:10px;}
-  details summary .arrow{color:var(--ink-dim); font-size:11px; margin-left:auto;}
+  details summary .arrow{color:var(--ink-dim); font-size:12px; margin-left:auto; font-weight:700;}
 
-  .empty{color:var(--ink-dim); font-size:12px; padding:14px; text-align:center;}
-  .status-line{margin-top:24px; color:var(--ink-dim); font-size:11px; text-align:center; letter-spacing:0.03em;}
+  .empty{color:var(--ink-dim); font-weight:700; font-size:13px; padding:16px; text-align:center;}
+  .status-line{margin-top:26px; color:var(--ink-dim); font-weight:700; font-size:11.5px; text-align:center;}
 
   /* ---- modales ---- */
   .modal-backdrop{
-    display:none; position:fixed; inset:0; background:rgba(5,8,16,0.75);
+    display:none; position:fixed; inset:0; background:rgba(51,44,34,0.45);
     align-items:center; justify-content:center; padding:20px; z-index:50;
   }
   .modal-backdrop.abierto{display:flex;}
   .modal{
-    background:var(--panel); border:1px solid var(--panel-line); border-radius:10px;
-    max-width:480px; width:100%; max-height:85vh; overflow-y:auto; padding:22px;
+    background:var(--card); border-radius:18px;
+    max-width:460px; width:100%; max-height:85vh; overflow-y:auto; padding:24px;
+    box-shadow:0 24px 50px -16px rgba(0,0,0,0.35);
   }
   .modal h2{
-    font-family:'Space Grotesk',sans-serif; font-size:16px; text-transform:uppercase;
-    letter-spacing:0.05em; margin-bottom:14px; display:flex; justify-content:space-between; align-items:center;
+    font-family:'Baloo 2',sans-serif; font-size:19px; font-weight:700;
+    margin-bottom:14px; display:flex; justify-content:space-between; align-items:center;
   }
-  .modal h2 .close{cursor:pointer; color:var(--ink-dim); font-size:14px; font-weight:400;}
-  .modal label{display:block; font-size:11px; color:var(--ink-dim); text-transform:uppercase; letter-spacing:0.05em; margin:10px 0 5px;}
-  .modal input, .modal textarea{
-    width:100%; background:var(--bg); border:1px solid var(--panel-line); color:var(--ink);
-    font-family:'IBM Plex Mono',monospace; font-size:13px; padding:9px 10px; border-radius:5px;
+  .modal h2 .close{cursor:pointer; color:var(--ink-dim); font-size:13px; font-weight:700;}
+  .modal label{display:block; font-size:11.5px; font-weight:800; color:var(--ink-dim); text-transform:uppercase; letter-spacing:0.03em; margin:12px 0 5px;}
+  .modal input, .modal textarea, .modal select{
+    width:100%; background:var(--bg); border:2px solid var(--card-line); color:var(--ink);
+    font-family:'Nunito',sans-serif; font-weight:700; font-size:13.5px; padding:10px 12px; border-radius:10px;
     resize:vertical;
   }
-  .modal textarea{min-height:70px;}
+  .modal textarea{min-height:72px;}
+  .modal p.intro{font-size:14px; font-weight:700; color:var(--ink-dim); margin-bottom:4px;}
   .modal .row-actions{display:flex; gap:8px; margin-top:16px;}
-  .frase-item{
-    border-top:1px solid var(--panel-line); padding:10px 0; font-size:13px;
-  }
-  .frase-item .autor{color:var(--ink-dim); font-size:11px; margin-top:3px;}
+  .frase-item{border-top:2px dashed var(--card-line); padding:11px 0; font-size:13.5px; font-weight:700;}
+  .frase-item .autor{color:var(--ink-dim); font-size:11.5px; margin-top:3px; font-weight:800;}
   .frase-list{margin-top:10px; max-height:220px; overflow-y:auto;}
-  .feedback{font-size:11px; margin-top:8px; min-height:14px;}
-  .feedback.ok{color:var(--semanal);}
-  .feedback.err{color:var(--diaria);}
+  .feedback{font-size:12px; font-weight:800; margin-top:8px; min-height:14px;}
+  .feedback.ok{color:var(--semanal-dark);}
+  .feedback.err{color:var(--diaria-dark);}
 
   @media (max-width:820px){
     header{align-items:flex-start;}
@@ -232,8 +224,8 @@
 
   <header>
     <div class="title-block">
-      <h1>Panel de tareas</h1>
-      <div class="sub">Equipo · sincronizado desde Planner</div>
+      <h1>📋 Panel de tareas</h1>
+      <div class="sub">Nuestro equipo, sincronizado desde Planner ✨</div>
     </div>
     <div class="clock">
       <span class="date" id="fecha">—</span>
@@ -245,11 +237,11 @@
     <div class="eyebrow">🎯 Objetivo del mes</div>
     <div class="texto" id="objetivoTexto">Cargando…</div>
     <div class="meta" id="objetivoMeta"></div>
-    <button class="edit" id="btnEditarObjetivo">Editar</button>
+    <button class="edit" id="btnEditarObjetivo">✏️ Editar</button>
   </div>
 
   <div class="persona-bar">
-    <span>👤 Viendo tareas de:</span>
+    <span>🙋 Viendo tareas de:</span>
     <select id="selectorPersona">
       <option value="__todos__">Todo el equipo</option>
     </select>
@@ -260,7 +252,7 @@
     <span id="notifText">Notificaciones desactivadas</span>
     <div class="spacer"></div>
     <button class="btn ghost" id="btnFrases">💬 Frases del equipo</button>
-    <button class="btn" id="notifBtn">Activar notificaciones</button>
+    <button class="btn" id="notifBtn">🔔 Activar notificaciones</button>
   </div>
 
   <section class="grupo grupo-diaria">
@@ -269,18 +261,18 @@
   </section>
 
   <section class="grupo grupo-semanal">
-    <div class="grupo-head"><span class="titulo-grupo">Esta semana</span><span class="count" id="count-semanal">0</span></div>
+    <div class="grupo-head"><span class="titulo-grupo">🗓️ Esta semana</span><span class="count" id="count-semanal">0</span></div>
     <div class="grid-semanal" id="list-semanal"></div>
   </section>
 
   <section class="grupo grupo-mensual">
-    <div class="grupo-head"><span class="titulo-grupo">Recordatorio del mes</span><span class="count" id="count-mensual">0</span></div>
+    <div class="grupo-head"><span class="titulo-grupo">🌙 Recordatorio del mes</span><span class="count" id="count-mensual">0</span></div>
     <div class="lista-mensual" id="list-mensual"></div>
   </section>
 
   <details class="grupo grupo-baja">
     <summary>
-      <div class="grupo-head"><span class="titulo-grupo">Backlog / sin depósito</span><span class="count" id="count-baja">0</span><span class="arrow">▾ ver</span></div>
+      <div class="grupo-head"><span class="titulo-grupo">🗂️ Backlog / sin depósito</span><span class="count" id="count-baja">0</span><span class="arrow">▾ ver</span></div>
     </summary>
     <div class="lista-baja" id="list-baja"></div>
   </details>
@@ -289,10 +281,25 @@
 
 </div>
 
+<!-- Modal: quién eres (primera vez) -->
+<div class="modal-backdrop" id="modalIdentidad">
+  <div class="modal">
+    <h2>¡Hola! 👋</h2>
+    <p class="intro">¿Quién eres tú? Así el panel te muestra tus tareas y te avisa por tu nombre.</p>
+    <label for="selectorIdentidadInicial">Soy...</label>
+    <select id="selectorIdentidadInicial">
+      <option value="__todos__">Prefiero ver todo el equipo</option>
+    </select>
+    <div class="row-actions">
+      <button class="btn" id="btnConfirmarIdentidad">¡Listo, vamos! 🚀</button>
+    </div>
+  </div>
+</div>
+
 <!-- Modal: frases del equipo -->
 <div class="modal-backdrop" id="modalFrases">
   <div class="modal">
-    <h2>Frases del equipo <span class="close" data-close="modalFrases">✕ cerrar</span></h2>
+    <h2>💬 Frases del equipo <span class="close" data-close="modalFrases">✕ cerrar</span></h2>
     <label for="fraseTexto">Nueva frase</label>
     <textarea id="fraseTexto" placeholder="Algo divertido, motivador o random para acompañar el día..."></textarea>
     <label for="fraseAutor">Tu nombre</label>
@@ -308,7 +315,7 @@
 <!-- Modal: objetivo del mes -->
 <div class="modal-backdrop" id="modalObjetivo">
   <div class="modal">
-    <h2>Editar objetivo del mes <span class="close" data-close="modalObjetivo">✕ cerrar</span></h2>
+    <h2>🎯 Editar objetivo del mes <span class="close" data-close="modalObjetivo">✕ cerrar</span></h2>
     <label for="objetivoInputTexto">Objetivo / foco</label>
     <textarea id="objetivoInputTexto" placeholder="ej. Cerrar la migración de bodega antes del 15"></textarea>
     <label for="objetivoInputMes">Mes</label>
@@ -385,10 +392,10 @@ function fmtFecha(iso){
 
 function prioridadInfo(p){
   const n = Number(p ?? 8);
-  if(n <= 3) return {label:'Urgente', cls:'prio-urgent'};
-  if(n <= 6) return {label:'Importante', cls:'prio-important'};
-  if(n <= 8) return {label:'Media', cls:'prio-medium'};
-  return {label:'Baja', cls:'prio-low'};
+  if(n <= 3) return {label:'🔴 Urgente', cls:'prio-urgent'};
+  if(n <= 6) return {label:'🟠 Importante', cls:'prio-important'};
+  if(n <= 8) return {label:'🟡 Media', cls:'prio-medium'};
+  return {label:'⚪ Baja', cls:'prio-low'};
 }
 
 function tarjetaTarea(t){
@@ -411,10 +418,13 @@ function tarjetaTarea(t){
 }
 
 /* =========================================================
-   SELECTOR DE PERSONA (filtra "solo mis tareas" vs "todo el equipo")
+   IDENTIDAD / SELECTOR DE PERSONA
+   "El navegador está logueado": la identidad vive en localStorage
+   de cada equipo/navegador y se usa para filtrar y personalizar.
 ========================================================= */
 const CLAVE_PERSONA = 'panel_persona_seleccionada';
 const selectorPersona = document.getElementById('selectorPersona');
+const selectorIdentidadInicial = document.getElementById('selectorIdentidadInicial');
 
 function todasLasTareas(data){
   return [
@@ -423,18 +433,42 @@ function todasLasTareas(data){
   ];
 }
 
+function primerNombre(nombreCompleto){
+  if(!nombreCompleto) return '';
+  let n = nombreCompleto;
+  if(n.includes(',')) n = n.split(',')[1] || n; // "Moreno, Sebastian / ..." -> " Sebastian / ..."
+  n = n.split('/')[0];
+  return n.trim().split(' ')[0] || '';
+}
+
 function poblarSelectorPersonas(data){
   const nombres = new Set();
   todasLasTareas(data).forEach(t => { if(t.asignado) nombres.add(t.asignado); });
   const guardado = localStorage.getItem(CLAVE_PERSONA) || '__todos__';
   const ordenados = Array.from(nombres).sort((a,b)=> a.localeCompare(b,'es'));
-
-  selectorPersona.innerHTML = '<option value="__todos__">Todo el equipo</option>' +
+  const opciones = '<option value="__todos__">Todo el equipo</option>' +
     ordenados.map(n => `<option value="${n}">${n}</option>`).join('');
 
-  // si la persona guardada ya no aparece en las tareas actuales, cae de vuelta a "todos"
+  selectorPersona.innerHTML = opciones;
   selectorPersona.value = ordenados.includes(guardado) || guardado === '__todos__' ? guardado : '__todos__';
+
+  selectorIdentidadInicial.innerHTML =
+    '<option value="__todos__">Prefiero ver todo el equipo</option>' +
+    ordenados.map(n => `<option value="${n}">${n}</option>`).join('');
+
+  // primera vez que alguien abre el panel en este navegador: le preguntamos quién es
+  if(!localStorage.getItem(CLAVE_PERSONA)){
+    abrirModal('modalIdentidad');
+  }
 }
+
+document.getElementById('btnConfirmarIdentidad').addEventListener('click', ()=>{
+  const elegido = selectorIdentidadInicial.value;
+  localStorage.setItem(CLAVE_PERSONA, elegido);
+  selectorPersona.value = elegido;
+  cerrarModal('modalIdentidad');
+  if(ultimosDatos) render(ultimosDatos);
+});
 
 selectorPersona.addEventListener('change', ()=>{
   localStorage.setItem(CLAVE_PERSONA, selectorPersona.value);
@@ -458,7 +492,7 @@ function render(data){
     const tareas = filtrarPorPersona(data[key] || []);
     const el = document.getElementById(mapa[key].el);
     document.getElementById(mapa[key].count).textContent = tareas.length;
-    el.innerHTML = tareas.length ? tareas.map(tarjetaTarea).join('') : '<div class="empty">Sin tareas aquí. Buen trabajo.</div>';
+    el.innerHTML = tareas.length ? tareas.map(tarjetaTarea).join('') : '<div class="empty">Sin tareas aquí. Buen trabajo. 🎉</div>';
   }
   const bajas = filtrarPorPersona([...(data.backlog||[]), ...(data.sin_deposito||[])]);
   document.getElementById('count-baja').textContent = bajas.length;
@@ -503,7 +537,7 @@ document.getElementById('btnGuardarObjetivo').addEventListener('click', async ()
       body: JSON.stringify({texto, mes, actualizado_por})
     });
     if(!res.ok) throw new Error('fallo al guardar');
-    fb.textContent = '¡Guardado!'; fb.className = 'feedback ok';
+    fb.textContent = '¡Guardado! 🎉'; fb.className = 'feedback ok';
     await cargarObjetivo();
     setTimeout(()=>cerrarModal('modalObjetivo'), 700);
   }catch(e){
@@ -521,7 +555,7 @@ async function cargarFrases(){
     const res = await fetch(N8N_BASE + 'frases-listar');
     const data = await res.json();
     const filas = Array.isArray(data) ? data : (data.data || []);
-    if(!filas.length){ cont.innerHTML = '<div class="empty">Aún no hay frases guardadas. ¡Agrega la primera!</div>'; return; }
+    if(!filas.length){ cont.innerHTML = '<div class="empty">Aún no hay frases guardadas. ¡Agrega la primera! ✨</div>'; return; }
     cont.innerHTML = filas.map(f => `
       <div class="frase-item">
         “${f.texto}”
@@ -548,7 +582,7 @@ document.getElementById('btnGuardarFrase').addEventListener('click', async ()=>{
       body: JSON.stringify({texto, autor})
     });
     if(!res.ok) throw new Error('fallo al guardar');
-    fb.textContent = '¡Frase guardada!'; fb.className = 'feedback ok';
+    fb.textContent = '¡Frase guardada! 🎉'; fb.className = 'feedback ok';
     document.getElementById('fraseTexto').value = '';
     cargarFrases();
   }catch(e){
@@ -575,11 +609,12 @@ document.querySelectorAll('[data-close]').forEach(el=>{
   el.addEventListener('click', ()=> cerrarModal(el.getAttribute('data-close')));
 });
 document.querySelectorAll('.modal-backdrop').forEach(bg=>{
-  bg.addEventListener('click', (e)=>{ if(e.target === bg) cerrarModal(bg.id); });
+  bg.addEventListener('click', (e)=>{ if(e.target === bg && bg.id !== 'modalIdentidad') cerrarModal(bg.id); });
 });
 
 /* =========================================================
-   NOTIFICACIONES
+   NOTIFICACIONES — personalizadas con el nombre de quien
+   está "logueado" en este navegador (identidad guardada arriba)
 ========================================================= */
 const notifBtn = document.getElementById('notifBtn');
 const notifDot = document.getElementById('notifDot');
@@ -594,7 +629,7 @@ function actualizarEstadoNotif(){
   if(Notification.permission === 'granted'){
     notifDot.className = 'dot on';
     notifText.textContent = 'Notificaciones activas';
-    notifBtn.textContent = 'Activadas';
+    notifBtn.textContent = '🔔 Activadas';
     notifBtn.disabled = true;
   }else if(Notification.permission === 'denied'){
     notifDot.className = 'dot off';
@@ -629,17 +664,21 @@ function marcarNotificada(id){
   localStorage.setItem('notif_enviadas', JSON.stringify({[hoy]: registro[hoy]}));
 }
 
-/* Notifica las tareas diarias, acompañadas de una frase random */
+/* Notifica las tareas diarias de la persona identificada en este navegador,
+   dirigiéndose a ella por su nombre y acompañadas de una frase random */
 async function revisarYNotificarDiarias(data){
   if(!data || Notification.permission !== 'granted') return;
+  const identidad = localStorage.getItem(CLAVE_PERSONA) || '__todos__';
+  const nombre = identidad !== '__todos__' ? primerNombre(identidad) : '';
   const diarias = filtrarPorPersona(data.diaria || []);
   for(let i=0;i<diarias.length;i++){
     const t = diarias[i];
     if(yaNotificada(t.id)) continue;
     const frase = await traerFraseRandom();
+    const titulo = nombre ? `¡Hola ${nombre}! 👋 Tarea de hoy` : '📌 Tarea de hoy';
     setTimeout(()=>{
-      new Notification('📌 Tarea de hoy: ' + t.titulo, {
-        body: `${frase}\n👤 ${t.asignado || 'Sin asignar'}`,
+      new Notification(titulo, {
+        body: `${t.titulo}\n${frase}`,
         tag: t.id
       });
       marcarNotificada(t.id);
@@ -647,7 +686,8 @@ async function revisarYNotificarDiarias(data){
   }
 }
 
-/* Programa 2 frases motivacionales sueltas al día, en horas aleatorias entre 9am y 6pm */
+/* Programa 2 frases motivacionales sueltas al día, en horas aleatorias entre 9am y 6pm,
+   dirigidas por nombre a quien esté identificado en este navegador */
 function programarFrasesDelDia(){
   const hoy = new Date().toDateString();
   const clave = 'frases_programadas_' + hoy;
@@ -666,8 +706,11 @@ function programarFrasesDelDia(){
     const ahora = Date.now();
     for(let i=0;i<horarios.length;i++){
       if(ahora >= horarios[i] && !enviadas.includes(i)){
+        const identidad = localStorage.getItem(CLAVE_PERSONA) || '__todos__';
+        const nombre = identidad !== '__todos__' ? primerNombre(identidad) : '';
         const frase = await traerFraseRandom();
-        new Notification('✨ Un momento para respirar', { body: frase });
+        const titulo = nombre ? `✨ Un momento para ti, ${nombre}` : '✨ Un momento para respirar';
+        new Notification(titulo, { body: frase });
         enviadas.push(i);
         localStorage.setItem('frases_enviadas_' + hoy, JSON.stringify(enviadas));
       }
