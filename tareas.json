@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-29T21:31:21.115Z",
+  "generated_at": "2026-07-29T23:31:30.352Z",
   "diaria": [
     {
       "id": "2Njg4TNpCUCUHjK5hh4udpgAHzXM",
@@ -152,16 +152,6 @@
       "deposito": "diaria"
     },
     {
-      "id": "U9d0Hya_pE6wmt7Ohh6t45gAI4_p",
-      "titulo": "Test API det Shipments con codigo arancelario",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "diaria"
-    },
-    {
       "id": "VZPX30ZlX0G9os_YyDbRdpgAJJQn",
       "titulo": "Testing documentos cliente final \"OTHERS\"",
       "descripcion": "",
@@ -223,6 +213,16 @@
     }
   ],
   "semanal": [
+    {
+      "id": "pfvPuIBdv0qUcLqscjAjrJgAIRI4",
+      "titulo": "Training new WH Manager",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "semanal"
+    },
     {
       "id": "9ytwFziBEUu49CRp3JVI3pgACAS_",
       "titulo": "Implementar Servicios AWB",
