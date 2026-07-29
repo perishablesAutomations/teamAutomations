@@ -102,17 +102,51 @@
   }
   .persona-bar select:focus{outline:2px solid var(--semanal);}
 
-  /* ---- barra de acciones ---- */
-  .actions-bar{
-    display:flex; align-items:center; gap:10px; flex-wrap:wrap;
+  /* ---- botón de configuración (header) ---- */
+  .settings-btn{
+    width:38px; height:38px; border-radius:50%;
     background:var(--card); border:2px solid var(--card-line);
-    border-radius:999px; padding:10px 16px; margin-bottom:28px; font-size:13px; font-weight:700;
-    box-shadow:0 6px 16px -12px rgba(0,0,0,0.15);
+    display:flex; align-items:center; justify-content:center;
+    font-size:16px; cursor:pointer; flex-shrink:0;
+    box-shadow:0 6px 14px -10px rgba(0,0,0,0.2);
   }
-  .actions-bar .dot{width:9px;height:9px;border-radius:50%;background:var(--baja); flex-shrink:0;}
-  .actions-bar .dot.on{background:var(--semanal); box-shadow:0 0 0 4px var(--semanal-bg);}
-  .actions-bar .dot.off{background:var(--diaria); box-shadow:0 0 0 4px var(--diaria-bg);}
-  .actions-bar .spacer{flex:1;}
+  .settings-btn:hover{transform:translateY(-1px);}
+  .settings-btn .ping{
+    position:absolute; width:8px; height:8px; border-radius:50%;
+    background:var(--diaria); margin-left:22px; margin-top:-30px;
+  }
+  .settings-row{display:flex; align-items:center; gap:10px;}
+
+  /* ---- configuración dentro del modal ---- */
+  .config-block{
+    display:flex; align-items:center; gap:10px; flex-wrap:wrap;
+    background:var(--bg); border:2px solid var(--card-line);
+    border-radius:14px; padding:12px 14px; margin-top:10px; font-size:12.5px; font-weight:700;
+  }
+  .config-block .dot{width:9px;height:9px;border-radius:50%;background:var(--baja); flex-shrink:0;}
+  .config-block .dot.on{background:var(--semanal); box-shadow:0 0 0 4px var(--semanal-bg);}
+  .config-block .dot.off{background:var(--diaria); box-shadow:0 0 0 4px var(--diaria-bg);}
+  .config-block .spacer{flex:1;}
+
+  /* ---- recordatorios del día ---- */
+  .recordatorios{margin-bottom:26px;}
+  .recordatorios-head{display:flex; align-items:center; gap:10px; margin-bottom:10px;}
+  .recordatorios-head .titulo-grupo{
+    font-family:'Baloo 2',sans-serif; font-weight:700; font-size:15px; color:#B8890A;
+  }
+  .recordatorios-head .count{
+    font-family:'Nunito',sans-serif; font-weight:800; font-size:11.5px;
+    background:rgba(0,0,0,0.06); color:var(--ink-dim); padding:2px 10px; border-radius:999px;
+  }
+  .recordatorios-grid{display:flex; flex-wrap:wrap; gap:8px;}
+  .recordatorio-card{
+    background:#FFF3D6; border:2px solid #FFE6A8; border-radius:12px;
+    padding:7px 12px; font-size:12px; font-weight:700; max-width:240px;
+    display:flex; align-items:baseline; gap:6px;
+  }
+  .recordatorio-card .hora{color:#B8890A; font-weight:800; flex-shrink:0;}
+  .recordatorio-card .txt{color:#5C4300;}
+  .recordatorio-card .autor{color:#9C8144; font-weight:800; font-size:10.5px; margin-left:4px;}
   .btn{
     background:var(--diaria); color:#fff; border:none;
     font-family:'Nunito',sans-serif; font-weight:800; font-size:13px;
@@ -227,9 +261,12 @@
       <h1>📋 Panel de tareas</h1>
       <div class="sub">Nuestro equipo, sincronizado desde Planner ✨</div>
     </div>
-    <div class="clock">
-      <span class="date" id="fecha">—</span>
-      <span id="hora">--:--</span>
+    <div class="settings-row">
+      <div class="clock">
+        <span class="date" id="fecha">—</span>
+        <span id="hora">--:--</span>
+      </div>
+      <div class="settings-btn" id="btnConfig" title="Configuración">⚙️</div>
     </div>
   </header>
 
@@ -247,13 +284,14 @@
     </select>
   </div>
 
-  <div class="actions-bar">
-    <span class="dot off" id="notifDot"></span>
-    <span id="notifText">Notificaciones desactivadas</span>
-    <div class="spacer"></div>
-    <button class="btn ghost" id="btnFrases">💬 Frases del equipo</button>
-    <button class="btn" id="notifBtn">🔔 Activar notificaciones</button>
-  </div>
+  <section class="recordatorios">
+    <div class="recordatorios-head">
+      <span class="titulo-grupo">📌 Recordatorios de hoy</span>
+      <span class="count" id="count-recordatorios">0</span>
+      <button class="btn ghost" id="btnAgregarRecordatorio" style="margin-left:auto; padding:6px 14px; font-size:12px;">+ Agregar</button>
+    </div>
+    <div class="recordatorios-grid" id="listaRecordatorios"></div>
+  </section>
 
   <section class="grupo grupo-diaria">
     <div class="grupo-head"><span class="titulo-grupo">🔥 Hoy — Diarias</span><span class="count" id="count-diaria">0</span></div>
@@ -293,6 +331,39 @@
     <div class="row-actions">
       <button class="btn" id="btnConfirmarIdentidad">¡Listo, vamos! 🚀</button>
     </div>
+  </div>
+</div>
+
+<!-- Modal: configuración (notificaciones + frases) -->
+<div class="modal-backdrop" id="modalConfig">
+  <div class="modal">
+    <h2>⚙️ Configuración <span class="close" data-close="modalConfig">✕ cerrar</span></h2>
+    <p class="intro">Notificaciones</p>
+    <div class="config-block">
+      <span class="dot off" id="notifDot"></span>
+      <span id="notifText">Notificaciones desactivadas</span>
+      <div class="spacer"></div>
+      <button class="btn" id="notifBtn" style="padding:7px 14px; font-size:12px;">🔔 Activar</button>
+    </div>
+    <div class="row-actions">
+      <button class="btn ghost" id="btnFrases">💬 Frases del equipo</button>
+    </div>
+  </div>
+</div>
+
+<!-- Modal: agregar recordatorio -->
+<div class="modal-backdrop" id="modalRecordatorio">
+  <div class="modal">
+    <h2>📌 Nuevo recordatorio <span class="close" data-close="modalRecordatorio">✕ cerrar</span></h2>
+    <p class="intro">Se ve todo el día de hoy, y desaparece solo mañana.</p>
+    <label for="recordatorioTexto">Mensaje</label>
+    <textarea id="recordatorioTexto" placeholder="ej. A las 3pm llega el mensajero por las guías"></textarea>
+    <label for="recordatorioAutor">Tu nombre</label>
+    <input id="recordatorioAutor" placeholder="ej. Camila">
+    <div class="row-actions">
+      <button class="btn" id="btnGuardarRecordatorio">Guardar recordatorio</button>
+    </div>
+    <div class="feedback" id="recordatorioFeedback"></div>
   </div>
 </div>
 
@@ -546,6 +617,72 @@ document.getElementById('btnGuardarObjetivo').addEventListener('click', async ()
 });
 
 /* =========================================================
+   CONFIGURACIÓN (notificaciones + acceso a frases)
+========================================================= */
+document.getElementById('btnConfig').addEventListener('click', ()=> abrirModal('modalConfig'));
+document.getElementById('btnFrases').addEventListener('click', ()=>{
+  cerrarModal('modalConfig');
+  abrirModal('modalFrases');
+  cargarFrases();
+});
+
+/* =========================================================
+   RECORDATORIOS DEL DÍA
+   Viven en la misma tabla que el objetivo del mes (tipo: "recordatorio"),
+   se ven solo el día en que se crearon (desde su hora de creación hasta 23:59).
+========================================================= */
+function fmtHora(iso){
+  const d = new Date(iso);
+  if(isNaN(d)) return '';
+  return d.toLocaleTimeString('es-CO',{hour:'2-digit',minute:'2-digit'});
+}
+
+async function cargarRecordatorios(){
+  const cont = document.getElementById('listaRecordatorios');
+  try{
+    const res = await fetch(N8N_BASE + 'recordatorios-hoy');
+    const data = await res.json();
+    const filas = Array.isArray(data) ? data : (data.data || []);
+    const hoy = new Date().toDateString();
+    const deHoy = filas.filter(f => f.fecha_hora && new Date(f.fecha_hora).toDateString() === hoy);
+    deHoy.sort((a,b)=> new Date(a.fecha_hora) - new Date(b.fecha_hora));
+
+    document.getElementById('count-recordatorios').textContent = deHoy.length;
+    cont.innerHTML = deHoy.length ? deHoy.map(r => `
+      <div class="recordatorio-card">
+        <span class="hora">${fmtHora(r.fecha_hora)}</span>
+        <span class="txt">${r.texto}</span>
+        <span class="autor">— ${r.autor || 'Equipo'}</span>
+      </div>`).join('') : '<div class="empty" style="padding:8px 0;">Nada por recordar hoy.</div>';
+  }catch(e){
+    document.getElementById('count-recordatorios').textContent = '0';
+    cont.innerHTML = '<div class="empty" style="padding:8px 0;">No se pudieron cargar los recordatorios.</div>';
+  }
+}
+
+document.getElementById('btnAgregarRecordatorio').addEventListener('click', ()=> abrirModal('modalRecordatorio'));
+
+document.getElementById('btnGuardarRecordatorio').addEventListener('click', async ()=>{
+  const texto = document.getElementById('recordatorioTexto').value.trim();
+  const autor = document.getElementById('recordatorioAutor').value.trim();
+  const fb = document.getElementById('recordatorioFeedback');
+  if(!texto){ fb.textContent = 'Escribe el recordatorio antes de guardar.'; fb.className = 'feedback err'; return; }
+  try{
+    const res = await fetch(N8N_BASE + 'recordatorio', {
+      method:'POST', headers:{'Content-Type':'application/json'},
+      body: JSON.stringify({texto, autor})
+    });
+    if(!res.ok) throw new Error('fallo al guardar');
+    fb.textContent = '¡Guardado! 🎉'; fb.className = 'feedback ok';
+    document.getElementById('recordatorioTexto').value = '';
+    await cargarRecordatorios();
+    setTimeout(()=>cerrarModal('modalRecordatorio'), 700);
+  }catch(e){
+    fb.textContent = 'No se pudo guardar. Intenta de nuevo.'; fb.className = 'feedback err';
+  }
+});
+
+/* =========================================================
    FRASES DEL EQUIPO
 ========================================================= */
 async function cargarFrases(){
@@ -565,11 +702,6 @@ async function cargarFrases(){
     cont.innerHTML = '<div class="empty">No se pudieron cargar las frases.</div>';
   }
 }
-
-document.getElementById('btnFrases').addEventListener('click', ()=>{
-  abrirModal('modalFrases');
-  cargarFrases();
-});
 
 document.getElementById('btnGuardarFrase').addEventListener('click', async ()=>{
   const texto = document.getElementById('fraseTexto').value.trim();
@@ -725,6 +857,7 @@ let ultimosDatos = null;
 async function init(){
   actualizarEstadoNotif();
   cargarObjetivo();
+  cargarRecordatorios();
   ultimosDatos = await cargarTareas();
   if(Notification.permission === 'granted'){
     revisarYNotificarDiarias(ultimosDatos);
@@ -732,6 +865,7 @@ async function init(){
   }
   setInterval(async ()=>{
     ultimosDatos = await cargarTareas();
+    cargarRecordatorios();
     if(Notification.permission === 'granted') revisarYNotificarDiarias(ultimosDatos);
   }, 10 * 60 * 1000);
 }
