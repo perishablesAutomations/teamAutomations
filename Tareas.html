@@ -94,6 +94,18 @@
   }
   .objetivo button.edit:hover{color:var(--ink); border-color:var(--objetivo);}
 
+  /* ---- selector de persona ---- */
+  .persona-bar{
+    display:flex; align-items:center; gap:10px; flex-wrap:wrap;
+    margin-bottom:14px; font-size:12.5px; color:var(--ink-dim);
+  }
+  .persona-bar select{
+    background:var(--panel); color:var(--ink); border:1px solid var(--panel-line);
+    font-family:'IBM Plex Mono',monospace; font-size:13px; font-weight:600;
+    padding:8px 12px; border-radius:5px; cursor:pointer;
+  }
+  .persona-bar select:focus{outline:2px solid var(--semanal);}
+
   /* ---- barra de acciones ---- */
   .actions-bar{
     display:flex; align-items:center; gap:10px; flex-wrap:wrap;
@@ -234,6 +246,13 @@
     <div class="texto" id="objetivoTexto">Cargando…</div>
     <div class="meta" id="objetivoMeta"></div>
     <button class="edit" id="btnEditarObjetivo">Editar</button>
+  </div>
+
+  <div class="persona-bar">
+    <span>👤 Viendo tareas de:</span>
+    <select id="selectorPersona">
+      <option value="__todos__">Todo el equipo</option>
+    </select>
   </div>
 
   <div class="actions-bar">
@@ -391,19 +410,57 @@ function tarjetaTarea(t){
     </div>`;
 }
 
+/* =========================================================
+   SELECTOR DE PERSONA (filtra "solo mis tareas" vs "todo el equipo")
+========================================================= */
+const CLAVE_PERSONA = 'panel_persona_seleccionada';
+const selectorPersona = document.getElementById('selectorPersona');
+
+function todasLasTareas(data){
+  return [
+    ...(data.diaria||[]), ...(data.semanal||[]), ...(data.mensual||[]),
+    ...(data.backlog||[]), ...(data.sin_deposito||[])
+  ];
+}
+
+function poblarSelectorPersonas(data){
+  const nombres = new Set();
+  todasLasTareas(data).forEach(t => { if(t.asignado) nombres.add(t.asignado); });
+  const guardado = localStorage.getItem(CLAVE_PERSONA) || '__todos__';
+  const ordenados = Array.from(nombres).sort((a,b)=> a.localeCompare(b,'es'));
+
+  selectorPersona.innerHTML = '<option value="__todos__">Todo el equipo</option>' +
+    ordenados.map(n => `<option value="${n}">${n}</option>`).join('');
+
+  // si la persona guardada ya no aparece en las tareas actuales, cae de vuelta a "todos"
+  selectorPersona.value = ordenados.includes(guardado) || guardado === '__todos__' ? guardado : '__todos__';
+}
+
+selectorPersona.addEventListener('change', ()=>{
+  localStorage.setItem(CLAVE_PERSONA, selectorPersona.value);
+  if(ultimosDatos) render(ultimosDatos);
+});
+
+function filtrarPorPersona(tareas){
+  const seleccion = selectorPersona.value;
+  if(seleccion === '__todos__') return tareas;
+  return tareas.filter(t => t.asignado === seleccion);
+}
+
 function render(data){
+  poblarSelectorPersonas(data);
   const mapa = {
     diaria:{el:'list-diaria', count:'count-diaria'},
     semanal:{el:'list-semanal', count:'count-semanal'},
     mensual:{el:'list-mensual', count:'count-mensual'}
   };
   for(const key in mapa){
-    const tareas = data[key] || [];
+    const tareas = filtrarPorPersona(data[key] || []);
     const el = document.getElementById(mapa[key].el);
     document.getElementById(mapa[key].count).textContent = tareas.length;
     el.innerHTML = tareas.length ? tareas.map(tarjetaTarea).join('') : '<div class="empty">Sin tareas aquí. Buen trabajo.</div>';
   }
-  const bajas = [...(data.backlog||[]), ...(data.sin_deposito||[])];
+  const bajas = filtrarPorPersona([...(data.backlog||[]), ...(data.sin_deposito||[])]);
   document.getElementById('count-baja').textContent = bajas.length;
   document.getElementById('list-baja').innerHTML = bajas.length ? bajas.map(tarjetaTarea).join('') : '<div class="empty">Nada por aquí.</div>';
 }
@@ -575,7 +632,7 @@ function marcarNotificada(id){
 /* Notifica las tareas diarias, acompañadas de una frase random */
 async function revisarYNotificarDiarias(data){
   if(!data || Notification.permission !== 'granted') return;
-  const diarias = data.diaria || [];
+  const diarias = filtrarPorPersona(data.diaria || []);
   for(let i=0;i<diarias.length;i++){
     const t = diarias[i];
     if(yaNotificada(t.id)) continue;
