@@ -14,12 +14,15 @@
     --panel-line:#232E47;
     --ink:#E7ECF5;
     --ink-dim:#8791A8;
-    --urgente:#F2A93B;
-    --urgente-dim:#4A3B1C;
-    --importante:#35C4C1;
-    --importante-dim:#1B3D3C;
-    --baja:#6B7590;
-    --baja-dim:#232C42;
+    --diaria:#F2A93B;
+    --diaria-dim:#4A3B1C;
+    --semanal:#35C4C1;
+    --semanal-dim:#1B3D3C;
+    --mensual:#8C7BE0;
+    --mensual-dim:#2C2450;
+    --baja:#5B6478;
+    --baja-dim:#1B2236;
+    --objetivo:#F2A93B;
   }
   *{box-sizing:border-box;margin:0;padding:0;}
   body{
@@ -27,11 +30,11 @@
     color:var(--ink);
     font-family:'IBM Plex Mono',monospace;
     min-height:100vh;
-    padding:32px 20px 60px;
+    padding:28px 18px 60px;
   }
   .wrap{max-width:1100px;margin:0 auto;}
 
-  /* ---- header: tablero de salidas ---- */
+  /* ---- header ---- */
   header{
     display:flex;
     justify-content:space-between;
@@ -39,156 +42,176 @@
     flex-wrap:wrap;
     gap:16px;
     border-bottom:2px solid var(--panel-line);
-    padding-bottom:20px;
-    margin-bottom:28px;
+    padding-bottom:18px;
+    margin-bottom:20px;
   }
   .title-block h1{
     font-family:'Space Grotesk',sans-serif;
     font-weight:700;
-    font-size:28px;
+    font-size:26px;
     letter-spacing:0.02em;
     text-transform:uppercase;
   }
-  .title-block .sub{
-    color:var(--ink-dim);
-    font-size:13px;
-    margin-top:4px;
-  }
+  .title-block .sub{color:var(--ink-dim); font-size:13px; margin-top:4px;}
   .clock{
     font-family:'Space Grotesk',sans-serif;
-    font-size:32px;
-    font-weight:700;
-    letter-spacing:0.03em;
+    font-size:28px; font-weight:700; letter-spacing:0.03em;
     font-variant-numeric:tabular-nums;
   }
   .clock .date{
-    display:block;
-    font-family:'IBM Plex Mono',monospace;
-    font-size:12px;
-    font-weight:400;
-    color:var(--ink-dim);
-    text-align:right;
-    letter-spacing:0.05em;
-    text-transform:uppercase;
+    display:block; font-family:'IBM Plex Mono',monospace; font-size:11px;
+    font-weight:400; color:var(--ink-dim); text-align:right;
+    letter-spacing:0.05em; text-transform:uppercase;
   }
 
-  /* ---- botón notificaciones ---- */
-  .notif-bar{
-    display:flex;
-    align-items:center;
-    gap:12px;
-    background:var(--panel);
-    border:1px solid var(--panel-line);
-    border-radius:6px;
-    padding:12px 16px;
-    margin-bottom:28px;
-    font-size:13px;
-  }
-  .notif-bar .dot{
-    width:8px;height:8px;border-radius:50%;
-    background:var(--baja);
-    flex-shrink:0;
-  }
-  .notif-bar .dot.on{background:var(--importante); box-shadow:0 0 0 4px var(--importante-dim);}
-  .notif-bar .dot.off{background:var(--urgente); box-shadow:0 0 0 4px var(--urgente-dim);}
-  .notif-bar button{
-    margin-left:auto;
-    background:var(--ink);
-    color:var(--bg);
-    border:none;
-    font-family:'IBM Plex Mono',monospace;
-    font-weight:600;
-    font-size:12px;
-    text-transform:uppercase;
-    letter-spacing:0.05em;
-    padding:8px 14px;
-    border-radius:4px;
-    cursor:pointer;
-  }
-  .notif-bar button:hover{opacity:0.85;}
-  .notif-bar button:disabled{opacity:0.4;cursor:default;}
-
-  /* ---- columnas ---- */
-  .board{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:18px;
-  }
-  @media (max-width:820px){
-    .board{grid-template-columns:1fr;}
-    header{align-items:flex-start;}
-    .clock .date{text-align:left;}
-  }
-  .col{
-    background:var(--panel);
-    border:1px solid var(--panel-line);
-    border-radius:8px;
-    overflow:hidden;
-    display:flex;
-    flex-direction:column;
-  }
-  .col-head{
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    padding:14px 16px;
-    font-family:'Space Grotesk',sans-serif;
-    font-weight:700;
-    font-size:13px;
-    text-transform:uppercase;
-    letter-spacing:0.06em;
-    border-bottom:1px solid var(--panel-line);
-  }
-  .col-urgente .col-head{color:var(--urgente); background:var(--urgente-dim);}
-  .col-importante .col-head{color:var(--importante); background:var(--importante-dim);}
-  .col-baja .col-head{color:var(--baja); background:var(--baja-dim);}
-  .count{
-    font-family:'IBM Plex Mono',monospace;
-    font-weight:600;
-    font-size:12px;
-    background:rgba(255,255,255,0.08);
-    padding:2px 8px;
+  /* ---- objetivo del mes ---- */
+  .objetivo{
+    position:relative;
+    background:linear-gradient(135deg, var(--diaria-dim), var(--panel));
+    border:1px solid var(--objetivo);
     border-radius:10px;
+    padding:18px 20px;
+    margin-bottom:22px;
+    box-shadow:0 0 0 1px rgba(242,169,59,0.08), 0 8px 24px -12px rgba(242,169,59,0.35);
   }
-  .col-body{padding:10px;display:flex;flex-direction:column;gap:8px;min-height:80px;}
+  .objetivo .eyebrow{
+    font-family:'Space Grotesk',sans-serif;
+    font-size:11px; font-weight:700; letter-spacing:0.12em;
+    text-transform:uppercase; color:var(--objetivo);
+    display:flex; align-items:center; gap:8px;
+  }
+  .objetivo .texto{
+    font-family:'Space Grotesk',sans-serif;
+    font-size:20px; font-weight:700; color:var(--ink);
+    margin-top:8px; line-height:1.35; max-width:88%;
+  }
+  .objetivo .meta{font-size:11px; color:var(--ink-dim); margin-top:8px;}
+  .objetivo button.edit{
+    position:absolute; top:14px; right:14px;
+    background:transparent; border:1px solid var(--panel-line);
+    color:var(--ink-dim); font-size:11px; font-family:'IBM Plex Mono',monospace;
+    padding:6px 10px; border-radius:5px; cursor:pointer;
+  }
+  .objetivo button.edit:hover{color:var(--ink); border-color:var(--objetivo);}
+
+  /* ---- barra de acciones ---- */
+  .actions-bar{
+    display:flex; align-items:center; gap:10px; flex-wrap:wrap;
+    background:var(--panel); border:1px solid var(--panel-line);
+    border-radius:6px; padding:10px 14px; margin-bottom:26px; font-size:12.5px;
+  }
+  .actions-bar .dot{width:8px;height:8px;border-radius:50%;background:var(--baja); flex-shrink:0;}
+  .actions-bar .dot.on{background:var(--semanal); box-shadow:0 0 0 4px var(--semanal-dim);}
+  .actions-bar .dot.off{background:var(--diaria); box-shadow:0 0 0 4px var(--diaria-dim);}
+  .actions-bar .spacer{flex:1;}
+  .btn{
+    background:var(--ink); color:var(--bg); border:none;
+    font-family:'IBM Plex Mono',monospace; font-weight:600; font-size:12px;
+    text-transform:uppercase; letter-spacing:0.05em;
+    padding:8px 14px; border-radius:4px; cursor:pointer;
+  }
+  .btn:hover{opacity:0.85;}
+  .btn:disabled{opacity:0.4; cursor:default;}
+  .btn.ghost{background:transparent; color:var(--ink); border:1px solid var(--panel-line);}
+
+  /* ---- secciones de tareas ---- */
+  section.grupo{margin-bottom:26px;}
+  .grupo-head{
+    display:flex; align-items:center; gap:10px; margin-bottom:12px;
+  }
+  .grupo-head .titulo-grupo{
+    font-family:'Space Grotesk',sans-serif; font-weight:700;
+    text-transform:uppercase; letter-spacing:0.06em;
+  }
+  .grupo-head .count{
+    font-family:'IBM Plex Mono',monospace; font-weight:600; font-size:11px;
+    background:rgba(255,255,255,0.08); padding:2px 8px; border-radius:10px;
+  }
+  .grupo-diaria .titulo-grupo{color:var(--diaria); font-size:18px;}
+  .grupo-semanal .titulo-grupo{color:var(--semanal); font-size:15px;}
+  .grupo-mensual .titulo-grupo{color:var(--mensual); font-size:14px;}
+  .grupo-baja .titulo-grupo{color:var(--baja); font-size:13px;}
+
+  .grid-diaria{display:grid; grid-template-columns:repeat(auto-fill,minmax(300px,1fr)); gap:12px;}
+  .grid-semanal{display:grid; grid-template-columns:repeat(auto-fill,minmax(260px,1fr)); gap:10px;}
+  .lista-mensual{display:flex; flex-direction:column; gap:6px;}
+  .lista-baja{display:flex; flex-direction:column; gap:6px;}
 
   .task{
-    background:rgba(255,255,255,0.02);
-    border:1px solid var(--panel-line);
-    border-left-width:3px;
-    border-radius:5px;
-    padding:10px 12px;
+    background:var(--panel); border:1px solid var(--panel-line);
+    border-left-width:3px; border-radius:7px; padding:12px 14px;
   }
-  .col-urgente .task{border-left-color:var(--urgente);}
-  .col-importante .task{border-left-color:var(--importante);}
-  .col-baja .task{border-left-color:var(--baja);}
+  .grid-diaria .task{border-left-color:var(--diaria); padding:16px 18px;}
+  .grid-semanal .task{border-left-color:var(--semanal);}
+  .lista-mensual .task{border-left-color:var(--mensual); padding:9px 12px;}
+  .lista-baja .task{border-left-color:var(--baja); padding:8px 12px; opacity:0.82;}
+
   .task .t-title{
-    font-family:'Space Grotesk',sans-serif;
-    font-weight:500;
-    font-size:14px;
-    line-height:1.3;
-    margin-bottom:6px;
+    font-family:'Space Grotesk',sans-serif; font-weight:600; line-height:1.3;
   }
-  .task .t-meta{
-    display:flex;
-    flex-wrap:wrap;
-    gap:8px;
-    font-size:11px;
-    color:var(--ink-dim);
+  .grid-diaria .task .t-title{font-size:16px; margin-bottom:6px;}
+  .grid-semanal .task .t-title{font-size:14px; margin-bottom:5px;}
+  .lista-mensual .task .t-title, .lista-baja .task .t-title{font-size:13px; margin-bottom:3px;}
+
+  .task .t-desc{font-size:12px; color:var(--ink-dim); margin-bottom:8px; line-height:1.4;}
+  .lista-mensual .t-desc, .lista-baja .t-desc{display:none;}
+
+  .task .t-meta{display:flex; flex-wrap:wrap; gap:6px; align-items:center;}
+  .badge{
+    font-size:10.5px; padding:2px 8px; border-radius:10px;
+    background:rgba(255,255,255,0.06); color:var(--ink-dim); white-space:nowrap;
   }
-  .task .t-meta span{white-space:nowrap;}
-  .empty{
-    color:var(--ink-dim);
-    font-size:12px;
-    text-align:center;
-    padding:24px 8px;
+  .badge.etiqueta{color:var(--ink); background:rgba(255,255,255,0.1);}
+  .badge.prio-urgent{color:var(--diaria); background:var(--diaria-dim);}
+  .badge.prio-important{color:var(--semanal); background:var(--semanal-dim);}
+  .badge.prio-medium{color:var(--mensual); background:var(--mensual-dim);}
+  .badge.prio-low{color:var(--baja); background:rgba(255,255,255,0.05);}
+
+  details.grupo-baja{background:transparent;}
+  details summary{cursor:pointer; list-style:none;}
+  details summary::-webkit-details-marker{display:none;}
+  details summary .grupo-head{margin-bottom:10px;}
+  details summary .arrow{color:var(--ink-dim); font-size:11px; margin-left:auto;}
+
+  .empty{color:var(--ink-dim); font-size:12px; padding:14px; text-align:center;}
+  .status-line{margin-top:24px; color:var(--ink-dim); font-size:11px; text-align:center; letter-spacing:0.03em;}
+
+  /* ---- modales ---- */
+  .modal-backdrop{
+    display:none; position:fixed; inset:0; background:rgba(5,8,16,0.75);
+    align-items:center; justify-content:center; padding:20px; z-index:50;
   }
-  .status-line{
-    margin-top:24px;
-    color:var(--ink-dim);
-    font-size:11px;
-    text-align:center;
-    letter-spacing:0.03em;
+  .modal-backdrop.abierto{display:flex;}
+  .modal{
+    background:var(--panel); border:1px solid var(--panel-line); border-radius:10px;
+    max-width:480px; width:100%; max-height:85vh; overflow-y:auto; padding:22px;
+  }
+  .modal h2{
+    font-family:'Space Grotesk',sans-serif; font-size:16px; text-transform:uppercase;
+    letter-spacing:0.05em; margin-bottom:14px; display:flex; justify-content:space-between; align-items:center;
+  }
+  .modal h2 .close{cursor:pointer; color:var(--ink-dim); font-size:14px; font-weight:400;}
+  .modal label{display:block; font-size:11px; color:var(--ink-dim); text-transform:uppercase; letter-spacing:0.05em; margin:10px 0 5px;}
+  .modal input, .modal textarea{
+    width:100%; background:var(--bg); border:1px solid var(--panel-line); color:var(--ink);
+    font-family:'IBM Plex Mono',monospace; font-size:13px; padding:9px 10px; border-radius:5px;
+    resize:vertical;
+  }
+  .modal textarea{min-height:70px;}
+  .modal .row-actions{display:flex; gap:8px; margin-top:16px;}
+  .frase-item{
+    border-top:1px solid var(--panel-line); padding:10px 0; font-size:13px;
+  }
+  .frase-item .autor{color:var(--ink-dim); font-size:11px; margin-top:3px;}
+  .frase-list{margin-top:10px; max-height:220px; overflow-y:auto;}
+  .feedback{font-size:11px; margin-top:8px; min-height:14px;}
+  .feedback.ok{color:var(--semanal);}
+  .feedback.err{color:var(--diaria);}
+
+  @media (max-width:820px){
+    header{align-items:flex-start;}
+    .clock .date{text-align:left;}
+    .objetivo .texto{max-width:100%;}
   }
 </style>
 </head>
@@ -206,32 +229,83 @@
     </div>
   </header>
 
-  <div class="notif-bar">
-    <span class="dot off" id="notifDot"></span>
-    <span id="notifText">Notificaciones desactivadas</span>
-    <button id="notifBtn">Activar notificaciones</button>
+  <div class="objetivo" id="objetivoBox">
+    <div class="eyebrow">🎯 Objetivo del mes</div>
+    <div class="texto" id="objetivoTexto">Cargando…</div>
+    <div class="meta" id="objetivoMeta"></div>
+    <button class="edit" id="btnEditarObjetivo">Editar</button>
   </div>
 
-  <div class="board">
-    <section class="col col-urgente">
-      <div class="col-head"><span>Urgentes</span><span class="count" id="count-urgente">0</span></div>
-      <div class="col-body" id="list-urgente"></div>
-    </section>
-    <section class="col col-importante">
-      <div class="col-head"><span>Importantes</span><span class="count" id="count-importante">0</span></div>
-      <div class="col-body" id="list-importante"></div>
-    </section>
-    <section class="col col-baja">
-      <div class="col-head"><span>No tan importantes</span><span class="count" id="count-baja">0</span></div>
-      <div class="col-body" id="list-baja"></div>
-    </section>
+  <div class="actions-bar">
+    <span class="dot off" id="notifDot"></span>
+    <span id="notifText">Notificaciones desactivadas</span>
+    <div class="spacer"></div>
+    <button class="btn ghost" id="btnFrases">💬 Frases del equipo</button>
+    <button class="btn" id="notifBtn">Activar notificaciones</button>
   </div>
+
+  <section class="grupo grupo-diaria">
+    <div class="grupo-head"><span class="titulo-grupo">🔥 Hoy — Diarias</span><span class="count" id="count-diaria">0</span></div>
+    <div class="grid-diaria" id="list-diaria"></div>
+  </section>
+
+  <section class="grupo grupo-semanal">
+    <div class="grupo-head"><span class="titulo-grupo">Esta semana</span><span class="count" id="count-semanal">0</span></div>
+    <div class="grid-semanal" id="list-semanal"></div>
+  </section>
+
+  <section class="grupo grupo-mensual">
+    <div class="grupo-head"><span class="titulo-grupo">Recordatorio del mes</span><span class="count" id="count-mensual">0</span></div>
+    <div class="lista-mensual" id="list-mensual"></div>
+  </section>
+
+  <details class="grupo grupo-baja">
+    <summary>
+      <div class="grupo-head"><span class="titulo-grupo">Backlog / sin depósito</span><span class="count" id="count-baja">0</span><span class="arrow">▾ ver</span></div>
+    </summary>
+    <div class="lista-baja" id="list-baja"></div>
+  </details>
 
   <div class="status-line" id="statusLine">Cargando tareas…</div>
 
 </div>
 
+<!-- Modal: frases del equipo -->
+<div class="modal-backdrop" id="modalFrases">
+  <div class="modal">
+    <h2>Frases del equipo <span class="close" data-close="modalFrases">✕ cerrar</span></h2>
+    <label for="fraseTexto">Nueva frase</label>
+    <textarea id="fraseTexto" placeholder="Algo divertido, motivador o random para acompañar el día..."></textarea>
+    <label for="fraseAutor">Tu nombre</label>
+    <input id="fraseAutor" placeholder="ej. Camila">
+    <div class="row-actions">
+      <button class="btn" id="btnGuardarFrase">Guardar frase</button>
+    </div>
+    <div class="feedback" id="fraseFeedback"></div>
+    <div class="frase-list" id="fraseList"></div>
+  </div>
+</div>
+
+<!-- Modal: objetivo del mes -->
+<div class="modal-backdrop" id="modalObjetivo">
+  <div class="modal">
+    <h2>Editar objetivo del mes <span class="close" data-close="modalObjetivo">✕ cerrar</span></h2>
+    <label for="objetivoInputTexto">Objetivo / foco</label>
+    <textarea id="objetivoInputTexto" placeholder="ej. Cerrar la migración de bodega antes del 15"></textarea>
+    <label for="objetivoInputMes">Mes</label>
+    <input id="objetivoInputMes" placeholder="ej. Agosto 2026">
+    <label for="objetivoInputPor">Definido por</label>
+    <input id="objetivoInputPor" placeholder="ej. Sebastián">
+    <div class="row-actions">
+      <button class="btn" id="btnGuardarObjetivo">Guardar objetivo</button>
+    </div>
+    <div class="feedback" id="objetivoFeedback"></div>
+  </div>
+</div>
+
 <script>
+const N8N_BASE = 'https://n8n-production-fbb1.up.railway.app/webhook/';
+
 /* =========================================================
    RELOJ
 ========================================================= */
@@ -243,27 +317,28 @@ function tick(){
 tick(); setInterval(tick, 15000);
 
 /* =========================================================
-   DATOS DE EJEMPLO (se usan solo si tareas.json no existe aún,
-   por ejemplo mientras conectas el flujo de n8n)
+   DATOS DE EJEMPLO (mientras tareas.json no esté publicado)
 ========================================================= */
 const DATOS_EJEMPLO = {
   generated_at: new Date().toISOString(),
-  urgente: [
-    {id:"t1", titulo:"Confirmar reserva de bodega vuelo AV204", asignado:"Camila R.", fecha_limite:"2026-07-27T14:00:00", prioridad:"Urgent", bucket:"Despachos hoy"},
-    {id:"t2", titulo:"Actualizar AWB con peso volumétrico corregido", asignado:"Sin asignar", fecha_limite:"2026-07-27T10:00:00", prioridad:"Urgent", bucket:"Documentación"}
+  diaria: [
+    {id:"t1", titulo:"Confirmar reserva de bodega vuelo AV204", descripcion:"Validar cupo y peso con la aerolínea antes del cierre.", etiqueta:"Exportaciones", asignado:"Camila R.", fecha_limite:"2026-07-27T14:00:00", prioridad:2},
+    {id:"t2", titulo:"Actualizar AWB con peso volumétrico corregido", descripcion:"", etiqueta:"", asignado:"Sin asignar", fecha_limite:"", prioridad:2}
   ],
-  importante: [
-    {id:"t3", titulo:"Revisar layout de zona fría para semana 31", asignado:"Julián P.", fecha_limite:"2026-07-30T17:00:00", prioridad:"Important", bucket:"Planeación"}
+  semanal: [
+    {id:"t3", titulo:"Revisar layout de zona fría para semana 31", descripcion:"Coordinar con bodega el nuevo acomodo.", etiqueta:"Bodega", asignado:"Julián P.", fecha_limite:"2026-07-30T17:00:00", prioridad:5}
   ],
-  no_importante: [
-    {id:"t4", titulo:"Archivar guías de la semana pasada", asignado:"Camila R.", fecha_limite:"2026-08-05T17:00:00", prioridad:"Medium", bucket:"Administrativo"}
+  mensual: [
+    {id:"t4", titulo:"Cierre de indicadores del mes", descripcion:"", etiqueta:"", asignado:"Camila R.", fecha_limite:"", prioridad:8}
+  ],
+  backlog: [],
+  sin_deposito: [
+    {id:"t5", titulo:"Archivar guías de la semana pasada", descripcion:"", etiqueta:"", asignado:"Camila R.", fecha_limite:"", prioridad:9}
   ]
 };
 
 /* =========================================================
-   CARGA DE DATOS
-   El flujo de n8n publica tareas.json en el mismo repo.
-   Si aún no existe (404), se muestran los datos de ejemplo.
+   CARGA DE TAREAS (estático, mismo repo)
 ========================================================= */
 async function cargarTareas(){
   try{
@@ -283,36 +358,171 @@ async function cargarTareas(){
 }
 
 function fmtFecha(iso){
-  if(!iso) return 'sin fecha';
+  if(!iso) return null;
   const d = new Date(iso);
+  if(isNaN(d)) return null;
   return d.toLocaleString('es-CO',{day:'2-digit',month:'short',hour:'2-digit',minute:'2-digit'});
 }
 
+function prioridadInfo(p){
+  const n = Number(p ?? 8);
+  if(n <= 3) return {label:'Urgente', cls:'prio-urgent'};
+  if(n <= 6) return {label:'Importante', cls:'prio-important'};
+  if(n <= 8) return {label:'Media', cls:'prio-medium'};
+  return {label:'Baja', cls:'prio-low'};
+}
+
+function tarjetaTarea(t){
+  const prio = prioridadInfo(t.prioridad);
+  const fecha = fmtFecha(t.fecha_limite);
+  const desc = t.descripcion ? `<div class="t-desc">${t.descripcion}</div>` : '';
+  const etiqueta = t.etiqueta ? `<span class="badge etiqueta">🏷 ${t.etiqueta}</span>` : '';
+  const fechaBadge = fecha ? `<span class="badge">⏰ ${fecha}</span>` : '';
+  return `
+    <div class="task">
+      <div class="t-title">${t.titulo}</div>
+      ${desc}
+      <div class="t-meta">
+        <span class="badge prio ${prio.cls}">${prio.label}</span>
+        <span class="badge">👤 ${t.asignado || 'Sin asignar'}</span>
+        ${etiqueta}
+        ${fechaBadge}
+      </div>
+    </div>`;
+}
+
 function render(data){
-  const cols = {urgente:'list-urgente', importante:'list-importante', no_importante:'list-baja'};
-  const counts = {urgente:'count-urgente', importante:'count-importante', no_importante:'count-baja'};
-  for(const key in cols){
+  const mapa = {
+    diaria:{el:'list-diaria', count:'count-diaria'},
+    semanal:{el:'list-semanal', count:'count-semanal'},
+    mensual:{el:'list-mensual', count:'count-mensual'}
+  };
+  for(const key in mapa){
     const tareas = data[key] || [];
-    const el = document.getElementById(cols[key]);
-    document.getElementById(counts[key]).textContent = tareas.length;
-    el.innerHTML = tareas.length ? '' : '<div class="empty">Sin tareas aquí. Buen trabajo.</div>';
-    tareas.forEach(t=>{
-      const div = document.createElement('div');
-      div.className = 'task';
-      div.innerHTML = `
-        <div class="t-title">${t.titulo}</div>
-        <div class="t-meta">
-          <span>👤 ${t.asignado || 'Sin asignar'}</span>
-          <span>🗂 ${t.bucket || ''}</span>
-          <span>⏰ ${fmtFecha(t.fecha_limite)}</span>
-        </div>`;
-      el.appendChild(div);
+    const el = document.getElementById(mapa[key].el);
+    document.getElementById(mapa[key].count).textContent = tareas.length;
+    el.innerHTML = tareas.length ? tareas.map(tarjetaTarea).join('') : '<div class="empty">Sin tareas aquí. Buen trabajo.</div>';
+  }
+  const bajas = [...(data.backlog||[]), ...(data.sin_deposito||[])];
+  document.getElementById('count-baja').textContent = bajas.length;
+  document.getElementById('list-baja').innerHTML = bajas.length ? bajas.map(tarjetaTarea).join('') : '<div class="empty">Nada por aquí.</div>';
+}
+
+/* =========================================================
+   OBJETIVO DEL MES
+========================================================= */
+async function cargarObjetivo(){
+  try{
+    const res = await fetch(N8N_BASE + 'objetivo-actual');
+    const data = await res.json();
+    document.getElementById('objetivoTexto').textContent = data.texto || 'Aún no se ha definido el objetivo del mes';
+    document.getElementById('objetivoMeta').textContent = data.mes ? `${data.mes}${data.actualizado_por ? ' · definido por ' + data.actualizado_por : ''}` : '';
+    return data;
+  }catch(e){
+    document.getElementById('objetivoTexto').textContent = 'No se pudo cargar el objetivo del mes';
+    return null;
+  }
+}
+
+document.getElementById('btnEditarObjetivo').addEventListener('click', async ()=>{
+  const actual = await cargarObjetivo();
+  if(actual){
+    document.getElementById('objetivoInputTexto').value = actual.texto === 'Aún no se ha definido el objetivo del mes' ? '' : (actual.texto || '');
+    document.getElementById('objetivoInputMes').value = actual.mes || '';
+    document.getElementById('objetivoInputPor').value = actual.actualizado_por || '';
+  }
+  abrirModal('modalObjetivo');
+});
+
+document.getElementById('btnGuardarObjetivo').addEventListener('click', async ()=>{
+  const texto = document.getElementById('objetivoInputTexto').value.trim();
+  const mes = document.getElementById('objetivoInputMes').value.trim();
+  const actualizado_por = document.getElementById('objetivoInputPor').value.trim();
+  const fb = document.getElementById('objetivoFeedback');
+  if(!texto){ fb.textContent = 'Escribe el objetivo antes de guardar.'; fb.className = 'feedback err'; return; }
+  try{
+    const res = await fetch(N8N_BASE + 'objetivo', {
+      method:'POST', headers:{'Content-Type':'application/json'},
+      body: JSON.stringify({texto, mes, actualizado_por})
     });
+    if(!res.ok) throw new Error('fallo al guardar');
+    fb.textContent = '¡Guardado!'; fb.className = 'feedback ok';
+    await cargarObjetivo();
+    setTimeout(()=>cerrarModal('modalObjetivo'), 700);
+  }catch(e){
+    fb.textContent = 'No se pudo guardar. Intenta de nuevo.'; fb.className = 'feedback err';
+  }
+});
+
+/* =========================================================
+   FRASES DEL EQUIPO
+========================================================= */
+async function cargarFrases(){
+  const cont = document.getElementById('fraseList');
+  cont.innerHTML = '<div class="empty">Cargando frases…</div>';
+  try{
+    const res = await fetch(N8N_BASE + 'frases-listar');
+    const data = await res.json();
+    const filas = Array.isArray(data) ? data : (data.data || []);
+    if(!filas.length){ cont.innerHTML = '<div class="empty">Aún no hay frases guardadas. ¡Agrega la primera!</div>'; return; }
+    cont.innerHTML = filas.map(f => `
+      <div class="frase-item">
+        “${f.texto}”
+        <div class="autor">— ${f.autor || 'Anónimo'}</div>
+      </div>`).join('');
+  }catch(e){
+    cont.innerHTML = '<div class="empty">No se pudieron cargar las frases.</div>';
+  }
+}
+
+document.getElementById('btnFrases').addEventListener('click', ()=>{
+  abrirModal('modalFrases');
+  cargarFrases();
+});
+
+document.getElementById('btnGuardarFrase').addEventListener('click', async ()=>{
+  const texto = document.getElementById('fraseTexto').value.trim();
+  const autor = document.getElementById('fraseAutor').value.trim();
+  const fb = document.getElementById('fraseFeedback');
+  if(!texto){ fb.textContent = 'Escribe una frase antes de guardar.'; fb.className = 'feedback err'; return; }
+  try{
+    const res = await fetch(N8N_BASE + 'frases', {
+      method:'POST', headers:{'Content-Type':'application/json'},
+      body: JSON.stringify({texto, autor})
+    });
+    if(!res.ok) throw new Error('fallo al guardar');
+    fb.textContent = '¡Frase guardada!'; fb.className = 'feedback ok';
+    document.getElementById('fraseTexto').value = '';
+    cargarFrases();
+  }catch(e){
+    fb.textContent = 'No se pudo guardar. Intenta de nuevo.'; fb.className = 'feedback err';
+  }
+});
+
+async function traerFraseRandom(){
+  try{
+    const res = await fetch(N8N_BASE + 'frase-random');
+    const data = await res.json();
+    return data.texto || '¡Vamos con todo hoy! 💪';
+  }catch(e){
+    return '¡Vamos con todo hoy! 💪';
   }
 }
 
 /* =========================================================
-   NOTIFICACIONES (simples, solo con la pestaña abierta)
+   MODALES (genérico)
+========================================================= */
+function abrirModal(id){ document.getElementById(id).classList.add('abierto'); }
+function cerrarModal(id){ document.getElementById(id).classList.remove('abierto'); }
+document.querySelectorAll('[data-close]').forEach(el=>{
+  el.addEventListener('click', ()=> cerrarModal(el.getAttribute('data-close')));
+});
+document.querySelectorAll('.modal-backdrop').forEach(bg=>{
+  bg.addEventListener('click', (e)=>{ if(e.target === bg) cerrarModal(bg.id); });
+});
+
+/* =========================================================
+   NOTIFICACIONES
 ========================================================= */
 const notifBtn = document.getElementById('notifBtn');
 const notifDot = document.getElementById('notifDot');
@@ -331,7 +541,7 @@ function actualizarEstadoNotif(){
     notifBtn.disabled = true;
   }else if(Notification.permission === 'denied'){
     notifDot.className = 'dot off';
-    notifText.textContent = 'Bloqueadas en el navegador — actívalas en la configuración del sitio';
+    notifText.textContent = 'Bloqueadas — actívalas en la configuración del sitio';
     notifBtn.disabled = true;
   }else{
     notifDot.className = 'dot off';
@@ -343,10 +553,12 @@ function actualizarEstadoNotif(){
 notifBtn.addEventListener('click', async ()=>{
   const permiso = await Notification.requestPermission();
   actualizarEstadoNotif();
-  if(permiso === 'granted') revisarYNotificarUrgentes(ultimosDatos);
+  if(permiso === 'granted'){
+    revisarYNotificarDiarias(ultimosDatos);
+    programarFrasesDelDia();
+  }
 });
 
-/* Evita repetir la misma notificación durante el mismo día */
 function yaNotificada(id){
   const hoy = new Date().toDateString();
   const registro = JSON.parse(localStorage.getItem('notif_enviadas') || '{}');
@@ -357,23 +569,53 @@ function marcarNotificada(id){
   const registro = JSON.parse(localStorage.getItem('notif_enviadas') || '{}');
   registro[hoy] = registro[hoy] || [];
   registro[hoy].push(id);
-  // limpieza simple: solo conserva el día de hoy
   localStorage.setItem('notif_enviadas', JSON.stringify({[hoy]: registro[hoy]}));
 }
 
-function revisarYNotificarUrgentes(data){
+/* Notifica las tareas diarias, acompañadas de una frase random */
+async function revisarYNotificarDiarias(data){
   if(!data || Notification.permission !== 'granted') return;
-  const urgentes = data.urgente || [];
-  urgentes.forEach((t,i)=>{
-    if(yaNotificada(t.id)) return;
+  const diarias = data.diaria || [];
+  for(let i=0;i<diarias.length;i++){
+    const t = diarias[i];
+    if(yaNotificada(t.id)) continue;
+    const frase = await traerFraseRandom();
     setTimeout(()=>{
-      new Notification('Tarea urgente: ' + t.titulo, {
-        body: `${t.asignado || 'Sin asignar'} · vence ${fmtFecha(t.fecha_limite)}`,
+      new Notification('📌 Tarea de hoy: ' + t.titulo, {
+        body: `${frase}\n👤 ${t.asignado || 'Sin asignar'}`,
         tag: t.id
       });
       marcarNotificada(t.id);
-    }, i * 1500); // separa cada notificación para que no se agrupen
-  });
+    }, i * 2000);
+  }
+}
+
+/* Programa 2 frases motivacionales sueltas al día, en horas aleatorias entre 9am y 6pm */
+function programarFrasesDelDia(){
+  const hoy = new Date().toDateString();
+  const clave = 'frases_programadas_' + hoy;
+  let horarios = JSON.parse(localStorage.getItem(clave) || 'null');
+  if(!horarios){
+    const base = new Date(); base.setHours(9,0,0,0);
+    const fin = new Date(); fin.setHours(18,0,0,0);
+    const rango = fin.getTime() - base.getTime();
+    horarios = [0,1].map(()=> new Date(base.getTime() + Math.random()*rango).getTime()).sort((a,b)=>a-b);
+    localStorage.setItem(clave, JSON.stringify(horarios));
+  }
+  const enviadas = JSON.parse(localStorage.getItem('frases_enviadas_' + hoy) || '[]');
+
+  setInterval(async ()=>{
+    if(Notification.permission !== 'granted') return;
+    const ahora = Date.now();
+    for(let i=0;i<horarios.length;i++){
+      if(ahora >= horarios[i] && !enviadas.includes(i)){
+        const frase = await traerFraseRandom();
+        new Notification('✨ Un momento para respirar', { body: frase });
+        enviadas.push(i);
+        localStorage.setItem('frases_enviadas_' + hoy, JSON.stringify(enviadas));
+      }
+    }
+  }, 60 * 1000);
 }
 
 /* =========================================================
@@ -382,14 +624,15 @@ function revisarYNotificarUrgentes(data){
 let ultimosDatos = null;
 async function init(){
   actualizarEstadoNotif();
+  cargarObjetivo();
   ultimosDatos = await cargarTareas();
   if(Notification.permission === 'granted'){
-    revisarYNotificarUrgentes(ultimosDatos);
+    revisarYNotificarDiarias(ultimosDatos);
+    programarFrasesDelDia();
   }
-  // vuelve a revisar cada 10 minutos mientras la pestaña siga abierta
   setInterval(async ()=>{
     ultimosDatos = await cargarTareas();
-    revisarYNotificarUrgentes(ultimosDatos);
+    if(Notification.permission === 'granted') revisarYNotificarDiarias(ultimosDatos);
   }, 10 * 60 * 1000);
 }
 init();
