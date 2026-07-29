@@ -115,7 +115,7 @@
     position:absolute; width:8px; height:8px; border-radius:50%;
     background:var(--diaria); margin-left:22px; margin-top:-30px;
   }
-  .settings-row{display:flex; align-items:center; gap:10px;}
+  .settings-row{display:flex; align-items:center; gap:10px; flex-wrap:wrap; justify-content:flex-end;}
 
   /* ---- configuración dentro del modal ---- */
   .config-block{
@@ -262,6 +262,7 @@
       <div class="sub">Nuestro equipo, sincronizado desde Planner ✨</div>
     </div>
     <div class="settings-row">
+      <button class="btn ghost" id="btnFrases" style="padding:8px 14px; font-size:12px;">💬 Frases del equipo</button>
       <div class="clock">
         <span class="date" id="fecha">—</span>
         <span id="hora">--:--</span>
@@ -344,9 +345,6 @@
       <span id="notifText">Notificaciones desactivadas</span>
       <div class="spacer"></div>
       <button class="btn" id="notifBtn" style="padding:7px 14px; font-size:12px;">🔔 Activar</button>
-    </div>
-    <div class="row-actions">
-      <button class="btn ghost" id="btnFrases">💬 Frases del equipo</button>
     </div>
   </div>
 </div>
@@ -621,7 +619,6 @@ document.getElementById('btnGuardarObjetivo').addEventListener('click', async ()
 ========================================================= */
 document.getElementById('btnConfig').addEventListener('click', ()=> abrirModal('modalConfig'));
 document.getElementById('btnFrases').addEventListener('click', ()=>{
-  cerrarModal('modalConfig');
   abrirModal('modalFrases');
   cargarFrases();
 });
@@ -653,7 +650,7 @@ async function cargarRecordatorios(){
         <span class="hora">${fmtHora(r.fecha_hora)}</span>
         <span class="txt">${r.texto}</span>
         <span class="autor">— ${r.autor || 'Equipo'}</span>
-      </div>`).join('') : '<div class="empty" style="padding:8px 0;">Nada por recordar hoy.</div>';
+      </div>`).join('') : '<div class="empty" style="padding:8px 0;">✨ Nadie ha dejado un recordatorio hoy. ¿Algo que el equipo no debería olvidar?</div>';
   }catch(e){
     document.getElementById('count-recordatorios').textContent = '0';
     cont.innerHTML = '<div class="empty" style="padding:8px 0;">No se pudieron cargar los recordatorios.</div>';
