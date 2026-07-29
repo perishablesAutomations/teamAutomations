@@ -353,11 +353,13 @@
 <div class="modal-backdrop" id="modalRecordatorio">
   <div class="modal">
     <h2>📌 Nuevo recordatorio <span class="close" data-close="modalRecordatorio">✕ cerrar</span></h2>
-    <p class="intro">Se ve todo el día de hoy, y desaparece solo mañana.</p>
+    <p class="intro">Elige hasta cuándo debe verse en el panel.</p>
     <label for="recordatorioTexto">Mensaje</label>
     <textarea id="recordatorioTexto" placeholder="ej. A las 3pm llega el mensajero por las guías"></textarea>
     <label for="recordatorioAutor">Tu nombre</label>
     <input id="recordatorioAutor" placeholder="ej. Camila">
+    <label for="recordatorioVigencia">Vigente hasta</label>
+    <input type="date" id="recordatorioVigencia">
     <div class="row-actions">
       <button class="btn" id="btnGuardarRecordatorio">Guardar recordatorio</button>
     </div>
@@ -624,14 +626,22 @@ document.getElementById('btnFrases').addEventListener('click', ()=>{
 });
 
 /* =========================================================
-   RECORDATORIOS DEL DÍA
-   Viven en la misma tabla que el objetivo del mes (tipo: "recordatorio"),
-   se ven solo el día en que se crearon (desde su hora de creación hasta 23:59).
+   RECORDATORIOS
+   Reutilizan el mismo campo "fecha_hora" de la tabla, pero aquí representa
+   "hasta cuándo es válido" (no la hora de creación) — se ven desde hoy
+   hasta que pase esa fecha.
 ========================================================= */
-function fmtHora(iso){
-  const d = new Date(iso);
+function hoyISO(){
+  return new Date().toISOString().slice(0,10); // "YYYY-MM-DD"
+}
+
+function fmtVence(fechaHora){
+  if(!fechaHora) return '';
+  const soloFecha = fechaHora.slice(0,10);
+  if(soloFecha === hoyISO()) return ''; // vence hoy: no hace falta aclararlo
+  const d = new Date(soloFecha + 'T00:00:00');
   if(isNaN(d)) return '';
-  return d.toLocaleTimeString('es-CO',{hour:'2-digit',minute:'2-digit'});
+  return `hasta ${d.toLocaleDateString('es-CO',{day:'2-digit',month:'short'})}`;
 }
 
 async function cargarRecordatorios(){
@@ -640,16 +650,17 @@ async function cargarRecordatorios(){
     const res = await fetch(N8N_BASE + 'recordatorios-hoy');
     const data = await res.json();
     const filas = Array.isArray(data) ? data : (data.data || []);
-    const hoy = new Date().toDateString();
-    const deHoy = filas.filter(f => f.fecha_hora && new Date(f.fecha_hora).toDateString() === hoy);
-    deHoy.sort((a,b)=> new Date(a.fecha_hora) - new Date(b.fecha_hora));
+    const ahora = Date.now();
+    // filtro de seguridad también en el navegador, por si n8n devuelve algo vencido
+    const vigentes = filas.filter(f => f.fecha_hora && new Date(f.fecha_hora).getTime() >= ahora);
+    vigentes.sort((a,b)=> new Date(a.fecha_hora) - new Date(b.fecha_hora));
 
-    document.getElementById('count-recordatorios').textContent = deHoy.length;
-    cont.innerHTML = deHoy.length ? deHoy.map(r => `
+    document.getElementById('count-recordatorios').textContent = vigentes.length;
+    cont.innerHTML = vigentes.length ? vigentes.map(r => `
       <div class="recordatorio-card">
-        <span class="hora">${fmtHora(r.fecha_hora)}</span>
         <span class="txt">${r.texto}</span>
         <span class="autor">— ${r.autor || 'Equipo'}</span>
+        ${fmtVence(r.fecha_hora) ? `<span class="autor">· ${fmtVence(r.fecha_hora)}</span>` : ''}
       </div>`).join('') : '<div class="empty" style="padding:8px 0;">✨ Nadie ha dejado un recordatorio hoy. ¿Algo que el equipo no debería olvidar?</div>';
   }catch(e){
     document.getElementById('count-recordatorios').textContent = '0';
@@ -657,17 +668,24 @@ async function cargarRecordatorios(){
   }
 }
 
-document.getElementById('btnAgregarRecordatorio').addEventListener('click', ()=> abrirModal('modalRecordatorio'));
+document.getElementById('btnAgregarRecordatorio').addEventListener('click', ()=>{
+  const inputVigencia = document.getElementById('recordatorioVigencia');
+  if(!inputVigencia.value) inputVigencia.value = hoyISO(); // por defecto, vence hoy
+  inputVigencia.min = hoyISO(); // no se puede elegir una fecha pasada
+  abrirModal('modalRecordatorio');
+});
 
 document.getElementById('btnGuardarRecordatorio').addEventListener('click', async ()=>{
   const texto = document.getElementById('recordatorioTexto').value.trim();
   const autor = document.getElementById('recordatorioAutor').value.trim();
+  const vigenciaFecha = document.getElementById('recordatorioVigencia').value || hoyISO();
+  const fecha_hora = vigenciaFecha + 'T23:59:59'; // válido hasta el final de ese día
   const fb = document.getElementById('recordatorioFeedback');
   if(!texto){ fb.textContent = 'Escribe el recordatorio antes de guardar.'; fb.className = 'feedback err'; return; }
   try{
     const res = await fetch(N8N_BASE + 'recordatorio', {
       method:'POST', headers:{'Content-Type':'application/json'},
-      body: JSON.stringify({texto, autor})
+      body: JSON.stringify({texto, autor, fecha_hora})
     });
     if(!res.ok) throw new Error('fallo al guardar');
     fb.textContent = '¡Guardado! 🎉'; fb.className = 'feedback ok';
