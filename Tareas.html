@@ -843,7 +843,7 @@ function programarFrasesDelDia(){
     const base = new Date(); base.setHours(9,0,0,0);
     const fin = new Date(); fin.setHours(18,0,0,0);
     const rango = fin.getTime() - base.getTime();
-    horarios = [0,1].map(()=> new Date(base.getTime() + Math.random()*rango).getTime()).sort((a,b)=>a-b);
+    horarios = [0,1,2,3].map(()=> new Date(base.getTime() + Math.random()*rango).getTime()).sort((a,b)=>a-b);
     localStorage.setItem(clave, JSON.stringify(horarios));
   }
   const enviadas = JSON.parse(localStorage.getItem('frases_enviadas_' + hoy) || '[]');
