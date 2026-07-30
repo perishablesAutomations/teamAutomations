@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-30T17:31:20.730Z",
+  "generated_at": "2026-07-30T19:31:20.238Z",
   "diaria": [
     {
       "id": "dEI8BYdVSkOEovkNNXNKTpgALiR7",
@@ -213,6 +213,16 @@
     }
   ],
   "semanal": [
+    {
+      "id": "Hf_YlKAb9U6F1XmJP8oampgAHQhb",
+      "titulo": "Ticket icono en mis despachos, vuelo retrasado",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "semanal"
+    },
     {
       "id": "pfvPuIBdv0qUcLqscjAjrJgAIRI4",
       "titulo": "Training new WH Manager",
