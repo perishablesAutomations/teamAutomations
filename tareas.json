@@ -1,6 +1,16 @@
 {
-  "generated_at": "2026-07-30T15:31:21.018Z",
+  "generated_at": "2026-07-30T17:31:20.730Z",
   "diaria": [
+    {
+      "id": "dEI8BYdVSkOEovkNNXNKTpgALiR7",
+      "titulo": "Mirar paso 2 no agrupa por exportador cuando no hay hawb o chawb",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "diaria"
+    },
     {
       "id": "2Njg4TNpCUCUHjK5hh4udpgAHzXM",
       "titulo": "Caso Facturas múltiples y documentar caso remarcaciones",
@@ -169,16 +179,6 @@
       "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
       "fecha_limite": "",
       "prioridad": 9,
-      "deposito": "diaria"
-    },
-    {
-      "id": "Tf36yd3Tlk6ODQhCr0Bfl5gALRCz",
-      "titulo": "Testing administrado guías previamente liberadas con ingresos",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
-      "fecha_limite": "",
-      "prioridad": 5,
       "deposito": "diaria"
     },
     {
