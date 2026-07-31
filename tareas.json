@@ -1,6 +1,36 @@
 {
-  "generated_at": "2026-07-31T21:31:28.512Z",
+  "generated_at": "2026-07-31T23:31:29.922Z",
   "diaria": [
+    {
+      "id": "ykWtoQRxMUy3dGzgMcN6spgAL5Vx",
+      "titulo": "Caso anular remisión",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "diaria"
+    },
+    {
+      "id": "jFPUuMzQkUObli08ITZT35gABNkS",
+      "titulo": "ticket boxType PO",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Moreno, Sebastian / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "diaria"
+    },
+    {
+      "id": "5A77EQcHHkSM4pLYzrhE5pgABzWt",
+      "titulo": "Testing implementación DVF",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Moreno, Sebastian / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "diaria"
+    },
     {
       "id": "2DsLrEPCek6vhdXN3DesmZgAFg4w",
       "titulo": "Ticket de acciones faltantes scan",
@@ -27,16 +57,6 @@
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "diaria"
-    },
-    {
-      "id": "cAxoX4Hz_0KrYPYt9qHcoZgAAmHo",
-      "titulo": "Ticket casi DF-traze",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
       "fecha_limite": "",
       "prioridad": 5,
       "deposito": "diaria"
@@ -286,6 +306,16 @@
     {
       "id": "9q8y615TT0SZSaWI7Zk4eJgAD9ms",
       "titulo": "Caso dsitribución y transmision clientes finales CDM",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Moreno, Sebastian / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "semanal"
+    },
+    {
+      "id": "0mPmvQ2_NEmNavWHNqeK8pgADUMi",
+      "titulo": "Caso crear reservas NEW con clientes PO",
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Moreno, Sebastian / Kuehne + Nagel / Bog ZA-OM",
