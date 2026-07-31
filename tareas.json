@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-07-31T11:31:26.022Z",
+  "generated_at": "2026-07-31T13:31:25.129Z",
   "diaria": [
     {
-      "id": "6Ko7Mvs1cUOoDwA0XEsviJgAPXDs",
-      "titulo": "Descarga documento unido desde el paso 1",
+      "id": "2DsLrEPCek6vhdXN3DesmZgAFg4w",
+      "titulo": "Ticket de acciones faltantes scan",
       "descripcion": "",
       "etiqueta": "",
-      "asignado": "Moreno, Sebastian / Kuehne + Nagel / Bog ZA-OM",
+      "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
       "fecha_limite": "",
       "prioridad": 5,
       "deposito": "diaria"
@@ -44,16 +44,6 @@
     {
       "id": "BYyWuO1ny0-LTa5I5RlgBpgADfjT",
       "titulo": "Testing Caso USABQ label-management",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Moreno, Sebastian / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "diaria"
-    },
-    {
-      "id": "GP4gY_DlsU-AJvTJX07jnpgALiCC",
-      "titulo": "Revisar twi API reservas manuales",
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Moreno, Sebastian / Kuehne + Nagel / Bog ZA-OM",
@@ -152,16 +142,6 @@
       "deposito": "diaria"
     },
     {
-      "id": "RVVilffvikuvJf1bxhDk4JgADZVt",
-      "titulo": "Comunicado de envío de documentos",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Moreno, Sebastian / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "diaria"
-    },
-    {
       "id": "wYMVlkevPEGpst42GNBZVZgAMHUT",
       "titulo": "Categorizar y mejoras bodega para crear un ticket con lo mas urgente",
       "descripcion": "",
@@ -233,6 +213,16 @@
     }
   ],
   "semanal": [
+    {
+      "id": "6Ko7Mvs1cUOoDwA0XEsviJgAPXDs",
+      "titulo": "Descarga documento unido desde el paso 1",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Moreno, Sebastian / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "semanal"
+    },
     {
       "id": "hp90rgpQP0WwAmEw5SbrSZgAIcq_",
       "titulo": "Total piezas bodega CDM paso 1",
