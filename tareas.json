@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-31T15:31:26.668Z",
+  "generated_at": "2026-07-31T17:31:26.229Z",
   "diaria": [
     {
       "id": "2DsLrEPCek6vhdXN3DesmZgAFg4w",
@@ -67,16 +67,6 @@
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "diaria"
-    },
-    {
-      "id": "2Njg4TNpCUCUHjK5hh4udpgAHzXM",
-      "titulo": "Caso Facturas múltiples y documentar caso remarcaciones",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Moreno, Sebastian / Kuehne + Nagel / Bog ZA-OM",
       "fecha_limite": "",
       "prioridad": 5,
       "deposito": "diaria"
@@ -269,6 +259,16 @@
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "semanal"
+    },
+    {
+      "id": "2Njg4TNpCUCUHjK5hh4udpgAHzXM",
+      "titulo": "Caso Facturas múltiples",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Moreno, Sebastian / Kuehne + Nagel / Bog ZA-OM",
       "fecha_limite": "",
       "prioridad": 5,
       "deposito": "semanal"
