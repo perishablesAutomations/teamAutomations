@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-31T13:31:25.129Z",
+  "generated_at": "2026-07-31T15:31:26.668Z",
   "diaria": [
     {
       "id": "2DsLrEPCek6vhdXN3DesmZgAFg4w",
@@ -213,6 +213,26 @@
     }
   ],
   "semanal": [
+    {
+      "id": "tGK87lDzvE-TIjxr5_ferJgAO73j",
+      "titulo": "ajustar error de al reprogramar para priorizar track.",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "semanal"
+    },
+    {
+      "id": "qRNb3EUStkWyX31lVlAS_ZgAMCOj",
+      "titulo": "Revisar set up CHAWB / KN AMS",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "semanal"
+    },
     {
       "id": "6Ko7Mvs1cUOoDwA0XEsviJgAPXDs",
       "titulo": "Descarga documento unido desde el paso 1",
