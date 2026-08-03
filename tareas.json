@@ -1,6 +1,16 @@
 {
-  "generated_at": "2026-08-03T21:31:36.089Z",
+  "generated_at": "2026-08-03T23:31:36.742Z",
   "diaria": [
+    {
+      "id": "arFnyAVA4ki8Nho6-279DJgALJnV",
+      "titulo": "5 Envío docs consignee y 5 cliente finakl",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "diaria"
+    },
     {
       "id": "HGA14Sm5rEOMGn1HC1JMl5gAFAvT",
       "titulo": "Caso manifiesto con ceros",
@@ -62,16 +72,6 @@
       "deposito": "diaria"
     },
     {
-      "id": "5A77EQcHHkSM4pLYzrhE5pgABzWt",
-      "titulo": "Testing implementación DVF",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Moreno, Sebastian / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "diaria"
-    },
-    {
       "id": "2DsLrEPCek6vhdXN3DesmZgAFg4w",
       "titulo": "Ticket de acciones faltantes scan",
       "descripcion": "",
@@ -102,16 +102,6 @@
       "deposito": "diaria"
     },
     {
-      "id": "BYyWuO1ny0-LTa5I5RlgBpgADfjT",
-      "titulo": "Testing Caso USABQ label-management",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Moreno, Sebastian / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "diaria"
-    },
-    {
       "id": "Hf_YlKAb9U6F1XmJP8oampgAHQhb",
       "titulo": "Test ticket icono en mis despachos, vuelo retrasado",
       "descripcion": "",
@@ -132,6 +122,16 @@
       "deposito": "diaria"
     },
     {
+      "id": "2Njg4TNpCUCUHjK5hh4udpgAHzXM",
+      "titulo": "Caso Facturas múltiples",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Moreno, Sebastian / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "diaria"
+    },
+    {
       "id": "YfcX2K67b0qipHPKiiblP5gAE1bQ",
       "titulo": "Caso export List EC",
       "descripcion": "",
@@ -142,21 +142,31 @@
       "deposito": "diaria"
     },
     {
-      "id": "YDUDb9LZyUqNIFkCRQbfEZgAAmea",
-      "titulo": "Revisar ingresos caso Galleria",
+      "id": "0mPmvQ2_NEmNavWHNqeK8pgADUMi",
+      "titulo": "Caso crear reservas NEW con clientes PO",
       "descripcion": "",
       "etiqueta": "",
-      "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
+      "asignado": "Moreno, Sebastian / Kuehne + Nagel / Bog ZA-OM",
       "fecha_limite": "",
       "prioridad": 5,
       "deposito": "diaria"
     },
     {
-      "id": "yPmbZT9lW0KsxaPolB9QvpgAPjv7",
-      "titulo": "Testing pantalla dimensiones con segundos ajustes",
+      "id": "VjJuFZIh7UGi6-5tJVb1O5gAPuKe",
+      "titulo": "Probar DAES - Ajuste de Dario",
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Moreno, Sebastian / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "diaria"
+    },
+    {
+      "id": "YDUDb9LZyUqNIFkCRQbfEZgAAmea",
+      "titulo": "Revisar ingresos caso Galleria",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
       "fecha_limite": "",
       "prioridad": 5,
       "deposito": "diaria"
@@ -192,6 +202,16 @@
       "deposito": "diaria"
     },
     {
+      "id": "YmuQC3nykUy4_lJvPYSN65gAMeqO",
+      "titulo": "Facturas en ingreso de bodega",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Moreno, Sebastian / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "diaria"
+    },
+    {
       "id": "CTCxzOwx9U-zAe-GEnopWZgANUKi",
       "titulo": "Revisar con Dario json consignee \"customerOrderReference\"",
       "descripcion": "",
@@ -217,16 +237,6 @@
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "diaria"
-    },
-    {
-      "id": "5s5-RlaRikiYYOTtbONps5gAHy22",
-      "titulo": "Test ejecutar proceso NEW y revisar caso logica configurar de brokers",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Moreno, Sebastian / Kuehne + Nagel / Bog ZA-OM",
       "fecha_limite": "",
       "prioridad": 5,
       "deposito": "diaria"
@@ -264,16 +274,6 @@
       "deposito": "semanal"
     },
     {
-      "id": "6Ko7Mvs1cUOoDwA0XEsviJgAPXDs",
-      "titulo": "Descarga documento unido desde el paso 1",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Moreno, Sebastian / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "semanal"
-    },
-    {
       "id": "HYtpYc2BREyTHm-jgPJ5jpgAB-LO",
       "titulo": "Testing auditoria de agrupaciones",
       "descripcion": "",
@@ -289,16 +289,6 @@
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "semanal"
-    },
-    {
-      "id": "2Njg4TNpCUCUHjK5hh4udpgAHzXM",
-      "titulo": "Caso Facturas múltiples",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Moreno, Sebastian / Kuehne + Nagel / Bog ZA-OM",
       "fecha_limite": "",
       "prioridad": 5,
       "deposito": "semanal"
@@ -326,26 +316,6 @@
     {
       "id": "9q8y615TT0SZSaWI7Zk4eJgAD9ms",
       "titulo": "Caso dsitribución y transmision clientes finales CDM",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Moreno, Sebastian / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "semanal"
-    },
-    {
-      "id": "0mPmvQ2_NEmNavWHNqeK8pgADUMi",
-      "titulo": "Caso crear reservas NEW con clientes PO",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Moreno, Sebastian / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "semanal"
-    },
-    {
-      "id": "VjJuFZIh7UGi6-5tJVb1O5gAPuKe",
-      "titulo": "Probar DAES - Ajuste de Dario",
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Moreno, Sebastian / Kuehne + Nagel / Bog ZA-OM",
@@ -384,16 +354,6 @@
       "deposito": "semanal"
     },
     {
-      "id": "2tYUgQzVrE-6FEl8BfjL3pgALr51",
-      "titulo": "Ejecutar proceso NEW con caso de FWB - iata agency",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Moreno, Sebastian / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "semanal"
-    },
-    {
       "id": "03XU6F_1g0y8QuNkbPALoJgANnnL",
       "titulo": "Ejeuctar proceso NEW caso template general",
       "descripcion": "",
@@ -419,16 +379,6 @@
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "semanal"
-    },
-    {
-      "id": "YmuQC3nykUy4_lJvPYSN65gAMeqO",
-      "titulo": "Facturas en ingreso de bodega",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Moreno, Sebastian / Kuehne + Nagel / Bog ZA-OM",
       "fecha_limite": "",
       "prioridad": 5,
       "deposito": "semanal"
