@@ -1,6 +1,36 @@
 {
-  "generated_at": "2026-08-04T19:31:48.073Z",
+  "generated_at": "2026-08-04T21:31:42.485Z",
   "diaria": [
+    {
+      "id": "Pu1gfvGQMEyzlbbarp6g65gAItwq",
+      "titulo": "Reincidencias producción CDM y operaciones",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 1,
+      "deposito": "diaria"
+    },
+    {
+      "id": "zb0l6axookGjxtwJPlV96JgAGqhS",
+      "titulo": "Documentar generación de endosos",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "diaria"
+    },
+    {
+      "id": "LOBuWBSa0Emj85yTIp42fpgAFN-4",
+      "titulo": "Etiquetas DV",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "diaria"
+    },
     {
       "id": "JV6PbpKFNk6BQoz8-RbAsJgACbdS",
       "titulo": "Resolución de caso de Credit Check.",
@@ -22,16 +52,6 @@
       "deposito": "diaria"
     },
     {
-      "id": "HGA14Sm5rEOMGn1HC1JMl5gAFAvT",
-      "titulo": "Caso manifiesto con ceros",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 3,
-      "deposito": "diaria"
-    },
-    {
       "id": "7Bf8zHJMYEuevHnBv3LlHpgAJZ78",
       "titulo": "Caso diferencia piezas paso 1 e ingresos",
       "descripcion": "",
@@ -47,16 +67,6 @@
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "diaria"
-    },
-    {
-      "id": "SVIv2ZL0JEqj74S4QmmPfJgAKhNB",
-      "titulo": "Documentar mejoras WH priorizadas",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
       "fecha_limite": "",
       "prioridad": 5,
       "deposito": "diaria"
@@ -133,12 +143,12 @@
     },
     {
       "id": "YfcX2K67b0qipHPKiiblP5gAE1bQ",
-      "titulo": "Caso export List EC",
+      "titulo": "Enviar correo para definir solución de export list",
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
       "fecha_limite": "",
-      "prioridad": 3,
+      "prioridad": 5,
       "deposito": "diaria"
     },
     {
@@ -193,7 +203,7 @@
     },
     {
       "id": "okOVQxyD8kusxSW9rVxHKpgAIp71",
-      "titulo": "Hora pdf AWB liquidada",
+      "titulo": "Hora pdf AWB liquidada - Asignar Gerardo",
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
@@ -213,7 +223,7 @@
     },
     {
       "id": "CTCxzOwx9U-zAe-GEnopWZgANUKi",
-      "titulo": "Revisar con Dario json consignee \"customerOrderReference\"",
+      "titulo": "Testing json consignee \"customerOrderReference\"",
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
@@ -229,6 +239,16 @@
       "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
       "fecha_limite": "",
       "prioridad": 9,
+      "deposito": "diaria"
+    },
+    {
+      "id": "MiQa4d0ohUyt2_l2-K4ZwpgAEOxs",
+      "titulo": "REvisar pq no se genera UUID para envio json traze",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Moreno, Sebastian / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 3,
       "deposito": "diaria"
     },
     {
@@ -378,7 +398,7 @@
       "titulo": "Ajustar check configuración de comercializadoras NEW",
       "descripcion": "",
       "etiqueta": "",
-      "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
+      "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
       "fecha_limite": "",
       "prioridad": 9,
       "deposito": "semanal"
@@ -471,16 +491,6 @@
       "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
       "fecha_limite": "",
       "prioridad": 5,
-      "deposito": "semanal"
-    },
-    {
-      "id": "MiQa4d0ohUyt2_l2-K4ZwpgAEOxs",
-      "titulo": "REvisar pq no se genera UUID para envio json traze",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 3,
       "deposito": "semanal"
     },
     {
