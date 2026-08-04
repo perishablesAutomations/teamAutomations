@@ -1,6 +1,16 @@
 {
-  "generated_at": "2026-08-04T15:31:40.266Z",
+  "generated_at": "2026-08-04T17:31:38.644Z",
   "diaria": [
+    {
+      "id": "JV6PbpKFNk6BQoz8-RbAsJgACbdS",
+      "titulo": "Resolución de caso de Credit Check.",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Moreno, Sebastian / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "diaria"
+    },
     {
       "id": "arFnyAVA4ki8Nho6-279DJgALJnV",
       "titulo": "5 Envío docs consignee y 5 cliente finakl",
@@ -57,16 +67,6 @@
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "diaria"
-    },
-    {
-      "id": "jFPUuMzQkUObli08ITZT35gABNkS",
-      "titulo": "ticket boxType PO",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Moreno, Sebastian / Kuehne + Nagel / Bog ZA-OM",
       "fecha_limite": "",
       "prioridad": 5,
       "deposito": "diaria"
@@ -223,7 +223,7 @@
     },
     {
       "id": "sGJGdBNJQUKGXqErkUCrdJgAJG2Z",
-      "titulo": "ticket ajuste reporte de warehouse inbounds con los filtros de cliente final y aerolinea",
+      "titulo": "Testing ajuste reporte de warehouse inbounds con los filtros de cliente final y aerolinea",
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
@@ -253,6 +253,36 @@
     }
   ],
   "semanal": [
+    {
+      "id": "4047u9rF8kWLVp0ihJl8qJgACMPQ",
+      "titulo": "Ticket generar etiquetas bodega a nivel de master - acciones masivas",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "semanal"
+    },
+    {
+      "id": "OzU0TLJT8kOK3D9PEU_A_JgAFMKB",
+      "titulo": "Ajuste AWB dashboard: tipo de caja - porcentaje de cumplimiento. observaciones en el ingreso",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "semanal"
+    },
+    {
+      "id": "xUtgrtg4TEq4EWhE1s8sFpgAOP7z",
+      "titulo": "Documentar: FDP a RTS y pop up de salidas opcion de FDP y RTS",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "semanal"
+    },
     {
       "id": "LcirmWyKBEakoR7sqop5HZgANf8_",
       "titulo": "Revisar casos de remarcaciones la actualizacion del dashboard, tambien modificaando ingresos",
