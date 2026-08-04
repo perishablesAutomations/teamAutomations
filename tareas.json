@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-04T21:31:42.485Z",
+  "generated_at": "2026-08-04T23:31:45.387Z",
   "diaria": [
     {
       "id": "Pu1gfvGQMEyzlbbarp6g65gAItwq",
@@ -32,11 +32,21 @@
       "deposito": "diaria"
     },
     {
-      "id": "JV6PbpKFNk6BQoz8-RbAsJgACbdS",
-      "titulo": "Resolución de caso de Credit Check.",
+      "id": "oHXN_ofEdUmS-F6tq2PdN5gAKUp0",
+      "titulo": "Crear editar ciudad - paises",
       "descripcion": "",
       "etiqueta": "",
-      "asignado": "Moreno, Sebastian / Kuehne + Nagel / Bog ZA-OM",
+      "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "diaria"
+    },
+    {
+      "id": "xUtgrtg4TEq4EWhE1s8sFpgAOP7z",
+      "titulo": "Documentar: FDP a RTS y pop up de salidas opcion de FDP y RTS",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
       "fecha_limite": "",
       "prioridad": 5,
       "deposito": "diaria"
@@ -72,31 +82,11 @@
       "deposito": "diaria"
     },
     {
-      "id": "ykWtoQRxMUy3dGzgMcN6spgAL5Vx",
-      "titulo": "Caso anular remisión",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "diaria"
-    },
-    {
       "id": "2DsLrEPCek6vhdXN3DesmZgAFg4w",
       "titulo": "Ticket de acciones faltantes scan",
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Moreno, Sebastian / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "diaria"
-    },
-    {
-      "id": "Jws2diWNpkyBgDAkbsK_ppgAF_9T",
-      "titulo": "Mirar ajustes versión responsiva con Sebas",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
       "fecha_limite": "",
       "prioridad": 5,
       "deposito": "diaria"
@@ -149,6 +139,16 @@
       "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
       "fecha_limite": "",
       "prioridad": 5,
+      "deposito": "diaria"
+    },
+    {
+      "id": "0vrfLTWU90OzKuJIdyfPV5gABj06",
+      "titulo": "Ajustar check configuración de comercializadoras NEW",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
+      "fecha_limite": "",
+      "prioridad": 9,
       "deposito": "diaria"
     },
     {
@@ -232,16 +232,6 @@
       "deposito": "diaria"
     },
     {
-      "id": "sGJGdBNJQUKGXqErkUCrdJgAJG2Z",
-      "titulo": "Testing ajuste reporte de warehouse inbounds con los filtros de cliente final y aerolinea",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
-      "fecha_limite": "",
-      "prioridad": 9,
-      "deposito": "diaria"
-    },
-    {
       "id": "MiQa4d0ohUyt2_l2-K4ZwpgAEOxs",
       "titulo": "REvisar pq no se genera UUID para envio json traze",
       "descripcion": "",
@@ -274,6 +264,46 @@
   ],
   "semanal": [
     {
+      "id": "Unc_VnCud0iQGmdOSOEl9ZgAAXk6",
+      "titulo": "Ticket ajuste tarifas: estatus activa paso 5 - el cliente principal lo tome en cuenta junto con el consignee - filtro buscar por id de tarifa",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "semanal"
+    },
+    {
+      "id": "fVXkSZ1z2k2Dw71qUEZfvpgAIrky",
+      "titulo": "Replicar tarifas que no son del consignatario 172-05218754",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "semanal"
+    },
+    {
+      "id": "40v5QdLGj0aOOY604Hy_FJgADKjm",
+      "titulo": "Crear ticket de versión responsova vista general de administrar reservas",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "semanal"
+    },
+    {
+      "id": "ChJYx9_wbUOIkcm74TWAJJgAObsq",
+      "titulo": "Omitir validación reprogramar si hay track cuando hay misma awb, hawb, cliente final y exportador",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "semanal"
+    },
+    {
       "id": "I4gUwpHI50qnDGlJ8DdBQJgAMlma",
       "titulo": "Revisar cuando se excede del peso del coeficiente de bodega, que salga la alerta en el paso 2 el “Cargar pesos WH”",
       "descripcion": "",
@@ -284,28 +314,8 @@
       "deposito": "semanal"
     },
     {
-      "id": "MLilHE_FS0WnjbygnV2h5pgAODA5",
-      "titulo": "Incluir buscar hija - \"acciones masivas un pop up?",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "semanal"
-    },
-    {
       "id": "JtL8S3ZFukqnSsc7wdm0oJgABUzh",
       "titulo": "Consultar/Crear/edtar aeropuertos",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "semanal"
-    },
-    {
-      "id": "oHXN_ofEdUmS-F6tq2PdN5gAKUp0",
-      "titulo": "Crear editar ciudad - paises",
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
@@ -334,31 +344,11 @@
       "deposito": "semanal"
     },
     {
-      "id": "xUtgrtg4TEq4EWhE1s8sFpgAOP7z",
-      "titulo": "Documentar: FDP a RTS y pop up de salidas opcion de FDP y RTS",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "semanal"
-    },
-    {
       "id": "LcirmWyKBEakoR7sqop5HZgANf8_",
       "titulo": "Revisar casos de remarcaciones la actualizacion del dashboard, tambien modificaando ingresos",
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "semanal"
-    },
-    {
-      "id": "tGK87lDzvE-TIjxr5_ferJgAO73j",
-      "titulo": "ajustar error de al reprogramar para priorizar track.",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
       "fecha_limite": "",
       "prioridad": 5,
       "deposito": "semanal"
@@ -391,16 +381,6 @@
       "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
       "fecha_limite": "",
       "prioridad": 5,
-      "deposito": "semanal"
-    },
-    {
-      "id": "0vrfLTWU90OzKuJIdyfPV5gABj06",
-      "titulo": "Ajustar check configuración de comercializadoras NEW",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
-      "fecha_limite": "",
-      "prioridad": 9,
       "deposito": "semanal"
     },
     {
@@ -538,6 +518,16 @@
     }
   ],
   "sin_deposito": [
+    {
+      "id": "MLilHE_FS0WnjbygnV2h5pgAODA5",
+      "titulo": "Incluir buscar hija - \"acciones masivas un pop up?",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "sin_deposito"
+    },
     {
       "id": "t9tW7VUAp0yDHWw4acflsJgAIBpX",
       "titulo": "Notifcación APP KNFRESH",
