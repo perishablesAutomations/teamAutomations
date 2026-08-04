@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-04T13:31:40.191Z",
+  "generated_at": "2026-08-04T15:31:40.266Z",
   "diaria": [
     {
       "id": "arFnyAVA4ki8Nho6-279DJgALJnV",
@@ -253,6 +253,16 @@
     }
   ],
   "semanal": [
+    {
+      "id": "LcirmWyKBEakoR7sqop5HZgANf8_",
+      "titulo": "Revisar casos de remarcaciones la actualizacion del dashboard, tambien modificaando ingresos",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "semanal"
+    },
     {
       "id": "tGK87lDzvE-TIjxr5_ferJgAO73j",
       "titulo": "ajustar error de al reprogramar para priorizar track.",
