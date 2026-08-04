@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-04T17:31:38.644Z",
+  "generated_at": "2026-08-04T19:31:48.073Z",
   "diaria": [
     {
       "id": "JV6PbpKFNk6BQoz8-RbAsJgACbdS",
@@ -253,6 +253,46 @@
     }
   ],
   "semanal": [
+    {
+      "id": "I4gUwpHI50qnDGlJ8DdBQJgAMlma",
+      "titulo": "Revisar cuando se excede del peso del coeficiente de bodega, que salga la alerta en el paso 2 el “Cargar pesos WH”",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "semanal"
+    },
+    {
+      "id": "MLilHE_FS0WnjbygnV2h5pgAODA5",
+      "titulo": "Incluir buscar hija - \"acciones masivas un pop up?",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "semanal"
+    },
+    {
+      "id": "JtL8S3ZFukqnSsc7wdm0oJgABUzh",
+      "titulo": "Consultar/Crear/edtar aeropuertos",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "semanal"
+    },
+    {
+      "id": "oHXN_ofEdUmS-F6tq2PdN5gAKUp0",
+      "titulo": "Crear editar ciudad - paises",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "semanal"
+    },
     {
       "id": "4047u9rF8kWLVp0ihJl8qJgACMPQ",
       "titulo": "Ticket generar etiquetas bodega a nivel de master - acciones masivas",
