@@ -1,6 +1,26 @@
 {
-  "generated_at": "2026-08-05T13:31:50.113Z",
+  "generated_at": "2026-08-05T15:31:49.136Z",
   "diaria": [
+    {
+      "id": "TToXts2Vuk2sZFjhoj9bgpgACUs7",
+      "titulo": "Miar ultimos cambios dimensiones",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Moreno, Sebastian / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "diaria"
+    },
+    {
+      "id": "CQcPr42GYU6ruwZSIUibA5gADbq9",
+      "titulo": "Probar nuevo estado IA facturas",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Moreno, Sebastian / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "diaria"
+    },
     {
       "id": "Pu1gfvGQMEyzlbbarp6g65gAItwq",
       "titulo": "Reincidencias producción CDM y operaciones",
