@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-05T15:31:49.136Z",
+  "generated_at": "2026-08-05T17:31:46.473Z",
   "diaria": [
     {
       "id": "TToXts2Vuk2sZFjhoj9bgpgACUs7",
@@ -262,16 +262,6 @@
       "deposito": "diaria"
     },
     {
-      "id": "c1QO8Cf1EEe4cvx_YnInyZgABcQf",
-      "titulo": "Ajuste de filtros – Administrar Reservas",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "diaria"
-    },
-    {
       "id": "KrMfCb0dCES9TrXdHK705JgAC4fj",
       "titulo": "Reunión migración APIs elite.",
       "descripcion": "",
@@ -489,6 +479,16 @@
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "semanal"
+    },
+    {
+      "id": "c1QO8Cf1EEe4cvx_YnInyZgABcQf",
+      "titulo": "Ajuste de filtros – Administrar Reservas",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
       "fecha_limite": "",
       "prioridad": 5,
       "deposito": "semanal"
