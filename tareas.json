@@ -1,16 +1,6 @@
 {
-  "generated_at": "2026-08-06T15:31:58.787Z",
+  "generated_at": "2026-08-06T17:31:47.658Z",
   "diaria": [
-    {
-      "id": "TToXts2Vuk2sZFjhoj9bgpgACUs7",
-      "titulo": "Miar ultimos cambios dimensiones",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Moreno, Sebastian / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "diaria"
-    },
     {
       "id": "CQcPr42GYU6ruwZSIUibA5gADbq9",
       "titulo": "Probar nuevo estado IA facturas",
@@ -102,16 +92,6 @@
       "deposito": "diaria"
     },
     {
-      "id": "2DsLrEPCek6vhdXN3DesmZgAFg4w",
-      "titulo": "Ticket de acciones faltantes scan",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Moreno, Sebastian / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "diaria"
-    },
-    {
       "id": "hp90rgpQP0WwAmEw5SbrSZgAIcq_",
       "titulo": "Total piezas bodega CDM paso 1",
       "descripcion": "",
@@ -174,16 +154,6 @@
     {
       "id": "0mPmvQ2_NEmNavWHNqeK8pgADUMi",
       "titulo": "Caso crear reservas NEW con clientes PO",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Moreno, Sebastian / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "diaria"
-    },
-    {
-      "id": "VjJuFZIh7UGi6-5tJVb1O5gAPuKe",
-      "titulo": "Probar DAES - Ajuste de Dario",
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Moreno, Sebastian / Kuehne + Nagel / Bog ZA-OM",
