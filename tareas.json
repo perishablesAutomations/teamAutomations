@@ -1,6 +1,16 @@
 {
-  "generated_at": "2026-08-06T17:31:47.658Z",
+  "generated_at": "2026-08-06T19:32:00.319Z",
   "diaria": [
+    {
+      "id": "a0t_nlXR_UqSHvQRBnP8y5gAPTTl",
+      "titulo": "Plantear y diseñar proceso de Reprogramación de carga",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Moreno, Sebastian / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "diaria"
+    },
     {
       "id": "CQcPr42GYU6ruwZSIUibA5gADbq9",
       "titulo": "Probar nuevo estado IA facturas",
@@ -243,6 +253,46 @@
     }
   ],
   "semanal": [
+    {
+      "id": "NTZi68B7OUarrvtQbi8fJZgADTCT",
+      "titulo": "Sincronizar lectoras en Bogotá",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "semanal"
+    },
+    {
+      "id": "lubcAN6stkSnY2EJBRJ23pgAIzgR",
+      "titulo": "Reunión con Oswaldo para sincronizar app en lectoras",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "semanal"
+    },
+    {
+      "id": "jM5yttEB8UecaGW4rR4LEpgAB9KD",
+      "titulo": "Sincronizar lectora de prueba Con Guillermo",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "semanal"
+    },
+    {
+      "id": "ODcYr0JUMUmrMnwZFqWKdJgABqTw",
+      "titulo": "Documentar reprogramación de carga",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Moreno, Sebastian / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "semanal"
+    },
     {
       "id": "Unc_VnCud0iQGmdOSOEl9ZgAAXk6",
       "titulo": "Ticket ajuste tarifas: estatus activa paso 5 - el cliente principal lo tome en cuenta junto con el consignee - filtro buscar por id de tarifa",
