@@ -1,6 +1,36 @@
 {
-  "generated_at": "2026-08-06T21:31:52.427Z",
+  "generated_at": "2026-08-06T23:31:54.413Z",
   "diaria": [
+    {
+      "id": "_zJqtCC5k0qrVuMFT_taHJgACzy4",
+      "titulo": "App de transmisión a Elite",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Moreno, Sebastian / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "diaria"
+    },
+    {
+      "id": "e7pzDyu__Emi9QxeHtp6UZgAMEo5",
+      "titulo": "Caso calcular paso 3",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "diaria"
+    },
+    {
+      "id": "AN4pmWpKUE6evCydKkuav5gAHkPv",
+      "titulo": "Caso CDM paso 2 de diplicados",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "diaria"
+    },
     {
       "id": "CRI9WjTzxUmP0jLViteSyJgAE9R4",
       "titulo": "Ticket ocultar Generar track desde el escaneo Legacy",
@@ -12,11 +42,21 @@
       "deposito": "diaria"
     },
     {
-      "id": "a0t_nlXR_UqSHvQRBnP8y5gAPTTl",
-      "titulo": "Plantear y diseñar proceso de Reprogramación de carga",
+      "id": "NTZi68B7OUarrvtQbi8fJZgADTCT",
+      "titulo": "Sincronizar lectoras en Bogotá",
       "descripcion": "",
       "etiqueta": "",
-      "asignado": "Moreno, Sebastian / Kuehne + Nagel / Bog ZA-OM",
+      "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "diaria"
+    },
+    {
+      "id": "jM5yttEB8UecaGW4rR4LEpgAB9KD",
+      "titulo": "Sincronizar lectora de prueba Con Guillermo",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
       "fecha_limite": "",
       "prioridad": 5,
       "deposito": "diaria"
@@ -33,22 +73,12 @@
     },
     {
       "id": "Pu1gfvGQMEyzlbbarp6g65gAItwq",
-      "titulo": "Reincidencias producción CDM y operaciones",
+      "titulo": "Publicar reincidencias producción CDM y operaciones",
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
       "fecha_limite": "",
       "prioridad": 1,
-      "deposito": "diaria"
-    },
-    {
-      "id": "zb0l6axookGjxtwJPlV96JgAGqhS",
-      "titulo": "Documentar generación de endosos",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 5,
       "deposito": "diaria"
     },
     {
@@ -77,16 +107,6 @@
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "diaria"
-    },
-    {
-      "id": "arFnyAVA4ki8Nho6-279DJgALJnV",
-      "titulo": "5 Envío docs consignee y 5 cliente finakl",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
       "fecha_limite": "",
       "prioridad": 5,
       "deposito": "diaria"
@@ -122,16 +142,6 @@
       "deposito": "diaria"
     },
     {
-      "id": "Hf_YlKAb9U6F1XmJP8oampgAHQhb",
-      "titulo": "Test ticket icono en mis despachos, vuelo retrasado",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "diaria"
-    },
-    {
       "id": "dEI8BYdVSkOEovkNNXNKTpgALiR7",
       "titulo": "Mirar paso 2 no agrupa por exportador cuando no hay hawb o chawb",
       "descripcion": "",
@@ -142,21 +152,21 @@
       "deposito": "diaria"
     },
     {
-      "id": "2Njg4TNpCUCUHjK5hh4udpgAHzXM",
-      "titulo": "Caso Facturas múltiples",
+      "id": "pfvPuIBdv0qUcLqscjAjrJgAIRI4",
+      "titulo": "Training new WH Manager",
       "descripcion": "",
       "etiqueta": "",
-      "asignado": "Moreno, Sebastian / Kuehne + Nagel / Bog ZA-OM",
+      "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
       "fecha_limite": "",
       "prioridad": 5,
       "deposito": "diaria"
     },
     {
-      "id": "YfcX2K67b0qipHPKiiblP5gAE1bQ",
-      "titulo": "Enviar correo para definir solución de export list",
+      "id": "2Njg4TNpCUCUHjK5hh4udpgAHzXM",
+      "titulo": "Caso Facturas múltiples",
       "descripcion": "",
       "etiqueta": "",
-      "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
+      "asignado": "Moreno, Sebastian / Kuehne + Nagel / Bog ZA-OM",
       "fecha_limite": "",
       "prioridad": 5,
       "deposito": "diaria"
@@ -182,6 +192,16 @@
       "deposito": "diaria"
     },
     {
+      "id": "UA3BIh2WT0uZNhbs5XSD7ZgAILk3",
+      "titulo": "Testing Delaware impmentación caso is invoiced",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Moreno, Sebastian / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "diaria"
+    },
+    {
       "id": "YDUDb9LZyUqNIFkCRQbfEZgAAmea",
       "titulo": "Revisar ingresos caso Galleria",
       "descripcion": "",
@@ -192,13 +212,13 @@
       "deposito": "diaria"
     },
     {
-      "id": "vTOaKJ0ylEifPLkbqyGebpgAGMLb",
-      "titulo": "Testing preliminar hija - ajuste CW",
+      "id": "w-jgL8x5Z0ikwceVgjA9SJgAOUjK",
+      "titulo": "Definir piloto Funza primera semana de Agosto",
       "descripcion": "",
       "etiqueta": "",
-      "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
+      "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
       "fecha_limite": "",
-      "prioridad": 3,
+      "prioridad": 5,
       "deposito": "diaria"
     },
     {
@@ -209,16 +229,6 @@
       "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
       "fecha_limite": "",
       "prioridad": 5,
-      "deposito": "diaria"
-    },
-    {
-      "id": "okOVQxyD8kusxSW9rVxHKpgAIp71",
-      "titulo": "Hora pdf AWB liquidada - Asignar Gerardo",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 3,
       "deposito": "diaria"
     },
     {
@@ -240,32 +250,42 @@
       "fecha_limite": "",
       "prioridad": 5,
       "deposito": "diaria"
-    },
-    {
-      "id": "MiQa4d0ohUyt2_l2-K4ZwpgAEOxs",
-      "titulo": "REvisar pq no se genera UUID para envio json traze",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Moreno, Sebastian / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 3,
-      "deposito": "diaria"
-    },
-    {
-      "id": "KrMfCb0dCES9TrXdHK705JgAC4fj",
-      "titulo": "Reunión migración APIs elite.",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Moreno, Sebastian / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "diaria"
     }
   ],
   "semanal": [
     {
-      "id": "NTZi68B7OUarrvtQbi8fJZgADTCT",
-      "titulo": "Sincronizar lectoras en Bogotá",
+      "id": "uGlPGrKQwEaLC8xKULjfipgAHVPg",
+      "titulo": "Training tarifas y paso 5",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "semanal"
+    },
+    {
+      "id": "gTbI0REDB0qVyNGOS5xUX5gAAomR",
+      "titulo": "Investigar método consultar Po traze",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "semanal"
+    },
+    {
+      "id": "oC3ordsWh0-NEfOhc1SZW5gAP8Et",
+      "titulo": "Validación ingresos en liquidación",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "semanal"
+    },
+    {
+      "id": "a9k3I_pkb0uCpUTgRaWoJJgAPOUf",
+      "titulo": "Validación del 5% con prorrateo de bodega",
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
@@ -276,16 +296,6 @@
     {
       "id": "lubcAN6stkSnY2EJBRJ23pgAIzgR",
       "titulo": "Reunión con Oswaldo para sincronizar app en lectoras",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "semanal"
-    },
-    {
-      "id": "jM5yttEB8UecaGW4rR4LEpgAB9KD",
-      "titulo": "Sincronizar lectora de prueba Con Guillermo",
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
@@ -308,7 +318,7 @@
       "titulo": "Ticket ajuste tarifas: estatus activa paso 5 - el cliente principal lo tome en cuenta junto con el consignee - filtro buscar por id de tarifa",
       "descripcion": "",
       "etiqueta": "",
-      "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
+      "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
       "fecha_limite": "",
       "prioridad": 5,
       "deposito": "semanal"
@@ -368,7 +378,7 @@
       "titulo": "Ticket generar etiquetas bodega a nivel de master - acciones masivas",
       "descripcion": "",
       "etiqueta": "",
-      "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
+      "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
       "fecha_limite": "",
       "prioridad": 5,
       "deposito": "semanal"
@@ -414,16 +424,6 @@
       "deposito": "semanal"
     },
     {
-      "id": "pfvPuIBdv0qUcLqscjAjrJgAIRI4",
-      "titulo": "Training new WH Manager",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "semanal"
-    },
-    {
       "id": "9ytwFziBEUu49CRp3JVI3pgACAS_",
       "titulo": "Implementar Servicios AWB",
       "descripcion": "",
@@ -444,41 +444,11 @@
       "deposito": "semanal"
     },
     {
-      "id": "UA3BIh2WT0uZNhbs5XSD7ZgAILk3",
-      "titulo": "Testing Delaware impmentación caso is invoiced",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Moreno, Sebastian / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "semanal"
-    },
-    {
       "id": "CKIRqgv_MUukFytCQOQitpgAGPqi",
       "titulo": "Revisar y consolidar cosas reportadas por Magno",
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "semanal"
-    },
-    {
-      "id": "w-jgL8x5Z0ikwceVgjA9SJgAOUjK",
-      "titulo": "Definir piloto Funza primera semana de Agosto",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "semanal"
-    },
-    {
-      "id": "03XU6F_1g0y8QuNkbPALoJgANnnL",
-      "titulo": "Ejeuctar proceso NEW caso template general",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Moreno, Sebastian / Kuehne + Nagel / Bog ZA-OM",
       "fecha_limite": "",
       "prioridad": 5,
       "deposito": "semanal"
@@ -568,6 +538,26 @@
     }
   ],
   "sin_deposito": [
+    {
+      "id": "Zs1l3XA4i0KVlMCtbpwg15gAJArg",
+      "titulo": "Implementación dimensiones EC",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "sin_deposito"
+    },
+    {
+      "id": "Nd2y4bChj0GzPu4ZD5fEXZgAKwYH",
+      "titulo": "Implementar dimensiones CO",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "sin_deposito"
+    },
     {
       "id": "xQ5GnEYSAEeWjAy-ChmBKJgABx89",
       "titulo": "Validar los xml de AERONEM que tipo de informacion envia y si es real con base a los WH",
