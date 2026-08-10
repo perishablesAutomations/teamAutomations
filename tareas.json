@@ -1,6 +1,26 @@
 {
-  "generated_at": "2026-08-10T21:32:14.505Z",
+  "generated_at": "2026-08-10T23:32:16.148Z",
   "diaria": [
+    {
+      "id": "NH9qfjx150iye_8XrJ623ZgAHoFr",
+      "titulo": "Stepper remarcación",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Moreno, Sebastian / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "diaria"
+    },
+    {
+      "id": "5E8N4Rx6Jkq9e-ICMg8wZJgAIoue",
+      "titulo": "Ajustes - Etiqueta por defecto y cambio LAX",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "diaria"
+    },
     {
       "id": "_zJqtCC5k0qrVuMFT_taHJgACzy4",
       "titulo": "App de transmisión a Elite",
@@ -182,16 +202,6 @@
       "deposito": "diaria"
     },
     {
-      "id": "UA3BIh2WT0uZNhbs5XSD7ZgAILk3",
-      "titulo": "Testing Delaware impmentación caso is invoiced",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Moreno, Sebastian / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "diaria"
-    },
-    {
       "id": "w-jgL8x5Z0ikwceVgjA9SJgAOUjK",
       "titulo": "Definir piloto Funza primera semana de Agosto",
       "descripcion": "",
@@ -233,6 +243,16 @@
     }
   ],
   "semanal": [
+    {
+      "id": "zqCilYfYjEeq46ZwpebBu5gAGXw7",
+      "titulo": "Asignación camiones TWI",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "semanal"
+    },
     {
       "id": "qjb5k_d3lE6kq2ZSnzJK3JgACu98",
       "titulo": "Training ingresar tarifas transhipment EC",
