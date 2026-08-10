@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-10T19:32:10.449Z",
+  "generated_at": "2026-08-10T21:32:14.505Z",
   "diaria": [
     {
       "id": "_zJqtCC5k0qrVuMFT_taHJgACzy4",
@@ -22,31 +22,11 @@
       "deposito": "diaria"
     },
     {
-      "id": "AN4pmWpKUE6evCydKkuav5gAHkPv",
-      "titulo": "Caso CDM paso 2 de diplicados",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "diaria"
-    },
-    {
       "id": "CRI9WjTzxUmP0jLViteSyJgAE9R4",
       "titulo": "Ticket ocultar Generar track desde el escaneo Legacy",
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Sin asignar",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "diaria"
-    },
-    {
-      "id": "NTZi68B7OUarrvtQbi8fJZgADTCT",
-      "titulo": "Sincronizar lectoras en Bogotá",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
       "fecha_limite": "",
       "prioridad": 5,
       "deposito": "diaria"
@@ -102,6 +82,26 @@
       "deposito": "diaria"
     },
     {
+      "id": "4047u9rF8kWLVp0ihJl8qJgACMPQ",
+      "titulo": "Ticket generar etiquetas bodega a nivel de master - acciones masivas",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "diaria"
+    },
+    {
+      "id": "OzU0TLJT8kOK3D9PEU_A_JgAFMKB",
+      "titulo": "Ajuste AWB dashboard: tipo de caja - porcentaje de cumplimiento. observaciones en el ingreso",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "diaria"
+    },
+    {
       "id": "xUtgrtg4TEq4EWhE1s8sFpgAOP7z",
       "titulo": "Documentar: FDP a RTS y pop up de salidas opcion de FDP y RTS",
       "descripcion": "",
@@ -152,16 +152,6 @@
       "deposito": "diaria"
     },
     {
-      "id": "pfvPuIBdv0qUcLqscjAjrJgAIRI4",
-      "titulo": "Training new WH Manager",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "diaria"
-    },
-    {
       "id": "2Njg4TNpCUCUHjK5hh4udpgAHzXM",
       "titulo": "Caso Facturas múltiples",
       "descripcion": "",
@@ -202,16 +192,6 @@
       "deposito": "diaria"
     },
     {
-      "id": "YDUDb9LZyUqNIFkCRQbfEZgAAmea",
-      "titulo": "Revisar ingresos caso Galleria",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "diaria"
-    },
-    {
       "id": "w-jgL8x5Z0ikwceVgjA9SJgAOUjK",
       "titulo": "Definir piloto Funza primera semana de Agosto",
       "descripcion": "",
@@ -242,11 +222,11 @@
       "deposito": "diaria"
     },
     {
-      "id": "CTCxzOwx9U-zAe-GEnopWZgANUKi",
-      "titulo": "Testing json consignee \"customerOrderReference\"",
+      "id": "Z1pnaBqmA0K1NyymSG-qGpgAC3sV",
+      "titulo": "Formato de reserva IBERIA",
       "descripcion": "",
       "etiqueta": "",
-      "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
+      "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
       "fecha_limite": "",
       "prioridad": 5,
       "deposito": "diaria"
@@ -254,8 +234,28 @@
   ],
   "semanal": [
     {
+      "id": "qjb5k_d3lE6kq2ZSnzJK3JgACu98",
+      "titulo": "Training ingresar tarifas transhipment EC",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "semanal"
+    },
+    {
+      "id": "rrTcAeZazEWrq92aaLxCW5gAMp7h",
+      "titulo": "Errores transmisión traze",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "semanal"
+    },
+    {
       "id": "uGlPGrKQwEaLC8xKULjfipgAHVPg",
-      "titulo": "Training tarifas y paso 5",
+      "titulo": "Training tarifas y paso 5 - Stefy",
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
@@ -286,6 +286,16 @@
     {
       "id": "a9k3I_pkb0uCpUTgRaWoJJgAPOUf",
       "titulo": "Validación del 5% con prorrateo de bodega",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "semanal"
+    },
+    {
+      "id": "NTZi68B7OUarrvtQbi8fJZgADTCT",
+      "titulo": "Sincronizar lectoras en Bogotá",
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
@@ -374,26 +384,6 @@
       "deposito": "semanal"
     },
     {
-      "id": "4047u9rF8kWLVp0ihJl8qJgACMPQ",
-      "titulo": "Ticket generar etiquetas bodega a nivel de master - acciones masivas",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "semanal"
-    },
-    {
-      "id": "OzU0TLJT8kOK3D9PEU_A_JgAFMKB",
-      "titulo": "Ajuste AWB dashboard: tipo de caja - porcentaje de cumplimiento. observaciones en el ingreso",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "semanal"
-    },
-    {
       "id": "LcirmWyKBEakoR7sqop5HZgANf8_",
       "titulo": "Revisar casos de remarcaciones la actualizacion del dashboard, tambien modificaando ingresos",
       "descripcion": "",
@@ -419,6 +409,16 @@
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "semanal"
+    },
+    {
+      "id": "pfvPuIBdv0qUcLqscjAjrJgAIRI4",
+      "titulo": "Training new WH Manager",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
       "fecha_limite": "",
       "prioridad": 5,
       "deposito": "semanal"
@@ -671,16 +671,6 @@
     {
       "id": "bySDR7esxkCjMm1jSeNXFpgAFpXQ",
       "titulo": "Opción sin transportador - Administración AWB",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "sin_deposito"
-    },
-    {
-      "id": "Z1pnaBqmA0K1NyymSG-qGpgAC3sV",
-      "titulo": "Formato de reserva IBERIA",
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
