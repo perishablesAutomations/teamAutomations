@@ -233,7 +233,30 @@
     font-weight:700;
     font-size:15px;
     color:var(--kn-navy);
+    display:inline-flex;
+    align-items:center;
+    gap:6px;
   }
+  .btn-copiar{
+    background:none;
+    border:none;
+    cursor:pointer;
+    padding:3px;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:5px;
+    color:var(--text-soft);
+    transition:background .12s ease, color .12s ease;
+  }
+  .btn-copiar:hover{
+    background:var(--kn-orange-soft);
+    color:var(--kn-orange);
+  }
+  .btn-copiar.copiado{
+    color:var(--u-verde);
+  }
+  .btn-copiar svg{ width:14px; height:14px; display:block; }
   .awb-consignee{
     font-size:12.5px;
     color:var(--text-soft);
@@ -474,7 +497,48 @@ function render(data){
       if(card.classList.contains('abierta')) abiertas.add(clave);
       else abiertas.delete(clave);
     });
+
+    const btnCopiar = card.querySelector('.btn-copiar');
+    if(btnCopiar){
+      btnCopiar.addEventListener('click', (e) => {
+        e.stopPropagation(); // no debe abrir/cerrar la tarjeta
+        copiarAlPortapapeles(btnCopiar.dataset.copiar, btnCopiar);
+      });
+      // Evita que el mousedown/drag para seleccionar texto dispare el toggle
+      btnCopiar.addEventListener('mousedown', (e) => e.stopPropagation());
+    }
   });
+}
+
+async function copiarAlPortapapeles(texto, btnEl){
+  try{
+    if(navigator.clipboard && window.isSecureContext){
+      await navigator.clipboard.writeText(texto);
+    }else{
+      // Fallback para contextos sin Clipboard API (http sin TLS, navegadores viejos)
+      const temp = document.createElement('textarea');
+      temp.value = texto;
+      temp.style.position = 'fixed';
+      temp.style.opacity = '0';
+      document.body.appendChild(temp);
+      temp.select();
+      document.execCommand('copy');
+      document.body.removeChild(temp);
+    }
+    mostrarCopiado(btnEl);
+  }catch(err){
+    alert('No se pudo copiar automáticamente. AWB: ' + texto);
+  }
+}
+
+function mostrarCopiado(btnEl){
+  const svgOriginal = btnEl.innerHTML;
+  btnEl.classList.add('copiado');
+  btnEl.innerHTML = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>`;
+  setTimeout(() => {
+    btnEl.classList.remove('copiado');
+    btnEl.innerHTML = svgOriginal;
+  }, 1200);
 }
 
 function renderResumen(awbs){
@@ -500,7 +564,12 @@ function tarjetaHTML(a){
         <div class="awb-left">
           <span class="badge-urg ${urg}">${LABEL_URGENCIA[urg]}</span>
           <div>
-            <div class="awb-id">${escapeHtml(a.awbNumber || a.id || '—')}</div>
+            <div class="awb-id">
+              <span class="awb-id-texto">${escapeHtml(a.awbNumber || a.id || '—')}</span>
+              <button type="button" class="btn-copiar" data-copiar="${escapeHtml(a.awbNumber || a.id || '')}" title="Copiar número de AWB" aria-label="Copiar número de AWB">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+              </button>
+            </div>
             <div class="awb-consignee">${escapeHtml(a.consignee || '')}</div>
           </div>
         </div>
