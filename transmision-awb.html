@@ -382,9 +382,10 @@
    Reemplazar por la URL real donde n8n publica el JSON generado
    (raw.githubusercontent.com o GitHub Pages).
    ============================================================ */
-// DEMO: apunta al JSON de ejemplo local. En producción, cambia esta línea por:
-// const JSON_URL = 'https://raw.githubusercontent.com/perishablesAutomations/teamAutomations/main/transmision-awb.json';
-const JSON_URL = './transmision-awb.ejemplo.json';
+// PRODUCCIÓN: apunta al JSON real que n8n comitea al repo.
+const JSON_URL = 'https://raw.githubusercontent.com/perishablesAutomations/teamAutomations/main/transmision-awb.json';
+// DEMO: si quieres volver a probar con datos de ejemplo, usa:
+// const JSON_URL = './transmision-awb.ejemplo.json';
 const POLL_MS = 5 * 60 * 1000; // 5 minutos
 const RELOJ_MS = 1000;
 
