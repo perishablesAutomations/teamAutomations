@@ -1,6 +1,16 @@
 {
-  "generated_at": "2026-08-11T21:32:09.571Z",
+  "generated_at": "2026-08-11T23:32:06.836Z",
   "diaria": [
+    {
+      "id": "JyxVch5h7UKNZW3Rx8qEh5gAAzGh",
+      "titulo": "Documentar programación todas las AWB",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Sin asignar",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "diaria"
+    },
     {
       "id": "NH9qfjx150iye_8XrJ623ZgAHoFr",
       "titulo": "Stepper remarcación",
@@ -243,6 +253,16 @@
     }
   ],
   "semanal": [
+    {
+      "id": "Gv_DI49t5kusYW1iorHghpgAMU63",
+      "titulo": "Corregir el dia que inicia la semana debe ser el lunes en el reporte de \"invoicing\"",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "semanal"
+    },
     {
       "id": "zqCilYfYjEeq46ZwpebBu5gAGXw7",
       "titulo": "Asignación camiones TWI",
