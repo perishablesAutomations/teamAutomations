@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AWBs pendientes de transmisión · K+N</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Roboto+Mono:wght@500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    /* Colores corporativos K+N (aproximados — ajustar con el hex exacto del manual de marca si lo tienes) */
+    --kn-navy: #0A2240;
+    --kn-navy-soft: #10315C;
+    --kn-orange: #FF6600;
+    --kn-orange-soft: #FFE3CC;
+
+    /* Semáforo de urgencia */
+    --u-rojo: #E4002B;
+    --u-rojo-bg: #FDEAEC;
+    --u-naranja: #FF8A00;
+    --u-naranja-bg: #FFF1DE;
+    --u-amarillo: #E0A800;
+    --u-amarillo-bg: #FFF8DE;
+    --u-verde: #2E7D32;
+    --u-verde-bg: #E9F5EA;
+    --u-gris: #6B7280;
+    --u-gris-bg: #F1F2F4;
+
+    --bg: #F4F5F7;
+    --card: #FFFFFF;
+    --text: #1B2430;
+    --text-soft: #5B6472;
+    --border: #E4E7EC;
+
+    --font-body: 'Nunito', system-ui, sans-serif;
+    --font-mono: 'Roboto Mono', 'SFMono-Regular', monospace;
+  }
+
+  *{ box-sizing:border-box; }
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--text);
+    font-family:var(--font-body);
+    -webkit-font-smoothing:antialiased;
+  }
+
+  /* ---------- Barra superior ---------- */
+  header.topbar{
+    background:var(--kn-navy);
+    color:#fff;
+    padding:14px 20px;
+    position:sticky;
+    top:0;
+    z-index:20;
+    box-shadow:0 2px 10px rgba(10,34,64,.25);
+  }
+  .topbar-inner{
+    max-width:1100px;
+    margin:0 auto;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:16px;
+    flex-wrap:wrap;
+  }
+  .brand{
+    display:flex;
+    align-items:center;
+    gap:10px;
+  }
+  .brand-mark{
+    width:34px; height:34px;
+    border-radius:8px;
+    background:var(--kn-orange);
+    display:flex; align-items:center; justify-content:center;
+    font-family:var(--font-mono);
+    font-weight:700;
+    color:var(--kn-navy);
+    font-size:14px;
+  }
+  .brand-text h1{
+    margin:0;
+    font-size:16px;
+    font-weight:800;
+    letter-spacing:.2px;
+  }
+  .brand-text p{
+    margin:0;
+    font-size:11.5px;
+    color:#B9C4D6;
+  }
+  .topbar-actions{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-size:12.5px;
+    color:#CBD5E3;
+  }
+  #reloj{
+    font-family:var(--font-mono);
+    font-weight:600;
+    color:#fff;
+  }
+  button.notif-btn{
+    background:var(--kn-orange);
+    color:var(--kn-navy);
+    border:none;
+    padding:8px 14px;
+    border-radius:8px;
+    font-weight:700;
+    font-size:12.5px;
+    cursor:pointer;
+    transition:filter .15s ease;
+  }
+  button.notif-btn:hover{ filter:brightness(1.08); }
+  button.notif-btn[disabled]{
+    background:#3A4C67;
+    color:#B9C4D6;
+    cursor:default;
+  }
+
+  /* ---------- Resumen / chips ---------- */
+  .summary{
+    max-width:1100px;
+    margin:18px auto 0;
+    padding:0 20px;
+    display:flex;
+    gap:10px;
+    flex-wrap:wrap;
+  }
+  .chip{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    padding:8px 14px;
+    border-radius:999px;
+    font-weight:700;
+    font-size:13px;
+    border:1px solid transparent;
+  }
+  .chip .dot{ width:9px; height:9px; border-radius:50%; }
+  .chip.rojo{ background:var(--u-rojo-bg); color:var(--u-rojo); }
+  .chip.rojo .dot{ background:var(--u-rojo); }
+  .chip.naranja{ background:var(--u-naranja-bg); color:#B25E00; }
+  .chip.naranja .dot{ background:var(--u-naranja); }
+  .chip.amarillo{ background:var(--u-amarillo-bg); color:#8A6600; }
+  .chip.amarillo .dot{ background:var(--u-amarillo); }
+  .chip.verde{ background:var(--u-verde-bg); color:var(--u-verde); }
+  .chip.verde .dot{ background:var(--u-verde); }
+  .chip.total{ background:#fff; color:var(--text-soft); border-color:var(--border); }
+
+  /* ---------- Contenedor lista ---------- */
+  main{
+    max-width:1100px;
+    margin:0 auto;
+    padding:18px 20px 60px;
+  }
+  .meta-bar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    color:var(--text-soft);
+    font-size:12.5px;
+    margin:14px 2px 10px;
+  }
+  .estado-carga{
+    text-align:center;
+    color:var(--text-soft);
+    padding:60px 20px;
+    font-size:14px;
+  }
+  .vacio{
+    text-align:center;
+    padding:60px 20px;
+    color:var(--u-verde);
+    font-weight:700;
+    font-size:15px;
+  }
+
+  /* ---------- Tarjeta AWB ---------- */
+  .awb-card{
+    background:var(--card);
+    border:1px solid var(--border);
+    border-left:6px solid var(--u-gris);
+    border-radius:12px;
+    margin-bottom:12px;
+    overflow:hidden;
+    transition:box-shadow .15s ease;
+  }
+  .awb-card:hover{ box-shadow:0 4px 16px rgba(10,34,64,.08); }
+  .awb-card.rojo{ border-left-color:var(--u-rojo); animation:pulso 1.8s ease-in-out infinite; }
+  .awb-card.naranja{ border-left-color:var(--u-naranja); }
+  .awb-card.amarillo{ border-left-color:var(--u-amarillo); }
+  .awb-card.verde{ border-left-color:var(--u-verde); }
+
+  @keyframes pulso{
+    0%,100%{ box-shadow:0 0 0 0 rgba(228,0,43,.22); }
+    50%{ box-shadow:0 0 0 7px rgba(228,0,43,0); }
+  }
+
+  .awb-head{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:14px;
+    padding:14px 16px;
+    cursor:pointer;
+    flex-wrap:wrap;
+  }
+  .awb-left{
+    display:flex;
+    align-items:center;
+    gap:14px;
+    min-width:0;
+  }
+  .badge-urg{
+    font-family:var(--font-mono);
+    font-size:11px;
+    font-weight:700;
+    padding:4px 8px;
+    border-radius:6px;
+    text-transform:uppercase;
+    white-space:nowrap;
+  }
+  .badge-urg.rojo{ background:var(--u-rojo-bg); color:var(--u-rojo); }
+  .badge-urg.naranja{ background:var(--u-naranja-bg); color:#B25E00; }
+  .badge-urg.amarillo{ background:var(--u-amarillo-bg); color:#8A6600; }
+  .badge-urg.verde{ background:var(--u-verde-bg); color:var(--u-verde); }
+
+  .awb-id{
+    font-family:var(--font-mono);
+    font-weight:700;
+    font-size:15px;
+    color:var(--kn-navy);
+  }
+  .awb-consignee{
+    font-size:12.5px;
+    color:var(--text-soft);
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    max-width:280px;
+  }
+  .awb-right{
+    display:flex;
+    align-items:center;
+    gap:18px;
+    font-size:12.5px;
+  }
+  .awb-etd{ text-align:right; }
+  .awb-etd .label{ color:var(--text-soft); font-size:10.5px; text-transform:uppercase; letter-spacing:.4px; }
+  .awb-etd .value{ font-family:var(--font-mono); font-weight:700; }
+  .awb-countdown{
+    font-family:var(--font-mono);
+    font-weight:800;
+    font-size:14px;
+  }
+  .awb-countdown.rojo{ color:var(--u-rojo); }
+  .awb-countdown.naranja{ color:#B25E00; }
+  .awb-countdown.amarillo{ color:#8A6600; }
+  .awb-countdown.verde{ color:var(--u-verde); }
+
+  .interface-pill{
+    font-family:var(--font-mono);
+    font-size:10.5px;
+    font-weight:700;
+    padding:3px 8px;
+    border-radius:6px;
+    background:var(--kn-orange-soft);
+    color:#B25400;
+    text-transform:uppercase;
+  }
+
+  .chev{
+    color:var(--text-soft);
+    transition:transform .15s ease;
+  }
+  .awb-card.abierta .chev{ transform:rotate(180deg); }
+
+  /* ---------- Detalle expandible ---------- */
+  .awb-detail{
+    display:none;
+    border-top:1px solid var(--border);
+    padding:14px 16px 18px;
+    background:#FAFBFC;
+  }
+  .awb-card.abierta .awb-detail{ display:block; }
+
+  .detail-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(140px,1fr));
+    gap:10px;
+    margin-bottom:14px;
+    font-size:12.5px;
+  }
+  .detail-grid div span.k{ display:block; color:var(--text-soft); font-size:10.5px; text-transform:uppercase; letter-spacing:.3px; }
+  .detail-grid div span.v{ font-weight:700; }
+
+  .ti-title{
+    font-size:12px;
+    font-weight:800;
+    text-transform:uppercase;
+    letter-spacing:.4px;
+    color:var(--text-soft);
+    margin:10px 0 8px;
+  }
+  .ti-item{
+    background:#fff;
+    border:1px solid var(--border);
+    border-radius:9px;
+    padding:10px 12px;
+    margin-bottom:8px;
+    font-size:12.5px;
+  }
+  .ti-item .ti-head{
+    display:flex; justify-content:space-between; gap:8px;
+    font-weight:700; margin-bottom:6px;
+  }
+  .try-row{
+    font-family:var(--font-mono);
+    font-size:11.5px;
+    color:var(--text-soft);
+    padding:3px 0;
+    border-top:1px dashed var(--border);
+  }
+  .try-row:first-child{ border-top:none; }
+  .sin-datos{ color:var(--text-soft); font-size:12px; font-style:italic; }
+
+  footer{
+    text-align:center;
+    color:var(--text-soft);
+    font-size:11.5px;
+    padding:20px;
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    .awb-card.rojo{ animation:none; }
+  }
+
+  @media (max-width:560px){
+    .awb-consignee{ max-width:150px; }
+    .awb-right{ gap:10px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <div class="brand">
+      <div class="brand-mark">K+N</div>
+      <div class="brand-text">
+        <h1>Transmisión de AWBs pendientes</h1>
+        <p>Interface Send ≠ NONE / DONE · últimos 7 días</p>
+      </div>
+    </div>
+    <div class="topbar-actions">
+      <span id="reloj">--:--:--</span>
+      <button class="notif-btn" id="btnNotif">Activar alertas rojas</button>
+    </div>
+  </div>
+</header>
+
+<div class="summary" id="summary"></div>
+
+<main>
+  <div class="meta-bar">
+    <span id="ultimaActualizacion">Cargando datos…</span>
+    <span id="totalAwbs"></span>
+  </div>
+  <div id="lista">
+    <div class="estado-carga">Consultando transmision-awb.json…</div>
+  </div>
+</main>
+
+<footer>Perishables Automations · teamAutomations</footer>
+
+<script>
+/* ============================================================
+   CONFIGURACIÓN
+   Reemplazar por la URL real donde n8n publica el JSON generado
+   (raw.githubusercontent.com o GitHub Pages).
+   ============================================================ */
+// DEMO: apunta al JSON de ejemplo local. En producción, cambia esta línea por:
+// const JSON_URL = 'https://raw.githubusercontent.com/perishablesAutomations/teamAutomations/main/transmision-awb.json';
+const JSON_URL = './transmision-awb.ejemplo.json';
+const POLL_MS = 5 * 60 * 1000; // 5 minutos
+const RELOJ_MS = 1000;
+
+const ORDEN_URGENCIA = { rojo: 0, naranja: 1, amarillo: 2, verde: 3, sinEtd: 4 };
+const LABEL_URGENCIA = { rojo: 'Rojo', naranja: 'Naranja', amarillo: 'Amarillo', verde: 'Verde', sinEtd: 'Sin ETD' };
+
+let ultimaData = null;
+const abiertas = new Set();
+
+function calcularUrgencia(etdIso){
+  if(!etdIso) return { urgencia:'sinEtd', horas:null };
+  const etd = new Date(etdIso);
+  const diffMs = etd.getTime() - Date.now();
+  const horas = diffMs / 3600000;
+  let urgencia;
+  if (horas < 1) urgencia = 'rojo';
+  else if (horas < 2) urgencia = 'naranja';
+  else if (horas < 3) urgencia = 'amarillo';
+  else urgencia = 'verde';
+  return { urgencia, horas };
+}
+
+function formatoCuenta(horas){
+  if (horas === null) return 'Sin ETD';
+  const signo = horas < 0 ? 'VENCIDA hace ' : 'en ';
+  const abs = Math.abs(horas);
+  const h = Math.floor(abs);
+  const m = Math.round((abs - h) * 60);
+  return `${signo}${h}h ${m}m`;
+}
+
+function formatoFecha(iso){
+  if(!iso) return '—';
+  const d = new Date(iso);
+  return d.toLocaleString('es-CO', { day:'2-digit', month:'2-digit', hour:'2-digit', minute:'2-digit' });
+}
+
+async function cargarDatos(){
+  try{
+    const res = await fetch(`${JSON_URL}?_=${Date.now()}`, { cache:'no-store' });
+    if(!res.ok) throw new Error('HTTP ' + res.status);
+    const data = await res.json();
+    ultimaData = data;
+    render(data);
+    revisarUrgentesYNotificar(data);
+  }catch(err){
+    document.getElementById('lista').innerHTML =
+      `<div class="estado-carga">No se pudo cargar transmision-awb.json (${err.message}). Reintentando…</div>`;
+  }
+}
+
+function render(data){
+  const awbs = (data.awbs || []).map(a => {
+    const { urgencia, horas } = calcularUrgencia(a.etd);
+    return { ...a, urgencia, horas };
+  }).sort((x, y) => {
+    // Prioriza por urgencia y, dentro de cada nivel, por ETD más próximo primero
+    if (ORDEN_URGENCIA[x.urgencia] !== ORDEN_URGENCIA[y.urgencia]){
+      return ORDEN_URGENCIA[x.urgencia] - ORDEN_URGENCIA[y.urgencia];
+    }
+    if (x.horas === null) return 1;
+    if (y.horas === null) return -1;
+    return x.horas - y.horas;
+  });
+
+  renderResumen(awbs);
+
+  document.getElementById('ultimaActualizacion').textContent =
+    data.generatedAt ? `Última actualización: ${formatoFecha(data.generatedAt)}` : '';
+  document.getElementById('totalAwbs').textContent = `${awbs.length} AWB pendientes de transmisión`;
+
+  const cont = document.getElementById('lista');
+  if(awbs.length === 0){
+    cont.innerHTML = `<div class="vacio">✓ No hay AWBs pendientes de transmisión</div>`;
+    return;
+  }
+
+  cont.innerHTML = awbs.map(a => tarjetaHTML(a)).join('');
+
+  cont.querySelectorAll('.awb-card').forEach(card => {
+    const clave = card.getAttribute('data-clave');
+    if(abiertas.has(clave)) card.classList.add('abierta');
+
+    card.querySelector('.awb-head').addEventListener('click', () => {
+      card.classList.toggle('abierta');
+      if(card.classList.contains('abierta')) abiertas.add(clave);
+      else abiertas.delete(clave);
+    });
+  });
+}
+
+function renderResumen(awbs){
+  const conteos = { rojo:0, naranja:0, amarillo:0, verde:0 };
+  awbs.forEach(a => { if(conteos[a.urgencia] !== undefined) conteos[a.urgencia]++; });
+
+  document.getElementById('summary').innerHTML = `
+    <div class="chip total">Total: ${awbs.length}</div>
+    <div class="chip rojo"><span class="dot"></span>Rojo: ${conteos.rojo}</div>
+    <div class="chip naranja"><span class="dot"></span>Naranja: ${conteos.naranja}</div>
+    <div class="chip amarillo"><span class="dot"></span>Amarillo: ${conteos.amarillo}</div>
+    <div class="chip verde"><span class="dot"></span>Verde: ${conteos.verde}</div>
+  `;
+}
+
+function tarjetaHTML(a){
+  const urg = a.urgencia;
+  const instancias = a.taskInstances || [];
+  const clave = escapeHtml(`${a.awbNumber || a.id}-${a.etd}`);
+  return `
+    <div class="awb-card ${urg}" data-clave="${clave}">
+      <div class="awb-head">
+        <div class="awb-left">
+          <span class="badge-urg ${urg}">${LABEL_URGENCIA[urg]}</span>
+          <div>
+            <div class="awb-id">${escapeHtml(a.awbNumber || a.id || '—')}</div>
+            <div class="awb-consignee">${escapeHtml(a.consignee || '')}</div>
+          </div>
+        </div>
+        <div class="awb-right">
+          <span class="interface-pill">${escapeHtml(a.interfaceSend || '—')}</span>
+          <div class="awb-etd">
+            <div class="label">ETD</div>
+            <div class="value">${formatoFecha(a.etd)}</div>
+          </div>
+          <div class="awb-countdown ${urg}">${formatoCuenta(a.horas)}</div>
+          <span class="chev">▾</span>
+        </div>
+      </div>
+      <div class="awb-detail">
+        <div class="detail-grid">
+          <div><span class="k">Prefijo aerolínea</span><span class="v">${escapeHtml(a.airlinePrefix || '—')}</span></div>
+          <div><span class="k">Fecha vuelo</span><span class="v">${escapeHtml(a.shipDate || '—')}</span></div>
+          <div><span class="k">AWB status</span><span class="v">${escapeHtml(String(a.awbStatus ?? '—'))}</span></div>
+          <div><span class="k">Interface Send</span><span class="v">${escapeHtml(a.interfaceSend || '—')}</span></div>
+        </div>
+        <div class="ti-title">Task instances</div>
+        ${instancias.length === 0
+          ? `<div class="sin-datos">Sin task instances registradas.</div>`
+          : instancias.map(ti => `
+            <div class="ti-item">
+              <div class="ti-head">
+                <span>Task instance #${escapeHtml(String(ti.taskInstanceId ?? '—'))}</span>
+                <span>${escapeHtml(ti.status || ti.taskName || '')}</span>
+              </div>
+              ${(ti.tries && ti.tries.length)
+                ? ti.tries.map(t => `
+                    <div class="try-row">
+                      Try ${escapeHtml(String(t.id ?? t.tryId ?? '—'))} ·
+                      ${escapeHtml(t.status || t.result || '—')} ·
+                      ${formatoFecha(t.createdAt || t.date)}
+                    </div>`).join('')
+                : `<div class="sin-datos">Sin intentos registrados.</div>`
+              }
+            </div>
+          `).join('')
+        }
+      </div>
+    </div>
+  `;
+}
+
+function escapeHtml(str){
+  return String(str)
+    .replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;')
+    .replaceAll('"','&quot;');
+}
+
+/* ---------- Notificaciones (Notification API — panel abierto en el navegador) ---------- */
+const NOTIF_STORAGE_KEY = 'awbTransmisionNotificadas';
+
+function getNotificadas(){
+  try{ return JSON.parse(localStorage.getItem(NOTIF_STORAGE_KEY) || '{}'); }
+  catch(e){ return {}; }
+}
+function setNotificadas(obj){
+  localStorage.setItem(NOTIF_STORAGE_KEY, JSON.stringify(obj));
+}
+
+function revisarUrgentesYNotificar(data){
+  if(Notification.permission !== 'granted') return;
+  const notificadas = getNotificadas();
+  const ahora = Date.now();
+
+  (data.awbs || []).forEach(a => {
+    const { urgencia } = calcularUrgencia(a.etd);
+    if(urgencia !== 'rojo') return;
+
+    const clave = `${a.awbNumber || a.id}-${a.etd}`;
+    const ultimaVez = notificadas[clave];
+    // Repite el aviso cada 15 minutos mientras siga en rojo
+    if(ultimaVez && (ahora - ultimaVez) < 15 * 60 * 1000) return;
+
+    new Notification('🔴 AWB por transmitir — urgente', {
+      body: `${a.awbNumber || a.id} (${a.consignee || 'sin consignee'}) — ETD en menos de 1h. Interface Send: ${a.interfaceSend}.`,
+      tag: clave
+    });
+    notificadas[clave] = ahora;
+  });
+
+  setNotificadas(notificadas);
+}
+
+document.getElementById('btnNotif').addEventListener('click', async () => {
+  if(!('Notification' in window)){
+    alert('Este navegador no soporta notificaciones.');
+    return;
+  }
+  const permiso = await Notification.requestPermission();
+  actualizarBotonNotif();
+  if(permiso === 'granted' && ultimaData) revisarUrgentesYNotificar(ultimaData);
+});
+
+function actualizarBotonNotif(){
+  const btn = document.getElementById('btnNotif');
+  if(Notification.permission === 'granted'){
+    btn.textContent = 'Alertas activas ✓';
+    btn.disabled = true;
+  }
+}
+if('Notification' in window) actualizarBotonNotif();
+
+/* ---------- Reloj ---------- */
+function tickReloj(){
+  document.getElementById('reloj').textContent =
+    new Date().toLocaleTimeString('es-CO', { hour:'2-digit', minute:'2-digit', second:'2-digit' });
+  // Re-renderiza cuentas regresivas y colores sin volver a pedir el JSON
+  if(ultimaData) render(ultimaData);
+}
+setInterval(tickReloj, RELOJ_MS);
+
+/* ---------- Arranque ---------- */
+cargarDatos();
+setInterval(cargarDatos, POLL_MS);
+</script>
+</body>
+</html>
