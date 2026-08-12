@@ -81,17 +81,20 @@
     gap:16px;
     flex-wrap:wrap;
   }
-  .brand{ display:flex; align-items:center; gap:12px; }
+  .brand{ display:flex; align-items:center; gap:12px; min-width:0; }
   .brand-mark{
     width:38px; height:38px;
+    min-width:38px; min-height:38px;
+    flex-shrink:0;
     border-radius:10px;
     background:var(--kn-navy-2);
     display:flex; align-items:center; justify-content:center;
     box-shadow:0 2px 8px rgba(0,0,0,.25);
   }
-  .brand-mark svg{ width:22px; height:22px; display:block; }
-  .brand-text h1{ margin:0; font-size:17px; font-weight:800; letter-spacing:.2px; }
-  .brand-text p{ margin:2px 0 0; font-size:11.5px; color:#AEBEDA; }
+  .brand-mark svg{ width:22px; height:22px; flex-shrink:0; display:block; }
+  .brand-text{ min-width:0; }
+  .brand-text h1{ margin:0; font-size:17px; font-weight:800; letter-spacing:.2px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+  .brand-text p{ margin:2px 0 0; font-size:11.5px; color:#AEBEDA; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
   .topbar-actions{ display:flex; align-items:center; gap:10px; font-size:12.5px; color:#CBD5E3; flex-wrap:wrap; }
   #reloj{ font-family:var(--font-mono); font-weight:600; color:#fff; }
 
@@ -216,6 +219,7 @@
   .awb-card.amarillo{ border-left-color:var(--u-amarillo); }
   .awb-card.verde{ border-left-color:var(--u-verde); }
   .awb-card.resuelta{ border-left-color:var(--u-verde); opacity:.85; }
+  .awb-card.omitida{ border-left-color:var(--text-faint); opacity:.75; }
 
   @keyframes pulso{
     0%,100%{ box-shadow:var(--shadow-sm), 0 0 0 0 rgba(228,0,43,.22); }
@@ -242,6 +246,14 @@
     font-size:10.5px; font-weight:700;
     padding:3px 8px; border-radius:6px;
     background:var(--u-amarillo-bg); color:#8A6600;
+    white-space:nowrap;
+  }
+
+  .badge-omitida{
+    display:inline-flex; align-items:center; gap:4px;
+    font-size:10.5px; font-weight:700;
+    padding:3px 8px; border-radius:6px;
+    background:var(--kn-navy-soft); color:var(--kn-navy-2);
     white-space:nowrap;
   }
 
@@ -412,7 +424,7 @@
       <span class="chev">▾</span>
       <span id="tituloResueltas">Resueltas automáticamente</span>
     </button>
-    <p class="resueltas-nota">Tareas completadas en K+N aunque el interface send aún figure pendiente/error — no cuentan como urgentes, pero quedan visibles por transparencia.</p>
+    <p class="resueltas-nota">Acá aparecen dos casos que no cuentan como urgentes, pero quedan visibles por transparencia: AWBs con todas sus tareas completadas en K+N (aunque el interface send siga pendiente/error), y AWBs cuyo campo awbId contiene "SOLO ELITE" (excluidas siempre, sin importar ETD).</p>
     <div class="resueltas-lista" id="listaResueltas"></div>
   </div>
 </main>
@@ -527,12 +539,20 @@ async function cargarDatos(){
   }
 }
 
+// Regla 3: si "awbId" contiene "SOLO ELITE" (cualquier variante alrededor del texto),
+// la AWB se excluye del listado urgente sin importar ETD ni tasks — nunca roja, nunca notifica.
+function esOmitidaPorNombre(awb){
+  return String(awb.awbId || '').toUpperCase().includes('SOLO ELITE');
+}
+
 function procesarAwbs(data){
   return (data.awbs || []).map(a => {
     const { urgencia, horas } = calcularUrgencia(a.etd);
     const evalTasks = evaluarAwbPorTasks(a);
     const resueltaPorTasks = (a.interfaceSend === 'PENDING' || a.interfaceSend === 'ERROR') && evalTasks.todasCompletadas;
-    return { ...a, urgencia, horas, evalTasks, resueltaPorTasks };
+    const omitidaPorNombre = esOmitidaPorNombre(a);
+    const excluidaDePendientes = resueltaPorTasks || omitidaPorNombre;
+    return { ...a, urgencia, horas, evalTasks, resueltaPorTasks, omitidaPorNombre, excluidaDePendientes };
   });
 }
 
@@ -550,13 +570,13 @@ function filtrarPorTexto(lista, texto){
 
 function render(data){
   const procesadas = procesarAwbs(data);
-  const pendientesTodas = procesadas.filter(a => !a.resueltaPorTasks).sort((x, y) => {
+  const pendientesTodas = procesadas.filter(a => !a.excluidaDePendientes).sort((x, y) => {
     if (ORDEN_URGENCIA[x.urgencia] !== ORDEN_URGENCIA[y.urgencia]) return ORDEN_URGENCIA[x.urgencia] - ORDEN_URGENCIA[y.urgencia];
     if (x.horas === null) return 1;
     if (y.horas === null) return -1;
     return x.horas - y.horas;
   });
-  const resueltasTodas = procesadas.filter(a => a.resueltaPorTasks);
+  const resueltasTodas = procesadas.filter(a => a.excluidaDePendientes);
 
   // Filtro de texto se aplica primero (a ambas listas); los chips cuentan sobre este resultado.
   const pendientesTexto = filtrarPorTexto(pendientesTodas, filtroTexto);
@@ -647,7 +667,10 @@ function renderResumen(awbs){
 }
 
 function tarjetaHTML(a, esResuelta){
+  const esOmitida = !!a.omitidaPorNombre;
   const urg = esResuelta ? 'gris' : a.urgencia;
+  const etiquetaEstado = esOmitida ? 'Omitida' : 'Resuelta';
+  const claseCard = esOmitida ? 'omitida' : (esResuelta ? 'resuelta' : urg);
   const instancias = a.taskInstances || [];
   const clave = escapeHtml(`${a.awbNumber || a.id}-${a.etd}`);
   const pctCajas = (a.fullBoxes && a.fullBoxes > 0)
@@ -655,10 +678,11 @@ function tarjetaHTML(a, esResuelta){
     : null;
 
   return `
-    <div class="awb-card ${esResuelta ? 'resuelta' : urg}" data-clave="${clave}">
+    <div class="awb-card ${claseCard}" data-clave="${clave}">
       <div class="awb-head">
         <div class="awb-left">
-          <span class="badge-urg ${esResuelta ? 'gris' : urg}">${esResuelta ? 'Resuelta' : LABEL_URGENCIA[urg]}</span>
+          <span class="badge-urg gris">${esResuelta ? etiquetaEstado : LABEL_URGENCIA[urg]}</span>
+          ${esOmitida ? `<span class="badge-omitida" title="awbId contiene &quot;SOLO ELITE&quot;">Excluida por nombre</span>` : ''}
           ${a.evalTasks && a.evalTasks.warning ? `<span class="badge-warning">⚠ Requirió reintento</span>` : ''}
           <div>
             <div class="awb-id">
@@ -821,7 +845,7 @@ function revisarUrgentesYNotificar(data){
   const procesadas = procesarAwbs(data);
 
   procesadas.forEach(a => {
-    if(a.resueltaPorTasks) return; // regla 1: ya no cuenta como urgente
+    if(a.excluidaDePendientes) return; // regla 1 (tasks completadas) o regla 3 (SOLO ELITE): nunca notifica
     if(a.urgencia !== 'rojo') return;
 
     const clave = `${a.awbNumber || a.id}-${a.etd}`;
