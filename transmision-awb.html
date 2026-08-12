@@ -285,10 +285,20 @@
   .ti-item.completada{ border-color:var(--u-verde); background:var(--u-verde-bg); }
   .ti-item .ti-head{ display:flex; justify-content:space-between; align-items:center; gap:8px; font-weight:700; margin-bottom:6px; }
   .try-row{
-    font-family:var(--font-mono); font-size:11px; color:var(--text-soft); padding:3px 0;
+    font-family:var(--font-mono); font-size:11px; color:var(--text-soft); padding:5px 0;
     border-top:1px dashed var(--border);
+    display:flex; flex-wrap:wrap; align-items:baseline; gap:8px;
   }
   .try-row:first-child{ border-top:none; }
+  .try-row .try-id{ font-weight:700; color:var(--text); }
+  .try-row.try-done .try-estado{ color:var(--u-verde); font-weight:700; }
+  .try-row.try-error .try-estado{ color:var(--u-rojo); font-weight:700; }
+  .try-row .try-fecha{ color:var(--text-faint); margin-left:auto; }
+  .try-msg{
+    flex-basis:100%; font-family:var(--font-body); font-size:11px; color:var(--text-faint);
+    white-space:nowrap; overflow:hidden; text-overflow:ellipsis; margin-top:2px;
+  }
+  .try-row:hover .try-msg{ white-space:normal; overflow:visible; }
   .sin-datos{ color:var(--text-faint); font-size:12px; font-style:italic; }
 
   /* ---------- Sección resueltas (regla 1) ---------- */
@@ -403,7 +413,7 @@ function evaluarTaskInstance(ti){
   }
   const tries = ti.tries || [];
   const huboTryCompletado = tries.some(t =>
-    estaCompletado(t.status) || estaCompletado(t.result) || estaCompletado(t.state)
+    estaCompletado(t.taskTryStatus) || estaCompletado(t.status) || estaCompletado(t.result) || estaCompletado(t.state)
   );
   if(huboTryCompletado){
     return { completada: true, warning: true };
@@ -592,6 +602,7 @@ function tarjetaHTML(a, esResuelta){
       </div>
       <div class="awb-detail">
         <div class="detail-grid">
+          <div><span class="k">Referencia (awbId)</span><span class="v">${escapeHtml(a.awbId || '—')}</span></div>
           <div><span class="k">Prefijo aerolínea</span><span class="v">${escapeHtml(a.airlinePrefix || '—')}</span></div>
           <div><span class="k">Fecha vuelo</span><span class="v">${escapeHtml(a.shipDate || '—')}</span></div>
           <div><span class="k">AWB status</span><span class="v">${escapeHtml(String(a.awbStatus ?? '—'))}</span></div>
@@ -612,19 +623,29 @@ function tarjetaHTML(a, esResuelta){
           : instancias.map(ti => {
               const evalTi = evaluarTaskInstance(ti);
               const nombreTarea = ti.taskName ? `${ti.taskName}${ti.clientName ? ' · ' + ti.clientName : ''}` : `Task instance #${ti.taskInstanceId ?? '—'}`;
+              const tries = (ti.tries || []).slice().sort((a, b) => {
+                const fa = new Date(a.executionDate || a.createdAt || a.date || 0).getTime();
+                const fb = new Date(b.executionDate || b.createdAt || b.date || 0).getTime();
+                return fb - fa; // mas reciente primero
+              });
               return `
               <div class="ti-item ${evalTi.completada ? 'completada' : ''}">
                 <div class="ti-head">
                   <span>${escapeHtml(nombreTarea)} ${evalTi.completada ? '✓' : ''}${evalTi.warning ? ' ⚠' : ''}</span>
                   <span>${escapeHtml(ti.taskTryStatus || ti.status || '—')}</span>
                 </div>
-                ${(ti.tries && ti.tries.length)
-                  ? ti.tries.map(t => `
-                      <div class="try-row">
-                        Try ${escapeHtml(String(t.id ?? t.tryId ?? '—'))} ·
-                        ${escapeHtml(t.status || t.result || '—')} ·
-                        ${formatoFecha(t.createdAt || t.date)}
-                      </div>`).join('')
+                ${tries.length
+                  ? tries.map(t => {
+                      const estadoTry = t.taskTryStatus || t.status || '—';
+                      const claseTry = estaCompletado(estadoTry) ? 'try-done' : (String(estadoTry).toUpperCase() === 'ERROR' ? 'try-error' : '');
+                      return `
+                      <div class="try-row ${claseTry}" title="${escapeHtml(t.message || '')}">
+                        <span class="try-id">Try ${escapeHtml(String(t.tryId ?? t.id ?? '—'))}</span>
+                        <span class="try-estado">${escapeHtml(estadoTry)}</span>
+                        <span class="try-fecha">${formatoFecha(t.executionDate || t.createdAt || t.date)}</span>
+                        ${t.message ? `<div class="try-msg">${escapeHtml(t.message)}</div>` : ''}
+                      </div>`;
+                    }).join('')
                   : `<div class="sin-datos">Sin intentos registrados.</div>`
                 }
               </div>
