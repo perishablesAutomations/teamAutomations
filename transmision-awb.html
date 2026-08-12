@@ -198,10 +198,12 @@
   .icon-btn svg{ width:17px; height:17px; display:block; }
 
   .modal-overlay{
+    display:none;
     position:fixed; inset:0; background:rgba(10,34,64,.55);
-    display:flex; align-items:center; justify-content:center;
+    align-items:center; justify-content:center;
     z-index:100; padding:20px;
   }
+  .modal-overlay:not([hidden]){ display:flex; }
   .modal-card{
     background:var(--card); border-radius:16px; box-shadow:var(--shadow-lg);
     width:100%; max-width:380px; padding:22px;
