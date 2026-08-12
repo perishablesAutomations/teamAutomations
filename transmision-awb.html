@@ -222,6 +222,17 @@
   .modal-label{ display:block; font-size:12.5px; font-weight:800; color:var(--text); margin:16px 0 5px; }
   .modal-hint{ font-size:11.5px; color:var(--text-faint); margin:0 0 12px; line-height:1.5; }
   .modal-nota{ font-size:11px; color:var(--text-faint); margin:10px 0 0; font-style:italic; }
+
+  .admin-token-row{
+    display:flex; gap:8px; margin-top:4px;
+  }
+  .admin-token-row input{
+    flex:1; padding:9px 12px; border-radius:8px;
+    border:1px solid var(--border); background:var(--card);
+    font-family:var(--font-body); font-size:13px; color:var(--text);
+    outline:none;
+  }
+  .admin-token-row input:focus{ border-color:var(--kn-orange); box-shadow:0 0 0 3px var(--kn-orange-soft); }
   #inputBuscar{
     flex:1; min-width:220px;
     padding:10px 14px;
@@ -481,6 +492,14 @@
       <button type="button" data-sede="ambas">Ambas</button>
     </div>
     <p class="modal-nota" id="notaDeteccion"></p>
+
+    <label class="modal-label">Acceso de administrador</label>
+    <p class="modal-hint" id="adminHintTexto"></p>
+    <div class="admin-token-row" id="filaActivarAdmin" hidden>
+      <input type="password" id="inputAdminToken" placeholder="Token de administrador" autocomplete="off">
+      <button type="button" class="pill-btn-limpiar" id="btnActivarAdmin">Activar</button>
+    </div>
+    <button type="button" class="pill-btn-limpiar" id="btnSalirAdmin" hidden>Salir del modo admin</button>
   </div>
 </div>
 
@@ -1130,6 +1149,39 @@ document.getElementById('modalConfig').addEventListener('click', (e) => {
 });
 document.addEventListener('keydown', (e) => {
   if(e.key === 'Escape' && !document.getElementById('modalConfig').hidden) cerrarModalConfig();
+});
+
+/* ---------- Acceso de administrador desde Configuración ---------- */
+function actualizarUIAdmin(){
+  document.getElementById('filaActivarAdmin').hidden = esAdmin;
+  document.getElementById('btnSalirAdmin').hidden = !esAdmin;
+  document.getElementById('adminHintTexto').textContent = esAdmin
+    ? 'Modo administrador activo en este dispositivo.'
+    : 'Ingresa el token para desbloquear "Ambas" y poder descartar AWBs manualmente.';
+}
+actualizarUIAdmin();
+
+function intentarActivarAdmin(){
+  const val = document.getElementById('inputAdminToken').value.trim();
+  if(!val) return;
+  if(val === ADMIN_TOKEN){
+    localStorage.setItem('awbTransmisionAdmin', 'true');
+    alert('Modo administrador activado. La página se va a recargar.');
+    window.location.reload();
+  } else {
+    alert('Token incorrecto.');
+    document.getElementById('inputAdminToken').value = '';
+  }
+}
+document.getElementById('btnActivarAdmin').addEventListener('click', intentarActivarAdmin);
+document.getElementById('inputAdminToken').addEventListener('keydown', (e) => {
+  if(e.key === 'Enter') intentarActivarAdmin();
+});
+document.getElementById('btnSalirAdmin').addEventListener('click', () => {
+  if(confirm('¿Salir del modo administrador en este dispositivo?')){
+    localStorage.removeItem('awbTransmisionAdmin');
+    window.location.reload();
+  }
 });
 
 /* ---------- Selector de sede (CO / EC / Ambas) — solo accesible desde Configuración ---------- */
