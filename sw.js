@@ -1,9 +1,11 @@
-const CACHE_NAME = 'awb-transmision-v1';
+const CACHE_NAME = 'awb-transmision-v2';
 const ARCHIVOS_CACHE = [
   './transmision-awb.html',
   './manifest.json',
   './icons/icon-192.png',
-  './icons/icon-512.png'
+  './icons/icon-512.png',
+  './icons/favicon-16.png',
+  './icons/favicon-32.png'
 ];
 
 self.addEventListener('install', (event) => {
