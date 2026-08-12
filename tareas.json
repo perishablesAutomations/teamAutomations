@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-12T17:32:09.278Z",
+  "generated_at": "2026-08-12T19:32:21.383Z",
   "diaria": [
     {
       "id": "esUFmw91vE6Lmk6PoG91WpgACVr_",
@@ -22,31 +22,11 @@
       "deposito": "diaria"
     },
     {
-      "id": "NH9qfjx150iye_8XrJ623ZgAHoFr",
-      "titulo": "Stepper remarcación",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Moreno, Sebastian / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "diaria"
-    },
-    {
       "id": "5E8N4Rx6Jkq9e-ICMg8wZJgAIoue",
       "titulo": "Ajustes - Etiqueta por defecto y cambio LAX",
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "diaria"
-    },
-    {
-      "id": "_zJqtCC5k0qrVuMFT_taHJgACzy4",
-      "titulo": "App de transmisión a Elite",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Moreno, Sebastian / Kuehne + Nagel / Bog ZA-OM",
       "fecha_limite": "",
       "prioridad": 5,
       "deposito": "diaria"
@@ -67,16 +47,6 @@
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "diaria"
-    },
-    {
-      "id": "CQcPr42GYU6ruwZSIUibA5gADbq9",
-      "titulo": "Probar nuevo estado IA facturas",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Moreno, Sebastian / Kuehne + Nagel / Bog ZA-OM",
       "fecha_limite": "",
       "prioridad": 5,
       "deposito": "diaria"
