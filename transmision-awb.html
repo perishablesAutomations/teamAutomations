@@ -333,7 +333,7 @@
       </div>
       <div class="brand-text">
         <h1>Transmisión de AWBs pendientes</h1>
-        <p>Interface Send ≠ NONE / DONE · últimos 5 días</p>
+        <p>Interface Send ≠ NONE / DONE · últimos 7 días</p>
       </div>
     </div>
     <div class="topbar-actions">
@@ -398,7 +398,7 @@ function estaCompletado(valor){
 // Regla 2: si dentro de los "tries" de una task instance hay uno completado,
 // se toma la instancia como completada, pero se marca warning (algo requirió reintento).
 function evaluarTaskInstance(ti){
-  if(estaCompletado(ti.status) || estaCompletado(ti.state) || estaCompletado(ti.taskStatus)){
+  if(estaCompletado(ti.taskTryStatus) || estaCompletado(ti.status) || estaCompletado(ti.state)){
     return { completada: true, warning: false };
   }
   const tries = ti.tries || [];
@@ -611,11 +611,12 @@ function tarjetaHTML(a, esResuelta){
           ? `<div class="sin-datos">Sin task instances registradas.</div>`
           : instancias.map(ti => {
               const evalTi = evaluarTaskInstance(ti);
+              const nombreTarea = ti.taskName ? `${ti.taskName}${ti.clientName ? ' · ' + ti.clientName : ''}` : `Task instance #${ti.taskInstanceId ?? '—'}`;
               return `
               <div class="ti-item ${evalTi.completada ? 'completada' : ''}">
                 <div class="ti-head">
-                  <span>Task instance #${escapeHtml(String(ti.taskInstanceId ?? '—'))} ${evalTi.completada ? '✓' : ''}${evalTi.warning ? ' ⚠' : ''}</span>
-                  <span>${escapeHtml(ti.status || ti.taskName || '')}</span>
+                  <span>${escapeHtml(nombreTarea)} ${evalTi.completada ? '✓' : ''}${evalTi.warning ? ' ⚠' : ''}</span>
+                  <span>${escapeHtml(ti.taskTryStatus || ti.status || '—')}</span>
                 </div>
                 ${(ti.tries && ti.tries.length)
                   ? ti.tries.map(t => `
