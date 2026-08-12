@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-12T16:31:51.999Z",
+  "generatedAt": "2026-08-12T16:50:25.510Z",
   "awbs": [
     {
       "id": 981217,
@@ -23,6 +23,7 @@
       "etd": "2026-08-08T10:45:00",
       "awbStatus": 6,
       "awbNumber": "985-63845784",
+      "sede": "CO",
       "taskInstances": [
         {
           "awbId": 981217,
@@ -66,7 +67,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -101.78
+      "hoursToEtd": -102.09
     },
     {
       "id": 981229,
@@ -90,6 +91,7 @@
       "etd": "2026-08-08T23:30:00",
       "awbStatus": 6,
       "awbNumber": "543-18663444",
+      "sede": "CO",
       "taskInstances": [
         {
           "awbId": 981229,
@@ -165,7 +167,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -89.03
+      "hoursToEtd": -89.34
     },
     {
       "id": 981218,
@@ -189,6 +191,7 @@
       "etd": "2026-08-09T02:00:00",
       "awbStatus": 6,
       "awbNumber": "985-63845795",
+      "sede": "CO",
       "taskInstances": [
         {
           "awbId": 981218,
@@ -232,7 +235,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -86.53
+      "hoursToEtd": -86.84
     },
     {
       "id": 981231,
@@ -256,6 +259,7 @@
       "etd": "2026-08-09T02:00:00",
       "awbStatus": 6,
       "awbNumber": "985-63845821",
+      "sede": "CO",
       "taskInstances": [
         {
           "awbId": 981231,
@@ -299,7 +303,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -86.53
+      "hoursToEtd": -86.84
     },
     {
       "id": 981253,
@@ -323,6 +327,7 @@
       "etd": "2026-08-09T06:30:00",
       "awbStatus": 6,
       "awbNumber": "992-04717856",
+      "sede": "CO",
       "taskInstances": [
         {
           "awbId": 981253,
@@ -382,7 +387,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -82.03
+      "hoursToEtd": -82.34
     },
     {
       "id": 981331,
@@ -406,6 +411,7 @@
       "etd": "2026-08-09T06:30:00",
       "awbStatus": 6,
       "awbNumber": "992-04717871",
+      "sede": "CO",
       "taskInstances": [
         {
           "awbId": 981331,
@@ -449,7 +455,83 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -82.03
+      "hoursToEtd": -82.34
+    },
+    {
+      "id": 981301,
+      "awbId": "FM/BANDY RANCH//PINNACLE//369-10699651",
+      "airlinePrefix": "145",
+      "shipDate": "2026-08-09",
+      "processedErrors": 0,
+      "rateType": "REGULAR",
+      "consignee": "SUNBURST FARMS INC.",
+      "detailConfirmationRequired": true,
+      "piecesConfirmedActivity": "DONE",
+      "weightConfirmedActivity": "DONE",
+      "awbProducedActivity": "DONE",
+      "invoiceProducedActivity": "ACTIVE",
+      "documentsSendActivity": "ACTIVE",
+      "interfaceSend": "PENDING",
+      "pieces": 109,
+      "fullBoxes": 50.27,
+      "piecesReceived": 109,
+      "fullBoxesReceived": 50.27,
+      "etd": "2026-08-09T17:30:00",
+      "awbStatus": 6,
+      "awbNumber": "145-11502993",
+      "sede": "EC",
+      "taskInstances": [
+        {
+          "awbId": 981301,
+          "clientName": null,
+          "taskUrlAddress": "/traze/sendBookings",
+          "taskTryStatus": "DONE",
+          "clientId": null,
+          "taskId": 5,
+          "taskInstanceId": 96831,
+          "taskName": "SEND BOOKINGS TRAZE",
+          "tries": [
+            {
+              "message": "Task Id: 5 - AWB: 145-11502993 - Sent by: RODRIGO PILLIZA - SUCCESS Ticket id 7f9b7c10-948a-11f1-9df7-2fee7ea020d1 Status: succeed",
+              "tryId": 79558,
+              "executionDate": "2026-08-10T07:10:15.043+00:00",
+              "taskTryStatus": "DONE",
+              "taskId": 5,
+              "taskInstanceId": 96831
+            },
+            {
+              "message": "Task Id: 5 - AWB: 145-11502993 - Sent by: RODRIGO PILLIZA - FAILED Ticket id 5e79b790-946c-11f1-88e6-bb2781fcb1cd Status: processing Maximum retry attempts reached",
+              "tryId": 79552,
+              "executionDate": "2026-08-10T03:34:39.713+00:00",
+              "taskTryStatus": "ERROR",
+              "taskId": 5,
+              "taskInstanceId": 96831
+            }
+          ]
+        },
+        {
+          "awbId": 981301,
+          "clientName": null,
+          "taskUrlAddress": "/traze/sendLabels",
+          "taskTryStatus": "DONE",
+          "clientId": null,
+          "taskId": 6,
+          "taskInstanceId": 96832,
+          "taskName": "SEND LABELS TRAZE",
+          "tries": [
+            {
+              "message": "Ticket id 0449ba30-94b8-11f1-94ac-1dff5396964c Status succeed",
+              "tryId": 79583,
+              "executionDate": "2026-08-10T08:35:49.837+00:00",
+              "taskTryStatus": "DONE",
+              "taskId": 6,
+              "taskInstanceId": 96832
+            }
+          ]
+        }
+      ],
+      "urgencia": "rojo",
+      "hoursToEtd": -71.34
     },
     {
       "id": 981230,
@@ -473,6 +555,7 @@
       "etd": "2026-08-09T18:10:00",
       "awbStatus": 6,
       "awbNumber": "985-63845810",
+      "sede": "CO",
       "taskInstances": [
         {
           "awbId": 981230,
@@ -572,7 +655,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -70.36
+      "hoursToEtd": -70.67
     },
     {
       "id": 981245,
@@ -596,6 +679,7 @@
       "etd": "2026-08-09T18:10:00",
       "awbStatus": 6,
       "awbNumber": "985-63845843",
+      "sede": "CO",
       "taskInstances": [
         {
           "awbId": 981245,
@@ -639,7 +723,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -70.36
+      "hoursToEtd": -70.67
     },
     {
       "id": 981258,
@@ -663,6 +747,7 @@
       "etd": "2026-08-09T18:10:00",
       "awbStatus": 6,
       "awbNumber": "985-63847755",
+      "sede": "CO",
       "taskInstances": [
         {
           "awbId": 981258,
@@ -706,7 +791,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -70.36
+      "hoursToEtd": -70.67
     },
     {
       "id": 981248,
@@ -730,6 +815,7 @@
       "etd": "2026-08-10T09:00:00",
       "awbStatus": 6,
       "awbNumber": "369-99307073",
+      "sede": "CO",
       "taskInstances": [
         {
           "awbId": 981248,
@@ -773,7 +859,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -55.53
+      "hoursToEtd": -55.84
     },
     {
       "id": 981246,
@@ -797,6 +883,7 @@
       "etd": "2026-08-10T14:15:00",
       "awbStatus": 6,
       "awbNumber": "985-63845854",
+      "sede": "CO",
       "taskInstances": [
         {
           "awbId": 981246,
@@ -840,7 +927,291 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -50.28
+      "hoursToEtd": -50.59
+    },
+    {
+      "id": 979520,
+      "awbId": "GALLERIA",
+      "airlinePrefix": "145",
+      "shipDate": "2026-08-09",
+      "processedErrors": 0,
+      "rateType": "REGULAR",
+      "consignee": "SUNBURST FARMS INC.",
+      "detailConfirmationRequired": true,
+      "piecesConfirmedActivity": "DONE",
+      "weightConfirmedActivity": "DONE",
+      "awbProducedActivity": "DONE",
+      "invoiceProducedActivity": "ACTIVE",
+      "documentsSendActivity": "ACTIVE",
+      "interfaceSend": "ERROR",
+      "pieces": 859,
+      "fullBoxes": 304.09000000000003,
+      "piecesReceived": 856,
+      "fullBoxesReceived": 302.87,
+      "etd": "2026-08-10T15:10:00",
+      "awbStatus": 6,
+      "awbNumber": "145-11500904",
+      "sede": "EC",
+      "taskInstances": [
+        {
+          "awbId": 979520,
+          "clientName": null,
+          "taskUrlAddress": "/traze/sendBookings",
+          "taskTryStatus": "DONE",
+          "clientId": null,
+          "taskId": 5,
+          "taskInstanceId": 96825,
+          "taskName": "SEND BOOKINGS TRAZE",
+          "tries": [
+            {
+              "message": "Task Id: 5 - AWB: 145-11500904 - Sent by: RODRIGO PILLIZA - SUCCESS Ticket id 541cf830-94a7-11f1-869b-0d5af4a7ccd1 Status: succeed",
+              "tryId": 79579,
+              "executionDate": "2026-08-10T10:36:32.307+00:00",
+              "taskTryStatus": "DONE",
+              "taskId": 5,
+              "taskInstanceId": 96825
+            },
+            {
+              "message": "Task Id: 5 - AWB: 145-11500904 - Sent by: RODRIGO PILLIZA - SUCCESS Ticket id 41d4a420-94a7-11f1-869b-0d5af4a7ccd1 Status: succeed",
+              "tryId": 79577,
+              "executionDate": "2026-08-10T10:35:56.457+00:00",
+              "taskTryStatus": "DONE",
+              "taskId": 5,
+              "taskInstanceId": 96825
+            },
+            {
+              "message": "Task Id: 5 - AWB: 145-11500904 - Sent by: RODRIGO PILLIZA - SUCCESS Ticket id c90d4200-94a5-11f1-869b-0d5af4a7ccd1 Status: succeed",
+              "tryId": 79571,
+              "executionDate": "2026-08-10T10:25:24.337+00:00",
+              "taskTryStatus": "DONE",
+              "taskId": 5,
+              "taskInstanceId": 96825
+            },
+            {
+              "message": "Task Id: 5 - AWB: 145-11500904 - Sent by: RODRIGO PILLIZA - FAILED Ticket id dd73f2f0-9489-11f1-87e8-6feebbe13239 Status: processing Maximum retry attempts reached",
+              "tryId": 79556,
+              "executionDate": "2026-08-10T07:05:50.343+00:00",
+              "taskTryStatus": "ERROR",
+              "taskId": 5,
+              "taskInstanceId": 96825
+            }
+          ]
+        },
+        {
+          "awbId": 979520,
+          "clientName": null,
+          "taskUrlAddress": "/traze/sendLabels",
+          "taskTryStatus": "ERROR",
+          "clientId": null,
+          "taskId": 6,
+          "taskInstanceId": 96826,
+          "taskName": "SEND LABELS TRAZE",
+          "tries": [
+            {
+              "message": "Task Id: 6 - AWB: 145-11500904 - Sent by: RODRIGO PILLIZA - FAILED Error: Hawb UIO-07227972 labels are required",
+              "tryId": 79580,
+              "executionDate": "2026-08-10T10:36:32.837+00:00",
+              "taskTryStatus": "ERROR",
+              "taskId": 6,
+              "taskInstanceId": 96826
+            },
+            {
+              "message": "Task Id: 6 - AWB: 145-11500904 - Sent by: RODRIGO PILLIZA - FAILED Error: Hawb UIO-07227972 labels are required",
+              "tryId": 79578,
+              "executionDate": "2026-08-10T10:35:56.970+00:00",
+              "taskTryStatus": "ERROR",
+              "taskId": 6,
+              "taskInstanceId": 96826
+            },
+            {
+              "message": "Task Id: 6 - AWB: 145-11500904 - Sent by: RODRIGO PILLIZA - FAILED Error: Hawb UIO-07227972 labels are required; Error: Hawb UIO-07228302 labels are required; Error: Hawb UIO-07228302 labels are required",
+              "tryId": 79572,
+              "executionDate": "2026-08-10T10:25:24.840+00:00",
+              "taskTryStatus": "ERROR",
+              "taskId": 6,
+              "taskInstanceId": 96826
+            },
+            {
+              "message": "Ticket id e69422f0-94b7-11f1-94ac-1dff5396964c Status succeed",
+              "tryId": 79582,
+              "executionDate": "2026-08-10T08:35:07.050+00:00",
+              "taskTryStatus": "DONE",
+              "taskId": 6,
+              "taskInstanceId": 96826
+            },
+            {
+              "message": "Task Id: 6 - AWB: 145-11500904 - Sent by: RODRIGO PILLIZA - FAILED Error: Hawb UIO-07227972 labels are required; Error: Hawb UIO-07228302 labels are required; Error: Hawb UIO-07228302 labels are required",
+              "tryId": 79555,
+              "executionDate": "2026-08-10T07:05:25.697+00:00",
+              "taskTryStatus": "ERROR",
+              "taskId": 6,
+              "taskInstanceId": 96826
+            }
+          ]
+        }
+      ],
+      "urgencia": "rojo",
+      "hoursToEtd": -49.67
+    },
+    {
+      "id": 980531,
+      "awbId": "GALLERIA",
+      "airlinePrefix": "145",
+      "shipDate": "2026-08-09",
+      "processedErrors": 0,
+      "rateType": "REGULAR",
+      "consignee": "SUNBURST FARMS INC.",
+      "detailConfirmationRequired": true,
+      "piecesConfirmedActivity": "DONE",
+      "weightConfirmedActivity": "DONE",
+      "awbProducedActivity": "DONE",
+      "invoiceProducedActivity": "ACTIVE",
+      "documentsSendActivity": "ACTIVE",
+      "interfaceSend": "PENDING",
+      "pieces": 703,
+      "fullBoxes": 278.75,
+      "piecesReceived": 703,
+      "fullBoxesReceived": 278.75,
+      "etd": "2026-08-10T15:10:00",
+      "awbStatus": 6,
+      "awbNumber": "145-11503284",
+      "sede": "EC",
+      "taskInstances": [
+        {
+          "awbId": 980531,
+          "clientName": null,
+          "taskUrlAddress": "/traze/sendBookings",
+          "taskTryStatus": "DONE",
+          "clientId": null,
+          "taskId": 5,
+          "taskInstanceId": 96837,
+          "taskName": "SEND BOOKINGS TRAZE",
+          "tries": [
+            {
+              "message": "Task Id: 5 - AWB: 145-11503284 - Sent by: RODRIGO PILLIZA - SUCCESS Ticket id 8f698150-948a-11f1-9df7-2fee7ea020d1 Status: succeed",
+              "tryId": 79559,
+              "executionDate": "2026-08-10T07:10:31.210+00:00",
+              "taskTryStatus": "DONE",
+              "taskId": 5,
+              "taskInstanceId": 96837
+            },
+            {
+              "message": "Task Id: 5 - AWB: 145-11503284 - Sent by: RODRIGO PILLIZA - FAILED Ticket id ff5e5910-946f-11f1-9ab1-11bfc27ca778 Status: processing Maximum retry attempts reached",
+              "tryId": 79553,
+              "executionDate": "2026-08-10T04:00:40.217+00:00",
+              "taskTryStatus": "ERROR",
+              "taskId": 5,
+              "taskInstanceId": 96837
+            }
+          ]
+        },
+        {
+          "awbId": 980531,
+          "clientName": null,
+          "taskUrlAddress": "/traze/sendLabels",
+          "taskTryStatus": "DONE",
+          "clientId": null,
+          "taskId": 6,
+          "taskInstanceId": 96838,
+          "taskName": "SEND LABELS TRAZE",
+          "tries": [
+            {
+              "message": "Ticket id d137c960-94bd-11f1-a1c2-b304db5105a2 Status succeed",
+              "tryId": 79587,
+              "executionDate": "2026-08-10T09:17:21.147+00:00",
+              "taskTryStatus": "DONE",
+              "taskId": 6,
+              "taskInstanceId": 96838
+            }
+          ]
+        }
+      ],
+      "urgencia": "rojo",
+      "hoursToEtd": -49.67
+    },
+    {
+      "id": 981302,
+      "awbId": "CANADA//DWF//BLOOMSTAR//BLOMISTIC//1460",
+      "airlinePrefix": "145",
+      "shipDate": "2026-08-09",
+      "processedErrors": 0,
+      "rateType": "REGULAR",
+      "consignee": "SUNBURST FARMS INC.",
+      "detailConfirmationRequired": true,
+      "piecesConfirmedActivity": "DONE",
+      "weightConfirmedActivity": "DONE",
+      "awbProducedActivity": "DONE",
+      "invoiceProducedActivity": "ACTIVE",
+      "documentsSendActivity": "ACTIVE",
+      "interfaceSend": "ERROR",
+      "pieces": 728,
+      "fullBoxes": 239.3499999999999,
+      "piecesReceived": 722,
+      "fullBoxesReceived": 237.5999999999999,
+      "etd": "2026-08-10T22:05:00",
+      "awbStatus": 6,
+      "awbNumber": "145-11503004",
+      "sede": "EC",
+      "taskInstances": [
+        {
+          "awbId": 981302,
+          "clientName": null,
+          "taskUrlAddress": "/traze/sendBookings",
+          "taskTryStatus": "ERROR",
+          "clientId": null,
+          "taskId": 5,
+          "taskInstanceId": 96833,
+          "taskName": "SEND BOOKINGS TRAZE",
+          "tries": [
+            {
+              "message": "Task Id: 5 - AWB: 145-11503004 - Sent by: RODRIGO PILLIZA - FAILED Ticket id 80c51a10-94ad-11f1-aabb-cb1348e838ad Status: processing Maximum retry attempts reached",
+              "tryId": 79581,
+              "executionDate": "2026-08-10T11:20:54.413+00:00",
+              "taskTryStatus": "ERROR",
+              "taskId": 5,
+              "taskInstanceId": 96833
+            },
+            {
+              "message": "Ticket id f612b660-94bc-11f1-a0b6-639c217ad3d4 Status succeed",
+              "tryId": 79585,
+              "executionDate": "2026-08-10T09:11:50.370+00:00",
+              "taskTryStatus": "DONE",
+              "taskId": 5,
+              "taskInstanceId": 96833
+            },
+            {
+              "message": "Ticket id 432dbef0-94bc-11f1-a0b6-639c217ad3d4 Status processing  after 5 trials",
+              "tryId": 79584,
+              "executionDate": "2026-08-10T09:07:03.750+00:00",
+              "taskTryStatus": "ERROR",
+              "taskId": 5,
+              "taskInstanceId": 96833
+            }
+          ]
+        },
+        {
+          "awbId": 981302,
+          "clientName": null,
+          "taskUrlAddress": "/traze/sendLabels",
+          "taskTryStatus": "DONE",
+          "clientId": null,
+          "taskId": 6,
+          "taskInstanceId": 96834,
+          "taskName": "SEND LABELS TRAZE",
+          "tries": [
+            {
+              "message": "Ticket id 66e48c60-94bd-11f1-a1c2-b304db5105a2 Status succeed",
+              "tryId": 79586,
+              "executionDate": "2026-08-10T09:14:23.950+00:00",
+              "taskTryStatus": "DONE",
+              "taskId": 6,
+              "taskInstanceId": 96834
+            }
+          ]
+        }
+      ],
+      "urgencia": "rojo",
+      "hoursToEtd": -42.76
     },
     {
       "id": 981394,
@@ -864,6 +1235,7 @@
       "etd": "2026-08-11T16:00:00",
       "awbStatus": 6,
       "awbNumber": "992-04717882",
+      "sede": "CO",
       "taskInstances": [
         {
           "awbId": 981394,
@@ -907,7 +1279,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -24.53
+      "hoursToEtd": -24.84
     },
     {
       "id": 981395,
@@ -931,6 +1303,7 @@
       "etd": "2026-08-11T16:00:00",
       "awbStatus": 6,
       "awbNumber": "992-04717893",
+      "sede": "CO",
       "taskInstances": [
         {
           "awbId": 981395,
@@ -974,7 +1347,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -24.53
+      "hoursToEtd": -24.84
     },
     {
       "id": 981382,
@@ -998,6 +1371,7 @@
       "etd": "2026-08-11T19:25:00",
       "awbStatus": 6,
       "awbNumber": "985-63878010",
+      "sede": "CO",
       "taskInstances": [
         {
           "awbId": 981382,
@@ -1041,7 +1415,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -21.11
+      "hoursToEtd": -21.42
     },
     {
       "id": 981421,
@@ -1065,6 +1439,7 @@
       "etd": "2026-08-11T19:25:00",
       "awbStatus": 6,
       "awbNumber": "985-63878533",
+      "sede": "CO",
       "taskInstances": [
         {
           "awbId": 981421,
@@ -1108,7 +1483,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -21.11
+      "hoursToEtd": -21.42
     },
     {
       "id": 981424,
@@ -1132,6 +1507,7 @@
       "etd": "2026-08-11T19:25:00",
       "awbStatus": 6,
       "awbNumber": "985-63928443",
+      "sede": "CO",
       "taskInstances": [
         {
           "awbId": 981424,
@@ -1175,7 +1551,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -21.11
+      "hoursToEtd": -21.42
     },
     {
       "id": 981426,
@@ -1199,6 +1575,7 @@
       "etd": "2026-08-11T19:25:00",
       "awbStatus": 6,
       "awbNumber": "985-63928454",
+      "sede": "CO",
       "taskInstances": [
         {
           "awbId": 981426,
@@ -1250,7 +1627,287 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -21.11
+      "hoursToEtd": -21.42
+    },
+    {
+      "id": 980564,
+      "awbId": "DELAWARE",
+      "airlinePrefix": "369",
+      "shipDate": "2026-08-11",
+      "processedErrors": 0,
+      "rateType": "REGULAR",
+      "consignee": "SUNBURST FARMS INC.",
+      "detailConfirmationRequired": true,
+      "piecesConfirmedActivity": "DONE",
+      "weightConfirmedActivity": "DONE",
+      "awbProducedActivity": "DONE",
+      "invoiceProducedActivity": "ACTIVE",
+      "documentsSendActivity": "ACTIVE",
+      "interfaceSend": "ERROR",
+      "pieces": 2215,
+      "fullBoxes": 470.0799999999997,
+      "piecesReceived": 2215,
+      "fullBoxesReceived": 470.0799999999997,
+      "etd": "2026-08-11T21:45:00",
+      "awbStatus": 6,
+      "awbNumber": "369-10714491",
+      "sede": "EC",
+      "taskInstances": [
+        {
+          "awbId": 980564,
+          "clientName": null,
+          "taskUrlAddress": "/traze/sendBookings",
+          "taskTryStatus": "ERROR",
+          "clientId": null,
+          "taskId": 5,
+          "taskInstanceId": 96917,
+          "taskName": "SEND BOOKINGS TRAZE",
+          "tries": [
+            {
+              "message": "Task Id: 5 - AWB: 369-10714491 - Sent by: Deybe Gualdron - FAILED Ticket id 2cecc220-95bc-11f1-8bdc-59c02053c21d Errors: {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=systemError, message=getQueueSaveShipment};  Maximum retry attempts reached",
+              "tryId": 79694,
+              "executionDate": "2026-08-11T19:38:13.213+00:00",
+              "taskTryStatus": "ERROR",
+              "taskId": 5,
+              "taskInstanceId": 96917
+            },
+            {
+              "message": "Task Id: 5 - AWB: 369-10714491 - Sent by: Deybe Gualdron - FAILED Ticket id 96df6ff0-95b9-11f1-ab99-d9692ddfdd96 Errors: {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=systemError, message=getQueueSaveShipment};  Maximum retry attempts reached",
+              "tryId": 79693,
+              "executionDate": "2026-08-11T19:19:42.597+00:00",
+              "taskTryStatus": "ERROR",
+              "taskId": 5,
+              "taskInstanceId": 96917
+            },
+            {
+              "message": "Task Id: 5 - AWB: 369-10714491 - Sent by: GERMAN CANAR - FAILED Ticket id 4f9b1050-95a9-11f1-884b-4f8a2bf468a2 Errors: {error=house field, message=house.measurements.temperature.value field is not number}; {error=house field, message=house.measurements.temperature.value field is not number}; {error=house field, message=house.measurements.temperature.value field is not number}; {error=house field, message=house.measurements.temperature.value field is not number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=systemError, message=getQueueSaveShipment};  Maximum retry attempts reached",
+              "tryId": 79692,
+              "executionDate": "2026-08-11T17:23:10.957+00:00",
+              "taskTryStatus": "ERROR",
+              "taskId": 5,
+              "taskInstanceId": 96917
+            },
+            {
+              "message": "Task Id: 5 - AWB: 369-10714491 - Sent by: GERMAN CANAR - FAILED Ticket id 4a86a090-95a7-11f1-a03d-f52d4f2259ed Errors: {error=house field, message=house.measurements.temperature.value field is not number}; {error=house field, message=house.measurements.temperature.value field is not number}; {error=house field, message=house.measurements.temperature.value field is not number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=systemError, message=getQueueSaveShipment};  Maximum retry attempts reached",
+              "tryId": 79687,
+              "executionDate": "2026-08-11T17:08:43.447+00:00",
+              "taskTryStatus": "ERROR",
+              "taskId": 5,
+              "taskInstanceId": 96917
+            },
+            {
+              "message": "Task Id: 5 - AWB: 369-10714491 - Sent by: Francisco Rodriguez - FAILED Ticket id 3ab5bc80-95a4-11f1-a03d-f52d4f2259ed Errors: {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=systemError, message=getQueueSaveShipment};  Maximum retry attempts reached",
+              "tryId": 79680,
+              "executionDate": "2026-08-11T16:46:48.523+00:00",
+              "taskTryStatus": "ERROR",
+              "taskId": 5,
+              "taskInstanceId": 96917
+            },
+            {
+              "message": "Task Id: 5 - AWB: 369-10714491 - Sent by: Francisco Rodriguez - FAILED Ticket id b83764a0-95a0-11f1-a1f2-c70b254c9e5f Errors: {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=systemError, message=getQueueSaveShipment};  Maximum retry attempts reached",
+              "tryId": 79676,
+              "executionDate": "2026-08-11T16:21:41.030+00:00",
+              "taskTryStatus": "ERROR",
+              "taskId": 5,
+              "taskInstanceId": 96917
+            },
+            {
+              "message": "Task Id: 5 - AWB: 369-10714491 - Sent by: Francisco Rodriguez - FAILED Ticket id c2a63580-959e-11f1-8d06-05bd74988e3a Errors: {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=systemError, message=getQueueSaveShipment};  Maximum retry attempts reached",
+              "tryId": 79675,
+              "executionDate": "2026-08-11T16:07:39.480+00:00",
+              "taskTryStatus": "ERROR",
+              "taskId": 5,
+              "taskInstanceId": 96917
+            },
+            {
+              "message": "Ticket id 33bb16e0-95be-11f1-8bdc-59c02053c21d Status succeed",
+              "tryId": 79702,
+              "executionDate": "2026-08-11T15:53:09.753+00:00",
+              "taskTryStatus": "DONE",
+              "taskId": 5,
+              "taskInstanceId": 96917
+            },
+            {
+              "message": "Task Id: 5 - AWB: 369-10714491 - Sent by: Francisco Rodriguez - FAILED Ticket id 8ff7d790-959b-11f1-b434-83a8c1fe2014 Errors: {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=systemError, message=getQueueSaveShipment};  Maximum retry attempts reached",
+              "tryId": 79670,
+              "executionDate": "2026-08-11T15:44:45.993+00:00",
+              "taskTryStatus": "ERROR",
+              "taskId": 5,
+              "taskInstanceId": 96917
+            },
+            {
+              "message": "Task Id: 5 - AWB: 369-10714491 - Sent by: Francisco Rodriguez - FAILED Ticket id 32e5da70-959b-11f1-b434-83a8c1fe2014 Errors: {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=systemError, message=getQueueSaveShipment};  Maximum retry attempts reached",
+              "tryId": 79669,
+              "executionDate": "2026-08-11T15:42:09.967+00:00",
+              "taskTryStatus": "ERROR",
+              "taskId": 5,
+              "taskInstanceId": 96917
+            },
+            {
+              "message": "Ticket id 448fefb0-95bc-11f1-8bdc-59c02053c21d Status succeed",
+              "tryId": 79695,
+              "executionDate": "2026-08-11T15:39:29.280+00:00",
+              "taskTryStatus": "DONE",
+              "taskId": 5,
+              "taskInstanceId": 96917
+            }
+          ]
+        },
+        {
+          "awbId": 980564,
+          "clientName": null,
+          "taskUrlAddress": "/traze/sendLabels",
+          "taskTryStatus": "DONE",
+          "clientId": null,
+          "taskId": 6,
+          "taskInstanceId": 96918,
+          "taskName": "SEND LABELS TRAZE",
+          "tries": [
+            {
+              "message": "Ticket id 71181530-95bc-11f1-9cad-ef3ed1acf447 Status succeed",
+              "tryId": 79696,
+              "executionDate": "2026-08-11T15:40:11.243+00:00",
+              "taskTryStatus": "DONE",
+              "taskId": 6,
+              "taskInstanceId": 96918
+            }
+          ]
+        }
+      ],
+      "urgencia": "rojo",
+      "hoursToEtd": -19.09
+    },
+    {
+      "id": 981307,
+      "awbId": "LEGACY-SUNBURST",
+      "airlinePrefix": "369",
+      "shipDate": "2026-08-11",
+      "processedErrors": 0,
+      "rateType": "REGULAR",
+      "consignee": "SUNBURST FARMS INC.",
+      "detailConfirmationRequired": true,
+      "piecesConfirmedActivity": "DONE",
+      "weightConfirmedActivity": "DONE",
+      "awbProducedActivity": "DONE",
+      "invoiceProducedActivity": "ACTIVE",
+      "documentsSendActivity": "ACTIVE",
+      "interfaceSend": "ERROR",
+      "pieces": 351,
+      "fullBoxes": 122.56999999999996,
+      "piecesReceived": 351,
+      "fullBoxesReceived": 122.54999999999995,
+      "etd": "2026-08-11T21:45:00",
+      "awbStatus": 6,
+      "awbNumber": "369-10715456",
+      "sede": "EC",
+      "taskInstances": [
+        {
+          "awbId": 981307,
+          "clientName": null,
+          "taskUrlAddress": "/traze/sendBookings",
+          "taskTryStatus": "ERROR",
+          "clientId": null,
+          "taskId": 5,
+          "taskInstanceId": 96931,
+          "taskName": "SEND BOOKINGS TRAZE",
+          "tries": [
+            {
+              "message": "Task Id: 5 - AWB: 369-10715456 - Sent by: Deybe Gualdron - FAILED Ticket id 9d1d6430-95be-11f1-8bdc-59c02053c21d Status: processing Maximum retry attempts reached",
+              "tryId": 79703,
+              "executionDate": "2026-08-11T19:55:54.640+00:00",
+              "taskTryStatus": "ERROR",
+              "taskId": 5,
+              "taskInstanceId": 96931
+            },
+            {
+              "message": "Task Id: 5 - AWB: 369-10715456 - Sent by: Deybe Gualdron - FAILED Ticket id af6b3880-95a8-11f1-884b-4f8a2bf468a2 Status: processing Maximum retry attempts reached",
+              "tryId": 79690,
+              "executionDate": "2026-08-11T17:18:56.653+00:00",
+              "taskTryStatus": "ERROR",
+              "taskId": 5,
+              "taskInstanceId": 96931
+            },
+            {
+              "message": "Task Id: 5 - AWB: 369-10715456 - Sent by: Francisco Rodriguez - FAILED Ticket id 06d5ada0-95a7-11f1-a03d-f52d4f2259ed Errors: {error=house field, message=house.measurements.temperature.value field is not number}; {error=systemError, message=getQueueSaveShipment};  Maximum retry attempts reached",
+              "tryId": 79686,
+              "executionDate": "2026-08-11T17:06:54.060+00:00",
+              "taskTryStatus": "ERROR",
+              "taskId": 5,
+              "taskInstanceId": 96931
+            },
+            {
+              "message": "Task Id: 5 - AWB: 369-10715456 - Sent by: Francisco Rodriguez - FAILED Ticket id bf2b7460-95a3-11f1-a03d-f52d4f2259ed Errors: {error=house field, message=house.measurements.temperature.value field is not number}; {error=systemError, message=getQueueSaveShipment};  Maximum retry attempts reached",
+              "tryId": 79679,
+              "executionDate": "2026-08-11T16:43:20.377+00:00",
+              "taskTryStatus": "ERROR",
+              "taskId": 5,
+              "taskInstanceId": 96931
+            },
+            {
+              "message": "Task Id: 5 - AWB: 369-10715456 - Sent by: Francisco Rodriguez - FAILED Ticket id 2fb2bb90-959e-11f1-8d06-05bd74988e3a Errors: {error=house field, message=house.measurements.temperature.value field is not number}; {error=systemError, message=getQueueSaveShipment};  Maximum retry attempts reached",
+              "tryId": 79674,
+              "executionDate": "2026-08-11T16:03:32.163+00:00",
+              "taskTryStatus": "ERROR",
+              "taskId": 5,
+              "taskInstanceId": 96931
+            },
+            {
+              "message": "Task Id: 5 - AWB: 369-10715456 - Sent by: Francisco Rodriguez - FAILED Ticket id 6f420dc0-959d-11f1-8d06-05bd74988e3a Errors: {error=house field, message=house.measurements.temperature.value field is not number}; {error=systemError, message=getQueueSaveShipment};  Maximum retry attempts reached",
+              "tryId": 79673,
+              "executionDate": "2026-08-11T15:58:04.273+00:00",
+              "taskTryStatus": "ERROR",
+              "taskId": 5,
+              "taskInstanceId": 96931
+            },
+            {
+              "message": "Ticket id e88f5b30-95be-11f1-8bdc-59c02053c21d Status succeed",
+              "tryId": 79704,
+              "executionDate": "2026-08-11T15:57:51.580+00:00",
+              "taskTryStatus": "DONE",
+              "taskId": 5,
+              "taskInstanceId": 96931
+            },
+            {
+              "message": "Task Id: 5 - AWB: 369-10715456 - Sent by: Francisco Rodriguez - FAILED Ticket id 1b1856a0-959d-11f1-8d06-05bd74988e3a Errors: {error=house field, message=house.measurements.temperature.value field is not number}; {error=systemError, message=getQueueSaveShipment};  Maximum retry attempts reached",
+              "tryId": 79672,
+              "executionDate": "2026-08-11T15:55:48.060+00:00",
+              "taskTryStatus": "ERROR",
+              "taskId": 5,
+              "taskInstanceId": 96931
+            },
+            {
+              "message": "Task Id: 5 - AWB: 369-10715456 - Sent by: Francisco Rodriguez - FAILED Ticket id 5b29d120-959c-11f1-8d06-05bd74988e3a Errors: {error=house field, message=house.measurements.temperature.value field is not number}; {error=systemError, message=getQueueSaveShipment};  Maximum retry attempts reached",
+              "tryId": 79671,
+              "executionDate": "2026-08-11T15:50:26.163+00:00",
+              "taskTryStatus": "ERROR",
+              "taskId": 5,
+              "taskInstanceId": 96931
+            }
+          ]
+        },
+        {
+          "awbId": 981307,
+          "clientName": null,
+          "taskUrlAddress": "/traze/sendLabels",
+          "taskTryStatus": "DONE",
+          "clientId": null,
+          "taskId": 6,
+          "taskInstanceId": 96932,
+          "taskName": "SEND LABELS TRAZE",
+          "tries": [
+            {
+              "message": "Ticket id f6bfdd10-95be-11f1-b68e-01ba9ac3d618 Status succeed",
+              "tryId": 79705,
+              "executionDate": "2026-08-11T15:58:05.147+00:00",
+              "taskTryStatus": "DONE",
+              "taskId": 6,
+              "taskInstanceId": 96932
+            }
+          ]
+        }
+      ],
+      "urgencia": "rojo",
+      "hoursToEtd": -19.09
     },
     {
       "id": 981428,
@@ -1274,6 +1931,7 @@
       "etd": "2026-08-12T05:00:00",
       "awbStatus": 6,
       "awbNumber": "729-94975775",
+      "sede": "CO",
       "taskInstances": [
         {
           "awbId": 981428,
@@ -1317,7 +1975,75 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -11.53
+      "hoursToEtd": -11.84
+    },
+    {
+      "id": 981500,
+      "awbId": "TERCEROS 1 FRESH STAR ",
+      "airlinePrefix": "985",
+      "shipDate": "2026-08-11",
+      "processedErrors": 0,
+      "rateType": "REGULAR",
+      "consignee": "SUNBURST FARMS INC.",
+      "detailConfirmationRequired": true,
+      "piecesConfirmedActivity": "ACTIVE",
+      "weightConfirmedActivity": "INACTIVE",
+      "awbProducedActivity": "ACTIVE",
+      "invoiceProducedActivity": "ACTIVE",
+      "documentsSendActivity": "INACTIVE",
+      "interfaceSend": "PENDING",
+      "pieces": 218,
+      "fullBoxes": 109,
+      "piecesReceived": 218,
+      "fullBoxesReceived": 109,
+      "etd": "2026-08-12T12:50:00",
+      "awbStatus": 6,
+      "awbNumber": "985-63925945",
+      "sede": "CO",
+      "taskInstances": [
+        {
+          "awbId": 981500,
+          "clientName": null,
+          "taskUrlAddress": "/traze/sendBookings",
+          "taskTryStatus": "DONE",
+          "clientId": null,
+          "taskId": 5,
+          "taskInstanceId": 96955,
+          "taskName": "SEND BOOKINGS TRAZE",
+          "tries": [
+            {
+              "message": "Ticket id 70daf1a0-966b-11f1-8f28-8feac9cbee2a Status succeed",
+              "tryId": 79751,
+              "executionDate": "2026-08-12T12:32:53.157+00:00",
+              "taskTryStatus": "DONE",
+              "taskId": 5,
+              "taskInstanceId": 96955
+            }
+          ]
+        },
+        {
+          "awbId": 981500,
+          "clientName": null,
+          "taskUrlAddress": "/traze/sendLabels",
+          "taskTryStatus": "DONE",
+          "clientId": null,
+          "taskId": 6,
+          "taskInstanceId": 96956,
+          "taskName": "SEND LABELS TRAZE",
+          "tries": [
+            {
+              "message": "Ticket id a6dfade0-966b-11f1-9f1a-b5bc1562cb88 Status succeed",
+              "tryId": 79752,
+              "executionDate": "2026-08-12T12:34:14.027+00:00",
+              "taskTryStatus": "DONE",
+              "taskId": 6,
+              "taskInstanceId": 96956
+            }
+          ]
+        }
+      ],
+      "urgencia": "rojo",
+      "hoursToEtd": -4.01
     },
     {
       "id": 981480,
@@ -1341,6 +2067,7 @@
       "etd": "2026-08-12T16:00:00",
       "awbStatus": 6,
       "awbNumber": "992-04718070",
+      "sede": "CO",
       "taskInstances": [
         {
           "awbId": 981480,
@@ -1408,7 +2135,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -0.53
+      "hoursToEtd": -0.84
     },
     {
       "id": 981503,
@@ -1432,6 +2159,7 @@
       "etd": "2026-08-12T16:00:00",
       "awbStatus": 6,
       "awbNumber": "992-04718081",
+      "sede": "CO",
       "taskInstances": [
         {
           "awbId": 981503,
@@ -1475,7 +2203,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -0.53
+      "hoursToEtd": -0.84
     },
     {
       "id": 981536,
@@ -1499,6 +2227,7 @@
       "etd": "2026-08-12T18:00:00",
       "awbStatus": 6,
       "awbNumber": "729-94975893",
+      "sede": "CO",
       "taskInstances": [
         {
           "awbId": 981536,
@@ -1558,7 +2287,55 @@
         }
       ],
       "urgencia": "naranja",
-      "hoursToEtd": 1.47
+      "hoursToEtd": 1.16
+    },
+    {
+      "id": 977584,
+      "awbId": "FM/BANDY RANCH//PINNACLE//CONTI",
+      "airlinePrefix": "369",
+      "shipDate": "2026-08-12",
+      "processedErrors": 0,
+      "rateType": "REGULAR",
+      "consignee": "SUNBURST FARMS INC.",
+      "detailConfirmationRequired": true,
+      "piecesConfirmedActivity": "DONE",
+      "weightConfirmedActivity": "DONE",
+      "awbProducedActivity": "DONE",
+      "invoiceProducedActivity": "ACTIVE",
+      "documentsSendActivity": "ACTIVE",
+      "interfaceSend": "ERROR",
+      "pieces": 294,
+      "fullBoxes": 67.59,
+      "piecesReceived": 293,
+      "fullBoxesReceived": 67.34,
+      "etd": "2026-08-13T01:00:00",
+      "awbStatus": 6,
+      "awbNumber": "369-10699673",
+      "sede": "EC",
+      "taskInstances": [
+        {
+          "awbId": 977584,
+          "clientName": null,
+          "taskUrlAddress": "/traze/sendBookings",
+          "taskTryStatus": "ERROR",
+          "clientId": null,
+          "taskId": 5,
+          "taskInstanceId": 96991,
+          "taskName": "SEND BOOKINGS TRAZE",
+          "tries": [
+            {
+              "message": "Task Id: 5 - AWB: 369-10699673 - Sent by: Francisco Rodriguez - FAILED Ticket id d501e970-966d-11f1-8f28-8feac9cbee2a Status: processing Maximum retry attempts reached",
+              "tryId": 79762,
+              "executionDate": "2026-08-12T16:50:11.387+00:00",
+              "taskTryStatus": "ERROR",
+              "taskId": 5,
+              "taskInstanceId": 96991
+            }
+          ]
+        }
+      ],
+      "urgencia": "verde",
+      "hoursToEtd": 8.16
     },
     {
       "id": 981486,
@@ -1582,6 +2359,7 @@
       "etd": "2026-08-13T06:20:00",
       "awbStatus": 6,
       "awbNumber": "985-63925934",
+      "sede": "CO",
       "taskInstances": [
         {
           "awbId": 981486,
@@ -1641,7 +2419,7 @@
         }
       ],
       "urgencia": "verde",
-      "hoursToEtd": 13.8
+      "hoursToEtd": 13.49
     }
   ],
   "erroresEnriquecimiento": []
