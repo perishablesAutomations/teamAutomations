@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-12T14:48:58.411Z",
+  "generatedAt": "2026-08-12T15:11:51.380Z",
   "awbs": [
     {
       "id": 981217,
@@ -23,9 +23,50 @@
       "etd": "2026-08-08T10:45:00",
       "awbStatus": 6,
       "awbNumber": "985-63845784",
-      "taskInstances": [],
+      "taskInstances": [
+        {
+          "awbId": 981217,
+          "clientName": null,
+          "taskUrlAddress": "/traze/sendBookings",
+          "taskTryStatus": "DONE",
+          "clientId": null,
+          "taskId": 5,
+          "taskInstanceId": 96725,
+          "taskName": "SEND BOOKINGS TRAZE",
+          "tries": [
+            {
+              "message": "Ticket id 9e7834b0-930a-11f1-9897-ede16b5092fd Status succeed",
+              "tryId": 79482,
+              "executionDate": "2026-08-08T05:22:26.690+00:00",
+              "taskTryStatus": "DONE",
+              "taskId": 5,
+              "taskInstanceId": 96725
+            }
+          ]
+        },
+        {
+          "awbId": 981217,
+          "clientName": null,
+          "taskUrlAddress": "/traze/sendLabels",
+          "taskTryStatus": "DONE",
+          "clientId": null,
+          "taskId": 6,
+          "taskInstanceId": 96726,
+          "taskName": "SEND LABELS TRAZE",
+          "tries": [
+            {
+              "message": "Ticket id bb412200-930a-11f1-a7fc-9f85f5c58bff Status succeed",
+              "tryId": 79483,
+              "executionDate": "2026-08-08T05:22:54.773+00:00",
+              "taskTryStatus": "DONE",
+              "taskId": 6,
+              "taskInstanceId": 96726
+            }
+          ]
+        }
+      ],
       "urgencia": "rojo",
-      "hoursToEtd": -100.07
+      "hoursToEtd": -100.45
     },
     {
       "id": 981229,
@@ -49,9 +90,108 @@
       "etd": "2026-08-08T23:30:00",
       "awbStatus": 6,
       "awbNumber": "543-18663444",
+      "taskInstances": [
+        {
+          "awbId": 981229,
+          "clientName": null,
+          "taskUrlAddress": "/traze/sendBookings",
+          "taskTryStatus": "ERROR",
+          "clientId": null,
+          "taskId": 5,
+          "taskInstanceId": 96723,
+          "taskName": "SEND BOOKINGS TRAZE",
+          "tries": [
+            {
+              "message": "Task Id: 5 - AWB: 543-18663444 - Sent by: Cesar augusto Montes - FAILED Ticket id b9506170-92fd-11f1-91a4-85c4cc08e584 Status: processing Maximum retry attempts reached",
+              "tryId": 79479,
+              "executionDate": "2026-08-08T07:50:08.250+00:00",
+              "taskTryStatus": "ERROR",
+              "taskId": 5,
+              "taskInstanceId": 96723
+            },
+            {
+              "message": "Task Id: 5 - AWB: 543-18663444 - Sent by: Cesar augusto Montes - FAILED Ticket id aff6bc00-92fd-11f1-91a4-85c4cc08e584 Status: processing Maximum retry attempts reached",
+              "tryId": 79478,
+              "executionDate": "2026-08-08T07:49:51.237+00:00",
+              "taskTryStatus": "ERROR",
+              "taskId": 5,
+              "taskInstanceId": 96723
+            },
+            {
+              "message": "Ticket id 612042a0-9310-11f1-a1cb-abfa1afd1edc Status succeed",
+              "tryId": 79489,
+              "executionDate": "2026-08-08T06:03:29.527+00:00",
+              "taskTryStatus": "DONE",
+              "taskId": 5,
+              "taskInstanceId": 96723
+            },
+            {
+              "message": "Ticket id 8a7d4410-9309-11f1-b778-9191f3418c75 Status processing  after 5 trials",
+              "tryId": 79481,
+              "executionDate": "2026-08-08T05:15:13.667+00:00",
+              "taskTryStatus": "ERROR",
+              "taskId": 5,
+              "taskInstanceId": 96723
+            },
+            {
+              "message": "Ticket id cf12e820-92fd-11f1-91a4-85c4cc08e584 Status processing  after 5 trials",
+              "tryId": 79480,
+              "executionDate": "2026-08-08T03:51:13.410+00:00",
+              "taskTryStatus": "ERROR",
+              "taskId": 5,
+              "taskInstanceId": 96723
+            }
+          ]
+        },
+        {
+          "awbId": 981229,
+          "clientName": null,
+          "taskUrlAddress": "/traze/sendLabels",
+          "taskTryStatus": "DONE",
+          "clientId": null,
+          "taskId": 6,
+          "taskInstanceId": 96724,
+          "taskName": "SEND LABELS TRAZE",
+          "tries": [
+            {
+              "message": "Ticket id 98e0dfb0-9310-11f1-b468-23c9a6723273 Status succeed",
+              "tryId": 79490,
+              "executionDate": "2026-08-08T06:04:52.900+00:00",
+              "taskTryStatus": "DONE",
+              "taskId": 6,
+              "taskInstanceId": 96724
+            }
+          ]
+        }
+      ],
+      "urgencia": "rojo",
+      "hoursToEtd": -87.7
+    },
+    {
+      "id": 981268,
+      "awbId": "1 SOLO ELITE ",
+      "airlinePrefix": "543",
+      "shipDate": "2026-08-07",
+      "processedErrors": 0,
+      "rateType": "SPOT",
+      "consignee": "SUNBURST FARMS INC.",
+      "detailConfirmationRequired": true,
+      "piecesConfirmedActivity": "DONE",
+      "weightConfirmedActivity": "DONE",
+      "awbProducedActivity": "DONE",
+      "invoiceProducedActivity": "ACTIVE",
+      "documentsSendActivity": "ACTIVE",
+      "interfaceSend": "PENDING",
+      "pieces": 84,
+      "fullBoxes": 21,
+      "piecesReceived": 54,
+      "fullBoxesReceived": 19,
+      "etd": "2026-08-08T23:30:00",
+      "awbStatus": 6,
+      "awbNumber": "543-18663433",
       "taskInstances": [],
       "urgencia": "rojo",
-      "hoursToEtd": -87.32
+      "hoursToEtd": -87.7
     },
     {
       "id": 981218,
@@ -75,9 +215,50 @@
       "etd": "2026-08-09T02:00:00",
       "awbStatus": 6,
       "awbNumber": "985-63845795",
-      "taskInstances": [],
+      "taskInstances": [
+        {
+          "awbId": 981218,
+          "clientName": null,
+          "taskUrlAddress": "/traze/sendBookings",
+          "taskTryStatus": "DONE",
+          "clientId": null,
+          "taskId": 5,
+          "taskInstanceId": 96731,
+          "taskName": "SEND BOOKINGS TRAZE",
+          "tries": [
+            {
+              "message": "Ticket id e7ca1560-930b-11f1-b56d-91f9c60c36ed Status succeed",
+              "tryId": 79484,
+              "executionDate": "2026-08-08T05:31:49.307+00:00",
+              "taskTryStatus": "DONE",
+              "taskId": 5,
+              "taskInstanceId": 96731
+            }
+          ]
+        },
+        {
+          "awbId": 981218,
+          "clientName": null,
+          "taskUrlAddress": "/traze/sendLabels",
+          "taskTryStatus": "DONE",
+          "clientId": null,
+          "taskId": 6,
+          "taskInstanceId": 96732,
+          "taskName": "SEND LABELS TRAZE",
+          "tries": [
+            {
+              "message": "Ticket id 2e65cc30-930c-11f1-9b53-97b5f00028a4 Status succeed",
+              "tryId": 79485,
+              "executionDate": "2026-08-08T05:33:17.777+00:00",
+              "taskTryStatus": "DONE",
+              "taskId": 6,
+              "taskInstanceId": 96732
+            }
+          ]
+        }
+      ],
       "urgencia": "rojo",
-      "hoursToEtd": -84.82
+      "hoursToEtd": -85.2
     },
     {
       "id": 981231,
@@ -101,9 +282,50 @@
       "etd": "2026-08-09T02:00:00",
       "awbStatus": 6,
       "awbNumber": "985-63845821",
-      "taskInstances": [],
+      "taskInstances": [
+        {
+          "awbId": 981231,
+          "clientName": null,
+          "taskUrlAddress": "/traze/sendBookings",
+          "taskTryStatus": "DONE",
+          "clientId": null,
+          "taskId": 5,
+          "taskInstanceId": 96735,
+          "taskName": "SEND BOOKINGS TRAZE",
+          "tries": [
+            {
+              "message": "Ticket id 6c9f5cf0-930c-11f1-b56d-91f9c60c36ed Status succeed",
+              "tryId": 79486,
+              "executionDate": "2026-08-08T05:35:21.083+00:00",
+              "taskTryStatus": "DONE",
+              "taskId": 5,
+              "taskInstanceId": 96735
+            }
+          ]
+        },
+        {
+          "awbId": 981231,
+          "clientName": null,
+          "taskUrlAddress": "/traze/sendLabels",
+          "taskTryStatus": "DONE",
+          "clientId": null,
+          "taskId": 6,
+          "taskInstanceId": 96736,
+          "taskName": "SEND LABELS TRAZE",
+          "tries": [
+            {
+              "message": "Ticket id 86c11f10-930c-11f1-9b53-97b5f00028a4 Status succeed",
+              "tryId": 79487,
+              "executionDate": "2026-08-08T05:35:44.493+00:00",
+              "taskTryStatus": "DONE",
+              "taskId": 6,
+              "taskInstanceId": 96736
+            }
+          ]
+        }
+      ],
       "urgencia": "rojo",
-      "hoursToEtd": -84.82
+      "hoursToEtd": -85.2
     },
     {
       "id": 981253,
@@ -127,9 +349,66 @@
       "etd": "2026-08-09T06:30:00",
       "awbStatus": 6,
       "awbNumber": "992-04717856",
-      "taskInstances": [],
+      "taskInstances": [
+        {
+          "awbId": 981253,
+          "clientName": null,
+          "taskUrlAddress": "/traze/sendBookings",
+          "taskTryStatus": "DONE",
+          "clientId": null,
+          "taskId": 5,
+          "taskInstanceId": 96763,
+          "taskName": "SEND BOOKINGS TRAZE",
+          "tries": [
+            {
+              "message": "Ticket id f2c05950-9407-11f1-bf22-db7002c4d1b4 Status succeed",
+              "tryId": 79549,
+              "executionDate": "2026-08-09T11:35:39.147+00:00",
+              "taskTryStatus": "DONE",
+              "taskId": 5,
+              "taskInstanceId": 96763
+            },
+            {
+              "message": "Ticket id c2ca0f20-9407-11f1-bf22-db7002c4d1b4 Status processing  after 5 trials",
+              "tryId": 79548,
+              "executionDate": "2026-08-09T11:34:58.870+00:00",
+              "taskTryStatus": "ERROR",
+              "taskId": 5,
+              "taskInstanceId": 96763
+            },
+            {
+              "message": "Ticket id 5e248100-93cf-11f1-998b-dbb3f8386dcc Status succeed",
+              "tryId": 79530,
+              "executionDate": "2026-08-09T04:50:37.987+00:00",
+              "taskTryStatus": "DONE",
+              "taskId": 5,
+              "taskInstanceId": 96763
+            }
+          ]
+        },
+        {
+          "awbId": 981253,
+          "clientName": null,
+          "taskUrlAddress": "/traze/sendLabels",
+          "taskTryStatus": "DONE",
+          "clientId": null,
+          "taskId": 6,
+          "taskInstanceId": 96764,
+          "taskName": "SEND LABELS TRAZE",
+          "tries": [
+            {
+              "message": "Ticket id 09189050-9408-11f1-955b-8733ae9be13a Status succeed",
+              "tryId": 79550,
+              "executionDate": "2026-08-09T11:36:06.687+00:00",
+              "taskTryStatus": "DONE",
+              "taskId": 6,
+              "taskInstanceId": 96764
+            }
+          ]
+        }
+      ],
       "urgencia": "rojo",
-      "hoursToEtd": -80.32
+      "hoursToEtd": -80.7
     },
     {
       "id": 981331,
@@ -153,35 +432,50 @@
       "etd": "2026-08-09T06:30:00",
       "awbStatus": 6,
       "awbNumber": "992-04717871",
-      "taskInstances": [],
+      "taskInstances": [
+        {
+          "awbId": 981331,
+          "clientName": null,
+          "taskUrlAddress": "/traze/sendBookings",
+          "taskTryStatus": "DONE",
+          "clientId": null,
+          "taskId": 5,
+          "taskInstanceId": 96765,
+          "taskName": "SEND BOOKINGS TRAZE",
+          "tries": [
+            {
+              "message": "Ticket id 1c71f620-93cf-11f1-998b-dbb3f8386dcc Status succeed",
+              "tryId": 79528,
+              "executionDate": "2026-08-09T04:48:47.700+00:00",
+              "taskTryStatus": "DONE",
+              "taskId": 5,
+              "taskInstanceId": 96765
+            }
+          ]
+        },
+        {
+          "awbId": 981331,
+          "clientName": null,
+          "taskUrlAddress": "/traze/sendLabels",
+          "taskTryStatus": "DONE",
+          "clientId": null,
+          "taskId": 6,
+          "taskInstanceId": 96766,
+          "taskName": "SEND LABELS TRAZE",
+          "tries": [
+            {
+              "message": "Ticket id 4535c0a0-93cf-11f1-b412-57c1e5ee2793 Status succeed",
+              "tryId": 79529,
+              "executionDate": "2026-08-09T04:49:46.040+00:00",
+              "taskTryStatus": "DONE",
+              "taskId": 6,
+              "taskInstanceId": 96766
+            }
+          ]
+        }
+      ],
       "urgencia": "rojo",
-      "hoursToEtd": -80.32
-    },
-    {
-      "id": 981367,
-      "awbId": "2 SOLO ELITE ",
-      "airlinePrefix": "985",
-      "shipDate": "2026-08-08",
-      "processedErrors": 0,
-      "rateType": "SPOT",
-      "consignee": "SUNBURST FARMS INC.",
-      "detailConfirmationRequired": true,
-      "piecesConfirmedActivity": "DONE",
-      "weightConfirmedActivity": "DONE",
-      "awbProducedActivity": "DONE",
-      "invoiceProducedActivity": "ACTIVE",
-      "documentsSendActivity": "ACTIVE",
-      "interfaceSend": "PENDING",
-      "pieces": 1246,
-      "fullBoxes": 324.75,
-      "piecesReceived": 536,
-      "fullBoxesReceived": 289,
-      "etd": "2026-08-09T11:00:00",
-      "awbStatus": 6,
-      "awbNumber": "985-63847744",
-      "taskInstances": [],
-      "urgencia": "rojo",
-      "hoursToEtd": -75.82
+      "hoursToEtd": -80.7
     },
     {
       "id": 981230,
@@ -205,9 +499,106 @@
       "etd": "2026-08-09T18:10:00",
       "awbStatus": 6,
       "awbNumber": "985-63845810",
-      "taskInstances": [],
+      "taskInstances": [
+        {
+          "awbId": 981230,
+          "clientName": null,
+          "taskUrlAddress": "/traze/sendBookings",
+          "taskTryStatus": "DONE",
+          "clientId": null,
+          "taskId": 5,
+          "taskInstanceId": 96777,
+          "taskName": "SEND BOOKINGS TRAZE",
+          "tries": [
+            {
+              "message": "Task Id: 5 - AWB: 985-63845810 - Sent by: Cesar augusto Montes - SUCCESS Ticket id 6f5513c0-93e0-11f1-b2a9-abe8fe0fdefc Status: succeed",
+              "tryId": 79535,
+              "executionDate": "2026-08-09T10:52:53.330+00:00",
+              "taskTryStatus": "DONE",
+              "taskId": 5,
+              "taskInstanceId": 96777
+            }
+          ]
+        },
+        {
+          "awbId": 981230,
+          "clientName": null,
+          "taskUrlAddress": "/traze/sendLabels",
+          "taskTryStatus": "DONE",
+          "clientId": null,
+          "taskId": 6,
+          "taskInstanceId": 96778,
+          "taskName": "SEND LABELS TRAZE",
+          "tries": [
+            {
+              "message": "Task Id: 6 - AWB: 985-63845810 - Sent by: Cesar augusto Montes - SUCCESS Ticket id 79825ce0-93e0-11f1-b76b-e13039b4a12f Status: succeed",
+              "tryId": 79536,
+              "executionDate": "2026-08-09T10:52:55.500+00:00",
+              "taskTryStatus": "DONE",
+              "taskId": 6,
+              "taskInstanceId": 96778
+            }
+          ]
+        },
+        {
+          "awbId": 981230,
+          "clientName": "CONTINENTAL FARMS LLC",
+          "taskUrlAddress": "/traze/sendClientBookings",
+          "taskTryStatus": "ERROR",
+          "clientId": 50,
+          "taskId": 7,
+          "taskInstanceId": 96779,
+          "taskName": "SEND BOOKINGS TRAZE CLIENT",
+          "tries": [
+            {
+              "message": "Task Id: 7 - Client: CONTINENTAL FARMS LLC - id: 50 - AWB: 985-6384-5810 - Sent by: Viviana Triana - FAILED Ticket id 3caa39c0-9505-11f1-89f2-6bf66f2049ae Errors: {error=quantityInShipment: 3 > quantityInShipmentPending: 2 for the following conditions, message=transactionItemId: 395577d0-8af1-11f1-95c5-8bfa4b8bd0d8, number: CPO001643-0009, quantity: 3, quantityConfirmed: 3, quantityInShipment: 0, quantityShipped: 0, }; {error=systemError, message=getQueueSaveShipment};  Maximum retry attempts reached",
+              "tryId": 79604,
+              "executionDate": "2026-08-10T21:48:40.830+00:00",
+              "taskTryStatus": "ERROR",
+              "taskId": 7,
+              "taskInstanceId": 96779
+            },
+            {
+              "message": "Task Id: 7 - Client: CONTINENTAL FARMS LLC - id: 50 - AWB: 985-6384-5810 - Sent by: Sebastian Moreno - FAILED Ticket id e351fda0-9472-11f1-9ab1-11bfc27ca778 Errors: {error=quantityInShipment: 3 > quantityInShipmentPending: 2 for the following conditions, message=transactionItemId: 395577d0-8af1-11f1-95c5-8bfa4b8bd0d8, number: CPO001643-0009, quantity: 3, quantityConfirmed: 3, quantityInShipment: 0, quantityShipped: 0, }; {error=systemError, message=getQueueSaveShipment};  Maximum retry attempts reached",
+              "tryId": 79554,
+              "executionDate": "2026-08-10T04:21:01.517+00:00",
+              "taskTryStatus": "ERROR",
+              "taskId": 7,
+              "taskInstanceId": 96779
+            },
+            {
+              "message": "Task Id: 7 - Client: CONTINENTAL FARMS LLC - id: 50 - AWB: 985-6384-5810 - Sent by: Cesar augusto Montes - FAILED Ticket id 7b186630-93e0-11f1-b2a9-abe8fe0fdefc Errors: {error=systemError, message=validation error: checkItems error:  Cannot read properties of null (reading 'sourceType')};  Maximum retry attempts reached",
+              "tryId": 79537,
+              "executionDate": "2026-08-09T10:53:03.063+00:00",
+              "taskTryStatus": "ERROR",
+              "taskId": 7,
+              "taskInstanceId": 96779
+            }
+          ]
+        },
+        {
+          "awbId": 981230,
+          "clientName": "CONTINENTAL FARMS LLC",
+          "taskUrlAddress": "/traze/sendClientLabels",
+          "taskTryStatus": "DONE",
+          "clientId": 50,
+          "taskId": 8,
+          "taskInstanceId": 96780,
+          "taskName": "SEND LABELS TRAZE CLIENT",
+          "tries": [
+            {
+              "message": "Task Id: 8 - Client: CONTINENTAL FARMS LLC - id: 50 - AWB: 985-63845810 - Sent by: Viviana Triana - SUCCESS Ticket id fa21cbd0-9505-11f1-aec9-c55049132f90 Status: succeed",
+              "tryId": 79605,
+              "executionDate": "2026-08-10T21:53:53.660+00:00",
+              "taskTryStatus": "DONE",
+              "taskId": 8,
+              "taskInstanceId": 96780
+            }
+          ]
+        }
+      ],
       "urgencia": "rojo",
-      "hoursToEtd": -68.65
+      "hoursToEtd": -69.03
     },
     {
       "id": 981245,
@@ -231,9 +622,50 @@
       "etd": "2026-08-09T18:10:00",
       "awbStatus": 6,
       "awbNumber": "985-63845843",
-      "taskInstances": [],
+      "taskInstances": [
+        {
+          "awbId": 981245,
+          "clientName": null,
+          "taskUrlAddress": "/traze/sendBookings",
+          "taskTryStatus": "DONE",
+          "clientId": null,
+          "taskId": 5,
+          "taskInstanceId": 96781,
+          "taskName": "SEND BOOKINGS TRAZE",
+          "tries": [
+            {
+              "message": "Ticket id f1685520-93e0-11f1-b2a9-abe8fe0fdefc Status succeed",
+              "tryId": 79538,
+              "executionDate": "2026-08-09T06:56:43.563+00:00",
+              "taskTryStatus": "DONE",
+              "taskId": 5,
+              "taskInstanceId": 96781
+            }
+          ]
+        },
+        {
+          "awbId": 981245,
+          "clientName": null,
+          "taskUrlAddress": "/traze/sendLabels",
+          "taskTryStatus": "DONE",
+          "clientId": null,
+          "taskId": 6,
+          "taskInstanceId": 96782,
+          "taskName": "SEND LABELS TRAZE",
+          "tries": [
+            {
+              "message": "Ticket id 1c6f0ac0-93e1-11f1-b76b-e13039b4a12f Status succeed",
+              "tryId": 79539,
+              "executionDate": "2026-08-09T06:57:30.223+00:00",
+              "taskTryStatus": "DONE",
+              "taskId": 6,
+              "taskInstanceId": 96782
+            }
+          ]
+        }
+      ],
       "urgencia": "rojo",
-      "hoursToEtd": -68.65
+      "hoursToEtd": -69.03
     },
     {
       "id": 981258,
@@ -257,13 +689,54 @@
       "etd": "2026-08-09T18:10:00",
       "awbStatus": 6,
       "awbNumber": "985-63847755",
-      "taskInstances": [],
+      "taskInstances": [
+        {
+          "awbId": 981258,
+          "clientName": null,
+          "taskUrlAddress": "/traze/sendBookings",
+          "taskTryStatus": "DONE",
+          "clientId": null,
+          "taskId": 5,
+          "taskInstanceId": 96789,
+          "taskName": "SEND BOOKINGS TRAZE",
+          "tries": [
+            {
+              "message": "Ticket id f0b17650-93e2-11f1-b2a9-abe8fe0fdefc Status succeed",
+              "tryId": 79540,
+              "executionDate": "2026-08-09T07:10:54.863+00:00",
+              "taskTryStatus": "DONE",
+              "taskId": 5,
+              "taskInstanceId": 96789
+            }
+          ]
+        },
+        {
+          "awbId": 981258,
+          "clientName": null,
+          "taskUrlAddress": "/traze/sendLabels",
+          "taskTryStatus": "DONE",
+          "clientId": null,
+          "taskId": 6,
+          "taskInstanceId": 96790,
+          "taskName": "SEND LABELS TRAZE",
+          "tries": [
+            {
+              "message": "Ticket id 2cbe14f0-93e3-11f1-b76b-e13039b4a12f Status succeed",
+              "tryId": 79541,
+              "executionDate": "2026-08-09T07:12:15.277+00:00",
+              "taskTryStatus": "DONE",
+              "taskId": 6,
+              "taskInstanceId": 96790
+            }
+          ]
+        }
+      ],
       "urgencia": "rojo",
-      "hoursToEtd": -68.65
+      "hoursToEtd": -69.03
     },
     {
-      "id": 981373,
-      "awbId": "1 SOLO NATIVE",
+      "id": 981362,
+      "awbId": "TERCEROS 3 san juan-luisiana",
       "airlinePrefix": "985",
       "shipDate": "2026-08-08",
       "processedErrors": 0,
@@ -276,68 +749,16 @@
       "invoiceProducedActivity": "ACTIVE",
       "documentsSendActivity": "ACTIVE",
       "interfaceSend": "PENDING",
-      "pieces": 43,
-      "fullBoxes": 22.630000000000003,
-      "piecesReceived": 812,
-      "fullBoxesReceived": 725.5,
+      "pieces": 416,
+      "fullBoxes": 380.83,
+      "piecesReceived": 416,
+      "fullBoxesReceived": 380.83,
       "etd": "2026-08-09T18:10:00",
       "awbStatus": 6,
-      "awbNumber": "985-63877531",
+      "awbNumber": "985-63845806",
       "taskInstances": [],
       "urgencia": "rojo",
-      "hoursToEtd": -68.65
-    },
-    {
-      "id": 976088,
-      "awbId": "1 SOLO ELITE ",
-      "airlinePrefix": "985",
-      "shipDate": "2026-08-08",
-      "processedErrors": 0,
-      "rateType": "REGULAR",
-      "consignee": "SUNBURST FARMS INC.",
-      "detailConfirmationRequired": true,
-      "piecesConfirmedActivity": "DONE",
-      "weightConfirmedActivity": "DONE",
-      "awbProducedActivity": "DONE",
-      "invoiceProducedActivity": "ACTIVE",
-      "documentsSendActivity": "ACTIVE",
-      "interfaceSend": "PENDING",
-      "pieces": 1239,
-      "fullBoxes": 311.4000000000001,
-      "piecesReceived": 1883,
-      "fullBoxesReceived": 693.42,
-      "etd": "2026-08-09T18:10:00",
-      "awbStatus": 6,
-      "awbNumber": "985-63930112",
-      "taskInstances": [],
-      "urgencia": "rojo",
-      "hoursToEtd": -68.65
-    },
-    {
-      "id": 981086,
-      "awbId": "1 SOLO ELITE ",
-      "airlinePrefix": "369",
-      "shipDate": "2026-08-08",
-      "processedErrors": 0,
-      "rateType": "REGULAR",
-      "consignee": "SUNBURST FARMS INC.",
-      "detailConfirmationRequired": true,
-      "piecesConfirmedActivity": "DONE",
-      "weightConfirmedActivity": "ACTIVE",
-      "awbProducedActivity": "INACTIVE",
-      "invoiceProducedActivity": "ACTIVE",
-      "documentsSendActivity": "INACTIVE",
-      "interfaceSend": "PENDING",
-      "pieces": 1149,
-      "fullBoxes": 287.25,
-      "piecesReceived": 238,
-      "fullBoxesReceived": 99.39,
-      "etd": "2026-08-10T09:00:00",
-      "awbStatus": 6,
-      "awbNumber": "369-99306782",
-      "taskInstances": [],
-      "urgencia": "rojo",
-      "hoursToEtd": -53.82
+      "hoursToEtd": -69.03
     },
     {
       "id": 981248,
@@ -361,9 +782,50 @@
       "etd": "2026-08-10T09:00:00",
       "awbStatus": 6,
       "awbNumber": "369-99307073",
-      "taskInstances": [],
+      "taskInstances": [
+        {
+          "awbId": 981248,
+          "clientName": null,
+          "taskUrlAddress": "/traze/sendBookings",
+          "taskTryStatus": "DONE",
+          "clientId": null,
+          "taskId": 5,
+          "taskInstanceId": 96775,
+          "taskName": "SEND BOOKINGS TRAZE",
+          "tries": [
+            {
+              "message": "Ticket id d66d0110-93ce-11f1-998b-dbb3f8386dcc Status succeed",
+              "tryId": 79526,
+              "executionDate": "2026-08-09T04:46:50.373+00:00",
+              "taskTryStatus": "DONE",
+              "taskId": 5,
+              "taskInstanceId": 96775
+            }
+          ]
+        },
+        {
+          "awbId": 981248,
+          "clientName": null,
+          "taskUrlAddress": "/traze/sendLabels",
+          "taskTryStatus": "DONE",
+          "clientId": null,
+          "taskId": 6,
+          "taskInstanceId": 96776,
+          "taskName": "SEND LABELS TRAZE",
+          "tries": [
+            {
+              "message": "Ticket id 008fbf50-93cf-11f1-8231-617220aa63f6 Status succeed",
+              "tryId": 79527,
+              "executionDate": "2026-08-09T04:47:50.920+00:00",
+              "taskTryStatus": "DONE",
+              "taskId": 6,
+              "taskInstanceId": 96776
+            }
+          ]
+        }
+      ],
       "urgencia": "rojo",
-      "hoursToEtd": -53.82
+      "hoursToEtd": -54.2
     },
     {
       "id": 981246,
@@ -387,9 +849,50 @@
       "etd": "2026-08-10T14:15:00",
       "awbStatus": 6,
       "awbNumber": "985-63845854",
-      "taskInstances": [],
+      "taskInstances": [
+        {
+          "awbId": 981246,
+          "clientName": null,
+          "taskUrlAddress": "/traze/sendBookings",
+          "taskTryStatus": "DONE",
+          "clientId": null,
+          "taskId": 5,
+          "taskInstanceId": 96809,
+          "taskName": "SEND BOOKINGS TRAZE",
+          "tries": [
+            {
+              "message": "Ticket id 6eab91a0-94c2-11f1-83d0-f7be216a0ab6 Status succeed",
+              "tryId": 79590,
+              "executionDate": "2026-08-10T09:50:43.457+00:00",
+              "taskTryStatus": "DONE",
+              "taskId": 5,
+              "taskInstanceId": 96809
+            }
+          ]
+        },
+        {
+          "awbId": 981246,
+          "clientName": null,
+          "taskUrlAddress": "/traze/sendLabels",
+          "taskTryStatus": "DONE",
+          "clientId": null,
+          "taskId": 6,
+          "taskInstanceId": 96810,
+          "taskName": "SEND LABELS TRAZE",
+          "tries": [
+            {
+              "message": "Ticket id 83945a20-94c2-11f1-9aa4-6f4ad59ea37b Status succeed",
+              "tryId": 79591,
+              "executionDate": "2026-08-10T09:50:58.380+00:00",
+              "taskTryStatus": "DONE",
+              "taskId": 6,
+              "taskInstanceId": 96810
+            }
+          ]
+        }
+      ],
       "urgencia": "rojo",
-      "hoursToEtd": -48.57
+      "hoursToEtd": -48.95
     },
     {
       "id": 981394,
@@ -413,9 +916,50 @@
       "etd": "2026-08-11T16:00:00",
       "awbStatus": 6,
       "awbNumber": "992-04717882",
-      "taskInstances": [],
+      "taskInstances": [
+        {
+          "awbId": 981394,
+          "clientName": null,
+          "taskUrlAddress": "/traze/sendBookings",
+          "taskTryStatus": "DONE",
+          "clientId": null,
+          "taskId": 5,
+          "taskInstanceId": 96885,
+          "taskName": "SEND BOOKINGS TRAZE",
+          "tries": [
+            {
+              "message": "Ticket id ec6b4790-9597-11f1-8e25-9585d536d11b Status succeed",
+              "tryId": 79663,
+              "executionDate": "2026-08-11T11:18:57.910+00:00",
+              "taskTryStatus": "DONE",
+              "taskId": 5,
+              "taskInstanceId": 96885
+            }
+          ]
+        },
+        {
+          "awbId": 981394,
+          "clientName": null,
+          "taskUrlAddress": "/traze/sendLabels",
+          "taskTryStatus": "DONE",
+          "clientId": null,
+          "taskId": 6,
+          "taskInstanceId": 96886,
+          "taskName": "SEND LABELS TRAZE",
+          "tries": [
+            {
+              "message": "Ticket id 044e1630-9598-11f1-871f-1de708cfe8c4 Status succeed",
+              "tryId": 79664,
+              "executionDate": "2026-08-11T11:19:17.790+00:00",
+              "taskTryStatus": "DONE",
+              "taskId": 6,
+              "taskInstanceId": 96886
+            }
+          ]
+        }
+      ],
       "urgencia": "rojo",
-      "hoursToEtd": -22.82
+      "hoursToEtd": -23.2
     },
     {
       "id": 981395,
@@ -439,9 +983,50 @@
       "etd": "2026-08-11T16:00:00",
       "awbStatus": 6,
       "awbNumber": "992-04717893",
-      "taskInstances": [],
+      "taskInstances": [
+        {
+          "awbId": 981395,
+          "clientName": null,
+          "taskUrlAddress": "/traze/sendBookings",
+          "taskTryStatus": "DONE",
+          "clientId": null,
+          "taskId": 5,
+          "taskInstanceId": 96887,
+          "taskName": "SEND BOOKINGS TRAZE",
+          "tries": [
+            {
+              "message": "Ticket id 5c589f10-959a-11f1-b434-83a8c1fe2014 Status succeed",
+              "tryId": 79667,
+              "executionDate": "2026-08-11T11:36:14.057+00:00",
+              "taskTryStatus": "DONE",
+              "taskId": 5,
+              "taskInstanceId": 96887
+            }
+          ]
+        },
+        {
+          "awbId": 981395,
+          "clientName": null,
+          "taskUrlAddress": "/traze/sendLabels",
+          "taskTryStatus": "DONE",
+          "clientId": null,
+          "taskId": 6,
+          "taskInstanceId": 96888,
+          "taskName": "SEND LABELS TRAZE",
+          "tries": [
+            {
+              "message": "Ticket id 7c0e9a30-959a-11f1-8bcd-65cd2fbcdfb2 Status succeed",
+              "tryId": 79668,
+              "executionDate": "2026-08-11T11:36:57.093+00:00",
+              "taskTryStatus": "DONE",
+              "taskId": 6,
+              "taskInstanceId": 96888
+            }
+          ]
+        }
+      ],
       "urgencia": "rojo",
-      "hoursToEtd": -22.82
+      "hoursToEtd": -23.2
     },
     {
       "id": 981382,
@@ -465,9 +1050,50 @@
       "etd": "2026-08-11T19:25:00",
       "awbStatus": 6,
       "awbNumber": "985-63878010",
-      "taskInstances": [],
+      "taskInstances": [
+        {
+          "awbId": 981382,
+          "clientName": null,
+          "taskUrlAddress": "/traze/sendBookings",
+          "taskTryStatus": "DONE",
+          "clientId": null,
+          "taskId": 5,
+          "taskInstanceId": 96860,
+          "taskName": "SEND BOOKINGS TRAZE",
+          "tries": [
+            {
+              "message": "Ticket id 558408c0-9598-11f1-8e25-9585d536d11b Status succeed",
+              "tryId": 79665,
+              "executionDate": "2026-08-11T11:21:55.033+00:00",
+              "taskTryStatus": "DONE",
+              "taskId": 5,
+              "taskInstanceId": 96860
+            }
+          ]
+        },
+        {
+          "awbId": 981382,
+          "clientName": null,
+          "taskUrlAddress": "/traze/sendLabels",
+          "taskTryStatus": "DONE",
+          "clientId": null,
+          "taskId": 6,
+          "taskInstanceId": 96861,
+          "taskName": "SEND LABELS TRAZE",
+          "tries": [
+            {
+              "message": "Ticket id 767039f0-9598-11f1-871f-1de708cfe8c4 Status succeed",
+              "tryId": 79666,
+              "executionDate": "2026-08-11T11:22:29.897+00:00",
+              "taskTryStatus": "DONE",
+              "taskId": 6,
+              "taskInstanceId": 96861
+            }
+          ]
+        }
+      ],
       "urgencia": "rojo",
-      "hoursToEtd": -19.4
+      "hoursToEtd": -19.78
     },
     {
       "id": 981421,
@@ -491,9 +1117,50 @@
       "etd": "2026-08-11T19:25:00",
       "awbStatus": 6,
       "awbNumber": "985-63878533",
-      "taskInstances": [],
+      "taskInstances": [
+        {
+          "awbId": 981421,
+          "clientName": null,
+          "taskUrlAddress": "/traze/sendBookings",
+          "taskTryStatus": "DONE",
+          "clientId": null,
+          "taskId": 5,
+          "taskInstanceId": 96864,
+          "taskName": "SEND BOOKINGS TRAZE",
+          "tries": [
+            {
+              "message": "Ticket id 78927550-95a6-11f1-a03d-f52d4f2259ed Status succeed",
+              "tryId": 79684,
+              "executionDate": "2026-08-11T13:02:55.353+00:00",
+              "taskTryStatus": "DONE",
+              "taskId": 5,
+              "taskInstanceId": 96864
+            }
+          ]
+        },
+        {
+          "awbId": 981421,
+          "clientName": null,
+          "taskUrlAddress": "/traze/sendLabels",
+          "taskTryStatus": "DONE",
+          "clientId": null,
+          "taskId": 6,
+          "taskInstanceId": 96865,
+          "taskName": "SEND LABELS TRAZE",
+          "tries": [
+            {
+              "message": "Ticket id f4ff7c50-95a6-11f1-af85-41810dbee18a Status succeed",
+              "tryId": 79685,
+              "executionDate": "2026-08-11T13:06:14.077+00:00",
+              "taskTryStatus": "DONE",
+              "taskId": 6,
+              "taskInstanceId": 96865
+            }
+          ]
+        }
+      ],
       "urgencia": "rojo",
-      "hoursToEtd": -19.4
+      "hoursToEtd": -19.78
     },
     {
       "id": 981424,
@@ -517,9 +1184,50 @@
       "etd": "2026-08-11T19:25:00",
       "awbStatus": 6,
       "awbNumber": "985-63928443",
-      "taskInstances": [],
+      "taskInstances": [
+        {
+          "awbId": 981424,
+          "clientName": null,
+          "taskUrlAddress": "/traze/sendBookings",
+          "taskTryStatus": "DONE",
+          "clientId": null,
+          "taskId": 5,
+          "taskInstanceId": 96866,
+          "taskName": "SEND BOOKINGS TRAZE",
+          "tries": [
+            {
+              "message": "Ticket id 866bba00-95a7-11f1-a03d-f52d4f2259ed Status succeed",
+              "tryId": 79688,
+              "executionDate": "2026-08-11T13:10:49.857+00:00",
+              "taskTryStatus": "DONE",
+              "taskId": 5,
+              "taskInstanceId": 96866
+            }
+          ]
+        },
+        {
+          "awbId": 981424,
+          "clientName": null,
+          "taskUrlAddress": "/traze/sendLabels",
+          "taskTryStatus": "DONE",
+          "clientId": null,
+          "taskId": 6,
+          "taskInstanceId": 96867,
+          "taskName": "SEND LABELS TRAZE",
+          "tries": [
+            {
+              "message": "Ticket id b425a8c0-95a7-11f1-af85-41810dbee18a Status succeed",
+              "tryId": 79689,
+              "executionDate": "2026-08-11T13:11:36.337+00:00",
+              "taskTryStatus": "DONE",
+              "taskId": 6,
+              "taskInstanceId": 96867
+            }
+          ]
+        }
+      ],
       "urgencia": "rojo",
-      "hoursToEtd": -19.4
+      "hoursToEtd": -19.78
     },
     {
       "id": 981426,
@@ -543,66 +1251,63 @@
       "etd": "2026-08-11T19:25:00",
       "awbStatus": 6,
       "awbNumber": "985-63928454",
-      "taskInstances": [],
+      "taskInstances": [
+        {
+          "awbId": 981426,
+          "clientName": null,
+          "taskUrlAddress": "/traze/sendBookings",
+          "taskTryStatus": "ERROR",
+          "clientId": null,
+          "taskId": 5,
+          "taskInstanceId": 96870,
+          "taskName": "SEND BOOKINGS TRAZE",
+          "tries": [
+            {
+              "message": "Task Id: 5 - AWB: 985-63928454 - Sent by: Cesar augusto Montes - FAILED Ticket id 2463afc0-9593-11f1-9982-bb2c0a7845f7 Errors: {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=systemError, message=getQueueSaveShipment};  Maximum retry attempts reached",
+              "tryId": 79649,
+              "executionDate": "2026-08-11T14:44:28.687+00:00",
+              "taskTryStatus": "ERROR",
+              "taskId": 5,
+              "taskInstanceId": 96870
+            },
+            {
+              "message": "Ticket id 3e855790-95a3-11f1-a03d-f52d4f2259ed Status succeed",
+              "tryId": 79677,
+              "executionDate": "2026-08-11T12:40:09.927+00:00",
+              "taskTryStatus": "DONE",
+              "taskId": 5,
+              "taskInstanceId": 96870
+            }
+          ]
+        },
+        {
+          "awbId": 981426,
+          "clientName": null,
+          "taskUrlAddress": "/traze/sendLabels",
+          "taskTryStatus": "DONE",
+          "clientId": null,
+          "taskId": 6,
+          "taskInstanceId": 96871,
+          "taskName": "SEND LABELS TRAZE",
+          "tries": [
+            {
+              "message": "Ticket id 7bbc1e50-95a3-11f1-adc8-c139e07b5009 Status succeed",
+              "tryId": 79678,
+              "executionDate": "2026-08-11T12:41:23.177+00:00",
+              "taskTryStatus": "DONE",
+              "taskId": 6,
+              "taskInstanceId": 96871
+            }
+          ]
+        }
+      ],
       "urgencia": "rojo",
-      "hoursToEtd": -19.4
+      "hoursToEtd": -19.78
     },
     {
-      "id": 981429,
-      "awbId": "1 SOLO ELITE  native",
+      "id": 981427,
+      "awbId": "TERCEROS 3 san juan y luisiana",
       "airlinePrefix": "985",
-      "shipDate": "2026-08-10",
-      "processedErrors": 0,
-      "rateType": "REGULAR",
-      "consignee": "SUNBURST FARMS INC.",
-      "detailConfirmationRequired": true,
-      "piecesConfirmedActivity": "DONE",
-      "weightConfirmedActivity": "ACTIVE",
-      "awbProducedActivity": "INACTIVE",
-      "invoiceProducedActivity": "ACTIVE",
-      "documentsSendActivity": "INACTIVE",
-      "interfaceSend": "PENDING",
-      "pieces": 160,
-      "fullBoxes": 143.83,
-      "piecesReceived": 693,
-      "fullBoxesReceived": 593,
-      "etd": "2026-08-11T19:25:00",
-      "awbStatus": 6,
-      "awbNumber": "985-63928476",
-      "taskInstances": [],
-      "urgencia": "rojo",
-      "hoursToEtd": -19.4
-    },
-    {
-      "id": 976089,
-      "awbId": "1 SOLO ELITE ",
-      "airlinePrefix": "985",
-      "shipDate": "2026-08-10",
-      "processedErrors": 0,
-      "rateType": "REGULAR",
-      "consignee": "SUNBURST FARMS INC.",
-      "detailConfirmationRequired": true,
-      "piecesConfirmedActivity": "DONE",
-      "weightConfirmedActivity": "ACTIVE",
-      "awbProducedActivity": "INACTIVE",
-      "invoiceProducedActivity": "ACTIVE",
-      "documentsSendActivity": "INACTIVE",
-      "interfaceSend": "PENDING",
-      "pieces": 1493,
-      "fullBoxes": 368.88,
-      "piecesReceived": 1189,
-      "fullBoxesReceived": 360.89,
-      "etd": "2026-08-11T19:25:00",
-      "awbStatus": 6,
-      "awbNumber": "985-63930123",
-      "taskInstances": [],
-      "urgencia": "rojo",
-      "hoursToEtd": -19.4
-    },
-    {
-      "id": 981105,
-      "awbId": "1 SOLO ELITE ",
-      "airlinePrefix": "369",
       "shipDate": "2026-08-10",
       "processedErrors": 0,
       "rateType": "REGULAR",
@@ -614,16 +1319,16 @@
       "invoiceProducedActivity": "ACTIVE",
       "documentsSendActivity": "ACTIVE",
       "interfaceSend": "PENDING",
-      "pieces": 1284,
-      "fullBoxes": 321,
-      "piecesReceived": 1116,
-      "fullBoxesReceived": 667.01,
-      "etd": "2026-08-11T21:30:00",
+      "pieces": 546,
+      "fullBoxes": 299.5,
+      "piecesReceived": 546,
+      "fullBoxesReceived": 299.5,
+      "etd": "2026-08-12T00:00:00",
       "awbStatus": 6,
-      "awbNumber": "369-99306970",
+      "awbNumber": "985-63928465",
       "taskInstances": [],
       "urgencia": "rojo",
-      "hoursToEtd": -17.32
+      "hoursToEtd": -15.2
     },
     {
       "id": 981428,
@@ -647,65 +1352,54 @@
       "etd": "2026-08-12T05:00:00",
       "awbStatus": 6,
       "awbNumber": "729-94975775",
-      "taskInstances": [],
+      "taskInstances": [
+        {
+          "awbId": 981428,
+          "clientName": null,
+          "taskUrlAddress": "/traze/sendBookings",
+          "taskTryStatus": "DONE",
+          "clientId": null,
+          "taskId": 5,
+          "taskInstanceId": 96895,
+          "taskName": "SEND BOOKINGS TRAZE",
+          "tries": [
+            {
+              "message": "Ticket id de7929b0-9554-11f1-85f9-45c79a2fcc97 Status succeed",
+              "tryId": 79614,
+              "executionDate": "2026-08-11T03:18:58.790+00:00",
+              "taskTryStatus": "DONE",
+              "taskId": 5,
+              "taskInstanceId": 96895
+            }
+          ]
+        },
+        {
+          "awbId": 981428,
+          "clientName": null,
+          "taskUrlAddress": "/traze/sendLabels",
+          "taskTryStatus": "DONE",
+          "clientId": null,
+          "taskId": 6,
+          "taskInstanceId": 96896,
+          "taskName": "SEND LABELS TRAZE",
+          "tries": [
+            {
+              "message": "Ticket id 3038e5b0-9555-11f1-9d37-5b5ac3077365 Status succeed",
+              "tryId": 79615,
+              "executionDate": "2026-08-11T03:20:54.587+00:00",
+              "taskTryStatus": "DONE",
+              "taskId": 6,
+              "taskInstanceId": 96896
+            }
+          ]
+        }
+      ],
       "urgencia": "rojo",
-      "hoursToEtd": -9.82
+      "hoursToEtd": -10.2
     },
     {
-      "id": 981433,
-      "awbId": "1 SOLO ELITE ",
-      "airlinePrefix": "729",
-      "shipDate": "2026-08-10",
-      "processedErrors": 0,
-      "rateType": "REGULAR",
-      "consignee": "SUNBURST FARMS INC.",
-      "detailConfirmationRequired": true,
-      "piecesConfirmedActivity": "DONE",
-      "weightConfirmedActivity": "DONE",
-      "awbProducedActivity": "DONE",
-      "invoiceProducedActivity": "ACTIVE",
-      "documentsSendActivity": "ACTIVE",
-      "interfaceSend": "PENDING",
-      "pieces": 1140,
-      "fullBoxes": 344.83,
-      "piecesReceived": 193,
-      "fullBoxesReceived": 96.13,
-      "etd": "2026-08-12T05:00:00",
-      "awbStatus": 6,
-      "awbNumber": "729-94975812",
-      "taskInstances": [],
-      "urgencia": "rojo",
-      "hoursToEtd": -9.82
-    },
-    {
-      "id": 981108,
-      "awbId": "1 SOLO ELITE ",
-      "airlinePrefix": "369",
-      "shipDate": "2026-08-11",
-      "processedErrors": 0,
-      "rateType": "REGULAR",
-      "consignee": "SUNBURST FARMS INC.",
-      "detailConfirmationRequired": true,
-      "piecesConfirmedActivity": "DONE",
-      "weightConfirmedActivity": "DONE",
-      "awbProducedActivity": "DONE",
-      "invoiceProducedActivity": "ACTIVE",
-      "documentsSendActivity": "ACTIVE",
-      "interfaceSend": "PENDING",
-      "pieces": 1286,
-      "fullBoxes": 321.5,
-      "piecesReceived": 274,
-      "fullBoxesReceived": 125.88,
-      "etd": "2026-08-12T12:30:00",
-      "awbStatus": 6,
-      "awbNumber": "369-99306992",
-      "taskInstances": [],
-      "urgencia": "rojo",
-      "hoursToEtd": -2.32
-    },
-    {
-      "id": 981500,
-      "awbId": "TERCEROS 1 FRESH STAR ",
+      "id": 981524,
+      "awbId": "TERCEROS san juan - luisiana",
       "airlinePrefix": "985",
       "shipDate": "2026-08-11",
       "processedErrors": 0,
@@ -718,172 +1412,16 @@
       "invoiceProducedActivity": "ACTIVE",
       "documentsSendActivity": "ACTIVE",
       "interfaceSend": "PENDING",
-      "pieces": 218,
-      "fullBoxes": 109,
-      "piecesReceived": 218,
-      "fullBoxesReceived": 109,
+      "pieces": 699,
+      "fullBoxes": 479.83,
+      "piecesReceived": 564,
+      "fullBoxesReceived": 344.83,
       "etd": "2026-08-12T12:50:00",
       "awbStatus": 6,
-      "awbNumber": "985-63925945",
+      "awbNumber": "985-63969651",
       "taskInstances": [],
       "urgencia": "rojo",
-      "hoursToEtd": -1.98
-    },
-    {
-      "id": 981504,
-      "awbId": "TERCEROS 1",
-      "airlinePrefix": "985",
-      "shipDate": "2026-08-11",
-      "processedErrors": 0,
-      "rateType": "REGULAR",
-      "consignee": "SUNBURST FARMS INC.",
-      "detailConfirmationRequired": true,
-      "piecesConfirmedActivity": "ACTIVE",
-      "weightConfirmedActivity": "INACTIVE",
-      "awbProducedActivity": "INACTIVE",
-      "invoiceProducedActivity": "ACTIVE",
-      "documentsSendActivity": "INACTIVE",
-      "interfaceSend": "PENDING",
-      "pieces": 455,
-      "fullBoxes": 170.79,
-      "piecesReceived": 448,
-      "fullBoxesReceived": 168.78,
-      "etd": "2026-08-12T12:50:00",
-      "awbStatus": 5,
-      "awbNumber": "985-63925956",
-      "taskInstances": [],
-      "urgencia": "rojo",
-      "hoursToEtd": -1.98
-    },
-    {
-      "id": 981485,
-      "awbId": "TERCEROS CONTINENTAL",
-      "airlinePrefix": "985",
-      "shipDate": "2026-08-11",
-      "processedErrors": 0,
-      "rateType": "REGULAR",
-      "consignee": "SUNBURST FARMS INC.",
-      "detailConfirmationRequired": true,
-      "piecesConfirmedActivity": "DONE",
-      "weightConfirmedActivity": "ACTIVE",
-      "awbProducedActivity": "INACTIVE",
-      "invoiceProducedActivity": "ACTIVE",
-      "documentsSendActivity": "INACTIVE",
-      "interfaceSend": "PENDING",
-      "pieces": 68,
-      "fullBoxes": 26,
-      "piecesReceived": 68,
-      "fullBoxesReceived": 26,
-      "etd": "2026-08-12T12:50:00",
-      "awbStatus": 5,
-      "awbNumber": "985-63930101",
-      "taskInstances": [],
-      "urgencia": "rojo",
-      "hoursToEtd": -1.98
-    },
-    {
-      "id": 976090,
-      "awbId": "1 SOLO ELITE ",
-      "airlinePrefix": "985",
-      "shipDate": "2026-08-11",
-      "processedErrors": 0,
-      "rateType": "REGULAR",
-      "consignee": "SUNBURST FARMS INC.",
-      "detailConfirmationRequired": true,
-      "piecesConfirmedActivity": "DONE",
-      "weightConfirmedActivity": "ACTIVE",
-      "awbProducedActivity": "INACTIVE",
-      "invoiceProducedActivity": "ACTIVE",
-      "documentsSendActivity": "INACTIVE",
-      "interfaceSend": "PENDING",
-      "pieces": 1084,
-      "fullBoxes": 272.33000000000004,
-      "piecesReceived": 840,
-      "fullBoxesReceived": 494.76,
-      "etd": "2026-08-12T12:50:00",
-      "awbStatus": 5,
-      "awbNumber": "985-63930134",
-      "taskInstances": [],
-      "urgencia": "rojo",
-      "hoursToEtd": -1.98
-    },
-    {
-      "id": 981505,
-      "awbId": "TERCEROS 2",
-      "airlinePrefix": "985",
-      "shipDate": "2026-08-11",
-      "processedErrors": 0,
-      "rateType": "REGULAR",
-      "consignee": "SUNBURST FARMS INC.",
-      "detailConfirmationRequired": true,
-      "piecesConfirmedActivity": "DONE",
-      "weightConfirmedActivity": "ACTIVE",
-      "awbProducedActivity": "INACTIVE",
-      "invoiceProducedActivity": "ACTIVE",
-      "documentsSendActivity": "INACTIVE",
-      "interfaceSend": "PENDING",
-      "pieces": 519,
-      "fullBoxes": 239.5,
-      "piecesReceived": 519,
-      "fullBoxesReceived": 239.5,
-      "etd": "2026-08-12T12:50:00",
-      "awbStatus": 5,
-      "awbNumber": "985-63969636",
-      "taskInstances": [],
-      "urgencia": "rojo",
-      "hoursToEtd": -1.98
-    },
-    {
-      "id": 981526,
-      "awbId": "1 SOLO ELITE  native",
-      "airlinePrefix": "985",
-      "shipDate": "2026-08-11",
-      "processedErrors": 0,
-      "rateType": "REGULAR",
-      "consignee": "SUNBURST FARMS INC.",
-      "detailConfirmationRequired": true,
-      "piecesConfirmedActivity": "DONE",
-      "weightConfirmedActivity": "ACTIVE",
-      "awbProducedActivity": "INACTIVE",
-      "invoiceProducedActivity": "ACTIVE",
-      "documentsSendActivity": "INACTIVE",
-      "interfaceSend": "PENDING",
-      "pieces": 70,
-      "fullBoxes": 49,
-      "piecesReceived": 796,
-      "fullBoxesReceived": 755.5,
-      "etd": "2026-08-12T12:50:00",
-      "awbStatus": 6,
-      "awbNumber": "985-63969662",
-      "taskInstances": [],
-      "urgencia": "rojo",
-      "hoursToEtd": -1.98
-    },
-    {
-      "id": 981621,
-      "awbId": "1 SOLO ELITE  BLOOMSTAR",
-      "airlinePrefix": "985",
-      "shipDate": "2026-08-11",
-      "processedErrors": 0,
-      "rateType": "REGULAR",
-      "consignee": "SUNBURST FARMS INC.",
-      "detailConfirmationRequired": true,
-      "piecesConfirmedActivity": "DONE",
-      "weightConfirmedActivity": "ACTIVE",
-      "awbProducedActivity": "INACTIVE",
-      "invoiceProducedActivity": "ACTIVE",
-      "documentsSendActivity": "INACTIVE",
-      "interfaceSend": "PENDING",
-      "pieces": 303,
-      "fullBoxes": 72,
-      "piecesReceived": 1390,
-      "fullBoxesReceived": 476.65999999999997,
-      "etd": "2026-08-12T12:50:00",
-      "awbStatus": 5,
-      "awbNumber": "985-63969673",
-      "taskInstances": [],
-      "urgencia": "rojo",
-      "hoursToEtd": -1.98
+      "hoursToEtd": -2.36
     },
     {
       "id": 981480,
@@ -907,9 +1445,74 @@
       "etd": "2026-08-12T16:00:00",
       "awbStatus": 6,
       "awbNumber": "992-04718070",
-      "taskInstances": [],
-      "urgencia": "naranja",
-      "hoursToEtd": 1.18
+      "taskInstances": [
+        {
+          "awbId": 981480,
+          "clientName": null,
+          "taskUrlAddress": "/traze/sendBookings",
+          "taskTryStatus": "ERROR",
+          "clientId": null,
+          "taskId": 5,
+          "taskInstanceId": 96939,
+          "taskName": "SEND BOOKINGS TRAZE",
+          "tries": [
+            {
+              "message": "Task Id: 5 - AWB: 992-04718070 - Sent by: Deybe Gualdron - FAILED Ticket id 3b6d14a0-965f-11f1-8434-f1dacaf605ad Errors: {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=systemError, message=getQueueSaveShipment};  Maximum retry attempts reached",
+              "tryId": 79746,
+              "executionDate": "2026-08-12T15:05:19.663+00:00",
+              "taskTryStatus": "ERROR",
+              "taskId": 5,
+              "taskInstanceId": 96939
+            },
+            {
+              "message": "Ticket id 8e21df00-965f-11f1-8434-f1dacaf605ad Status succeed",
+              "tryId": 79747,
+              "executionDate": "2026-08-12T11:07:58.623+00:00",
+              "taskTryStatus": "DONE",
+              "taskId": 5,
+              "taskInstanceId": 96939
+            },
+            {
+              "message": "Task Id: 5 - AWB: 992-04718070 - Sent by: JUAN DIEGO LEON - FAILED Ticket id 526caf00-963a-11f1-851e-49af9e753f6c Errors: {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=systemError, message=getQueueSaveShipment};  Maximum retry attempts reached",
+              "tryId": 79734,
+              "executionDate": "2026-08-12T10:41:11.867+00:00",
+              "taskTryStatus": "ERROR",
+              "taskId": 5,
+              "taskInstanceId": 96939
+            },
+            {
+              "message": "Task Id: 5 - AWB: 992-04718070 - Sent by: JUAN DIEGO LEON - FAILED Ticket id 3bd54c20-963a-11f1-851e-49af9e753f6c Errors: {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=systemError, message=getQueueSaveShipment};  Maximum retry attempts reached",
+              "tryId": 79733,
+              "executionDate": "2026-08-12T10:40:33.977+00:00",
+              "taskTryStatus": "ERROR",
+              "taskId": 5,
+              "taskInstanceId": 96939
+            }
+          ]
+        },
+        {
+          "awbId": 981480,
+          "clientName": null,
+          "taskUrlAddress": "/traze/sendLabels",
+          "taskTryStatus": "DONE",
+          "clientId": null,
+          "taskId": 6,
+          "taskInstanceId": 96940,
+          "taskName": "SEND LABELS TRAZE",
+          "tries": [
+            {
+              "message": "Ticket id b53f4c80-965f-11f1-908a-eb54f60de9d1 Status succeed",
+              "tryId": 79748,
+              "executionDate": "2026-08-12T11:08:43.923+00:00",
+              "taskTryStatus": "DONE",
+              "taskId": 6,
+              "taskInstanceId": 96940
+            }
+          ]
+        }
+      ],
+      "urgencia": "rojo",
+      "hoursToEtd": 0.8
     },
     {
       "id": 981503,
@@ -933,35 +1536,50 @@
       "etd": "2026-08-12T16:00:00",
       "awbStatus": 6,
       "awbNumber": "992-04718081",
-      "taskInstances": [],
-      "urgencia": "naranja",
-      "hoursToEtd": 1.18
-    },
-    {
-      "id": 981514,
-      "awbId": "1 SOLO ELITE ",
-      "airlinePrefix": "729",
-      "shipDate": "2026-08-11",
-      "processedErrors": 0,
-      "rateType": "REGULAR",
-      "consignee": "SUNBURST FARMS INC.",
-      "detailConfirmationRequired": true,
-      "piecesConfirmedActivity": "DONE",
-      "weightConfirmedActivity": "DONE",
-      "awbProducedActivity": "DONE",
-      "invoiceProducedActivity": "ACTIVE",
-      "documentsSendActivity": "ACTIVE",
-      "interfaceSend": "PENDING",
-      "pieces": 1027,
-      "fullBoxes": 256.83000000000004,
-      "piecesReceived": 272,
-      "fullBoxesReceived": 256,
-      "etd": "2026-08-12T18:00:00",
-      "awbStatus": 6,
-      "awbNumber": "729-94975860",
-      "taskInstances": [],
-      "urgencia": "verde",
-      "hoursToEtd": 3.18
+      "taskInstances": [
+        {
+          "awbId": 981503,
+          "clientName": null,
+          "taskUrlAddress": "/traze/sendBookings",
+          "taskTryStatus": "DONE",
+          "clientId": null,
+          "taskId": 5,
+          "taskInstanceId": 96941,
+          "taskName": "SEND BOOKINGS TRAZE",
+          "tries": [
+            {
+              "message": "Ticket id 1ea2d550-963f-11f1-aa34-8b97cfacdd41 Status succeed",
+              "tryId": 79735,
+              "executionDate": "2026-08-12T07:15:37.650+00:00",
+              "taskTryStatus": "DONE",
+              "taskId": 5,
+              "taskInstanceId": 96941
+            }
+          ]
+        },
+        {
+          "awbId": 981503,
+          "clientName": null,
+          "taskUrlAddress": "/traze/sendLabels",
+          "taskTryStatus": "DONE",
+          "clientId": null,
+          "taskId": 6,
+          "taskInstanceId": 96942,
+          "taskName": "SEND LABELS TRAZE",
+          "tries": [
+            {
+              "message": "Ticket id 29c83a10-963f-11f1-9e47-199db4074882 Status succeed",
+              "tryId": 79736,
+              "executionDate": "2026-08-12T07:15:46.133+00:00",
+              "taskTryStatus": "DONE",
+              "taskId": 6,
+              "taskInstanceId": 96942
+            }
+          ]
+        }
+      ],
+      "urgencia": "rojo",
+      "hoursToEtd": 0.8
     },
     {
       "id": 981536,
@@ -985,9 +1603,66 @@
       "etd": "2026-08-12T18:00:00",
       "awbStatus": 6,
       "awbNumber": "729-94975893",
-      "taskInstances": [],
-      "urgencia": "verde",
-      "hoursToEtd": 3.18
+      "taskInstances": [
+        {
+          "awbId": 981536,
+          "clientName": null,
+          "taskUrlAddress": "/traze/sendBookings",
+          "taskTryStatus": "ERROR",
+          "clientId": null,
+          "taskId": 5,
+          "taskInstanceId": 96989,
+          "taskName": "SEND BOOKINGS TRAZE",
+          "tries": [
+            {
+              "message": "Task Id: 5 - AWB: 729-94975893 - Sent by: JUAN DIEGO LEON - FAILED Ticket id e087d6a0-961e-11f1-91e2-db0edb0ef91f Errors: {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=systemError, message=getQueueSaveShipment};  Maximum retry attempts reached",
+              "tryId": 79712,
+              "executionDate": "2026-08-12T07:24:39.407+00:00",
+              "taskTryStatus": "ERROR",
+              "taskId": 5,
+              "taskInstanceId": 96989
+            },
+            {
+              "message": "Task Id: 5 - AWB: 729-94975893 - Sent by: JUAN DIEGO LEON - FAILED Ticket id a9aba620-961e-11f1-91e2-db0edb0ef91f Errors: {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=systemError, message=getQueueSaveShipment};  Maximum retry attempts reached",
+              "tryId": 79711,
+              "executionDate": "2026-08-12T07:23:12.300+00:00",
+              "taskTryStatus": "ERROR",
+              "taskId": 5,
+              "taskInstanceId": 96989
+            },
+            {
+              "message": "Ticket id 7a1c65b0-961f-11f1-91e2-db0edb0ef91f Status succeed",
+              "tryId": 79713,
+              "executionDate": "2026-08-12T03:29:07.880+00:00",
+              "taskTryStatus": "DONE",
+              "taskId": 5,
+              "taskInstanceId": 96989
+            }
+          ]
+        },
+        {
+          "awbId": 981536,
+          "clientName": null,
+          "taskUrlAddress": "/traze/sendLabels",
+          "taskTryStatus": "DONE",
+          "clientId": null,
+          "taskId": 6,
+          "taskInstanceId": 96990,
+          "taskName": "SEND LABELS TRAZE",
+          "tries": [
+            {
+              "message": "Ticket id 85d83e10-961f-11f1-ae75-c794c7045603 Status succeed",
+              "tryId": 79714,
+              "executionDate": "2026-08-12T03:29:16.597+00:00",
+              "taskTryStatus": "DONE",
+              "taskId": 6,
+              "taskInstanceId": 96990
+            }
+          ]
+        }
+      ],
+      "urgencia": "amarillo",
+      "hoursToEtd": 2.8
     },
     {
       "id": 981486,
@@ -1011,9 +1686,39 @@
       "etd": "2026-08-13T06:20:00",
       "awbStatus": 6,
       "awbNumber": "985-63925934",
-      "taskInstances": [],
+      "taskInstances": [
+        {
+          "awbId": 981486,
+          "clientName": null,
+          "taskUrlAddress": "/traze/sendBookings",
+          "taskTryStatus": "ERROR",
+          "clientId": null,
+          "taskId": 5,
+          "taskInstanceId": 96953,
+          "taskName": "SEND BOOKINGS TRAZE",
+          "tries": [
+            {
+              "message": "Task Id: 5 - AWB: 985-63925934 - Sent by: JUAN DIEGO LEON - FAILED Ticket id e0159330-9626-11f1-a181-3b7ffdd672b4 Errors: {error=items field, message=items.measurements.dimensions field is required}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.dimensions field is required}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=systemError, message=getQueueSaveShipment};  Maximum retry attempts reached",
+              "tryId": 79718,
+              "executionDate": "2026-08-12T08:21:59.600+00:00",
+              "taskTryStatus": "ERROR",
+              "taskId": 5,
+              "taskInstanceId": 96953
+            },
+            {
+              "message": "Task Id: 5 - AWB: 985-63925934 - Sent by: JUAN DIEGO LEON - FAILED Ticket id ba786470-9623-11f1-91e2-db0edb0ef91f Errors: {error=items field, message=items.measurements.dimensions field is required}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=items field, message=items.measurements.dimensions field is required}; {error=items field, message=items.measurements.quantities.equivalent field is required}; {error=items field, message=items.measurements.quantities.equivalent should be a number}; {error=systemError, message=getQueueSaveShipment};  Maximum retry attempts reached",
+              "tryId": 79715,
+              "executionDate": "2026-08-12T07:59:23.137+00:00",
+              "taskTryStatus": "ERROR",
+              "taskId": 5,
+              "taskInstanceId": 96953
+            }
+          ]
+        }
+      ],
       "urgencia": "verde",
-      "hoursToEtd": 15.52
+      "hoursToEtd": 15.14
     }
-  ]
+  ],
+  "erroresEnriquecimiento": []
 }
