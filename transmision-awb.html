@@ -142,13 +142,50 @@
     background:var(--card);
     box-shadow:var(--shadow-sm);
     border:1px solid var(--border);
+    cursor:pointer;
+    font-family:var(--font-body);
+    transition:transform .1s ease, box-shadow .15s ease, opacity .15s ease;
   }
+  .chip:hover{ box-shadow:var(--shadow-md); }
+  .chip:active{ transform:scale(.97); }
   .chip .dot{ width:9px; height:9px; border-radius:50%; }
   .chip.rojo{ color:var(--u-rojo); } .chip.rojo .dot{ background:var(--u-rojo); }
   .chip.naranja{ color:#B25E00; } .chip.naranja .dot{ background:var(--u-naranja); }
   .chip.amarillo{ color:#8A6600; } .chip.amarillo .dot{ background:var(--u-amarillo); }
   .chip.verde{ color:var(--u-verde); } .chip.verde .dot{ background:var(--u-verde); }
   .chip.total{ color:var(--kn-navy); background:var(--kn-navy-soft); border-color:transparent; }
+
+  /* Estado activo: el chip seleccionado se resalta; los demas se atenuan */
+  .chip.activo{ box-shadow:0 0 0 2px currentColor, var(--shadow-sm); }
+  .summary.con-filtro .chip:not(.activo){ opacity:.45; }
+
+  /* ---------- Barra de filtro de texto ---------- */
+  .filtros-bar{
+    max-width:1100px; margin:16px auto 0; padding:0 20px;
+    display:flex; align-items:center; gap:10px; flex-wrap:wrap;
+  }
+  #inputBuscar{
+    flex:1; min-width:220px;
+    padding:10px 14px;
+    border-radius:10px;
+    border:1px solid var(--border);
+    background:var(--card);
+    font-family:var(--font-body);
+    font-size:13.5px;
+    color:var(--text);
+    box-shadow:var(--shadow-sm);
+    outline:none;
+  }
+  #inputBuscar:focus{ border-color:var(--kn-orange); box-shadow:0 0 0 3px var(--kn-orange-soft); }
+  #inputBuscar::placeholder{ color:var(--text-faint); }
+  .pill-btn-limpiar{
+    background:var(--card); color:var(--text-soft);
+    border:1px solid var(--border); padding:9px 14px;
+    border-radius:999px; font-weight:700; font-size:12.5px;
+    cursor:pointer; font-family:var(--font-body);
+    box-shadow:var(--shadow-sm);
+  }
+  .pill-btn-limpiar:hover{ color:var(--kn-navy); border-color:var(--kn-navy); }
 
   /* ---------- Contenedor lista ---------- */
   main{ max-width:1100px; margin:0 auto; padding:18px 20px 60px; }
@@ -358,6 +395,10 @@
 <div class="summary" id="summary"></div>
 
 <main>
+  <div class="filtros-bar">
+    <input type="search" id="inputBuscar" placeholder="Buscar por AWB, consignee o referencia…" autocomplete="off">
+    <button class="pill-btn-limpiar" id="btnLimpiarFiltros" hidden>Limpiar filtros</button>
+  </div>
   <div class="meta-bar">
     <span id="ultimaActualizacion">Cargando datos…</span>
     <span id="totalAwbs"></span>
@@ -397,6 +438,8 @@ const LABEL_URGENCIA = { rojo: 'Rojo', naranja: 'Naranja', amarillo: 'Amarillo',
 const ESTADOS_COMPLETADO = ['DONE', 'COMPLETED', 'COMPLETADO', 'FINALIZADO', 'SUCCESS', 'SUCCESSFUL', 'OK'];
 
 let ultimaData = null;
+let filtroUrgencia = 'todos';
+let filtroTexto = '';
 const abiertas = new Set();
 let resueltasAbiertas = false;
 
@@ -493,24 +536,48 @@ function procesarAwbs(data){
   });
 }
 
+function filtrarPorTexto(lista, texto){
+  if(!texto) return lista;
+  const q = texto.trim().toLowerCase();
+  if(!q) return lista;
+  return lista.filter(a =>
+    (a.awbNumber || '').toLowerCase().includes(q) ||
+    (a.consignee || '').toLowerCase().includes(q) ||
+    (a.awbId || '').toLowerCase().includes(q) ||
+    String(a.id ?? '').toLowerCase().includes(q)
+  );
+}
+
 function render(data){
   const procesadas = procesarAwbs(data);
-  const pendientes = procesadas.filter(a => !a.resueltaPorTasks).sort((x, y) => {
+  const pendientesTodas = procesadas.filter(a => !a.resueltaPorTasks).sort((x, y) => {
     if (ORDEN_URGENCIA[x.urgencia] !== ORDEN_URGENCIA[y.urgencia]) return ORDEN_URGENCIA[x.urgencia] - ORDEN_URGENCIA[y.urgencia];
     if (x.horas === null) return 1;
     if (y.horas === null) return -1;
     return x.horas - y.horas;
   });
-  const resueltas = procesadas.filter(a => a.resueltaPorTasks);
+  const resueltasTodas = procesadas.filter(a => a.resueltaPorTasks);
 
-  renderResumen(pendientes);
+  // Filtro de texto se aplica primero (a ambas listas); los chips cuentan sobre este resultado.
+  const pendientesTexto = filtrarPorTexto(pendientesTodas, filtroTexto);
+  const resueltasTexto = filtrarPorTexto(resueltasTodas, filtroTexto);
+
+  renderResumen(pendientesTexto);
+
+  // Filtro de urgencia (chip activo) se aplica solo a las pendientes.
+  const pendientes = filtroUrgencia === 'todos'
+    ? pendientesTexto
+    : pendientesTexto.filter(a => a.urgencia === filtroUrgencia);
 
   document.getElementById('ultimaActualizacion').textContent =
     data.generatedAt ? `Última actualización: ${formatoFecha(data.generatedAt)}` : '';
-  document.getElementById('totalAwbs').textContent = `${pendientes.length} AWB pendientes de transmisión`;
+  document.getElementById('totalAwbs').textContent =
+    `${pendientes.length} AWB pendientes de transmisión` + (pendientes.length !== pendientesTexto.length ? ` (de ${pendientesTexto.length})` : '');
 
   const cont = document.getElementById('lista');
-  if(pendientes.length === 0){
+  if(pendientesTexto.length === 0 && (filtroTexto || filtroUrgencia !== 'todos')){
+    cont.innerHTML = `<div class="vacio">Sin resultados para este filtro</div>`;
+  } else if(pendientes.length === 0){
     cont.innerHTML = `<div class="vacio">✓ No hay AWBs realmente pendientes de transmisión</div>`;
   } else {
     cont.innerHTML = pendientes.map(a => tarjetaHTML(a, false)).join('');
@@ -520,14 +587,16 @@ function render(data){
   const seccionResueltas = document.getElementById('seccionResueltas');
   const listaResueltas = document.getElementById('listaResueltas');
   const tituloResueltas = document.getElementById('tituloResueltas');
-  if(resueltas.length > 0){
+  if(resueltasTexto.length > 0){
     seccionResueltas.hidden = false;
-    tituloResueltas.textContent = `Resueltas automáticamente (${resueltas.length})`;
-    listaResueltas.innerHTML = resueltas.map(a => tarjetaHTML(a, true)).join('');
+    tituloResueltas.textContent = `Resueltas automáticamente (${resueltasTexto.length})`;
+    listaResueltas.innerHTML = resueltasTexto.map(a => tarjetaHTML(a, true)).join('');
     adjuntarListenersTarjetas(listaResueltas);
   } else {
     seccionResueltas.hidden = true;
   }
+
+  document.getElementById('btnLimpiarFiltros').hidden = !(filtroTexto || filtroUrgencia !== 'todos');
 }
 
 function adjuntarListenersTarjetas(cont){
@@ -556,13 +625,25 @@ function renderResumen(awbs){
   const conteos = { rojo:0, naranja:0, amarillo:0, verde:0 };
   awbs.forEach(a => { if(conteos[a.urgencia] !== undefined) conteos[a.urgencia]++; });
 
-  document.getElementById('summary').innerHTML = `
-    <div class="chip total">Total: ${awbs.length}</div>
-    <div class="chip rojo"><span class="dot"></span>Rojo: ${conteos.rojo}</div>
-    <div class="chip naranja"><span class="dot"></span>Naranja: ${conteos.naranja}</div>
-    <div class="chip amarillo"><span class="dot"></span>Amarillo: ${conteos.amarillo}</div>
-    <div class="chip verde"><span class="dot"></span>Verde: ${conteos.verde}</div>
+  const activo = (clave) => filtroUrgencia === clave ? 'activo' : '';
+  const summaryEl = document.getElementById('summary');
+  summaryEl.classList.toggle('con-filtro', filtroUrgencia !== 'todos');
+
+  summaryEl.innerHTML = `
+    <div class="chip total ${activo('todos')}" data-urgencia="todos">Total: ${awbs.length}</div>
+    <div class="chip rojo ${activo('rojo')}" data-urgencia="rojo"><span class="dot"></span>Rojo: ${conteos.rojo}</div>
+    <div class="chip naranja ${activo('naranja')}" data-urgencia="naranja"><span class="dot"></span>Naranja: ${conteos.naranja}</div>
+    <div class="chip amarillo ${activo('amarillo')}" data-urgencia="amarillo"><span class="dot"></span>Amarillo: ${conteos.amarillo}</div>
+    <div class="chip verde ${activo('verde')}" data-urgencia="verde"><span class="dot"></span>Verde: ${conteos.verde}</div>
   `;
+
+  summaryEl.querySelectorAll('.chip').forEach(chip => {
+    chip.addEventListener('click', () => {
+      const clave = chip.dataset.urgencia;
+      filtroUrgencia = (filtroUrgencia === clave) ? 'todos' : clave;
+      if(ultimaData) render(ultimaData);
+    });
+  });
 }
 
 function tarjetaHTML(a, esResuelta){
@@ -815,6 +896,19 @@ function tickReloj(){
   if(ultimaData) render(ultimaData);
 }
 setInterval(tickReloj, RELOJ_MS);
+
+/* ---------- Filtro de texto ---------- */
+document.getElementById('inputBuscar').addEventListener('input', (e) => {
+  filtroTexto = e.target.value;
+  if(ultimaData) render(ultimaData);
+});
+
+document.getElementById('btnLimpiarFiltros').addEventListener('click', () => {
+  filtroTexto = '';
+  filtroUrgencia = 'todos';
+  document.getElementById('inputBuscar').value = '';
+  if(ultimaData) render(ultimaData);
+});
 
 /* ---------- Arranque ---------- */
 cargarDatos();
