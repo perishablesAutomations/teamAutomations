@@ -2,58 +2,75 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>AWBs pendientes de transmisión · K+N</title>
+
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#0A2240">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="AWB Transmisión">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="icon" href="icons/icon-192.png">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Roboto+Mono:wght@500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Roboto+Mono:wght@500;700&display=swap" rel="stylesheet">
 <style>
   :root{
-    /* Colores corporativos K+N (aproximados — ajustar con el hex exacto del manual de marca si lo tienes) */
     --kn-navy: #0A2240;
-    --kn-navy-soft: #10315C;
+    --kn-navy-2: #123765;
+    --kn-navy-soft: #E7ECF4;
     --kn-orange: #FF6600;
+    --kn-orange-dark: #CC5200;
     --kn-orange-soft: #FFE3CC;
 
-    /* Semáforo de urgencia */
     --u-rojo: #E4002B;
     --u-rojo-bg: #FDEAEC;
     --u-naranja: #FF8A00;
     --u-naranja-bg: #FFF1DE;
-    --u-amarillo: #E0A800;
+    --u-amarillo: #C79200;
     --u-amarillo-bg: #FFF8DE;
-    --u-verde: #2E7D32;
+    --u-verde: #1E7A34;
     --u-verde-bg: #E9F5EA;
     --u-gris: #6B7280;
     --u-gris-bg: #F1F2F4;
 
-    --bg: #F4F5F7;
+    --bg: #F2F4F8;
     --card: #FFFFFF;
-    --text: #1B2430;
+    --text: #14202E;
     --text-soft: #5B6472;
-    --border: #E4E7EC;
+    --text-faint: #8A93A0;
+    --border: #E4E8EF;
 
     --font-body: 'Nunito', system-ui, sans-serif;
     --font-mono: 'Roboto Mono', 'SFMono-Regular', monospace;
+
+    --shadow-sm: 0 1px 2px rgba(10,34,64,.06), 0 1px 1px rgba(10,34,64,.04);
+    --shadow-md: 0 4px 16px rgba(10,34,64,.10), 0 2px 6px rgba(10,34,64,.06);
+    --shadow-lg: 0 12px 32px rgba(10,34,64,.16);
   }
 
   *{ box-sizing:border-box; }
+  html{ -webkit-text-size-adjust:100%; }
   body{
     margin:0;
     background:var(--bg);
     color:var(--text);
     font-family:var(--font-body);
     -webkit-font-smoothing:antialiased;
+    padding-bottom: env(safe-area-inset-bottom);
   }
 
   /* ---------- Barra superior ---------- */
   header.topbar{
-    background:var(--kn-navy);
+    background:linear-gradient(135deg, var(--kn-navy) 0%, var(--kn-navy-2) 100%);
     color:#fff;
-    padding:14px 20px;
+    padding:calc(14px + env(safe-area-inset-top)) 20px 16px;
     position:sticky;
     top:0;
-    z-index:20;
-    box-shadow:0 2px 10px rgba(10,34,64,.25);
+    z-index:30;
+    box-shadow:var(--shadow-md);
   }
   .topbar-inner{
     max-width:1100px;
@@ -64,118 +81,85 @@
     gap:16px;
     flex-wrap:wrap;
   }
-  .brand{
-    display:flex;
-    align-items:center;
-    gap:10px;
-  }
+  .brand{ display:flex; align-items:center; gap:12px; }
   .brand-mark{
-    width:34px; height:34px;
-    border-radius:8px;
-    background:var(--kn-orange);
+    width:38px; height:38px;
+    border-radius:10px;
+    background:var(--kn-navy-2);
     display:flex; align-items:center; justify-content:center;
-    font-family:var(--font-mono);
+    box-shadow:0 2px 8px rgba(0,0,0,.25);
+  }
+  .brand-mark svg{ width:22px; height:22px; display:block; }
+  .brand-text h1{ margin:0; font-size:17px; font-weight:800; letter-spacing:.2px; }
+  .brand-text p{ margin:2px 0 0; font-size:11.5px; color:#AEBEDA; }
+  .topbar-actions{ display:flex; align-items:center; gap:10px; font-size:12.5px; color:#CBD5E3; flex-wrap:wrap; }
+  #reloj{ font-family:var(--font-mono); font-weight:600; color:#fff; }
+
+  button.pill-btn{
+    background:rgba(255,255,255,.1);
+    color:#fff;
+    border:1px solid rgba(255,255,255,.22);
+    padding:8px 14px;
+    border-radius:999px;
     font-weight:700;
-    color:var(--kn-navy);
-    font-size:14px;
+    font-size:12px;
+    cursor:pointer;
+    transition:background .15s ease, transform .1s ease;
+    font-family:var(--font-body);
   }
-  .brand-text h1{
-    margin:0;
-    font-size:16px;
-    font-weight:800;
-    letter-spacing:.2px;
-  }
-  .brand-text p{
-    margin:0;
-    font-size:11.5px;
-    color:#B9C4D6;
-  }
-  .topbar-actions{
-    display:flex;
-    align-items:center;
-    gap:10px;
-    font-size:12.5px;
-    color:#CBD5E3;
-  }
-  #reloj{
-    font-family:var(--font-mono);
-    font-weight:600;
+  button.pill-btn:hover{ background:rgba(255,255,255,.18); }
+  button.pill-btn:active{ transform:scale(.97); }
+  button.pill-btn.acento{
+    background:var(--kn-orange);
+    border-color:var(--kn-orange);
     color:#fff;
   }
-  button.notif-btn{
-    background:var(--kn-orange);
-    color:var(--kn-navy);
-    border:none;
-    padding:8px 14px;
-    border-radius:8px;
-    font-weight:700;
-    font-size:12.5px;
-    cursor:pointer;
-    transition:filter .15s ease;
-  }
-  button.notif-btn:hover{ filter:brightness(1.08); }
-  button.notif-btn[disabled]{
-    background:#3A4C67;
-    color:#B9C4D6;
-    cursor:default;
+  button.pill-btn.acento:hover{ background:var(--kn-orange-dark); }
+  button.pill-btn[disabled]{ background:rgba(255,255,255,.06); border-color:rgba(255,255,255,.12); color:#8493AC; cursor:default; }
+
+  .ios-hint{
+    font-size:11px;
+    color:#AEBEDA;
+    max-width:220px;
+    line-height:1.4;
   }
 
   /* ---------- Resumen / chips ---------- */
   .summary{
     max-width:1100px;
-    margin:18px auto 0;
+    margin:20px auto 0;
     padding:0 20px;
     display:flex;
     gap:10px;
     flex-wrap:wrap;
   }
   .chip{
-    display:flex;
-    align-items:center;
-    gap:8px;
-    padding:8px 14px;
+    display:flex; align-items:center; gap:8px;
+    padding:9px 16px;
     border-radius:999px;
-    font-weight:700;
+    font-weight:800;
     font-size:13px;
-    border:1px solid transparent;
+    background:var(--card);
+    box-shadow:var(--shadow-sm);
+    border:1px solid var(--border);
   }
   .chip .dot{ width:9px; height:9px; border-radius:50%; }
-  .chip.rojo{ background:var(--u-rojo-bg); color:var(--u-rojo); }
-  .chip.rojo .dot{ background:var(--u-rojo); }
-  .chip.naranja{ background:var(--u-naranja-bg); color:#B25E00; }
-  .chip.naranja .dot{ background:var(--u-naranja); }
-  .chip.amarillo{ background:var(--u-amarillo-bg); color:#8A6600; }
-  .chip.amarillo .dot{ background:var(--u-amarillo); }
-  .chip.verde{ background:var(--u-verde-bg); color:var(--u-verde); }
-  .chip.verde .dot{ background:var(--u-verde); }
-  .chip.total{ background:#fff; color:var(--text-soft); border-color:var(--border); }
+  .chip.rojo{ color:var(--u-rojo); } .chip.rojo .dot{ background:var(--u-rojo); }
+  .chip.naranja{ color:#B25E00; } .chip.naranja .dot{ background:var(--u-naranja); }
+  .chip.amarillo{ color:#8A6600; } .chip.amarillo .dot{ background:var(--u-amarillo); }
+  .chip.verde{ color:var(--u-verde); } .chip.verde .dot{ background:var(--u-verde); }
+  .chip.total{ color:var(--kn-navy); background:var(--kn-navy-soft); border-color:transparent; }
 
   /* ---------- Contenedor lista ---------- */
-  main{
-    max-width:1100px;
-    margin:0 auto;
-    padding:18px 20px 60px;
-  }
+  main{ max-width:1100px; margin:0 auto; padding:18px 20px 60px; }
   .meta-bar{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    color:var(--text-soft);
-    font-size:12.5px;
-    margin:14px 2px 10px;
+    display:flex; justify-content:space-between; align-items:center;
+    color:var(--text-faint); font-size:12px; margin:16px 2px 12px; flex-wrap:wrap; gap:6px;
   }
-  .estado-carga{
-    text-align:center;
-    color:var(--text-soft);
-    padding:60px 20px;
-    font-size:14px;
-  }
+  .estado-carga{ text-align:center; color:var(--text-soft); padding:70px 20px; font-size:14px; }
   .vacio{
-    text-align:center;
-    padding:60px 20px;
-    color:var(--u-verde);
-    font-weight:700;
-    font-size:15px;
+    text-align:center; padding:70px 20px; color:var(--u-verde);
+    font-weight:800; font-size:16px;
   }
 
   /* ---------- Tarjeta AWB ---------- */
@@ -183,187 +167,155 @@
     background:var(--card);
     border:1px solid var(--border);
     border-left:6px solid var(--u-gris);
-    border-radius:12px;
+    border-radius:14px;
     margin-bottom:12px;
     overflow:hidden;
-    transition:box-shadow .15s ease;
+    box-shadow:var(--shadow-sm);
+    transition:box-shadow .18s ease, transform .12s ease;
   }
-  .awb-card:hover{ box-shadow:0 4px 16px rgba(10,34,64,.08); }
+  .awb-card:hover{ box-shadow:var(--shadow-md); transform:translateY(-1px); }
   .awb-card.rojo{ border-left-color:var(--u-rojo); animation:pulso 1.8s ease-in-out infinite; }
   .awb-card.naranja{ border-left-color:var(--u-naranja); }
   .awb-card.amarillo{ border-left-color:var(--u-amarillo); }
   .awb-card.verde{ border-left-color:var(--u-verde); }
+  .awb-card.resuelta{ border-left-color:var(--u-verde); opacity:.85; }
 
   @keyframes pulso{
-    0%,100%{ box-shadow:0 0 0 0 rgba(228,0,43,.22); }
-    50%{ box-shadow:0 0 0 7px rgba(228,0,43,0); }
+    0%,100%{ box-shadow:var(--shadow-sm), 0 0 0 0 rgba(228,0,43,.22); }
+    50%{ box-shadow:var(--shadow-md), 0 0 0 8px rgba(228,0,43,0); }
   }
 
   .awb-head{
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    gap:14px;
-    padding:14px 16px;
-    cursor:pointer;
-    flex-wrap:wrap;
+    display:flex; align-items:center; justify-content:space-between; gap:14px;
+    padding:15px 16px; cursor:pointer; flex-wrap:wrap;
   }
-  .awb-left{
-    display:flex;
-    align-items:center;
-    gap:14px;
-    min-width:0;
-  }
+  .awb-left{ display:flex; align-items:center; gap:14px; min-width:0; }
   .badge-urg{
-    font-family:var(--font-mono);
-    font-size:11px;
-    font-weight:700;
-    padding:4px 8px;
-    border-radius:6px;
-    text-transform:uppercase;
-    white-space:nowrap;
+    font-family:var(--font-mono); font-size:10.5px; font-weight:700;
+    padding:4px 8px; border-radius:6px; text-transform:uppercase; white-space:nowrap;
   }
   .badge-urg.rojo{ background:var(--u-rojo-bg); color:var(--u-rojo); }
   .badge-urg.naranja{ background:var(--u-naranja-bg); color:#B25E00; }
   .badge-urg.amarillo{ background:var(--u-amarillo-bg); color:#8A6600; }
   .badge-urg.verde{ background:var(--u-verde-bg); color:var(--u-verde); }
+  .badge-urg.gris{ background:var(--u-gris-bg); color:var(--u-gris); }
+
+  .badge-warning{
+    display:inline-flex; align-items:center; gap:4px;
+    font-size:10.5px; font-weight:700;
+    padding:3px 8px; border-radius:6px;
+    background:var(--u-amarillo-bg); color:#8A6600;
+    white-space:nowrap;
+  }
 
   .awb-id{
-    font-family:var(--font-mono);
-    font-weight:700;
-    font-size:15px;
-    color:var(--kn-navy);
-    display:inline-flex;
-    align-items:center;
-    gap:6px;
+    font-family:var(--font-mono); font-weight:700; font-size:15px; color:var(--kn-navy);
+    display:inline-flex; align-items:center; gap:6px;
   }
+  .awb-consignee{
+    font-size:12.5px; color:var(--text-soft);
+    white-space:nowrap; overflow:hidden; text-overflow:ellipsis; max-width:240px;
+  }
+  .awb-boxes{
+    font-size:11px; color:var(--text-faint); font-family:var(--font-mono); margin-top:2px;
+  }
+
   .btn-copiar{
-    background:none;
-    border:none;
-    cursor:pointer;
-    padding:3px;
-    display:inline-flex;
-    align-items:center;
-    justify-content:center;
-    border-radius:5px;
-    color:var(--text-soft);
+    background:none; border:none; cursor:pointer; padding:3px;
+    display:inline-flex; align-items:center; justify-content:center;
+    border-radius:5px; color:var(--text-faint);
     transition:background .12s ease, color .12s ease;
   }
-  .btn-copiar:hover{
-    background:var(--kn-orange-soft);
-    color:var(--kn-orange);
-  }
-  .btn-copiar.copiado{
-    color:var(--u-verde);
-  }
+  .btn-copiar:hover{ background:var(--kn-orange-soft); color:var(--kn-orange-dark); }
+  .btn-copiar.copiado{ color:var(--u-verde); }
   .btn-copiar svg{ width:14px; height:14px; display:block; }
-  .awb-consignee{
-    font-size:12.5px;
-    color:var(--text-soft);
-    white-space:nowrap;
-    overflow:hidden;
-    text-overflow:ellipsis;
-    max-width:280px;
-  }
-  .awb-right{
-    display:flex;
-    align-items:center;
-    gap:18px;
-    font-size:12.5px;
-  }
+
+  .awb-right{ display:flex; align-items:center; gap:16px; font-size:12.5px; }
   .awb-etd{ text-align:right; }
-  .awb-etd .label{ color:var(--text-soft); font-size:10.5px; text-transform:uppercase; letter-spacing:.4px; }
+  .awb-etd .label{ color:var(--text-faint); font-size:10px; text-transform:uppercase; letter-spacing:.4px; }
   .awb-etd .value{ font-family:var(--font-mono); font-weight:700; }
-  .awb-countdown{
-    font-family:var(--font-mono);
-    font-weight:800;
-    font-size:14px;
-  }
+  .awb-countdown{ font-family:var(--font-mono); font-weight:800; font-size:14px; }
   .awb-countdown.rojo{ color:var(--u-rojo); }
   .awb-countdown.naranja{ color:#B25E00; }
   .awb-countdown.amarillo{ color:#8A6600; }
   .awb-countdown.verde{ color:var(--u-verde); }
+  .awb-countdown.gris{ color:var(--u-gris); }
 
   .interface-pill{
-    font-family:var(--font-mono);
-    font-size:10.5px;
-    font-weight:700;
-    padding:3px 8px;
-    border-radius:6px;
-    background:var(--kn-orange-soft);
-    color:#B25400;
+    font-family:var(--font-mono); font-size:10.5px; font-weight:700;
+    padding:3px 8px; border-radius:6px; background:var(--kn-orange-soft); color:#B25400;
     text-transform:uppercase;
   }
-
-  .chev{
-    color:var(--text-soft);
-    transition:transform .15s ease;
-  }
+  .chev{ color:var(--text-faint); transition:transform .15s ease; }
   .awb-card.abierta .chev{ transform:rotate(180deg); }
 
-  /* ---------- Detalle expandible ---------- */
   .awb-detail{
-    display:none;
-    border-top:1px solid var(--border);
-    padding:14px 16px 18px;
-    background:#FAFBFC;
+    display:none; border-top:1px solid var(--border); padding:14px 16px 18px; background:#FAFBFD;
   }
   .awb-card.abierta .awb-detail{ display:block; }
 
   .detail-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit, minmax(140px,1fr));
-    gap:10px;
-    margin-bottom:14px;
-    font-size:12.5px;
+    display:grid; grid-template-columns:repeat(auto-fit, minmax(120px,1fr));
+    gap:10px; margin-bottom:14px; font-size:12.5px;
   }
-  .detail-grid div span.k{ display:block; color:var(--text-soft); font-size:10.5px; text-transform:uppercase; letter-spacing:.3px; }
-  .detail-grid div span.v{ font-weight:700; }
+  .detail-grid div span.k{ display:block; color:var(--text-faint); font-size:10px; text-transform:uppercase; letter-spacing:.3px; }
+  .detail-grid div span.v{ font-weight:700; font-family:var(--font-mono); }
+
+  .progreso-cajas{
+    margin-bottom:14px;
+  }
+  .progreso-cajas .barra-bg{
+    background:var(--u-gris-bg); border-radius:6px; height:8px; overflow:hidden;
+  }
+  .progreso-cajas .barra-fg{
+    background:var(--kn-orange); height:100%; border-radius:6px; transition:width .3s ease;
+  }
+  .progreso-cajas .texto{
+    font-size:11px; color:var(--text-soft); margin-top:5px; font-family:var(--font-mono);
+  }
 
   .ti-title{
-    font-size:12px;
-    font-weight:800;
-    text-transform:uppercase;
-    letter-spacing:.4px;
-    color:var(--text-soft);
-    margin:10px 0 8px;
+    font-size:11.5px; font-weight:800; text-transform:uppercase; letter-spacing:.4px;
+    color:var(--text-faint); margin:10px 0 8px;
   }
   .ti-item{
-    background:#fff;
-    border:1px solid var(--border);
-    border-radius:9px;
-    padding:10px 12px;
-    margin-bottom:8px;
-    font-size:12.5px;
+    background:#fff; border:1px solid var(--border); border-radius:10px;
+    padding:10px 12px; margin-bottom:8px; font-size:12.5px;
   }
-  .ti-item .ti-head{
-    display:flex; justify-content:space-between; gap:8px;
-    font-weight:700; margin-bottom:6px;
-  }
+  .ti-item.completada{ border-color:var(--u-verde); background:var(--u-verde-bg); }
+  .ti-item .ti-head{ display:flex; justify-content:space-between; align-items:center; gap:8px; font-weight:700; margin-bottom:6px; }
   .try-row{
-    font-family:var(--font-mono);
-    font-size:11.5px;
-    color:var(--text-soft);
-    padding:3px 0;
+    font-family:var(--font-mono); font-size:11px; color:var(--text-soft); padding:3px 0;
     border-top:1px dashed var(--border);
   }
   .try-row:first-child{ border-top:none; }
-  .sin-datos{ color:var(--text-soft); font-size:12px; font-style:italic; }
+  .sin-datos{ color:var(--text-faint); font-size:12px; font-style:italic; }
 
-  footer{
-    text-align:center;
-    color:var(--text-soft);
-    font-size:11.5px;
-    padding:20px;
+  /* ---------- Sección resueltas (regla 1) ---------- */
+  .seccion-resueltas{
+    margin-top:24px;
+    border-top:2px dashed var(--border);
+    padding-top:16px;
   }
+  .resueltas-toggle{
+    display:flex; align-items:center; gap:8px; cursor:pointer;
+    background:none; border:none; padding:0; font-family:var(--font-body);
+    font-weight:800; font-size:13px; color:var(--u-verde);
+  }
+  .resueltas-toggle .chev{ transition:transform .15s ease; }
+  .resueltas-toggle.abierto .chev{ transform:rotate(180deg); }
+  .resueltas-lista{ display:none; margin-top:12px; }
+  .resueltas-lista.abierta{ display:block; }
+  .resueltas-nota{ font-size:11.5px; color:var(--text-faint); margin:6px 2px 0; }
 
-  @media (prefers-reduced-motion: reduce){
-    .awb-card.rojo{ animation:none; }
-  }
+  footer{ text-align:center; color:var(--text-faint); font-size:11.5px; padding:24px; }
+
+  @media (prefers-reduced-motion: reduce){ .awb-card.rojo{ animation:none; } }
 
   @media (max-width:560px){
-    .awb-consignee{ max-width:150px; }
+    .awb-consignee{ max-width:140px; }
     .awb-right{ gap:10px; }
+    .topbar-actions{ width:100%; justify-content:space-between; }
   }
 </style>
 </head>
@@ -372,7 +324,13 @@
 <header class="topbar">
   <div class="topbar-inner">
     <div class="brand">
-      <div class="brand-mark">K+N</div>
+      <div class="brand-mark">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round">
+          <path d="M4 17a1.4 1.4 0 1 0 0-2.8A1.4 1.4 0 0 0 4 17Z" fill="#FFFFFF" stroke="none"/>
+          <path d="M4 12.5a6.5 6.5 0 0 1 6.5 6.5"/>
+          <path d="M4 8a11 11 0 0 1 11 11"/>
+        </svg>
+      </div>
       <div class="brand-text">
         <h1>Transmisión de AWBs pendientes</h1>
         <p>Interface Send ≠ NONE / DONE · últimos 7 días</p>
@@ -380,7 +338,9 @@
     </div>
     <div class="topbar-actions">
       <span id="reloj">--:--:--</span>
-      <button class="notif-btn" id="btnNotif">Activar alertas rojas</button>
+      <button class="pill-btn acento" id="btnNotif">Activar alertas rojas</button>
+      <button class="pill-btn" id="btnInstalar" hidden>Instalar app</button>
+      <span class="ios-hint" id="iosHint" hidden>En iPhone: Compartir → "Agregar a inicio" para instalarla</span>
     </div>
   </div>
 </header>
@@ -395,6 +355,15 @@
   <div id="lista">
     <div class="estado-carga">Consultando transmision-awb.json…</div>
   </div>
+
+  <div class="seccion-resueltas" id="seccionResueltas" hidden>
+    <button class="resueltas-toggle" id="toggleResueltas">
+      <span class="chev">▾</span>
+      <span id="tituloResueltas">Resueltas automáticamente</span>
+    </button>
+    <p class="resueltas-nota">Tareas completadas en K+N aunque el interface send aún figure pendiente/error — no cuentan como urgentes, pero quedan visibles por transparencia.</p>
+    <div class="resueltas-lista" id="listaResueltas"></div>
+  </div>
 </main>
 
 <footer>Perishables Automations · teamAutomations</footer>
@@ -402,27 +371,66 @@
 <script>
 /* ============================================================
    CONFIGURACIÓN
-   Reemplazar por la URL real donde n8n publica el JSON generado
-   (raw.githubusercontent.com o GitHub Pages).
    ============================================================ */
-// PRODUCCIÓN: apunta al JSON real que n8n comitea al repo.
-const JSON_URL = 'https://raw.githubusercontent.com/perishablesAutomations/teamAutomations/main/transmision-awb.json';
-// DEMO: si quieres volver a probar con datos de ejemplo, usa:
-// const JSON_URL = './transmision-awb.ejemplo.json';
-const POLL_MS = 5 * 60 * 1000; // 5 minutos
+// DEMO: apunta al JSON de ejemplo local. En producción, cambia esta línea por:
+// const JSON_URL = 'https://raw.githubusercontent.com/perishablesAutomations/teamAutomations/main/transmision-awb.json';
+const JSON_URL = './transmision-awb.ejemplo.json';
+const POLL_MS = 5 * 60 * 1000;
 const RELOJ_MS = 1000;
 
 const ORDEN_URGENCIA = { rojo: 0, naranja: 1, amarillo: 2, verde: 3, sinEtd: 4 };
 const LABEL_URGENCIA = { rojo: 'Rojo', naranja: 'Naranja', amarillo: 'Amarillo', verde: 'Verde', sinEtd: 'Sin ETD' };
 
+// Valores que consideramos "completado" al leer status de task instances y tries.
+// K+N puede usar otros literales - ajustar esta lista cuando se confirme el enum real.
+const ESTADOS_COMPLETADO = ['DONE', 'COMPLETED', 'COMPLETADO', 'FINALIZADO', 'SUCCESS', 'SUCCESSFUL', 'OK'];
+
 let ultimaData = null;
 const abiertas = new Set();
+let resueltasAbiertas = false;
+
+function estaCompletado(valor){
+  if(!valor) return false;
+  return ESTADOS_COMPLETADO.includes(String(valor).toUpperCase());
+}
+
+// Regla 2: si dentro de los "tries" de una task instance hay uno completado,
+// se toma la instancia como completada, pero se marca warning (algo requirió reintento).
+function evaluarTaskInstance(ti){
+  if(estaCompletado(ti.status) || estaCompletado(ti.state) || estaCompletado(ti.taskStatus)){
+    return { completada: true, warning: false };
+  }
+  const tries = ti.tries || [];
+  const huboTryCompletado = tries.some(t =>
+    estaCompletado(t.status) || estaCompletado(t.result) || estaCompletado(t.state)
+  );
+  if(huboTryCompletado){
+    return { completada: true, warning: true };
+  }
+  return { completada: false, warning: false };
+}
+
+// Regla 1: si TODAS las task instances de una AWB están completadas, no cuenta
+// como pendiente aunque interfaceSend siga en PENDING/ERROR.
+function evaluarAwbPorTasks(awb){
+  const instancias = awb.taskInstances || [];
+  if(instancias.length === 0){
+    return { todasCompletadas: false, warning: false, totalInstancias: 0 };
+  }
+  let todas = true;
+  let warning = false;
+  for(const ti of instancias){
+    const r = evaluarTaskInstance(ti);
+    if(!r.completada) todas = false;
+    if(r.warning) warning = true;
+  }
+  return { todasCompletadas: todas, warning, totalInstancias: instancias.length };
+}
 
 function calcularUrgencia(etdIso){
   if(!etdIso) return { urgencia:'sinEtd', horas:null };
   const etd = new Date(etdIso);
-  const diffMs = etd.getTime() - Date.now();
-  const horas = diffMs / 3600000;
+  const horas = (etd.getTime() - Date.now()) / 3600000;
   let urgencia;
   if (horas < 1) urgencia = 'rojo';
   else if (horas < 2) urgencia = 'naranja';
@@ -446,6 +454,11 @@ function formatoFecha(iso){
   return d.toLocaleString('es-CO', { day:'2-digit', month:'2-digit', hour:'2-digit', minute:'2-digit' });
 }
 
+function formatoNumero(n){
+  if(n === null || n === undefined) return '—';
+  return Number(n).toLocaleString('es-CO', { maximumFractionDigits: 2 });
+}
+
 async function cargarDatos(){
   try{
     const res = await fetch(`${JSON_URL}?_=${Date.now()}`, { cache:'no-store' });
@@ -460,34 +473,53 @@ async function cargarDatos(){
   }
 }
 
-function render(data){
-  const awbs = (data.awbs || []).map(a => {
+function procesarAwbs(data){
+  return (data.awbs || []).map(a => {
     const { urgencia, horas } = calcularUrgencia(a.etd);
-    return { ...a, urgencia, horas };
-  }).sort((x, y) => {
-    // Prioriza por urgencia y, dentro de cada nivel, por ETD más próximo primero
-    if (ORDEN_URGENCIA[x.urgencia] !== ORDEN_URGENCIA[y.urgencia]){
-      return ORDEN_URGENCIA[x.urgencia] - ORDEN_URGENCIA[y.urgencia];
-    }
+    const evalTasks = evaluarAwbPorTasks(a);
+    const resueltaPorTasks = (a.interfaceSend === 'PENDING' || a.interfaceSend === 'ERROR') && evalTasks.todasCompletadas;
+    return { ...a, urgencia, horas, evalTasks, resueltaPorTasks };
+  });
+}
+
+function render(data){
+  const procesadas = procesarAwbs(data);
+  const pendientes = procesadas.filter(a => !a.resueltaPorTasks).sort((x, y) => {
+    if (ORDEN_URGENCIA[x.urgencia] !== ORDEN_URGENCIA[y.urgencia]) return ORDEN_URGENCIA[x.urgencia] - ORDEN_URGENCIA[y.urgencia];
     if (x.horas === null) return 1;
     if (y.horas === null) return -1;
     return x.horas - y.horas;
   });
+  const resueltas = procesadas.filter(a => a.resueltaPorTasks);
 
-  renderResumen(awbs);
+  renderResumen(pendientes);
 
   document.getElementById('ultimaActualizacion').textContent =
     data.generatedAt ? `Última actualización: ${formatoFecha(data.generatedAt)}` : '';
-  document.getElementById('totalAwbs').textContent = `${awbs.length} AWB pendientes de transmisión`;
+  document.getElementById('totalAwbs').textContent = `${pendientes.length} AWB pendientes de transmisión`;
 
   const cont = document.getElementById('lista');
-  if(awbs.length === 0){
-    cont.innerHTML = `<div class="vacio">✓ No hay AWBs pendientes de transmisión</div>`;
-    return;
+  if(pendientes.length === 0){
+    cont.innerHTML = `<div class="vacio">✓ No hay AWBs realmente pendientes de transmisión</div>`;
+  } else {
+    cont.innerHTML = pendientes.map(a => tarjetaHTML(a, false)).join('');
+    adjuntarListenersTarjetas(cont);
   }
 
-  cont.innerHTML = awbs.map(a => tarjetaHTML(a)).join('');
+  const seccionResueltas = document.getElementById('seccionResueltas');
+  const listaResueltas = document.getElementById('listaResueltas');
+  const tituloResueltas = document.getElementById('tituloResueltas');
+  if(resueltas.length > 0){
+    seccionResueltas.hidden = false;
+    tituloResueltas.textContent = `Resueltas automáticamente (${resueltas.length})`;
+    listaResueltas.innerHTML = resueltas.map(a => tarjetaHTML(a, true)).join('');
+    adjuntarListenersTarjetas(listaResueltas);
+  } else {
+    seccionResueltas.hidden = true;
+  }
+}
 
+function adjuntarListenersTarjetas(cont){
   cont.querySelectorAll('.awb-card').forEach(card => {
     const clave = card.getAttribute('data-clave');
     if(abiertas.has(clave)) card.classList.add('abierta');
@@ -501,21 +533,119 @@ function render(data){
     const btnCopiar = card.querySelector('.btn-copiar');
     if(btnCopiar){
       btnCopiar.addEventListener('click', (e) => {
-        e.stopPropagation(); // no debe abrir/cerrar la tarjeta
+        e.stopPropagation();
         copiarAlPortapapeles(btnCopiar.dataset.copiar, btnCopiar);
       });
-      // Evita que el mousedown/drag para seleccionar texto dispare el toggle
       btnCopiar.addEventListener('mousedown', (e) => e.stopPropagation());
     }
   });
 }
 
+function renderResumen(awbs){
+  const conteos = { rojo:0, naranja:0, amarillo:0, verde:0 };
+  awbs.forEach(a => { if(conteos[a.urgencia] !== undefined) conteos[a.urgencia]++; });
+
+  document.getElementById('summary').innerHTML = `
+    <div class="chip total">Total: ${awbs.length}</div>
+    <div class="chip rojo"><span class="dot"></span>Rojo: ${conteos.rojo}</div>
+    <div class="chip naranja"><span class="dot"></span>Naranja: ${conteos.naranja}</div>
+    <div class="chip amarillo"><span class="dot"></span>Amarillo: ${conteos.amarillo}</div>
+    <div class="chip verde"><span class="dot"></span>Verde: ${conteos.verde}</div>
+  `;
+}
+
+function tarjetaHTML(a, esResuelta){
+  const urg = esResuelta ? 'gris' : a.urgencia;
+  const instancias = a.taskInstances || [];
+  const clave = escapeHtml(`${a.awbNumber || a.id}-${a.etd}`);
+  const pctCajas = (a.fullBoxes && a.fullBoxes > 0)
+    ? Math.min(100, Math.round(((a.fullBoxesReceived || 0) / a.fullBoxes) * 100))
+    : null;
+
+  return `
+    <div class="awb-card ${esResuelta ? 'resuelta' : urg}" data-clave="${clave}">
+      <div class="awb-head">
+        <div class="awb-left">
+          <span class="badge-urg ${esResuelta ? 'gris' : urg}">${esResuelta ? 'Resuelta' : LABEL_URGENCIA[urg]}</span>
+          ${a.evalTasks && a.evalTasks.warning ? `<span class="badge-warning">⚠ Requirió reintento</span>` : ''}
+          <div>
+            <div class="awb-id">
+              <span class="awb-id-texto">${escapeHtml(a.awbNumber || a.id || '—')}</span>
+              <button type="button" class="btn-copiar" data-copiar="${escapeHtml(a.awbNumber || a.id || '')}" title="Copiar número de AWB" aria-label="Copiar número de AWB">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+              </button>
+            </div>
+            <div class="awb-consignee">${escapeHtml(a.consignee || '')}</div>
+            <div class="awb-boxes">${formatoNumero(a.fullBoxesReceived)} / ${formatoNumero(a.fullBoxes)} cajas · ${formatoNumero(a.piecesReceived)} / ${formatoNumero(a.pieces)} pzas</div>
+          </div>
+        </div>
+        <div class="awb-right">
+          <span class="interface-pill">${escapeHtml(a.interfaceSend || '—')}</span>
+          <div class="awb-etd">
+            <div class="label">ETD</div>
+            <div class="value">${formatoFecha(a.etd)}</div>
+          </div>
+          <div class="awb-countdown ${esResuelta ? 'gris' : urg}">${esResuelta ? '—' : formatoCuenta(a.horas)}</div>
+          <span class="chev">▾</span>
+        </div>
+      </div>
+      <div class="awb-detail">
+        <div class="detail-grid">
+          <div><span class="k">Prefijo aerolínea</span><span class="v">${escapeHtml(a.airlinePrefix || '—')}</span></div>
+          <div><span class="k">Fecha vuelo</span><span class="v">${escapeHtml(a.shipDate || '—')}</span></div>
+          <div><span class="k">AWB status</span><span class="v">${escapeHtml(String(a.awbStatus ?? '—'))}</span></div>
+          <div><span class="k">Interface Send</span><span class="v">${escapeHtml(a.interfaceSend || '—')}</span></div>
+          <div><span class="k">Full boxes</span><span class="v">${formatoNumero(a.fullBoxes)}</span></div>
+          <div><span class="k">Full boxes recib.</span><span class="v">${formatoNumero(a.fullBoxesReceived)}</span></div>
+          <div><span class="k">Piezas</span><span class="v">${formatoNumero(a.pieces)}</span></div>
+          <div><span class="k">Piezas recib.</span><span class="v">${formatoNumero(a.piecesReceived)}</span></div>
+        </div>
+        ${pctCajas !== null ? `
+        <div class="progreso-cajas">
+          <div class="barra-bg"><div class="barra-fg" style="width:${pctCajas}%"></div></div>
+          <div class="texto">${pctCajas}% de las cajas recibidas</div>
+        </div>` : ''}
+        <div class="ti-title">Task instances</div>
+        ${instancias.length === 0
+          ? `<div class="sin-datos">Sin task instances registradas.</div>`
+          : instancias.map(ti => {
+              const evalTi = evaluarTaskInstance(ti);
+              return `
+              <div class="ti-item ${evalTi.completada ? 'completada' : ''}">
+                <div class="ti-head">
+                  <span>Task instance #${escapeHtml(String(ti.taskInstanceId ?? '—'))} ${evalTi.completada ? '✓' : ''}${evalTi.warning ? ' ⚠' : ''}</span>
+                  <span>${escapeHtml(ti.status || ti.taskName || '')}</span>
+                </div>
+                ${(ti.tries && ti.tries.length)
+                  ? ti.tries.map(t => `
+                      <div class="try-row">
+                        Try ${escapeHtml(String(t.id ?? t.tryId ?? '—'))} ·
+                        ${escapeHtml(t.status || t.result || '—')} ·
+                        ${formatoFecha(t.createdAt || t.date)}
+                      </div>`).join('')
+                  : `<div class="sin-datos">Sin intentos registrados.</div>`
+                }
+              </div>
+            `;
+            }).join('')
+        }
+      </div>
+    </div>
+  `;
+}
+
+function escapeHtml(str){
+  return String(str)
+    .replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;')
+    .replaceAll('"','&quot;');
+}
+
+/* ---------- Copiar AWB ---------- */
 async function copiarAlPortapapeles(texto, btnEl){
   try{
     if(navigator.clipboard && window.isSecureContext){
       await navigator.clipboard.writeText(texto);
     }else{
-      // Fallback para contextos sin Clipboard API (http sin TLS, navegadores viejos)
       const temp = document.createElement('textarea');
       temp.value = texto;
       temp.style.position = 'fixed';
@@ -541,88 +671,20 @@ function mostrarCopiado(btnEl){
   }, 1200);
 }
 
-function renderResumen(awbs){
-  const conteos = { rojo:0, naranja:0, amarillo:0, verde:0 };
-  awbs.forEach(a => { if(conteos[a.urgencia] !== undefined) conteos[a.urgencia]++; });
+/* ---------- Sección resueltas: toggle ---------- */
+document.getElementById('toggleResueltas').addEventListener('click', () => {
+  resueltasAbiertas = !resueltasAbiertas;
+  document.getElementById('toggleResueltas').classList.toggle('abierto', resueltasAbiertas);
+  document.getElementById('listaResueltas').classList.toggle('abierta', resueltasAbiertas);
+});
 
-  document.getElementById('summary').innerHTML = `
-    <div class="chip total">Total: ${awbs.length}</div>
-    <div class="chip rojo"><span class="dot"></span>Rojo: ${conteos.rojo}</div>
-    <div class="chip naranja"><span class="dot"></span>Naranja: ${conteos.naranja}</div>
-    <div class="chip amarillo"><span class="dot"></span>Amarillo: ${conteos.amarillo}</div>
-    <div class="chip verde"><span class="dot"></span>Verde: ${conteos.verde}</div>
-  `;
-}
-
-function tarjetaHTML(a){
-  const urg = a.urgencia;
-  const instancias = a.taskInstances || [];
-  const clave = escapeHtml(`${a.awbNumber || a.id}-${a.etd}`);
-  return `
-    <div class="awb-card ${urg}" data-clave="${clave}">
-      <div class="awb-head">
-        <div class="awb-left">
-          <span class="badge-urg ${urg}">${LABEL_URGENCIA[urg]}</span>
-          <div>
-            <div class="awb-id">
-              <span class="awb-id-texto">${escapeHtml(a.awbNumber || a.id || '—')}</span>
-              <button type="button" class="btn-copiar" data-copiar="${escapeHtml(a.awbNumber || a.id || '')}" title="Copiar número de AWB" aria-label="Copiar número de AWB">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
-              </button>
-            </div>
-            <div class="awb-consignee">${escapeHtml(a.consignee || '')}</div>
-          </div>
-        </div>
-        <div class="awb-right">
-          <span class="interface-pill">${escapeHtml(a.interfaceSend || '—')}</span>
-          <div class="awb-etd">
-            <div class="label">ETD</div>
-            <div class="value">${formatoFecha(a.etd)}</div>
-          </div>
-          <div class="awb-countdown ${urg}">${formatoCuenta(a.horas)}</div>
-          <span class="chev">▾</span>
-        </div>
-      </div>
-      <div class="awb-detail">
-        <div class="detail-grid">
-          <div><span class="k">Prefijo aerolínea</span><span class="v">${escapeHtml(a.airlinePrefix || '—')}</span></div>
-          <div><span class="k">Fecha vuelo</span><span class="v">${escapeHtml(a.shipDate || '—')}</span></div>
-          <div><span class="k">AWB status</span><span class="v">${escapeHtml(String(a.awbStatus ?? '—'))}</span></div>
-          <div><span class="k">Interface Send</span><span class="v">${escapeHtml(a.interfaceSend || '—')}</span></div>
-        </div>
-        <div class="ti-title">Task instances</div>
-        ${instancias.length === 0
-          ? `<div class="sin-datos">Sin task instances registradas.</div>`
-          : instancias.map(ti => `
-            <div class="ti-item">
-              <div class="ti-head">
-                <span>Task instance #${escapeHtml(String(ti.taskInstanceId ?? '—'))}</span>
-                <span>${escapeHtml(ti.status || ti.taskName || '')}</span>
-              </div>
-              ${(ti.tries && ti.tries.length)
-                ? ti.tries.map(t => `
-                    <div class="try-row">
-                      Try ${escapeHtml(String(t.id ?? t.tryId ?? '—'))} ·
-                      ${escapeHtml(t.status || t.result || '—')} ·
-                      ${formatoFecha(t.createdAt || t.date)}
-                    </div>`).join('')
-                : `<div class="sin-datos">Sin intentos registrados.</div>`
-              }
-            </div>
-          `).join('')
-        }
-      </div>
-    </div>
-  `;
-}
-
-function escapeHtml(str){
-  return String(str)
-    .replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;')
-    .replaceAll('"','&quot;');
-}
-
-/* ---------- Notificaciones (Notification API — panel abierto en el navegador) ---------- */
+/* ---------- Notificaciones ----------
+   Usa el service worker (registration.showNotification) en vez de `new Notification()`
+   directo: así se muestran como notificaciones nativas del sistema operativo
+   (centro de notificaciones / pantalla de bloqueo en Android) cuando la app está
+   instalada como PWA. Sigue requiriendo que la PWA corra en segundo plano — para
+   que lleguen con la app totalmente cerrada hace falta Web Push real (VAPID +
+   suscripciones guardadas + envío firmado desde el backend), que es un paso aparte. */
 const NOTIF_STORAGE_KEY = 'awbTransmisionNotificadas';
 
 function getNotificadas(){
@@ -633,23 +695,41 @@ function setNotificadas(obj){
   localStorage.setItem(NOTIF_STORAGE_KEY, JSON.stringify(obj));
 }
 
+async function mostrarNotificacionOS(titulo, opciones){
+  if('serviceWorker' in navigator){
+    try{
+      const reg = await navigator.serviceWorker.ready;
+      if(reg && reg.showNotification){
+        await reg.showNotification(titulo, opciones);
+        return;
+      }
+    }catch(e){ /* cae al fallback */ }
+  }
+  if(Notification.permission === 'granted'){
+    new Notification(titulo, opciones);
+  }
+}
+
 function revisarUrgentesYNotificar(data){
   if(Notification.permission !== 'granted') return;
   const notificadas = getNotificadas();
   const ahora = Date.now();
+  const procesadas = procesarAwbs(data);
 
-  (data.awbs || []).forEach(a => {
-    const { urgencia } = calcularUrgencia(a.etd);
-    if(urgencia !== 'rojo') return;
+  procesadas.forEach(a => {
+    if(a.resueltaPorTasks) return; // regla 1: ya no cuenta como urgente
+    if(a.urgencia !== 'rojo') return;
 
     const clave = `${a.awbNumber || a.id}-${a.etd}`;
     const ultimaVez = notificadas[clave];
-    // Repite el aviso cada 15 minutos mientras siga en rojo
     if(ultimaVez && (ahora - ultimaVez) < 15 * 60 * 1000) return;
 
-    new Notification('🔴 AWB por transmitir — urgente', {
+    mostrarNotificacionOS('🔴 AWB por transmitir — urgente', {
       body: `${a.awbNumber || a.id} (${a.consignee || 'sin consignee'}) — ETD en menos de 1h. Interface Send: ${a.interfaceSend}.`,
-      tag: clave
+      tag: clave,
+      icon: 'icons/icon-192.png',
+      badge: 'icons/icon-192.png',
+      vibrate: [200, 100, 200]
     });
     notificadas[clave] = ahora;
   });
@@ -676,11 +756,39 @@ function actualizarBotonNotif(){
 }
 if('Notification' in window) actualizarBotonNotif();
 
+/* ---------- PWA: registrar service worker ---------- */
+if('serviceWorker' in navigator){
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('sw.js').catch(() => {});
+  });
+}
+
+/* ---------- PWA: instalar en Android/desktop ---------- */
+let deferredPrompt = null;
+window.addEventListener('beforeinstallprompt', (e) => {
+  e.preventDefault();
+  deferredPrompt = e;
+  document.getElementById('btnInstalar').hidden = false;
+});
+document.getElementById('btnInstalar').addEventListener('click', async () => {
+  if(!deferredPrompt) return;
+  deferredPrompt.prompt();
+  await deferredPrompt.userChoice;
+  deferredPrompt = null;
+  document.getElementById('btnInstalar').hidden = true;
+});
+
+/* iOS no dispara beforeinstallprompt: mostramos instrucción manual */
+const esIOS = /iphone|ipad|ipod/i.test(navigator.userAgent);
+const yaInstalada = window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone === true;
+if(esIOS && !yaInstalada){
+  document.getElementById('iosHint').hidden = false;
+}
+
 /* ---------- Reloj ---------- */
 function tickReloj(){
   document.getElementById('reloj').textContent =
     new Date().toLocaleTimeString('es-CO', { hour:'2-digit', minute:'2-digit', second:'2-digit' });
-  // Re-renderiza cuentas regresivas y colores sin volver a pedir el JSON
   if(ultimaData) render(ultimaData);
 }
 setInterval(tickReloj, RELOJ_MS);
