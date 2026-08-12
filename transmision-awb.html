@@ -296,23 +296,29 @@
     display:flex; align-items:center; justify-content:space-between; gap:14px;
     padding:15px 16px; cursor:pointer; flex-wrap:wrap;
   }
-  .awb-left{ display:flex; align-items:center; gap:14px; min-width:0; }
-  .badge-urg{
-    font-family:var(--font-mono); font-size:10.5px; font-weight:700;
-    padding:4px 8px; border-radius:6px; text-transform:uppercase; white-space:nowrap;
+  .awb-left{ display:flex; align-items:center; gap:10px; min-width:0; }
+  .punto-urg{
+    width:11px; height:11px; border-radius:50%; flex-shrink:0;
   }
-  .badge-urg.rojo{ background:var(--u-rojo-bg); color:var(--u-rojo); }
-  .badge-urg.naranja{ background:var(--u-naranja-bg); color:#B25E00; }
-  .badge-urg.amarillo{ background:var(--u-amarillo-bg); color:#8A6600; }
-  .badge-urg.verde{ background:var(--u-verde-bg); color:var(--u-verde); }
-  .badge-urg.gris{ background:var(--u-gris-bg); color:var(--u-gris); }
+  .punto-urg.rojo{ background:var(--u-rojo); box-shadow:0 0 0 3px var(--u-rojo-bg); }
+  .punto-urg.naranja{ background:var(--u-naranja); box-shadow:0 0 0 3px var(--u-naranja-bg); }
+  .punto-urg.amarillo{ background:var(--u-amarillo); box-shadow:0 0 0 3px var(--u-amarillo-bg); }
+  .punto-urg.verde{ background:var(--u-verde); box-shadow:0 0 0 3px var(--u-verde-bg); }
+  .punto-urg.gris{ background:var(--u-gris); box-shadow:0 0 0 3px var(--u-gris-bg); }
 
-  .badge-warning{
+  .badge-resuelta{
     display:inline-flex; align-items:center; gap:4px;
     font-size:10.5px; font-weight:700;
     padding:3px 8px; border-radius:6px;
-    background:var(--u-amarillo-bg); color:#8A6600;
+    background:var(--u-verde-bg); color:var(--u-verde);
     white-space:nowrap;
+  }
+
+  .badge-warning{
+    display:inline-flex; align-items:center; justify-content:center;
+    width:22px; height:22px; border-radius:50%; flex-shrink:0;
+    font-size:13px;
+    background:var(--u-amarillo-bg); color:#8A6600;
   }
 
   .badge-omitida{
@@ -870,7 +876,8 @@ function tarjetaHTML(a, esResuelta){
   const esDescartada = !!a.descartadaManual;
   const urg = esResuelta ? 'gris' : a.urgencia;
   const etiquetaEstado = esOmitida ? 'Omitida' : (esDescartada ? 'Descartada' : (esSinTareas ? 'Sin tareas' : 'Resuelta'));
-  const claseCard = (esOmitida || esSinTareas || esDescartada) ? 'omitida' : (esResuelta ? 'resuelta' : urg);
+  const tieneRazonEspecifica = esOmitida || esSinTareas || esDescartada;
+  const claseCard = tieneRazonEspecifica ? 'omitida' : (esResuelta ? 'resuelta' : urg);
   const instancias = a.taskInstances || [];
   const clave = escapeHtml(`${a.awbNumber || a.id}-${a.etd}`);
   const tituloDescarte = a.motivoDescarte ? `Motivo: ${a.motivoDescarte}` : 'Descartada manualmente por un admin';
@@ -879,11 +886,12 @@ function tarjetaHTML(a, esResuelta){
     <div class="awb-card ${claseCard}" data-clave="${clave}">
       <div class="awb-head">
         <div class="awb-left">
-          <span class="badge-urg gris">${esResuelta ? etiquetaEstado : LABEL_URGENCIA[urg]}</span>
+          ${!esResuelta ? `<span class="punto-urg ${urg}" title="${escapeHtml(LABEL_URGENCIA[urg])}"></span>` : ''}
+          ${(esResuelta && !tieneRazonEspecifica) ? `<span class="badge-resuelta">${etiquetaEstado}</span>` : ''}
           ${esOmitida ? `<span class="badge-omitida" title="awbId contiene &quot;SOLO ELITE&quot;">Excluida por nombre</span>` : ''}
           ${esSinTareas ? `<span class="badge-omitida" title="taskInstances viene vacío">Sin tareas de transmisión</span>` : ''}
           ${esDescartada ? `<span class="badge-omitida" title="${escapeHtml(tituloDescarte)}">Descartada manualmente</span>` : ''}
-          ${a.evalTasks && a.evalTasks.warning ? `<span class="badge-warning">⚠ Requirió reintento</span>` : ''}
+          ${a.evalTasks && a.evalTasks.warning ? `<span class="badge-warning" title="Requirió reintento">⚠</span>` : ''}
           <div>
             <div class="awb-id">
               <span class="awb-id-texto">${escapeHtml(a.awbNumber || a.id || '—')}</span>
