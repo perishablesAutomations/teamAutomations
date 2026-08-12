@@ -312,6 +312,18 @@
     white-space:nowrap;
   }
 
+  .admin-zona{
+    margin-top:14px; padding-top:14px; border-top:1px dashed var(--border);
+  }
+  .btn-descartar{
+    background:none; border:1px solid var(--u-rojo); color:var(--u-rojo);
+    padding:8px 14px; border-radius:8px; font-family:var(--font-body);
+    font-weight:700; font-size:12px; cursor:pointer;
+    transition:background .15s ease, color .15s ease;
+  }
+  .btn-descartar:hover{ background:var(--u-rojo); color:#fff; }
+  .btn-descartar:disabled{ opacity:.5; cursor:default; background:none; color:var(--u-rojo); }
+
   .awb-id{
     font-family:var(--font-mono); font-weight:700; font-size:15px; color:var(--kn-navy);
     display:inline-flex; align-items:center; gap:6px;
@@ -522,6 +534,19 @@ const LABEL_URGENCIA = { rojo: 'Rojo', naranja: 'Naranja', amarillo: 'Amarillo',
 // K+N puede usar otros literales - ajustar esta lista cuando se confirme el enum real.
 const ESTADOS_COMPLETADO = ['DONE', 'COMPLETED', 'COMPLETADO', 'FINALIZADO', 'SUCCESS', 'SUCCESSFUL', 'OK'];
 
+// --- Admin: se activa con ?adminToken=... en la URL, y queda guardado en este
+// dispositivo/navegador para no tener que repetir el link cada vez. ---
+const ADMIN_TOKEN = 'kn-perish-2026-adm-X7mQ9p';
+const WEBHOOK_DESCARTAR = 'https://n8n-production-fbb1.up.railway.app/webhook/awb-descartar';
+(function resolverAdmin(){
+  const params = new URLSearchParams(window.location.search);
+  if(params.get('adminToken') === ADMIN_TOKEN){
+    localStorage.setItem('awbTransmisionAdmin', 'true');
+  }
+})();
+const esAdmin = localStorage.getItem('awbTransmisionAdmin') === 'true';
+const descartesLocales = new Set(); // para ocultar de inmediato en esta sesión, sin esperar la próxima actualización
+
 let ultimaData = null;
 let filtroUrgencia = 'todos';
 let filtroTexto = '';
@@ -634,8 +659,12 @@ function procesarAwbs(data){
     const resueltaPorTasks = (a.interfaceSend === 'PENDING' || a.interfaceSend === 'ERROR') && evalTasks.todasCompletadas;
     const omitidaPorNombre = esOmitidaPorNombre(a);
     const sinTareas = esSinTareasTransmision(a);
-    const excluidaDePendientes = resueltaPorTasks || omitidaPorNombre || sinTareas;
-    return { ...a, urgencia, horas, evalTasks, resueltaPorTasks, omitidaPorNombre, sinTareas, excluidaDePendientes };
+    // Regla 5: descartada a mano por un admin. "a.descartadaManual" viene del backend
+    // (Data Table de n8n) una vez que corra la próxima consulta; "descartesLocales"
+    // es solo para que se oculte al instante en ESTA sesión, sin esperar ese refresh.
+    const descartadaManual = !!a.descartadaManual || descartesLocales.has(String(a.id));
+    const excluidaDePendientes = resueltaPorTasks || omitidaPorNombre || sinTareas || descartadaManual;
+    return { ...a, urgencia, horas, evalTasks, resueltaPorTasks, omitidaPorNombre, sinTareas, descartadaManual, excluidaDePendientes };
   });
 }
 
@@ -742,7 +771,53 @@ function adjuntarListenersTarjetas(cont){
       });
       btnCopiar.addEventListener('mousedown', (e) => e.stopPropagation());
     }
+
+    const btnDescartar = card.querySelector('.btn-descartar');
+    if(btnDescartar){
+      btnDescartar.addEventListener('click', (e) => {
+        e.stopPropagation();
+        descartarAwb(btnDescartar);
+      });
+      btnDescartar.addEventListener('mousedown', (e) => e.stopPropagation());
+    }
   });
+}
+
+async function descartarAwb(btnEl){
+  const id = btnEl.dataset.descartarId;
+  const awbNumber = btnEl.dataset.descartarAwb;
+  const sede = btnEl.dataset.descartarSede;
+
+  const motivo = prompt(`¿Por qué se descarta la AWB ${awbNumber}? (opcional)`);
+  if(motivo === null) return; // cancelo el prompt
+
+  if(!confirm(`Confirmas descartar ${awbNumber} — no se volverá a mostrar como pendiente/roja.`)) return;
+
+  btnEl.disabled = true;
+  btnEl.textContent = 'Descartando…';
+
+  try{
+    const res = await fetch(WEBHOOK_DESCARTAR, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        awbId: id,
+        awbNumber,
+        sede: sede || null,
+        motivo: motivo || null,
+        descartadaPor: 'admin-web',
+        fecha: new Date().toISOString()
+      })
+    });
+    if(!res.ok) throw new Error('HTTP ' + res.status);
+
+    descartesLocales.add(String(id)); // se oculta de inmediato en esta sesión
+    if(ultimaData) render(ultimaData);
+  }catch(err){
+    alert('No se pudo descartar la AWB (' + err.message + '). Intenta de nuevo.');
+    btnEl.disabled = false;
+    btnEl.textContent = 'Descartar esta AWB manualmente';
+  }
 }
 
 function renderResumen(awbs){
@@ -773,11 +848,13 @@ function renderResumen(awbs){
 function tarjetaHTML(a, esResuelta){
   const esOmitida = !!a.omitidaPorNombre;
   const esSinTareas = !!a.sinTareas;
+  const esDescartada = !!a.descartadaManual;
   const urg = esResuelta ? 'gris' : a.urgencia;
-  const etiquetaEstado = esOmitida ? 'Omitida' : (esSinTareas ? 'Sin tareas' : 'Resuelta');
-  const claseCard = esOmitida ? 'omitida' : (esSinTareas ? 'omitida' : (esResuelta ? 'resuelta' : urg));
+  const etiquetaEstado = esOmitida ? 'Omitida' : (esDescartada ? 'Descartada' : (esSinTareas ? 'Sin tareas' : 'Resuelta'));
+  const claseCard = (esOmitida || esSinTareas || esDescartada) ? 'omitida' : (esResuelta ? 'resuelta' : urg);
   const instancias = a.taskInstances || [];
   const clave = escapeHtml(`${a.awbNumber || a.id}-${a.etd}`);
+  const tituloDescarte = a.motivoDescarte ? `Motivo: ${a.motivoDescarte}` : 'Descartada manualmente por un admin';
 
   return `
     <div class="awb-card ${claseCard}" data-clave="${clave}">
@@ -786,6 +863,7 @@ function tarjetaHTML(a, esResuelta){
           <span class="badge-urg gris">${esResuelta ? etiquetaEstado : LABEL_URGENCIA[urg]}</span>
           ${esOmitida ? `<span class="badge-omitida" title="awbId contiene &quot;SOLO ELITE&quot;">Excluida por nombre</span>` : ''}
           ${esSinTareas ? `<span class="badge-omitida" title="taskInstances viene vacío">Sin tareas de transmisión</span>` : ''}
+          ${esDescartada ? `<span class="badge-omitida" title="${escapeHtml(tituloDescarte)}">Descartada manualmente</span>` : ''}
           ${a.evalTasks && a.evalTasks.warning ? `<span class="badge-warning">⚠ Requirió reintento</span>` : ''}
           <div>
             <div class="awb-id">
@@ -856,6 +934,12 @@ function tarjetaHTML(a, esResuelta){
             `;
             }).join('')
         }
+        ${(esAdmin && !esDescartada) ? `
+        <div class="admin-zona">
+          <button type="button" class="btn-descartar" data-descartar-id="${escapeHtml(String(a.id))}" data-descartar-awb="${escapeHtml(a.awbNumber || String(a.id))}" data-descartar-sede="${escapeHtml(a.sede || '')}">
+            Descartar esta AWB manualmente
+          </button>
+        </div>` : ''}
       </div>
     </div>
   `;
@@ -1049,6 +1133,9 @@ document.addEventListener('keydown', (e) => {
 });
 
 /* ---------- Selector de sede (CO / EC / Ambas) — solo accesible desde Configuración ---------- */
+// "Ambas" queda oculto salvo para quien entró con el link de admin (?adminToken=...).
+document.querySelector('#sedeSelector [data-sede="ambas"]').hidden = !esAdmin;
+
 function actualizarBotonesSede(){
   document.querySelectorAll('#sedeSelector button').forEach(btn => {
     btn.classList.toggle('activo', btn.dataset.sede === filtroSede);
