@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-12T15:51:51.866Z",
+  "generatedAt": "2026-08-12T16:11:51.695Z",
   "awbs": [
     {
       "id": 981217,
@@ -66,7 +66,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -101.11
+      "hoursToEtd": -101.45
     },
     {
       "id": 981229,
@@ -165,33 +165,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -88.36
-    },
-    {
-      "id": 981268,
-      "awbId": "1 SOLO ELITE ",
-      "airlinePrefix": "543",
-      "shipDate": "2026-08-07",
-      "processedErrors": 0,
-      "rateType": "SPOT",
-      "consignee": "SUNBURST FARMS INC.",
-      "detailConfirmationRequired": true,
-      "piecesConfirmedActivity": "DONE",
-      "weightConfirmedActivity": "DONE",
-      "awbProducedActivity": "DONE",
-      "invoiceProducedActivity": "ACTIVE",
-      "documentsSendActivity": "ACTIVE",
-      "interfaceSend": "PENDING",
-      "pieces": 84,
-      "fullBoxes": 21,
-      "piecesReceived": 54,
-      "fullBoxesReceived": 19,
-      "etd": "2026-08-08T23:30:00",
-      "awbStatus": 6,
-      "awbNumber": "543-18663433",
-      "taskInstances": [],
-      "urgencia": "rojo",
-      "hoursToEtd": -88.36
+      "hoursToEtd": -88.7
     },
     {
       "id": 981218,
@@ -258,7 +232,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -85.86
+      "hoursToEtd": -86.2
     },
     {
       "id": 981231,
@@ -325,7 +299,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -85.86
+      "hoursToEtd": -86.2
     },
     {
       "id": 981253,
@@ -408,7 +382,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -81.36
+      "hoursToEtd": -81.7
     },
     {
       "id": 981331,
@@ -475,7 +449,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -81.36
+      "hoursToEtd": -81.7
     },
     {
       "id": 981230,
@@ -598,7 +572,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -69.7
+      "hoursToEtd": -70.03
     },
     {
       "id": 981245,
@@ -665,7 +639,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -69.7
+      "hoursToEtd": -70.03
     },
     {
       "id": 981258,
@@ -732,33 +706,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -69.7
-    },
-    {
-      "id": 981362,
-      "awbId": "TERCEROS 3 san juan-luisiana",
-      "airlinePrefix": "985",
-      "shipDate": "2026-08-08",
-      "processedErrors": 0,
-      "rateType": "REGULAR",
-      "consignee": "SUNBURST FARMS INC.",
-      "detailConfirmationRequired": true,
-      "piecesConfirmedActivity": "DONE",
-      "weightConfirmedActivity": "DONE",
-      "awbProducedActivity": "DONE",
-      "invoiceProducedActivity": "ACTIVE",
-      "documentsSendActivity": "ACTIVE",
-      "interfaceSend": "PENDING",
-      "pieces": 416,
-      "fullBoxes": 380.83,
-      "piecesReceived": 416,
-      "fullBoxesReceived": 380.83,
-      "etd": "2026-08-09T18:10:00",
-      "awbStatus": 6,
-      "awbNumber": "985-63845806",
-      "taskInstances": [],
-      "urgencia": "rojo",
-      "hoursToEtd": -69.7
+      "hoursToEtd": -70.03
     },
     {
       "id": 981248,
@@ -825,7 +773,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -54.86
+      "hoursToEtd": -55.2
     },
     {
       "id": 981246,
@@ -892,7 +840,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -49.61
+      "hoursToEtd": -49.95
     },
     {
       "id": 981394,
@@ -959,7 +907,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -23.86
+      "hoursToEtd": -24.2
     },
     {
       "id": 981395,
@@ -1026,7 +974,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -23.86
+      "hoursToEtd": -24.2
     },
     {
       "id": 981382,
@@ -1093,7 +1041,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -20.45
+      "hoursToEtd": -20.78
     },
     {
       "id": 981421,
@@ -1160,7 +1108,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -20.45
+      "hoursToEtd": -20.78
     },
     {
       "id": 981424,
@@ -1227,7 +1175,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -20.45
+      "hoursToEtd": -20.78
     },
     {
       "id": 981426,
@@ -1302,33 +1250,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -20.45
-    },
-    {
-      "id": 981427,
-      "awbId": "TERCEROS 3 san juan y luisiana",
-      "airlinePrefix": "985",
-      "shipDate": "2026-08-10",
-      "processedErrors": 0,
-      "rateType": "REGULAR",
-      "consignee": "SUNBURST FARMS INC.",
-      "detailConfirmationRequired": true,
-      "piecesConfirmedActivity": "DONE",
-      "weightConfirmedActivity": "DONE",
-      "awbProducedActivity": "DONE",
-      "invoiceProducedActivity": "ACTIVE",
-      "documentsSendActivity": "ACTIVE",
-      "interfaceSend": "PENDING",
-      "pieces": 546,
-      "fullBoxes": 299.5,
-      "piecesReceived": 546,
-      "fullBoxesReceived": 299.5,
-      "etd": "2026-08-12T00:00:00",
-      "awbStatus": 6,
-      "awbNumber": "985-63928465",
-      "taskInstances": [],
-      "urgencia": "rojo",
-      "hoursToEtd": -15.86
+      "hoursToEtd": -20.78
     },
     {
       "id": 981428,
@@ -1395,33 +1317,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -10.86
-    },
-    {
-      "id": 981524,
-      "awbId": "TERCEROS san juan - luisiana",
-      "airlinePrefix": "985",
-      "shipDate": "2026-08-11",
-      "processedErrors": 0,
-      "rateType": "REGULAR",
-      "consignee": "SUNBURST FARMS INC.",
-      "detailConfirmationRequired": true,
-      "piecesConfirmedActivity": "DONE",
-      "weightConfirmedActivity": "DONE",
-      "awbProducedActivity": "DONE",
-      "invoiceProducedActivity": "ACTIVE",
-      "documentsSendActivity": "ACTIVE",
-      "interfaceSend": "PENDING",
-      "pieces": 699,
-      "fullBoxes": 479.83,
-      "piecesReceived": 564,
-      "fullBoxesReceived": 344.83,
-      "etd": "2026-08-12T12:50:00",
-      "awbStatus": 6,
-      "awbNumber": "985-63969651",
-      "taskInstances": [],
-      "urgencia": "rojo",
-      "hoursToEtd": -3.03
+      "hoursToEtd": -11.2
     },
     {
       "id": 981480,
@@ -1512,7 +1408,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": 0.14
+      "hoursToEtd": -0.2
     },
     {
       "id": 981503,
@@ -1579,7 +1475,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": 0.14
+      "hoursToEtd": -0.2
     },
     {
       "id": 981536,
@@ -1661,8 +1557,8 @@
           ]
         }
       ],
-      "urgencia": "amarillo",
-      "hoursToEtd": 2.14
+      "urgencia": "naranja",
+      "hoursToEtd": 1.8
     },
     {
       "id": 981486,
@@ -1717,7 +1613,7 @@
         }
       ],
       "urgencia": "verde",
-      "hoursToEtd": 14.47
+      "hoursToEtd": 14.14
     }
   ],
   "erroresEnriquecimiento": []
