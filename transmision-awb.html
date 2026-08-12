@@ -361,19 +361,6 @@
   .detail-grid div span.k{ display:block; color:var(--text-faint); font-size:10px; text-transform:uppercase; letter-spacing:.3px; }
   .detail-grid div span.v{ font-weight:700; font-family:var(--font-mono); }
 
-  .progreso-cajas{
-    margin-bottom:14px;
-  }
-  .progreso-cajas .barra-bg{
-    background:var(--u-gris-bg); border-radius:6px; height:8px; overflow:hidden;
-  }
-  .progreso-cajas .barra-fg{
-    background:var(--kn-orange); height:100%; border-radius:6px; transition:width .3s ease;
-  }
-  .progreso-cajas .texto{
-    font-size:11px; color:var(--text-soft); margin-top:5px; font-family:var(--font-mono);
-  }
-
   .ti-title{
     font-size:11.5px; font-weight:800; text-transform:uppercase; letter-spacing:.4px;
     color:var(--text-faint); margin:10px 0 8px;
@@ -485,6 +472,11 @@
 
 <main>
   <div class="filtros-bar">
+    <div class="sede-selector" id="branchFiltro" hidden>
+      <button type="button" data-branch="todas">Todas</button>
+      <button type="button" data-branch="CO">CO</button>
+      <button type="button" data-branch="EC">EC</button>
+    </div>
     <input type="search" id="inputBuscar" placeholder="Buscar por AWB, consignee o referencia…" autocomplete="off">
     <button class="pill-btn-limpiar" id="btnLimpiarFiltros" hidden>Limpiar filtros</button>
   </div>
@@ -530,6 +522,7 @@ let ultimaData = null;
 let filtroUrgencia = 'todos';
 let filtroTexto = '';
 let filtroSede = localStorage.getItem('awbTransmisionSede') || null; // null = aun no decidido, se resuelve al arrancar
+let filtroBranchVista = 'todas'; // sub-filtro visible solo cuando filtroSede === 'ambas'
 const abiertas = new Set();
 let resueltasAbiertas = false;
 
@@ -653,6 +646,11 @@ function filtrarPorSede(lista, sede){
   return lista.filter(a => !a.sede || a.sede === sede);
 }
 
+function filtrarPorBranchVista(lista, branch){
+  if(branch === 'todas') return lista;
+  return lista.filter(a => !a.sede || a.sede === branch);
+}
+
 function render(data){
   const procesadas = procesarAwbs(data);
   const pendientesTodas = procesadas.filter(a => !a.excluidaDePendientes).sort((x, y) => {
@@ -663,12 +661,18 @@ function render(data){
   });
   const resueltasTodas = procesadas.filter(a => a.excluidaDePendientes);
 
-  // Orden de filtros: sede -> texto -> urgencia (chip). Los chips cuentan sobre sede+texto.
+  // Orden de filtros: sede (config) -> branch (sub-filtro visible solo en Ambas) -> texto -> urgencia (chip).
   const pendientesSede = filtrarPorSede(pendientesTodas, filtroSede);
   const resueltasSede = filtrarPorSede(resueltasTodas, filtroSede);
 
-  const pendientesTexto = filtrarPorTexto(pendientesSede, filtroTexto);
-  const resueltasTexto = filtrarPorTexto(resueltasSede, filtroTexto);
+  const branchFiltroEl = document.getElementById('branchFiltro');
+  branchFiltroEl.hidden = (filtroSede !== 'ambas');
+
+  const pendientesBranch = filtroSede === 'ambas' ? filtrarPorBranchVista(pendientesSede, filtroBranchVista) : pendientesSede;
+  const resueltasBranch = filtroSede === 'ambas' ? filtrarPorBranchVista(resueltasSede, filtroBranchVista) : resueltasSede;
+
+  const pendientesTexto = filtrarPorTexto(pendientesBranch, filtroTexto);
+  const resueltasTexto = filtrarPorTexto(resueltasBranch, filtroTexto);
 
   renderResumen(pendientesTexto);
 
@@ -761,9 +765,6 @@ function tarjetaHTML(a, esResuelta){
   const claseCard = esOmitida ? 'omitida' : (esResuelta ? 'resuelta' : urg);
   const instancias = a.taskInstances || [];
   const clave = escapeHtml(`${a.awbNumber || a.id}-${a.etd}`);
-  const pctCajas = (a.fullBoxes && a.fullBoxes > 0)
-    ? Math.min(100, Math.round(((a.fullBoxesReceived || 0) / a.fullBoxes) * 100))
-    : null;
 
   return `
     <div class="awb-card ${claseCard}" data-clave="${clave}">
@@ -806,11 +807,6 @@ function tarjetaHTML(a, esResuelta){
           <div><span class="k">Piezas</span><span class="v">${formatoNumero(a.pieces)}</span></div>
           <div><span class="k">Piezas recib.</span><span class="v">${formatoNumero(a.piecesReceived)}</span></div>
         </div>
-        ${pctCajas !== null ? `
-        <div class="progreso-cajas">
-          <div class="barra-bg"><div class="barra-fg" style="width:${pctCajas}%"></div></div>
-          <div class="texto">${pctCajas}% de las cajas recibidas</div>
-        </div>` : ''}
         <div class="ti-title">Task instances</div>
         ${instancias.length === 0
           ? `<div class="sin-datos">Sin task instances registradas.</div>`
@@ -1047,18 +1043,35 @@ function actualizarBotonesSede(){
 document.querySelectorAll('#sedeSelector button').forEach(btn => {
   btn.addEventListener('click', () => {
     filtroSede = btn.dataset.sede;
+    filtroBranchVista = 'todas'; // reinicia el sub-filtro al cambiar de modo
     // Elección manual desde Configuración SÍ se guarda de forma persistente
     // (a diferencia del default por ubicación, que no se guarda para poder
     // re-detectar en visitas futuras si el usuario nunca elige a mano).
     localStorage.setItem('awbTransmisionSede', filtroSede);
     document.getElementById('notaDeteccion').textContent = 'Guardado manualmente.';
     actualizarBotonesSede();
+    actualizarBotonesBranch();
     if(ultimaData){
       render(ultimaData);
       revisarUrgentesYNotificar(ultimaData);
     }
   });
 });
+
+/* ---------- Filtro rápido por branch (solo visible dentro del modo Ambas) ---------- */
+function actualizarBotonesBranch(){
+  document.querySelectorAll('#branchFiltro button').forEach(btn => {
+    btn.classList.toggle('activo', btn.dataset.branch === filtroBranchVista);
+  });
+}
+document.querySelectorAll('#branchFiltro button').forEach(btn => {
+  btn.addEventListener('click', () => {
+    filtroBranchVista = btn.dataset.branch;
+    actualizarBotonesBranch();
+    if(ultimaData) render(ultimaData);
+  });
+});
+actualizarBotonesBranch();
 
 /* ---------- Detección de sede por ubicación (solo si no hay preferencia guardada) ----------
    Nunca elige "ambas" automáticamente — solo CO o EC. "Ambas" es exclusivo del
