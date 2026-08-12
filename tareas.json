@@ -1,12 +1,22 @@
 {
-  "generated_at": "2026-08-12T15:32:10.882Z",
+  "generated_at": "2026-08-12T17:32:09.278Z",
   "diaria": [
+    {
+      "id": "esUFmw91vE6Lmk6PoG91WpgACVr_",
+      "titulo": "asignar Exportador a un Cliente ate las marcas que tiene activas",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "diaria"
+    },
     {
       "id": "JyxVch5h7UKNZW3Rx8qEh5gAAzGh",
       "titulo": "Documentar programación todas las AWB",
       "descripcion": "",
       "etiqueta": "",
-      "asignado": "Sin asignar",
+      "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
       "fecha_limite": "",
       "prioridad": 5,
       "deposito": "diaria"
@@ -674,16 +684,6 @@
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "sin_deposito"
-    },
-    {
-      "id": "wgrwyki_WE-boNWrvMhhFZgALrr2",
-      "titulo": "Testing mejoras de bodega 6 (reporte de salidas y ajustes awb dashboard)",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
       "fecha_limite": "",
       "prioridad": 5,
       "deposito": "sin_deposito"
