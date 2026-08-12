@@ -167,6 +167,55 @@
     max-width:1100px; margin:16px auto 0; padding:0 20px;
     display:flex; align-items:center; gap:10px; flex-wrap:wrap;
   }
+  .sede-selector{
+    display:flex; background:var(--card); border:1px solid var(--border);
+    border-radius:10px; padding:3px; box-shadow:var(--shadow-sm); flex-shrink:0;
+  }
+  .sede-selector button{
+    border:none; background:none; cursor:pointer;
+    padding:7px 14px; border-radius:7px;
+    font-family:var(--font-body); font-weight:700; font-size:12.5px;
+    color:var(--text-soft);
+    transition:background .15s ease, color .15s ease;
+  }
+  .sede-selector button:hover{ color:var(--kn-navy); }
+  .sede-selector button.activo{ background:var(--kn-navy); color:#fff; }
+  .sede-pill{
+    font-family:var(--font-mono); font-size:10px; font-weight:700;
+    padding:2px 7px; border-radius:5px;
+    background:var(--kn-navy-soft); color:var(--kn-navy-2);
+    white-space:nowrap;
+  }
+
+  .icon-btn{
+    background:rgba(255,255,255,.1); border:1px solid rgba(255,255,255,.22);
+    color:#fff; width:34px; height:34px; border-radius:999px;
+    display:inline-flex; align-items:center; justify-content:center;
+    cursor:pointer; flex-shrink:0; padding:0;
+    transition:background .15s ease;
+  }
+  .icon-btn:hover{ background:rgba(255,255,255,.18); }
+  .icon-btn svg{ width:17px; height:17px; display:block; }
+
+  .modal-overlay{
+    position:fixed; inset:0; background:rgba(10,34,64,.55);
+    display:flex; align-items:center; justify-content:center;
+    z-index:100; padding:20px;
+  }
+  .modal-card{
+    background:var(--card); border-radius:16px; box-shadow:var(--shadow-lg);
+    width:100%; max-width:380px; padding:22px;
+  }
+  .modal-head{ display:flex; align-items:center; justify-content:space-between; margin-bottom:4px; }
+  .modal-head h2{ margin:0; font-size:16px; font-weight:800; color:var(--kn-navy); }
+  .modal-close{
+    background:none; border:none; font-size:22px; line-height:1;
+    cursor:pointer; color:var(--text-faint); padding:2px 6px;
+  }
+  .modal-close:hover{ color:var(--kn-navy); }
+  .modal-label{ display:block; font-size:12.5px; font-weight:800; color:var(--text); margin:16px 0 5px; }
+  .modal-hint{ font-size:11.5px; color:var(--text-faint); margin:0 0 12px; line-height:1.5; }
+  .modal-nota{ font-size:11px; color:var(--text-faint); margin:10px 0 0; font-style:italic; }
   #inputBuscar{
     flex:1; min-width:220px;
     padding:10px 14px;
@@ -400,9 +449,35 @@
       <button class="pill-btn acento" id="btnNotif">Activar alertas rojas</button>
       <button class="pill-btn" id="btnInstalar" hidden>Instalar app</button>
       <span class="ios-hint" id="iosHint" hidden>En iPhone: Compartir → "Agregar a inicio" para instalarla</span>
+      <button class="icon-btn" id="btnConfig" title="Configuración" aria-label="Configuración">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="3"/>
+          <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1Z"/>
+        </svg>
+      </button>
     </div>
   </div>
 </header>
+
+<div class="modal-overlay" id="modalConfig" hidden>
+  <div class="modal-card">
+    <div class="modal-head">
+      <h2>Configuración</h2>
+      <button class="modal-close" id="btnCerrarConfig" aria-label="Cerrar">×</button>
+    </div>
+    <label class="modal-label">Sede a monitorear</label>
+    <p class="modal-hint">
+      Por defecto se detecta sola según tu ubicación (si la permites) — solo puede quedar en CO o EC.
+      La opción "Ambas" es exclusiva para el equipo que monitorea los dos países, y solo se activa acá.
+    </p>
+    <div class="sede-selector" id="sedeSelector">
+      <button type="button" data-sede="CO">CO</button>
+      <button type="button" data-sede="EC">EC</button>
+      <button type="button" data-sede="ambas">Ambas</button>
+    </div>
+    <p class="modal-nota" id="notaDeteccion"></p>
+  </div>
+</div>
 
 <div class="summary" id="summary"></div>
 
@@ -452,6 +527,7 @@ const ESTADOS_COMPLETADO = ['DONE', 'COMPLETED', 'COMPLETADO', 'FINALIZADO', 'SU
 let ultimaData = null;
 let filtroUrgencia = 'todos';
 let filtroTexto = '';
+let filtroSede = localStorage.getItem('awbTransmisionSede') || null; // null = aun no decidido, se resuelve al arrancar
 const abiertas = new Set();
 let resueltasAbiertas = false;
 
@@ -568,6 +644,13 @@ function filtrarPorTexto(lista, texto){
   );
 }
 
+function filtrarPorSede(lista, sede){
+  if(sede === 'ambas' || !sede) return lista; // null = todavia no se resolvio, mostrar todo mientras tanto
+  // AWBs sin campo "sede" (payloads viejos, antes de agregar EC) se muestran
+  // igual en cualquier filtro, para no ocultar datos por una falta de dato nueva.
+  return lista.filter(a => !a.sede || a.sede === sede);
+}
+
 function render(data){
   const procesadas = procesarAwbs(data);
   const pendientesTodas = procesadas.filter(a => !a.excluidaDePendientes).sort((x, y) => {
@@ -578,9 +661,12 @@ function render(data){
   });
   const resueltasTodas = procesadas.filter(a => a.excluidaDePendientes);
 
-  // Filtro de texto se aplica primero (a ambas listas); los chips cuentan sobre este resultado.
-  const pendientesTexto = filtrarPorTexto(pendientesTodas, filtroTexto);
-  const resueltasTexto = filtrarPorTexto(resueltasTodas, filtroTexto);
+  // Orden de filtros: sede -> texto -> urgencia (chip). Los chips cuentan sobre sede+texto.
+  const pendientesSede = filtrarPorSede(pendientesTodas, filtroSede);
+  const resueltasSede = filtrarPorSede(resueltasTodas, filtroSede);
+
+  const pendientesTexto = filtrarPorTexto(pendientesSede, filtroTexto);
+  const resueltasTexto = filtrarPorTexto(resueltasSede, filtroTexto);
 
   renderResumen(pendientesTexto);
 
@@ -696,6 +782,7 @@ function tarjetaHTML(a, esResuelta){
           </div>
         </div>
         <div class="awb-right">
+          ${a.sede && (filtroSede === 'ambas' || !filtroSede) ? `<span class="sede-pill">${escapeHtml(a.sede)}</span>` : ''}
           <span class="interface-pill">${escapeHtml(a.interfaceSend || '—')}</span>
           <div class="awb-etd">
             <div class="label">ETD</div>
@@ -843,8 +930,9 @@ function revisarUrgentesYNotificar(data){
   const notificadas = getNotificadas();
   const ahora = Date.now();
   const procesadas = procesarAwbs(data);
+  const procesadasSede = filtrarPorSede(procesadas, filtroSede);
 
-  procesadas.forEach(a => {
+  procesadasSede.forEach(a => {
     if(a.excluidaDePendientes) return; // regla 1 (tasks completadas) o regla 3 (SOLO ELITE): nunca notifica
     if(a.urgencia !== 'rojo') return;
 
@@ -852,7 +940,8 @@ function revisarUrgentesYNotificar(data){
     const ultimaVez = notificadas[clave];
     if(ultimaVez && (ahora - ultimaVez) < 15 * 60 * 1000) return;
 
-    mostrarNotificacionOS('🔴 AWB por transmitir — urgente', {
+    const etiquetaSede = a.sede ? ` [${a.sede}]` : '';
+    mostrarNotificacionOS(`🔴 AWB por transmitir — urgente${etiquetaSede}`, {
       body: `${a.awbNumber || a.id} (${a.consignee || 'sin consignee'}) — ETD en menos de 1h. Interface Send: ${a.interfaceSend}.`,
       tag: clave,
       icon: 'icons/icon-192.png',
@@ -934,9 +1023,86 @@ document.getElementById('btnLimpiarFiltros').addEventListener('click', () => {
   if(ultimaData) render(ultimaData);
 });
 
+/* ---------- Modal de configuración ---------- */
+function abrirModalConfig(){ document.getElementById('modalConfig').hidden = false; }
+function cerrarModalConfig(){ document.getElementById('modalConfig').hidden = true; }
+
+document.getElementById('btnConfig').addEventListener('click', abrirModalConfig);
+document.getElementById('btnCerrarConfig').addEventListener('click', cerrarModalConfig);
+document.getElementById('modalConfig').addEventListener('click', (e) => {
+  if(e.target.id === 'modalConfig') cerrarModalConfig(); // clic fuera de la tarjeta cierra
+});
+document.addEventListener('keydown', (e) => {
+  if(e.key === 'Escape' && !document.getElementById('modalConfig').hidden) cerrarModalConfig();
+});
+
+/* ---------- Selector de sede (CO / EC / Ambas) — solo accesible desde Configuración ---------- */
+function actualizarBotonesSede(){
+  document.querySelectorAll('#sedeSelector button').forEach(btn => {
+    btn.classList.toggle('activo', btn.dataset.sede === filtroSede);
+  });
+}
+document.querySelectorAll('#sedeSelector button').forEach(btn => {
+  btn.addEventListener('click', () => {
+    filtroSede = btn.dataset.sede;
+    // Elección manual desde Configuración SÍ se guarda de forma persistente
+    // (a diferencia del default por ubicación, que no se guarda para poder
+    // re-detectar en visitas futuras si el usuario nunca elige a mano).
+    localStorage.setItem('awbTransmisionSede', filtroSede);
+    document.getElementById('notaDeteccion').textContent = 'Guardado manualmente.';
+    actualizarBotonesSede();
+    if(ultimaData){
+      render(ultimaData);
+      revisarUrgentesYNotificar(ultimaData);
+    }
+  });
+});
+
+/* ---------- Detección de sede por ubicación (solo si no hay preferencia guardada) ----------
+   Nunca elige "ambas" automáticamente — solo CO o EC. "Ambas" es exclusivo del
+   equipo que monitorea los dos países, y se activa siempre a mano desde Configuración. */
+function inferirSedePorCoordenadas(lat, lon){
+  // Rangos geográficos aproximados (no es una frontera exacta, pero alcanza para un default razonable).
+  const enEcuador = lat >= -5.1 && lat <= 1.6 && lon >= -81.2 && lon <= -75.0;
+  const enColombia = lat >= -4.3 && lat <= 13.5 && lon >= -79.1 && lon <= -66.8;
+  if(enEcuador && !enColombia) return 'EC';
+  if(enColombia && !enEcuador) return 'CO';
+  if(enEcuador && enColombia) return lat <= 0.5 ? 'EC' : 'CO'; // zona de solape en la frontera
+  return null; // fuera de ambos paises: no forzamos nada
+}
+
+function detectarSedePorUbicacion(){
+  return new Promise((resolve) => {
+    if(!('geolocation' in navigator)){ resolve(null); return; }
+    navigator.geolocation.getCurrentPosition(
+      (pos) => resolve(inferirSedePorCoordenadas(pos.coords.latitude, pos.coords.longitude)),
+      () => resolve(null), // permiso denegado o error: seguimos con el fallback
+      { timeout: 5000, maximumAge: 3600000 }
+    );
+  });
+}
+
 /* ---------- Arranque ---------- */
-cargarDatos();
-setInterval(cargarDatos, POLL_MS);
+(async () => {
+  const notaEl = document.getElementById('notaDeteccion');
+
+  if(!filtroSede){
+    notaEl.textContent = 'Detectando sede por ubicación…';
+    const detectada = await detectarSedePorUbicacion();
+    filtroSede = detectada || 'CO'; // sin ubicación disponible: CO como default razonable
+    notaEl.textContent = detectada
+      ? `Detectado automáticamente por ubicación: ${detectada}.`
+      : 'No se pudo detectar por ubicación — usando CO por defecto. Cámbialo aquí si hace falta.';
+    // No se guarda en localStorage: así, si el usuario nunca entra a Configuración
+    // a fijarlo a mano, la próxima visita se vuelve a intentar detectar por ubicación.
+  } else {
+    notaEl.textContent = 'Guardado manualmente.';
+  }
+
+  actualizarBotonesSede();
+  cargarDatos();
+  setInterval(cargarDatos, POLL_MS);
+})();
 </script>
 </body>
 </html>
