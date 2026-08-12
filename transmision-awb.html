@@ -493,7 +493,7 @@
       <span class="chev">▾</span>
       <span id="tituloResueltas">Resueltas automáticamente</span>
     </button>
-    <p class="resueltas-nota">Acá aparecen dos casos que no cuentan como urgentes, pero quedan visibles por transparencia: AWBs con todas sus tareas completadas en K+N (aunque el interface send siga pendiente/error), y AWBs cuyo campo awbId contiene "SOLO ELITE" (excluidas siempre, sin importar ETD).</p>
+    <p class="resueltas-nota">Acá aparecen tres casos que no cuentan como urgentes, pero quedan visibles por transparencia: AWBs con todas sus tareas completadas en K+N (aunque el interface send siga pendiente/error), AWBs cuyo campo awbId contiene "SOLO ELITE", y AWBs sin ninguna task instance registrada todavía (nada que transmitir aún) — estas dos últimas excluidas siempre, sin importar ETD.</p>
     <div class="resueltas-lista" id="listaResueltas"></div>
   </div>
 </main>
@@ -616,14 +616,22 @@ function esOmitidaPorNombre(awb){
   return String(awb.awbId || '').toUpperCase().includes('SOLO ELITE');
 }
 
+// Regla 4: si taskInstances viene vacío ([]), no hay ninguna tarea de transmisión
+// registrada para esa AWB todavía — se excluye del listado urgente (nunca roja,
+// nunca notifica) y se muestra como "Sin tareas de transmisión".
+function esSinTareasTransmision(awb){
+  return !(awb.taskInstances && awb.taskInstances.length > 0);
+}
+
 function procesarAwbs(data){
   return (data.awbs || []).map(a => {
     const { urgencia, horas } = calcularUrgencia(a.etd);
     const evalTasks = evaluarAwbPorTasks(a);
     const resueltaPorTasks = (a.interfaceSend === 'PENDING' || a.interfaceSend === 'ERROR') && evalTasks.todasCompletadas;
     const omitidaPorNombre = esOmitidaPorNombre(a);
-    const excluidaDePendientes = resueltaPorTasks || omitidaPorNombre;
-    return { ...a, urgencia, horas, evalTasks, resueltaPorTasks, omitidaPorNombre, excluidaDePendientes };
+    const sinTareas = esSinTareasTransmision(a);
+    const excluidaDePendientes = resueltaPorTasks || omitidaPorNombre || sinTareas;
+    return { ...a, urgencia, horas, evalTasks, resueltaPorTasks, omitidaPorNombre, sinTareas, excluidaDePendientes };
   });
 }
 
@@ -760,9 +768,10 @@ function renderResumen(awbs){
 
 function tarjetaHTML(a, esResuelta){
   const esOmitida = !!a.omitidaPorNombre;
+  const esSinTareas = !!a.sinTareas;
   const urg = esResuelta ? 'gris' : a.urgencia;
-  const etiquetaEstado = esOmitida ? 'Omitida' : 'Resuelta';
-  const claseCard = esOmitida ? 'omitida' : (esResuelta ? 'resuelta' : urg);
+  const etiquetaEstado = esOmitida ? 'Omitida' : (esSinTareas ? 'Sin tareas' : 'Resuelta');
+  const claseCard = esOmitida ? 'omitida' : (esSinTareas ? 'omitida' : (esResuelta ? 'resuelta' : urg));
   const instancias = a.taskInstances || [];
   const clave = escapeHtml(`${a.awbNumber || a.id}-${a.etd}`);
 
@@ -772,6 +781,7 @@ function tarjetaHTML(a, esResuelta){
         <div class="awb-left">
           <span class="badge-urg gris">${esResuelta ? etiquetaEstado : LABEL_URGENCIA[urg]}</span>
           ${esOmitida ? `<span class="badge-omitida" title="awbId contiene &quot;SOLO ELITE&quot;">Excluida por nombre</span>` : ''}
+          ${esSinTareas ? `<span class="badge-omitida" title="taskInstances viene vacío">Sin tareas de transmisión</span>` : ''}
           ${a.evalTasks && a.evalTasks.warning ? `<span class="badge-warning">⚠ Requirió reintento</span>` : ''}
           <div>
             <div class="awb-id">
