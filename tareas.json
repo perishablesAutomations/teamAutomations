@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-12T19:32:21.383Z",
+  "generated_at": "2026-08-12T21:32:06.042Z",
   "diaria": [
     {
       "id": "esUFmw91vE6Lmk6PoG91WpgACVr_",
@@ -27,6 +27,16 @@
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "diaria"
+    },
+    {
+      "id": "uGlPGrKQwEaLC8xKULjfipgAHVPg",
+      "titulo": "Training tarifas y paso 5 - Stefy",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
       "fecha_limite": "",
       "prioridad": 5,
       "deposito": "diaria"
@@ -63,7 +73,7 @@
     },
     {
       "id": "LOBuWBSa0Emj85yTIp42fpgAFN-4",
-      "titulo": "Etiquetas DV",
+      "titulo": "Documentar Etiquetas DV",
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
@@ -94,16 +104,6 @@
     {
       "id": "OzU0TLJT8kOK3D9PEU_A_JgAFMKB",
       "titulo": "Ajuste AWB dashboard: tipo de caja - porcentaje de cumplimiento. observaciones en el ingreso",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "diaria"
-    },
-    {
-      "id": "xUtgrtg4TEq4EWhE1s8sFpgAOP7z",
-      "titulo": "Documentar: FDP a RTS y pop up de salidas opcion de FDP y RTS",
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
@@ -182,18 +182,8 @@
       "deposito": "diaria"
     },
     {
-      "id": "w-jgL8x5Z0ikwceVgjA9SJgAOUjK",
-      "titulo": "Definir piloto Funza primera semana de Agosto",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "diaria"
-    },
-    {
       "id": "HmUjAPP--0K7oyNdPpJNpJgAOtwc",
-      "titulo": "Testing manifestar hawbs",
+      "titulo": "Testing Ajustes manifestar hawbs",
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
@@ -234,31 +224,11 @@
       "deposito": "semanal"
     },
     {
-      "id": "qjb5k_d3lE6kq2ZSnzJK3JgACu98",
-      "titulo": "Training ingresar tarifas transhipment EC",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "semanal"
-    },
-    {
       "id": "rrTcAeZazEWrq92aaLxCW5gAMp7h",
       "titulo": "Errores transmisión traze",
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "semanal"
-    },
-    {
-      "id": "uGlPGrKQwEaLC8xKULjfipgAHVPg",
-      "titulo": "Training tarifas y paso 5 - Stefy",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
       "fecha_limite": "",
       "prioridad": 5,
       "deposito": "semanal"
