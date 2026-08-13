@@ -1,12 +1,22 @@
 {
-  "generated_at": "2026-08-13T19:32:20.935Z",
+  "generated_at": "2026-08-13T21:32:16.826Z",
   "diaria": [
     {
-      "id": "ImpVhv0ymkaueIwAPWnYFZgAI_qn",
-      "titulo": "Invoicing report",
+      "id": "f1Dmvy14-kStlDryCW67OpgANmHo",
+      "titulo": "Coordinar fecha capactiación dimensiones.",
       "descripcion": "",
       "etiqueta": "",
-      "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
+      "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "diaria"
+    },
+    {
+      "id": "aETsqvFqzkij-q7xT3ictZgAEj93",
+      "titulo": "Escenarios para cancelar/eliminar lineas traze",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
       "fecha_limite": "",
       "prioridad": 5,
       "deposito": "diaria"
@@ -68,7 +78,7 @@
       "etiqueta": "",
       "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
       "fecha_limite": "",
-      "prioridad": 5,
+      "prioridad": 3,
       "deposito": "diaria"
     },
     {
@@ -112,16 +122,6 @@
       "deposito": "diaria"
     },
     {
-      "id": "uGlPGrKQwEaLC8xKULjfipgAHVPg",
-      "titulo": "Training tarifas y paso 5 - Stefy",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "diaria"
-    },
-    {
       "id": "CRI9WjTzxUmP0jLViteSyJgAE9R4",
       "titulo": "Ticket ocultar Generar track desde el escaneo Legacy",
       "descripcion": "",
@@ -143,7 +143,7 @@
     },
     {
       "id": "LOBuWBSa0Emj85yTIp42fpgAFN-4",
-      "titulo": "Documentar Etiquetas DV",
+      "titulo": "Entregar Etiquetas DV",
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
@@ -188,7 +188,7 @@
       "etiqueta": "",
       "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
       "fecha_limite": "",
-      "prioridad": 5,
+      "prioridad": 3,
       "deposito": "diaria"
     },
     {
@@ -212,21 +212,21 @@
       "deposito": "diaria"
     },
     {
-      "id": "0vrfLTWU90OzKuJIdyfPV5gABj06",
-      "titulo": "Ajustar check configuración de comercializadoras NEW",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
-      "fecha_limite": "",
-      "prioridad": 9,
-      "deposito": "diaria"
-    },
-    {
       "id": "0mPmvQ2_NEmNavWHNqeK8pgADUMi",
       "titulo": "Caso crear reservas NEW con clientes PO",
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Moreno, Sebastian / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "diaria"
+    },
+    {
+      "id": "OFzuv_jv0U-tzytJ-FLMNpgANOkE",
+      "titulo": "Testing certificado de origen",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
       "fecha_limite": "",
       "prioridad": 5,
       "deposito": "diaria"
@@ -253,6 +253,16 @@
     }
   ],
   "semanal": [
+    {
+      "id": "ImpVhv0ymkaueIwAPWnYFZgAI_qn",
+      "titulo": "Test Invoicing report",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "semanal"
+    },
     {
       "id": "Gv_DI49t5kusYW1iorHghpgAMU63",
       "titulo": "Corregir el dia que inicia la semana debe ser el lunes en el reporte de \"invoicing\"",
@@ -414,16 +424,6 @@
       "deposito": "semanal"
     },
     {
-      "id": "HYtpYc2BREyTHm-jgPJ5jpgAB-LO",
-      "titulo": "Testing auditoria de agrupaciones",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "semanal"
-    },
-    {
       "id": "pfvPuIBdv0qUcLqscjAjrJgAIRI4",
       "titulo": "Training new WH Manager",
       "descripcion": "",
@@ -431,6 +431,16 @@
       "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
       "fecha_limite": "",
       "prioridad": 5,
+      "deposito": "semanal"
+    },
+    {
+      "id": "0vrfLTWU90OzKuJIdyfPV5gABj06",
+      "titulo": "Test Ajustar check configuración de comercializadoras NEW",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
+      "fecha_limite": "",
+      "prioridad": 9,
       "deposito": "semanal"
     },
     {
@@ -464,16 +474,6 @@
       "deposito": "semanal"
     },
     {
-      "id": "OFzuv_jv0U-tzytJ-FLMNpgANOkE",
-      "titulo": "Testing certificado de origen",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "semanal"
-    },
-    {
       "id": "CrYMsEEaF0iC5DGcoLm4IJgAJXIs",
       "titulo": "Asignar caso de PO cuando se recarga po con piezas en track esta dejando actualizar, no debe hacerlo",
       "descripcion": "",
@@ -485,7 +485,7 @@
     },
     {
       "id": "c1QO8Cf1EEe4cvx_YnInyZgABcQf",
-      "titulo": "Ajuste de filtros – Administrar Reservas",
+      "titulo": "Test Ajuste de filtros – Administrar Reservas",
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
