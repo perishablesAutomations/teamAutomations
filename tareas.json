@@ -1,6 +1,36 @@
 {
-  "generated_at": "2026-08-13T21:32:16.826Z",
+  "generated_at": "2026-08-13T23:32:17.475Z",
   "diaria": [
+    {
+      "id": "Vy2nkfbn4UuYgZN6fLWcSZgAF7iB",
+      "titulo": "Seguimiento USA BQ con Diego",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "diaria"
+    },
+    {
+      "id": "GTWlrPpqvkGqi5ohAdH8VJgANVb-",
+      "titulo": "Definir proceso de gear management",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Moreno, Sebastian / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "diaria"
+    },
+    {
+      "id": "qATZgCNrQEC0RdShPKTFpZgAGM0h",
+      "titulo": "Definir diseño de ubicaciones",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Moreno, Sebastian / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "diaria"
+    },
     {
       "id": "f1Dmvy14-kStlDryCW67OpgANmHo",
       "titulo": "Coordinar fecha capactiación dimensiones.",
@@ -22,16 +52,6 @@
       "deposito": "diaria"
     },
     {
-      "id": "SqzmUGC3vUqapOP4tuY-qZgAJwKC",
-      "titulo": "Fuente AWB",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "diaria"
-    },
-    {
       "id": "ZeVA-ZJWbEOUSeCX8gsPWZgAMo5e",
       "titulo": "Asignar y test agrupación de exportadores paso 2",
       "descripcion": "",
@@ -43,7 +63,7 @@
     },
     {
       "id": "5jI9ZO7d0Emq-Cx2T3SkzpgAOM69",
-      "titulo": "Casos pendientes confirmar track con podega",
+      "titulo": "Documentar casos pendientes confirmar track con bodega",
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
@@ -264,11 +284,11 @@
       "deposito": "semanal"
     },
     {
-      "id": "Gv_DI49t5kusYW1iorHghpgAMU63",
-      "titulo": "Corregir el dia que inicia la semana debe ser el lunes en el reporte de \"invoicing\"",
+      "id": "SqzmUGC3vUqapOP4tuY-qZgAJwKC",
+      "titulo": "Testing Fuente AWB",
       "descripcion": "",
       "etiqueta": "",
-      "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
+      "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
       "fecha_limite": "",
       "prioridad": 5,
       "deposito": "semanal"
@@ -469,16 +489,6 @@
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "semanal"
-    },
-    {
-      "id": "CrYMsEEaF0iC5DGcoLm4IJgAJXIs",
-      "titulo": "Asignar caso de PO cuando se recarga po con piezas en track esta dejando actualizar, no debe hacerlo",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
       "fecha_limite": "",
       "prioridad": 5,
       "deposito": "semanal"
