@@ -1,148 +1,6 @@
 {
-  "generatedAt": "2026-08-12T23:58:57.397Z",
+  "generatedAt": "2026-08-13T00:13:58.219Z",
   "awbs": [
-    {
-      "id": 981209,
-      "awbId": "ELITE",
-      "airlinePrefix": "729",
-      "shipDate": "2026-08-07",
-      "processedErrors": 0,
-      "rateType": "REGULAR",
-      "consignee": "SUNBURST FARMS INC.",
-      "detailConfirmationRequired": true,
-      "piecesConfirmedActivity": "DONE",
-      "weightConfirmedActivity": "DONE",
-      "awbProducedActivity": "DONE",
-      "invoiceProducedActivity": "ACTIVE",
-      "documentsSendActivity": "ACTIVE",
-      "interfaceSend": "PENDING",
-      "pieces": 869,
-      "fullBoxes": 234.25,
-      "piecesReceived": 867,
-      "fullBoxesReceived": 233.75,
-      "etd": "2026-08-08T06:05:00",
-      "awbStatus": 6,
-      "awbNumber": "729-91204330",
-      "sede": "EC",
-      "taskInstances": [],
-      "urgencia": "rojo",
-      "hoursToEtd": -113.9
-    },
-    {
-      "id": 981217,
-      "awbId": "TERCEROS  MARIA FLOWER Y USAB",
-      "airlinePrefix": "985",
-      "shipDate": "2026-08-07",
-      "processedErrors": 0,
-      "rateType": "REGULAR",
-      "consignee": "SUNBURST FARMS INC.",
-      "detailConfirmationRequired": true,
-      "piecesConfirmedActivity": "DONE",
-      "weightConfirmedActivity": "DONE",
-      "awbProducedActivity": "DONE",
-      "invoiceProducedActivity": "ACTIVE",
-      "documentsSendActivity": "ACTIVE",
-      "interfaceSend": "PENDING",
-      "pieces": 493,
-      "fullBoxes": 214.5,
-      "piecesReceived": 492,
-      "fullBoxesReceived": 214.25,
-      "etd": "2026-08-08T10:45:00",
-      "awbStatus": 6,
-      "awbNumber": "985-63845784",
-      "sede": "CO",
-      "taskInstances": [
-        {
-          "awbId": 981217,
-          "taskTryStatus": "DONE",
-          "clientId": null,
-          "taskId": 5,
-          "taskInstanceId": 96725,
-          "taskName": "SEND BOOKINGS TRAZE",
-          "clientName": null,
-          "taskUrlAddress": "/traze/sendBookings",
-          "tries": [
-            {
-              "message": "Ticket id 9e7834b0-930a-11f1-9897-ede16b5092fd Status succeed",
-              "tryId": 79482,
-              "executionDate": "2026-08-08T05:22:26.690+00:00",
-              "taskTryStatus": "DONE",
-              "taskId": 5,
-              "taskInstanceId": 96725
-            }
-          ]
-        },
-        {
-          "awbId": 981217,
-          "taskTryStatus": "DONE",
-          "clientId": null,
-          "taskId": 6,
-          "taskInstanceId": 96726,
-          "taskName": "SEND LABELS TRAZE",
-          "clientName": null,
-          "taskUrlAddress": "/traze/sendLabels",
-          "tries": [
-            {
-              "message": "Ticket id bb412200-930a-11f1-a7fc-9f85f5c58bff Status succeed",
-              "tryId": 79483,
-              "executionDate": "2026-08-08T05:22:54.773+00:00",
-              "taskTryStatus": "DONE",
-              "taskId": 6,
-              "taskInstanceId": 96726
-            }
-          ]
-        },
-        {
-          "awbId": 981217,
-          "taskTryStatus": "PENDING",
-          "clientId": 53046,
-          "taskId": 7,
-          "taskInstanceId": 96727,
-          "taskName": "SEND BOOKINGS TRAZE CLIENT",
-          "clientName": "MARIA FLOWERS INTERNATIONAL INC",
-          "taskUrlAddress": "/traze/sendClientBookings",
-          "tries": []
-        },
-        {
-          "awbId": 981217,
-          "taskTryStatus": "PENDING",
-          "clientId": 44826,
-          "taskId": 7,
-          "taskInstanceId": 96728,
-          "taskName": "SEND BOOKINGS TRAZE CLIENT",
-          "clientName": "BLOOMSTAR",
-          "taskUrlAddress": "/traze/sendClientBookings",
-          "tries": []
-        },
-        {
-          "awbId": 981217,
-          "taskTryStatus": "PENDING",
-          "clientId": 53046,
-          "taskId": 8,
-          "taskInstanceId": 96729,
-          "taskName": "SEND LABELS TRAZE CLIENT",
-          "clientName": "MARIA FLOWERS INTERNATIONAL INC",
-          "taskUrlAddress": "/traze/sendClientLabels",
-          "tries": []
-        },
-        {
-          "awbId": 981217,
-          "taskTryStatus": "PENDING",
-          "clientId": 44826,
-          "taskId": 8,
-          "taskInstanceId": 96730,
-          "taskName": "SEND LABELS TRAZE CLIENT",
-          "clientName": "BLOOMSTAR",
-          "taskUrlAddress": "/traze/sendClientLabels",
-          "tries": []
-        }
-      ],
-      "descartadaManual": true,
-      "motivoDescarte": "transmisión por legacy",
-      "fechaDescarte": "2026-08-12T20:52:25.431Z",
-      "urgencia": "rojo",
-      "hoursToEtd": -109.23
-    },
     {
       "id": 981329,
       "awbId": "ELITE",
@@ -168,376 +26,7 @@
       "sede": "EC",
       "taskInstances": [],
       "urgencia": "rojo",
-      "hoursToEtd": -101.55
-    },
-    {
-      "id": 981229,
-      "awbId": "TERCEROS 1",
-      "airlinePrefix": "543",
-      "shipDate": "2026-08-07",
-      "processedErrors": 0,
-      "rateType": "SPOT",
-      "consignee": "SUNBURST FARMS INC.",
-      "detailConfirmationRequired": true,
-      "piecesConfirmedActivity": "ACTIVE",
-      "weightConfirmedActivity": "INACTIVE",
-      "awbProducedActivity": "INACTIVE",
-      "invoiceProducedActivity": "ACTIVE",
-      "documentsSendActivity": "INACTIVE",
-      "interfaceSend": "ERROR",
-      "pieces": 512,
-      "fullBoxes": 208.9,
-      "piecesReceived": 497,
-      "fullBoxesReceived": 205.29,
-      "etd": "2026-08-08T23:30:00",
-      "awbStatus": 6,
-      "awbNumber": "543-18663444",
-      "sede": "CO",
-      "taskInstances": [
-        {
-          "awbId": 981229,
-          "taskTryStatus": "ERROR",
-          "clientId": null,
-          "taskId": 5,
-          "taskInstanceId": 96723,
-          "taskName": "SEND BOOKINGS TRAZE",
-          "clientName": null,
-          "taskUrlAddress": "/traze/sendBookings",
-          "tries": [
-            {
-              "message": "Task Id: 5 - AWB: 543-18663444 - Sent by: Cesar augusto Montes - FAILED Ticket id b9506170-92fd-11f1-91a4-85c4cc08e584 Status: processing Maximum retry attempts reached",
-              "tryId": 79479,
-              "executionDate": "2026-08-08T07:50:08.250+00:00",
-              "taskTryStatus": "ERROR",
-              "taskId": 5,
-              "taskInstanceId": 96723
-            },
-            {
-              "message": "Task Id: 5 - AWB: 543-18663444 - Sent by: Cesar augusto Montes - FAILED Ticket id aff6bc00-92fd-11f1-91a4-85c4cc08e584 Status: processing Maximum retry attempts reached",
-              "tryId": 79478,
-              "executionDate": "2026-08-08T07:49:51.237+00:00",
-              "taskTryStatus": "ERROR",
-              "taskId": 5,
-              "taskInstanceId": 96723
-            },
-            {
-              "message": "Ticket id 612042a0-9310-11f1-a1cb-abfa1afd1edc Status succeed",
-              "tryId": 79489,
-              "executionDate": "2026-08-08T06:03:29.527+00:00",
-              "taskTryStatus": "DONE",
-              "taskId": 5,
-              "taskInstanceId": 96723
-            },
-            {
-              "message": "Ticket id 8a7d4410-9309-11f1-b778-9191f3418c75 Status processing  after 5 trials",
-              "tryId": 79481,
-              "executionDate": "2026-08-08T05:15:13.667+00:00",
-              "taskTryStatus": "ERROR",
-              "taskId": 5,
-              "taskInstanceId": 96723
-            },
-            {
-              "message": "Ticket id cf12e820-92fd-11f1-91a4-85c4cc08e584 Status processing  after 5 trials",
-              "tryId": 79480,
-              "executionDate": "2026-08-08T03:51:13.410+00:00",
-              "taskTryStatus": "ERROR",
-              "taskId": 5,
-              "taskInstanceId": 96723
-            }
-          ]
-        },
-        {
-          "awbId": 981229,
-          "taskTryStatus": "DONE",
-          "clientId": null,
-          "taskId": 6,
-          "taskInstanceId": 96724,
-          "taskName": "SEND LABELS TRAZE",
-          "clientName": null,
-          "taskUrlAddress": "/traze/sendLabels",
-          "tries": [
-            {
-              "message": "Ticket id 98e0dfb0-9310-11f1-b468-23c9a6723273 Status succeed",
-              "tryId": 79490,
-              "executionDate": "2026-08-08T06:04:52.900+00:00",
-              "taskTryStatus": "DONE",
-              "taskId": 6,
-              "taskInstanceId": 96724
-            }
-          ]
-        }
-      ],
-      "urgencia": "rojo",
-      "hoursToEtd": -96.48
-    },
-    {
-      "id": 981268,
-      "awbId": "1 SOLO ELITE ",
-      "airlinePrefix": "543",
-      "shipDate": "2026-08-07",
-      "processedErrors": 0,
-      "rateType": "SPOT",
-      "consignee": "SUNBURST FARMS INC.",
-      "detailConfirmationRequired": true,
-      "piecesConfirmedActivity": "DONE",
-      "weightConfirmedActivity": "DONE",
-      "awbProducedActivity": "DONE",
-      "invoiceProducedActivity": "ACTIVE",
-      "documentsSendActivity": "ACTIVE",
-      "interfaceSend": "PENDING",
-      "pieces": 84,
-      "fullBoxes": 21,
-      "piecesReceived": 54,
-      "fullBoxesReceived": 19,
-      "etd": "2026-08-08T23:30:00",
-      "awbStatus": 6,
-      "awbNumber": "543-18663433",
-      "sede": "CO",
-      "taskInstances": [],
-      "urgencia": "rojo",
-      "hoursToEtd": -96.48
-    },
-    {
-      "id": 981213,
-      "awbId": "ELITE",
-      "airlinePrefix": "729",
-      "shipDate": "2026-08-07",
-      "processedErrors": 0,
-      "rateType": "REGULAR",
-      "consignee": "SUNBURST FARMS INC.",
-      "detailConfirmationRequired": true,
-      "piecesConfirmedActivity": "DONE",
-      "weightConfirmedActivity": "DONE",
-      "awbProducedActivity": "DONE",
-      "invoiceProducedActivity": "ACTIVE",
-      "documentsSendActivity": "ACTIVE",
-      "interfaceSend": "PENDING",
-      "pieces": 532,
-      "fullBoxes": 233.88,
-      "piecesReceived": 532,
-      "fullBoxesReceived": 233.88,
-      "etd": "2026-08-09T00:21:00",
-      "awbStatus": 6,
-      "awbNumber": "729-91204470",
-      "sede": "EC",
-      "taskInstances": [],
-      "urgencia": "rojo",
-      "hoursToEtd": -95.63
-    },
-    {
-      "id": 978031,
-      "awbId": "ELITE",
-      "airlinePrefix": "729",
-      "shipDate": "2026-08-07",
-      "processedErrors": 0,
-      "rateType": "REGULAR",
-      "consignee": "SUNBURST FARMS INC.",
-      "detailConfirmationRequired": true,
-      "piecesConfirmedActivity": "DONE",
-      "weightConfirmedActivity": "DONE",
-      "awbProducedActivity": "DONE",
-      "invoiceProducedActivity": "ACTIVE",
-      "documentsSendActivity": "ACTIVE",
-      "interfaceSend": "PENDING",
-      "pieces": 885,
-      "fullBoxes": 408.5,
-      "piecesReceived": 885,
-      "fullBoxesReceived": 408.5,
-      "etd": "2026-08-09T00:21:00",
-      "awbStatus": 6,
-      "awbNumber": "729-91204960",
-      "sede": "EC",
-      "taskInstances": [],
-      "urgencia": "rojo",
-      "hoursToEtd": -95.63
-    },
-    {
-      "id": 981218,
-      "awbId": "TERCEROS CONTINENTAL",
-      "airlinePrefix": "985",
-      "shipDate": "2026-08-07",
-      "processedErrors": 0,
-      "rateType": "REGULAR",
-      "consignee": "SUNBURST FARMS INC.",
-      "detailConfirmationRequired": true,
-      "piecesConfirmedActivity": "DONE",
-      "weightConfirmedActivity": "DONE",
-      "awbProducedActivity": "DONE",
-      "invoiceProducedActivity": "ACTIVE",
-      "documentsSendActivity": "ACTIVE",
-      "interfaceSend": "PENDING",
-      "pieces": 250,
-      "fullBoxes": 97.25,
-      "piecesReceived": 250,
-      "fullBoxesReceived": 97.25,
-      "etd": "2026-08-09T02:00:00",
-      "awbStatus": 6,
-      "awbNumber": "985-63845795",
-      "sede": "CO",
-      "taskInstances": [
-        {
-          "awbId": 981218,
-          "taskTryStatus": "DONE",
-          "clientId": null,
-          "taskId": 5,
-          "taskInstanceId": 96731,
-          "taskName": "SEND BOOKINGS TRAZE",
-          "clientName": null,
-          "taskUrlAddress": "/traze/sendBookings",
-          "tries": [
-            {
-              "message": "Ticket id e7ca1560-930b-11f1-b56d-91f9c60c36ed Status succeed",
-              "tryId": 79484,
-              "executionDate": "2026-08-08T05:31:49.307+00:00",
-              "taskTryStatus": "DONE",
-              "taskId": 5,
-              "taskInstanceId": 96731
-            }
-          ]
-        },
-        {
-          "awbId": 981218,
-          "taskTryStatus": "DONE",
-          "clientId": null,
-          "taskId": 6,
-          "taskInstanceId": 96732,
-          "taskName": "SEND LABELS TRAZE",
-          "clientName": null,
-          "taskUrlAddress": "/traze/sendLabels",
-          "tries": [
-            {
-              "message": "Ticket id 2e65cc30-930c-11f1-9b53-97b5f00028a4 Status succeed",
-              "tryId": 79485,
-              "executionDate": "2026-08-08T05:33:17.777+00:00",
-              "taskTryStatus": "DONE",
-              "taskId": 6,
-              "taskInstanceId": 96732
-            }
-          ]
-        },
-        {
-          "awbId": 981218,
-          "taskTryStatus": "PENDING",
-          "clientId": 50,
-          "taskId": 7,
-          "taskInstanceId": 96733,
-          "taskName": "SEND BOOKINGS TRAZE CLIENT",
-          "clientName": "CONTINENTAL FARMS LLC",
-          "taskUrlAddress": "/traze/sendClientBookings",
-          "tries": []
-        },
-        {
-          "awbId": 981218,
-          "taskTryStatus": "PENDING",
-          "clientId": 50,
-          "taskId": 8,
-          "taskInstanceId": 96734,
-          "taskName": "SEND LABELS TRAZE CLIENT",
-          "clientName": "CONTINENTAL FARMS LLC",
-          "taskUrlAddress": "/traze/sendClientLabels",
-          "tries": []
-        }
-      ],
-      "descartadaManual": true,
-      "motivoDescarte": "GUIA TRANSMITIDA",
-      "fechaDescarte": "2026-08-12T21:05:44.345Z",
-      "urgencia": "rojo",
-      "hoursToEtd": -93.98
-    },
-    {
-      "id": 981231,
-      "awbId": "TERCEROS OTROS",
-      "airlinePrefix": "985",
-      "shipDate": "2026-08-07",
-      "processedErrors": 0,
-      "rateType": "REGULAR",
-      "consignee": "TRADEWINDS INTL - SUITE 340",
-      "detailConfirmationRequired": true,
-      "piecesConfirmedActivity": "DONE",
-      "weightConfirmedActivity": "ACTIVE",
-      "awbProducedActivity": "INACTIVE",
-      "invoiceProducedActivity": "ACTIVE",
-      "documentsSendActivity": "INACTIVE",
-      "interfaceSend": "PENDING",
-      "pieces": 253,
-      "fullBoxes": 77.25999999999999,
-      "piecesReceived": 251,
-      "fullBoxesReceived": 76.75999999999999,
-      "etd": "2026-08-09T02:00:00",
-      "awbStatus": 6,
-      "awbNumber": "985-63845821",
-      "sede": "CO",
-      "taskInstances": [
-        {
-          "awbId": 981231,
-          "taskTryStatus": "DONE",
-          "clientId": null,
-          "taskId": 5,
-          "taskInstanceId": 96735,
-          "taskName": "SEND BOOKINGS TRAZE",
-          "clientName": null,
-          "taskUrlAddress": "/traze/sendBookings",
-          "tries": [
-            {
-              "message": "Ticket id 6c9f5cf0-930c-11f1-b56d-91f9c60c36ed Status succeed",
-              "tryId": 79486,
-              "executionDate": "2026-08-08T05:35:21.083+00:00",
-              "taskTryStatus": "DONE",
-              "taskId": 5,
-              "taskInstanceId": 96735
-            }
-          ]
-        },
-        {
-          "awbId": 981231,
-          "taskTryStatus": "DONE",
-          "clientId": null,
-          "taskId": 6,
-          "taskInstanceId": 96736,
-          "taskName": "SEND LABELS TRAZE",
-          "clientName": null,
-          "taskUrlAddress": "/traze/sendLabels",
-          "tries": [
-            {
-              "message": "Ticket id 86c11f10-930c-11f1-9b53-97b5f00028a4 Status succeed",
-              "tryId": 79487,
-              "executionDate": "2026-08-08T05:35:44.493+00:00",
-              "taskTryStatus": "DONE",
-              "taskId": 6,
-              "taskInstanceId": 96736
-            }
-          ]
-        }
-      ],
-      "urgencia": "rojo",
-      "hoursToEtd": -93.98
-    },
-    {
-      "id": 981206,
-      "awbId": "ELITE",
-      "airlinePrefix": "145",
-      "shipDate": "2026-08-07",
-      "processedErrors": 0,
-      "rateType": "REGULAR",
-      "consignee": "SUNBURST FARMS INC.",
-      "detailConfirmationRequired": true,
-      "piecesConfirmedActivity": "DONE",
-      "weightConfirmedActivity": "DONE",
-      "awbProducedActivity": "DONE",
-      "invoiceProducedActivity": "ACTIVE",
-      "documentsSendActivity": "ACTIVE",
-      "interfaceSend": "PENDING",
-      "pieces": 713,
-      "fullBoxes": 310.5,
-      "piecesReceived": 698,
-      "fullBoxesReceived": 306.75,
-      "etd": "2026-08-09T04:00:00",
-      "awbStatus": 6,
-      "awbNumber": "145-11503273",
-      "sede": "EC",
-      "taskInstances": [],
-      "urgencia": "rojo",
-      "hoursToEtd": -91.98
+      "hoursToEtd": -101.8
     },
     {
       "id": 981253,
@@ -621,7 +110,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -89.48
+      "hoursToEtd": -89.73
     },
     {
       "id": 981331,
@@ -689,7 +178,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -89.48
+      "hoursToEtd": -89.73
     },
     {
       "id": 981367,
@@ -805,61 +294,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -84.98
-    },
-    {
-      "id": 981149,
-      "awbId": "ELITE",
-      "airlinePrefix": "369",
-      "shipDate": "2026-08-07",
-      "processedErrors": 0,
-      "rateType": "REGULAR",
-      "consignee": "SUNBURST FARMS INC.",
-      "detailConfirmationRequired": true,
-      "piecesConfirmedActivity": "DONE",
-      "weightConfirmedActivity": "DONE",
-      "awbProducedActivity": "DONE",
-      "invoiceProducedActivity": "ACTIVE",
-      "documentsSendActivity": "ACTIVE",
-      "interfaceSend": "PENDING",
-      "pieces": 743,
-      "fullBoxes": 274.25,
-      "piecesReceived": 743,
-      "fullBoxesReceived": 274.25,
-      "etd": "2026-08-09T17:00:00",
-      "awbStatus": 6,
-      "awbNumber": "369-10715062",
-      "sede": "EC",
-      "taskInstances": [],
-      "urgencia": "rojo",
-      "hoursToEtd": -78.98
-    },
-    {
-      "id": 981150,
-      "awbId": "ELITE",
-      "airlinePrefix": "369",
-      "shipDate": "2026-08-07",
-      "processedErrors": 0,
-      "rateType": "REGULAR",
-      "consignee": "SUNBURST FARMS INC.",
-      "detailConfirmationRequired": true,
-      "piecesConfirmedActivity": "DONE",
-      "weightConfirmedActivity": "DONE",
-      "awbProducedActivity": "DONE",
-      "invoiceProducedActivity": "ACTIVE",
-      "documentsSendActivity": "ACTIVE",
-      "interfaceSend": "PENDING",
-      "pieces": 307,
-      "fullBoxes": 139.5,
-      "piecesReceived": 304,
-      "fullBoxesReceived": 138.5,
-      "etd": "2026-08-09T17:00:00",
-      "awbStatus": 6,
-      "awbNumber": "369-10715143",
-      "sede": "EC",
-      "taskInstances": [],
-      "urgencia": "rojo",
-      "hoursToEtd": -78.98
+      "hoursToEtd": -85.23
     },
     {
       "id": 981301,
@@ -935,7 +370,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -78.48
+      "hoursToEtd": -78.73
     },
     {
       "id": 981230,
@@ -1059,7 +494,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -77.82
+      "hoursToEtd": -78.07
     },
     {
       "id": 981245,
@@ -1193,7 +628,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -77.82
+      "hoursToEtd": -78.07
     },
     {
       "id": 981258,
@@ -1261,7 +696,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -77.82
+      "hoursToEtd": -78.07
     },
     {
       "id": 981373,
@@ -1311,7 +746,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -77.82
+      "hoursToEtd": -78.07
     },
     {
       "id": 976088,
@@ -1427,7 +862,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -77.82
+      "hoursToEtd": -78.07
     },
     {
       "id": 981362,
@@ -1454,7 +889,7 @@
       "sede": "CO",
       "taskInstances": [],
       "urgencia": "rojo",
-      "hoursToEtd": -77.82
+      "hoursToEtd": -78.07
     },
     {
       "id": 981288,
@@ -1481,7 +916,7 @@
       "sede": "EC",
       "taskInstances": [],
       "urgencia": "rojo",
-      "hoursToEtd": -69.98
+      "hoursToEtd": -70.23
     },
     {
       "id": 981292,
@@ -1508,7 +943,7 @@
       "sede": "EC",
       "taskInstances": [],
       "urgencia": "rojo",
-      "hoursToEtd": -69.98
+      "hoursToEtd": -70.23
     },
     {
       "id": 981293,
@@ -1535,7 +970,7 @@
       "sede": "EC",
       "taskInstances": [],
       "urgencia": "rojo",
-      "hoursToEtd": -69.98
+      "hoursToEtd": -70.23
     },
     {
       "id": 981294,
@@ -1562,7 +997,7 @@
       "sede": "EC",
       "taskInstances": [],
       "urgencia": "rojo",
-      "hoursToEtd": -69.98
+      "hoursToEtd": -70.23
     },
     {
       "id": 981296,
@@ -1589,7 +1024,7 @@
       "sede": "EC",
       "taskInstances": [],
       "urgencia": "rojo",
-      "hoursToEtd": -69.98
+      "hoursToEtd": -70.23
     },
     {
       "id": 981298,
@@ -1616,7 +1051,7 @@
       "sede": "EC",
       "taskInstances": [],
       "urgencia": "rojo",
-      "hoursToEtd": -69.98
+      "hoursToEtd": -70.23
     },
     {
       "id": 981364,
@@ -1643,7 +1078,7 @@
       "sede": "EC",
       "taskInstances": [],
       "urgencia": "rojo",
-      "hoursToEtd": -63.98
+      "hoursToEtd": -64.23
     },
     {
       "id": 981198,
@@ -1670,7 +1105,7 @@
       "sede": "EC",
       "taskInstances": [],
       "urgencia": "rojo",
-      "hoursToEtd": -63.98
+      "hoursToEtd": -64.23
     },
     {
       "id": 981248,
@@ -1738,7 +1173,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -62.98
+      "hoursToEtd": -63.23
     },
     {
       "id": 981086,
@@ -1854,7 +1289,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -62.98
+      "hoursToEtd": -63.23
     },
     {
       "id": 981246,
@@ -1922,7 +1357,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -57.73
+      "hoursToEtd": -57.98
     },
     {
       "id": 979520,
@@ -2046,7 +1481,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -56.82
+      "hoursToEtd": -57.07
     },
     {
       "id": 980531,
@@ -2122,7 +1557,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -56.82
+      "hoursToEtd": -57.07
     },
     {
       "id": 981374,
@@ -2149,7 +1584,7 @@
       "sede": "EC",
       "taskInstances": [],
       "urgencia": "rojo",
-      "hoursToEtd": -56.82
+      "hoursToEtd": -57.07
     },
     {
       "id": 981302,
@@ -2255,7 +1690,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -49.9
+      "hoursToEtd": -50.15
     },
     {
       "id": 976843,
@@ -2282,7 +1717,7 @@
       "sede": "EC",
       "taskInstances": [],
       "urgencia": "rojo",
-      "hoursToEtd": -49.9
+      "hoursToEtd": -50.15
     },
     {
       "id": 981377,
@@ -2309,7 +1744,7 @@
       "sede": "EC",
       "taskInstances": [],
       "urgencia": "rojo",
-      "hoursToEtd": -49.9
+      "hoursToEtd": -50.15
     },
     {
       "id": 981378,
@@ -2336,7 +1771,7 @@
       "sede": "EC",
       "taskInstances": [],
       "urgencia": "rojo",
-      "hoursToEtd": -49.9
+      "hoursToEtd": -50.15
     },
     {
       "id": 981394,
@@ -2404,7 +1839,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -31.98
+      "hoursToEtd": -32.23
     },
     {
       "id": 981395,
@@ -2472,7 +1907,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -31.98
+      "hoursToEtd": -32.23
     },
     {
       "id": 981434,
@@ -2499,7 +1934,7 @@
       "sede": "EC",
       "taskInstances": [],
       "urgencia": "rojo",
-      "hoursToEtd": -28.65
+      "hoursToEtd": -28.9
     },
     {
       "id": 981435,
@@ -2526,7 +1961,7 @@
       "sede": "EC",
       "taskInstances": [],
       "urgencia": "rojo",
-      "hoursToEtd": -28.65
+      "hoursToEtd": -28.9
     },
     {
       "id": 978034,
@@ -2553,7 +1988,7 @@
       "sede": "EC",
       "taskInstances": [],
       "urgencia": "rojo",
-      "hoursToEtd": -28.65
+      "hoursToEtd": -28.9
     },
     {
       "id": 978380,
@@ -2580,7 +2015,7 @@
       "sede": "EC",
       "taskInstances": [],
       "urgencia": "rojo",
-      "hoursToEtd": -28.65
+      "hoursToEtd": -28.9
     },
     {
       "id": 981382,
@@ -2670,7 +2105,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -28.57
+      "hoursToEtd": -28.82
     },
     {
       "id": 981421,
@@ -2738,7 +2173,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -28.57
+      "hoursToEtd": -28.82
     },
     {
       "id": 981424,
@@ -2828,7 +2263,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -28.57
+      "hoursToEtd": -28.82
     },
     {
       "id": 981426,
@@ -2926,7 +2361,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -28.57
+      "hoursToEtd": -28.82
     },
     {
       "id": 981429,
@@ -2976,7 +2411,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -28.57
+      "hoursToEtd": -28.82
     },
     {
       "id": 976089,
@@ -3092,7 +2527,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -28.57
+      "hoursToEtd": -28.82
     },
     {
       "id": 981105,
@@ -3208,7 +2643,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -26.48
+      "hoursToEtd": -26.73
     },
     {
       "id": 980564,
@@ -3356,7 +2791,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -26.23
+      "hoursToEtd": -26.48
     },
     {
       "id": 981307,
@@ -3488,7 +2923,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -26.23
+      "hoursToEtd": -26.48
     },
     {
       "id": 981427,
@@ -3515,7 +2950,7 @@
       "sede": "CO",
       "taskInstances": [],
       "urgencia": "rojo",
-      "hoursToEtd": -23.98
+      "hoursToEtd": -24.23
     },
     {
       "id": 981428,
@@ -3583,7 +3018,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -18.98
+      "hoursToEtd": -19.23
     },
     {
       "id": 981433,
@@ -3677,7 +3112,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -18.98
+      "hoursToEtd": -19.23
     },
     {
       "id": 981108,
@@ -3793,7 +3228,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -11.48
+      "hoursToEtd": -11.73
     },
     {
       "id": 981500,
@@ -3861,7 +3296,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -11.15
+      "hoursToEtd": -11.4
     },
     {
       "id": 981504,
@@ -3929,7 +3364,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -11.15
+      "hoursToEtd": -11.4
     },
     {
       "id": 981485,
@@ -4019,7 +3454,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -11.15
+      "hoursToEtd": -11.4
     },
     {
       "id": 981505,
@@ -4087,7 +3522,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -11.15
+      "hoursToEtd": -11.4
     },
     {
       "id": 976090,
@@ -4181,7 +3616,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -11.15
+      "hoursToEtd": -11.4
     },
     {
       "id": 981526,
@@ -4231,7 +3666,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -11.15
+      "hoursToEtd": -11.4
     },
     {
       "id": 981621,
@@ -4303,7 +3738,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -11.15
+      "hoursToEtd": -11.4
     },
     {
       "id": 981524,
@@ -4330,7 +3765,7 @@
       "sede": "CO",
       "taskInstances": [],
       "urgencia": "rojo",
-      "hoursToEtd": -11.15
+      "hoursToEtd": -11.4
     },
     {
       "id": 981480,
@@ -4422,7 +3857,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -7.98
+      "hoursToEtd": -8.23
     },
     {
       "id": 981503,
@@ -4490,7 +3925,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -7.98
+      "hoursToEtd": -8.23
     },
     {
       "id": 981536,
@@ -4574,7 +4009,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -5.98
+      "hoursToEtd": -6.23
     },
     {
       "id": 981514,
@@ -4668,7 +4103,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -5.98
+      "hoursToEtd": -6.23
     },
     {
       "id": 976669,
@@ -4740,7 +4175,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -0.15
+      "hoursToEtd": -0.4
     },
     {
       "id": 981314,
@@ -4837,17 +4272,9 @@
           "taskUrlAddress": "/traze/sendClientLabels",
           "tries": [
             {
-              "message": "Task Id: 8 - Client: ECOPLANTS LLC. - id: 43075 - AWB: 369-10715526 - Sent by: DARIO CARREÑO - FAILED Ticket id 25333b70-96a9-11f1-8301-610962a0d0e1 Errors: {error=no shipmentItem found for the following conditions, message=id: 5259c570-713b-4c91-94f0-03d986baa7e9, sourceMessageError=conditionsValidations};  Maximum retry attempts reached",
-              "tryId": 79782,
-              "executionDate": "2026-08-12T23:54:25.097+00:00",
-              "taskTryStatus": "ERROR",
-              "taskId": 8,
-              "taskInstanceId": 97006
-            },
-            {
-              "message": "Task Id: 8 - Client: ECOPLANTS LLC. - id: 43075 - AWB: 369-10715526 - Sent by: Viviana Triana - FAILED Database error loading reservations for tracking: JDBC exception executing SQL [select r1_0.pkey_reserva,r1_0.txt_observaciones,r1_0.aud_fecha,a2_0.pkey_guiamast,a2_0.fkey_aerolinea,a2_0.gui_aerolinea,a2_0.str_nombbuia,a2_0.fkey_tipguiamaster,a2_0.fkey_sede,b2_0.codigo_cliente,b2_0.flag_activo,b2_0.str_dircliente,b2_0.flag_carga_po,b2_0.flag_bulk,b2_0.cid_code,b2_0.fkey_ciudad,b2_0.str_codcliente,b2_0.fkey_modo_consolidado,b2_0.str_mailconta1,b2_0.str_mailconta2,b2_0.str_nomconta1,b2_0.str_nomconta2,b2_0.fkey_creation_user,b2_0.creation_date,b2_0.flag_bloqcartera,b2_0.str_nomaduanas,b2_0.flag_requiere_descripcion,b2_0.flag_requiere_conf_detalle,b2_0.flag_requieredimension,b2_0.fkey_comercial,b2_0.flag_barcode,b2_0.flag_distribuyepo,b2_0.flag_parcializapo,b2_0.indirequbrok,b2_0.flag_requierefactura,b2_0.modification_date,b2_0.fkey_modification_user,b2_0.str_nomcliente,b2_0.normalized_address,b2_0.str_observaciones,b2_0.str_ppdcol,b2_0.flag_requiere_po,b2_0.salog_code,b2_0.security_lock,b2_0.str_codieuri,b2_0.str_faxcliente,b2_0.str_telcliente,b2_0.flag_requiere_camion,b2_0.str_tipcliente,b2_0.flag_validaetiquetas,b2_0.flag_requierevariedad,b2_0.aud_version,b2_0.zipcode,b2_0.fkey_zona,a2_0.gui_serieentrega,a2_0.cod_cliente,c2_0.codigo_cliente,c2_0.flag_activo,c2_0.str_dircliente,c2_0.flag_carga_po,c2_0.flag_bulk,c2_0.cid_code,c2_0.fkey_ciudad,c3_0.pkey_ciudad,c3_0.fkey_pais,c4_0.pkey_pais,c4_0.str_ci,c4_0.str_nompais,c4_0.clave_tel,c3_0.cod_aduana,c3_0.str_nomciudad,s1_0.pkey_estado,s1_0.str_codestado,s1_0.fkey_pais,s1_0.str_nomestado,c2_0.str_codcliente,c2_0.fkey_modo_consolidado,c2_0.str_mailconta1,c2_0.str_mailconta2,c2_0.str_nomconta1,c2_0.str_nomconta2,c2_0.fkey_creation_user,c2_0.creation_date,c2_0.flag_bloqcartera,c2_0.str_nomaduanas,c2_0.flag_requiere_descripcion,c2_0.flag_requiere_conf_detalle,c2_0.flag_requieredimension,c2_0.fkey_comercial,c2_0.flag_barcode,c2_0.flag_distribuyepo,c2_0.flag_parcializapo,c2_0.indirequbrok,c2_0.flag_requierefactura,c2_0.modification_date,c2_0.fkey_modification_user,c2_0.str_nomcliente,c2_0.normalized_address,c2_0.str_observaciones,c2_0.str_ppdcol,c2_0.flag_requiere_po,c2_0.salog_code,c2_0.security_lock,c2_0.str_codieuri,c2_0.str_faxcliente,c2_0.str_telcliente,c2_0.flag_requiere_camion,c2_0.str_tipcliente,c2_0.flag_validaetiquetas,c2_0.flag_requierevariedad,c2_0.aud_version,c2_0.zipcode,c2_0.fkey_zona,a2_0.fkey_creation_user,a2_0.creation_date,a2_0.fkey_destino_final,a2_0.fec_anulacion,a2_0.expected_weight,a2_0.fkey_vuelconeorig,fc1_0.pkey_vuelcone,fc1_0.fec_fechorar,fc1_0.fec_fechorsa,fc1_0.aircraft_type,fc1_0.fkey_aerolinea,fc1_0.fkey_codaerde,d1_0.pkey_aeropuerto,d1_0.fkey_ciudad,d1_0.str_codiata,d1_0.latitude,d1_0.longitude,d1_0.str_nomaeropuerto,d1_0.str_zonahoraria,fc1_0.cod_codaerde,fc1_0.fkey_vuelo,fc1_0.cod_vuelo,fc1_0.fkey_codaeror,o1_0.pkey_aeropuerto,o1_0.fkey_ciudad,o1_0.str_codiata,o1_0.latitude,o1_0.longitude,o1_0.str_nomaeropuerto,o1_0.str_zonahoraria,fc1_0.cod_codaeror,a2_0.flag_anulada,a2_0.ocupada,a2_0.fkey_tipguiahija,a2_0.str_obstrlago,ia1_0.pkeyguiamast,ia1_0.str_accountno,ia1_0.str_accountinginformation,ia1_0.str_agentiatacode,ia1_0.as_per_agreement,ia1_0.str_codcompaerea,ia1_0.str_nombreaerolinea,ia1_0.str_amountofinsurance,ia1_0.flt_avgweight,ia1_0.fkey_guiamast,ia1_0.fkeytipestguiamast,ia1_0.fkeysede,ia1_0.str_by_1,ia1_0.str_by_2,ia1_0.str_byfirstcarrier,ia1_0.flo_totapesocobr,ia1_0.str_chgscode,ia1_0.str_col_1,ia1_0.str_col_2,ia1_0.flo_totalcollect,ia1_0.flo_col_totaldueagent,ia1_0.flo_col_totalduecarrier,ia1_0.flo_col_weightcharge,ia1_0.fkeyconsignee,ia1_0.str_consignee,ia1_0.str_currency,ia1_0.flo_currencyconversionrates,ia1_0.str_obs_corte,ia1_0.fec_corteguia,ia1_0.str_declaredvaluecarriage,ia1_0.str_declaredvaluecustoms,ia1_0.str_airportdestination,ia1_0.estimated_weight,ia1_0.str_flightdate_1,ia1_0.str_flightdate_2,ia1_0.str_flightdate_3,ia1_0.str_fechalugarformalizado,ia1_0.flt_fullboxes,ia1_0.str_handlinginformation,ia1_0.header_by,ia1_0.str_codaeropuerto,ia1_0.instrucciones,ia1_0.aud_usuario,ia1_0.str_issuing,ia1_0.aud_fecmodifica,ia1_0.str_naturequantitygoods,ia1_0.fkeynotify,ia1_0.str_aeropuertoorigen,ia1_0.str_other_handling,ia1_0.flo_totalkilos,ia1_0.flo_totalpiezas,ia1_0.str_ppd_1,ia1_0.str_ppd_2,ia1_0.flo_totalprepaid,ia1_0.flo_pre_totaldueagent,ia1_0.flo_pre_totalduecarrier,ia1_0.flo_pre_weightcharge,ia1_0.str_impredime,ia1_0.str_referencenumber,ia1_0.str_numserie,ia1_0.fec_fecha,ia1_0.fkeyshipper,ia1_0.str_shipper,ia1_0.str_service_special,ia1_0.str_to_1,ia1_0.str_to_2,ia1_0.str_to_3,ia1_0.flo_totaltarifa,ia1_0.str_tipopiezas,ia1_0.flo_totalpesovol,a2_0.fkey_vuelconedest,lc1_0.pkey_vuelcone,lc1_0.fec_fechorar,lc1_0.fec_fechorsa,lc1_0.aircraft_type,lc1_0.fkey_aerolinea,lc1_0.fkey_codaerde,d2_0.pkey_aeropuerto,d2_0.fkey_ciudad,d2_0.str_codiata,d2_0.latitude,d2_0.longitude,d2_0.str_nomaeropuerto,d2_0.str_zonahoraria,lc1_0.cod_codaerde,lc1_0.fkey_vuelo,lc1_0.cod_vuelo,lc1_0.fkey_codaeror,o2_0.pkey_aeropuerto,o2_0.fkey_ciudad,o2_0.str_codiata,o2_0.latitude,o2_0.longitude,o2_0.str_nomaeropuerto,o2_0.str_zonahoraria,lc1_0.cod_codaeror,a2_0.modification_date,a2_0.cod_mani_aduana,a2_0.num_cupocaja,a2_0.num_maxinumecult,a2_0.fkey_modification_user,a2_0.cod_cliente_factura,a2_0.flag_proces_error,a2_0.str_tiptarifa,ra1_0.pkeybodevuel,ra1_0.fkeyvuelo,ra1_0.fkeybodega,ra1_0.fec_fecinien,ra1_0.fec_fecfinen,f4_0.pkeyvuelo,f4_0.aircraft,f4_0.aircraft_type,a6_0.pkey_aerolinea,a6_0.flag_activo,a6_0.str_address,a6_0.str_idaerolinea,a6_0.cid_code,a6_0.fkey_city,a6_0.cod_aerolinea_aduana,a6_0.str_nomaerolinea,a6_0.str_codiata,a6_0.str_nomcorto,a6_0.fkeytipotasa,a6_0.security_lock,a6_0.tipounidmedi,a6_0.str_urlweb,a6_0.zipcode,f4_0.fkey_arrival_airport,f4_0.bkd_arrival_time,f4_0.bkd_departure_time,f4_0.num_cupocaja,f4_0.fkey_sede,f4_0.fkey_departure_airport,f4_0.arrival_time,f4_0.fec_fechorsa,f4_0.fec_fecmodif,f4_0.cod_vuelo,f4_0.chr_prioridad,f4_0.fec_programacion,f4_0.chr_indoridat,f4_0.chr_indvuebas,w2_0.pkey_bodega,w2_0.fkey_sede,w2_0.cod_bodega,w2_0.str_nombodega,a2_0.salog_tn_expo,a2_0.salog_short_code,a2_0.gui_serie,a2_0.fec_programacion,a2_0.est_actual,u1_0.codigo_usuario,u1_0.flag_activo,u1_0.email,u1_0.fkey_compania,u1_0.login,u1_0.nombre,u1_0.passwd,u1_0.contact_phone,u1_0.cargo,u1_0.id_usuario,a2_0.aud_version,a2_0.fkey_zona,r1_0.fec_salida,r1_0.fkey_sede,b6_0.pkey_sede,b6_0.chr_codaerorig,b6_0.chr_digiverinego,b6_0.fkey_ciudad,b6_0.cod_sede_puerto,b6_0.codigobranch,b6_0.fkeycompania,b6_0.cod_sede_aduana,b6_0.str_textofirma,b6_0.str_inland_dept_expo,b6_0.str_inland_dept_impo,b6_0.str_nomsede,b6_0.salog_bono,b6_0.salog_branch_code,b6_0.salog_dept_code,b6_0.str_logicareceiv,b6_0.str_nombconfbde,b6_0.str_prefhijaacon,r1_0.chr_tipocarga,ct1_0.pkey_tipocarga,ct1_0.flag_publico,ct1_0.str_nombin,p2_0.pkeytipoembalaje,p2_0.tipoembalaje,ct1_0.str_nombes,r1_0.cod_causal,r1_0.fec_confirmacion,r1_0.num_chawb,r1_0.fkey_nieta,r1_0.fkey_creation_user,r1_0.creation_date,r1_0.str_fue,r1_0.fkey_tipo_dex,r1_0.fkey_destinat,fc2_0.pkey_agruclie,fc2_0.str_infoadicacou,fc2_0.str_permrese,fc2_0.fkey_tipchawb,fc2_0.fkey_compania,fc2_0.str_codcliente,c15_0.codigo_cliente,c15_0.flag_activo,c15_0.str_dircliente,c15_0.flag_carga_po,c15_0.flag_bulk,c15_0.cid_code,c15_0.fkey_ciudad,c15_0.str_codcliente,c15_0.fkey_modo_consolidado,c15_0.str_mailconta1,c15_0.str_mailconta2,c15_0.str_nomconta1,c15_0.str_nomconta2,c15_0.fkey_creation_user,c15_0.creation_date,c15_0.flag_bloqcartera,c15_0.str_nomaduanas,c15_0.flag_requiere_descripcion,c15_0.flag_requiere_conf_detalle,c15_0.flag_requieredimension,c15_0.fkey_comercial,c15_0.flag_barcode,c15_0.flag_distribuyepo,c15_0.flag_parcializapo,c15_0.indirequbrok,c15_0.flag_requierefactura,c15_0.modification_date,c15_0.fkey_modification_user,c15_0.str_nomcliente,c15_0.normalized_address,c15_0.str_observaciones,c15_0.str_ppdcol,c15_0.flag_requiere_po,c15_0.salog_code,c15_0.security_lock,c15_0.str_codieuri,c15_0.str_faxcliente,c15_0.str_telcliente,c15_0.flag_requiere_camion,c15_0.str_tipcliente,c15_0.flag_validaetiquetas,c15_0.flag_requierevariedad,c15_0.aud_version,c15_0.zipcode,c15_0.fkey_zona,fc2_0.fkey_creation_user,fc2_0.creation_date,fc2_0.str_codcliagr,dc1_0.codigo_cliente,dc1_0.flag_activo,dc1_0.str_dircliente,dc1_0.flag_carga_po,dc1_0.flag_bulk,dc1_0.cid_code,dc1_0.fkey_ciudad,c17_0.pkey_ciudad,c17_0.fkey_pais,c18_0.pkey_pais,c18_0.str_ci,c18_0.str_nompais,c18_0.clave_tel,c17_0.cod_aduana,c17_0.str_nomciudad,s3_0.pkey_estado,s3_0.str_codestado,s3_0.fkey_pais,s3_0.str_nomestado,dc1_0.str_codcliente,dc1_0.fkey_modo_consolidado,dc1_0.str_mailconta1,dc1_0.str_mailconta2,dc1_0.str_nomconta1,dc1_0.str_nomconta2,dc1_0.fkey_creation_user,dc1_0.creation_date,dc1_0.flag_bloqcartera,dc1_0.str_nomaduanas,dc1_0.flag_requiere_descripcion,dc1_0.flag_requiere_conf_detalle,dc1_0.flag_requieredimension,dc1_0.fkey_comercial,dc1_0.flag_barcode,dc1_0.flag_distribuyepo,dc1_0.flag_parcializapo,dc1_0.indirequbrok,dc1_0.flag_requierefactura,dc1_0.modification_date,dc1_0.fkey_modification_user,dc1_0.str_nomcliente,dc1_0.normalized_address,dc1_0.str_observaciones,dc1_0.str_ppdcol,dc1_0.flag_requiere_po,dc1_0.salog_code,dc1_0.security_lock,dc1_0.str_codieuri,dc1_0.str_faxcliente,dc1_0.str_telcliente,dc1_0.flag_requiere_camion,dc1_0.str_tipcliente,dc1_0.flag_validaetiquetas,dc1_0.flag_requierevariedad,dc1_0.aud_version,dc1_0.zipcode,dc1_0.fkey_zona,fc2_0.fkey_cliedocu,dc2_0.codigo_cliente,dc2_0.flag_activo,dc2_0.str_dircliente,dc2_0.flag_carga_po,dc2_0.flag_bulk,dc2_0.cid_code,dc2_0.fkey_ciudad,c20_0.pkey_ciudad,c20_0.fkey_pais,c21_0.pkey_pais,c21_0.str_ci,c21_0.str_nompais,c21_0.clave_tel,c20_0.cod_aduana,c20_0.str_nomciudad,s4_0.pkey_estado,s4_0.str_codestado,s4_0.fkey_pais,s4_0.str_nomestado,dc2_0.str_codcliente,dc2_0.fkey_modo_consolidado,dc2_0.str_mailconta1,dc2_0.str_mailconta2,dc2_0.str_nomconta1,dc2_0.str_nomconta2,dc2_0.fkey_creation_user,dc2_0.creation_date,dc2_0.flag_bloqcartera,dc2_0.str_nomaduanas,dc2_0.flag_requiere_descripcion,dc2_0.flag_requiere_conf_detalle,dc2_0.flag_requieredimension,dc2_0.fkey_comercial,dc2_0.flag_barcode,dc2_0.flag_distribuyepo,dc2_0.flag_parcializapo,dc2_0.indirequbrok,dc2_0.flag_requierefactura,dc2_0.modification_date,dc2_0.fkey_modification_user,dc2_0.str_nomcliente,dc2_0.normalized_address,dc2_0.str_observaciones,dc2_0.str_ppdcol,dc2_0.flag_requiere_po,dc2_0.salog_code,dc2_0.security_lock,dc2_0.str_codieuri,dc2_0.str_faxcliente,dc2_0.str_telcliente,dc2_0.flag_requiere_camion,dc2_0.str_tipcliente,dc2_0.flag_validaetiquetas,dc2_0.flag_requierevariedad,dc2_0.aud_version,dc2_0.zipcode,dc2_0.fkey_zona,fa1_0.pkey_agrucliente,fa1_0.fkey_agruclie,fa1_0.codigo_documento,dt1_0.codigo_tipo_documento,dt1_0.abreviatura,dt1_0.scan_origin,dt1_0.manual_origin,dt1_0.fkey_tipo_cliente,dt1_0.dms_doc_type,dt1_0.mandatory,dt1_0.nombre_tipo_documento,dt1_0.flag_envio,fa1_0.codigo_cliente,it1_0.codigo_cliente,it1_0.flag_activo,it1_0.str_dircliente,it1_0.flag_carga_po,it1_0.flag_bulk,it1_0.cid_code,it1_0.fkey_ciudad,c23_0.pkey_ciudad,c23_0.fkey_pais,c24_0.pkey_pais,c24_0.str_ci,c24_0.str_nompais,c24_0.clave_tel,c23_0.cod_aduana,c23_0.str_nomciudad,s5_0.pkey_estado,s5_0.str_codestado,s5_0.fkey_pais,s5_0.str_nomestado,it1_0.str_codcliente,it1_0.fkey_modo_consolidado,it1_0.str_mailconta1,it1_0.str_mailconta2,it1_0.str_nomconta1,it1_0.str_nomconta2,it1_0.fkey_creation_user,it1_0.creation_date,it1_0.flag_bloqcartera,it1_0.str_nomaduanas,it1_0.flag_requiere_descripcion,it1_0.flag_requiere_conf_detalle,it1_0.flag_requieredimension,it1_0.fkey_comercial,it1_0.flag_barcode,it1_0.flag_distribuyepo,it1_0.flag_parcializapo,it1_0.indirequbrok,it1_0.flag_requierefactura,it1_0.modification_date,it1_0.fkey_modification_user,it1_0.str_nomcliente,it1_0.normalized_address,it1_0.str_observaciones,it1_0.str_ppdcol,it1_0.flag_requiere_po,it1_0.salog_code,it1_0.security_lock,it1_0.str_codieuri,it1_0.str_faxcliente,it1_0.str_telcliente,it1_0.flag_requiere_camion,it1_0.str_tipcliente,it1_0.flag_validaetiquetas,it1_0.flag_requierevariedad,it1_0.aud_version,it1_0.zipcode,it1_0.fkey_zona,fa1_0.str_sufijo,fc2_0.str_infoadichand,fc2_0.fkey_tipguiahija,fc2_0.str_actiadmi,fc2_0.str_textolabel,fc2_0.modification_date,fc2_0.fkey_modification_user,fc2_0.str_nombagrcl,fc2_0.fkey_agruclie,pd1_0.pkey_agrucliente,pd1_0.fkey_agruclie,pd1_0.codigo_documento,dt3_0.codigo_tipo_documento,dt3_0.abreviatura,dt3_0.scan_origin,dt3_0.manual_origin,dt3_0.fkey_tipo_cliente,dt3_0.dms_doc_type,dt3_0.mandatory,dt3_0.nombre_tipo_documento,dt3_0.flag_envio,pd1_0.codigo_cliente,it2_0.codigo_cliente,it2_0.flag_activo,it2_0.str_dircliente,it2_0.flag_carga_po,it2_0.flag_bulk,it2_0.cid_code,it2_0.fkey_ciudad,c26_0.pkey_ciudad,c26_0.fkey_pais,c27_0.pkey_pais,c27_0.str_ci,c27_0.str_nompais,c27_0.clave_tel,c26_0.cod_aduana,c26_0.str_nomciudad,s6_0.pkey_estado,s6_0.str_codestado,s6_0.fkey_pais,s6_0.str_nomestado,it2_0.str_codcliente,it2_0.fkey_modo_consolidado,it2_0.str_mailconta1,it2_0.str_mailconta2,it2_0.str_nomconta1,it2_0.str_nomconta2,it2_0.fkey_creation_user,it2_0.creation_date,it2_0.flag_bloqcartera,it2_0.str_nomaduanas,it2_0.flag_requiere_descripcion,it2_0.flag_requiere_conf_detalle,it2_0.flag_requieredimension,it2_0.fkey_comercial,it2_0.flag_barcode,it2_0.flag_distribuyepo,it2_0.flag_parcializapo,it2_0.indirequbrok,it2_0.flag_requierefactura,it2_0.modification_date,it2_0.fkey_modification_user,it2_0.str_nomcliente,it2_0.normalized_address,it2_0.str_observaciones,it2_0.str_ppdcol,it2_0.flag_requiere_po,it2_0.salog_code,it2_0.security_lock,it2_0.str_codieuri,it2_0.str_faxcliente,it2_0.str_telcliente,it2_0.flag_requiere_camion,it2_0.str_tipcliente,it2_0.flag_validaetiquetas,it2_0.flag_requierevariedad,it2_0.aud_version,it2_0.zipcode,it2_0.fkey_zona,pd1_0.str_sufijo,fc2_0.str_nomprealert,pc1_0.codigo_cliente,pc1_0.flag_activo,pc1_0.str_dircliente,pc1_0.flag_carga_po,pc1_0.flag_bulk,pc1_0.cid_code,pc1_0.fkey_ciudad,c29_0.pkey_ciudad,c29_0.fkey_pais,c30_0.pkey_pais,c30_0.str_ci,c30_0.str_nompais,c30_0.clave_tel,c29_0.cod_aduana,c29_0.str_nomciudad,s7_0.pkey_estado,s7_0.str_codestado,s7_0.fkey_pais,s7_0.str_nomestado,pc1_0.str_codcliente,pc1_0.fkey_modo_consolidado,pc1_0.str_mailconta1,pc1_0.str_mailconta2,pc1_0.str_nomconta1,pc1_0.str_nomconta2,pc1_0.fkey_creation_user,pc1_0.creation_date,pc1_0.flag_bloqcartera,pc1_0.str_nomaduanas,pc1_0.flag_requiere_descripcion,pc1_0.flag_requiere_conf_detalle,pc1_0.flag_requieredimension,pc1_0.fkey_comercial,pc1_0.flag_barcode,pc1_0.flag_distribuyepo,pc1_0.flag_parcializapo,pc1_0.indirequbrok,pc1_0.flag_requierefactura,pc1_0.modification_date,pc1_0.fkey_modification_user,pc1_0.str_nomcliente,pc1_0.normalized_address,pc1_0.str_observaciones,pc1_0.str_ppdcol,pc1_0.flag_requiere_po,pc1_0.salog_code,pc1_0.security_lock,pc1_0.str_codieuri,pc1_0.str_faxcliente,pc1_0.str_telcliente,pc1_0.flag_requiere_camion,pc1_0.str_tipcliente,pc1_0.flag_validaetiquetas,pc1_0.flag_requierevariedad,pc1_0.aud_version,pc1_0.zipcode,pc1_0.fkey_zona,fc2_0.str_nomcorto,fc2_0.aud_version,r1_0.flo_fulles,r1_0.flag_tipoenvio,r1_0.str_numeguihij,r1_0.str_infadicional,r1_0.cod_factura,r1_0.str_user_name,r1_0.flag_reseacep,r1_0.flag_etiquetas_espera,r1_0.flag_err_label,r1_0.flag_label,r1_0.flag_req_etiqueta,r1_0.flag_req_aceptacion,r1_0.flag_rei_etiqueta,r1_0.flag_parcial,r1_0.flag_recarga_po,r1_0.flag_qas,r1_0.desbloqueada,r1_0.flag_label_external,r1_0.modification_date,lpm1_0.pkey_reserva,lpm1_0.last_update_dt,r1_0.fkey_modification_user,r1_0.chr_origrese,r1_0.fec_fecha_reserva,r1_0.int_pcs,r1_0.pref_chawb,r1_0.str_prefhija,r1_0.num_po,r1_0.fkey_agruclie,rg1_0.pkey_agruclie,rg1_0.str_infoadicacou,rg1_0.str_permrese,rg1_0.fkey_tipchawb,rg1_0.fkey_compania,rg1_0.str_codcliente,c33_0.codigo_cliente,c33_0.flag_activo,c33_0.str_dircliente,c33_0.flag_carga_po,c33_0.flag_bulk,c33_0.cid_code,c33_0.fkey_ciudad,c33_0.str_codcliente,c33_0.fkey_modo_consolidado,c33_0.str_mailconta1,c33_0.str_mailconta2,c33_0.str_nomconta1,c33_0.str_nomconta2,c33_0.fkey_creation_user,c33_0.creation_date,c33_0.flag_bloqcartera,c33_0.str_nomaduanas,c33_0.flag_requiere_descripcion,c33_0.flag_requiere_conf_detalle,c33_0.flag_requieredimension,c33_0.fkey_comercial,c33_0.flag_barcode,c33_0.flag_distribuyepo,c33_0.flag_parcializapo,c33_0.indirequbrok,c33_0.flag_requierefactura,c33_0.modification_date,c33_0.fkey_modification_user,c33_0.str_nomcliente,c33_0.normalized_address,c33_0.str_observaciones,c33_0.str_ppdcol,c33_0.flag_requiere_po,c33_0.salog_code,c33_0.security_lock,c33_0.str_codieuri,c33_0.str_faxcliente,c33_0.str_telcliente,c33_0.flag_requiere_camion,c33_0.str_tipcliente,c33_0.flag_validaetiquetas,c33_0.flag_requierevariedad,c33_0.aud_version,c33_0.zipcode,c33_0.fkey_zona,rg1_0.fkey_creation_user,rg1_0.creation_date,rg1_0.str_codcliagr,dc3_0.codigo_cliente,dc3_0.flag_activo,dc3_0.str_dircliente,dc3_0.flag_carga_po,dc3_0.flag_bulk,dc3_0.cid_code,dc3_0.fkey_ciudad,c35_0.pkey_ciudad,c35_0.fkey_pais,c36_0.pkey_pais,c36_0.str_ci,c36_0.str_nompais,c36_0.clave_tel,c35_0.cod_aduana,c35_0.str_nomciudad,s8_0.pkey_estado,s8_0.str_codestado,s8_0.fkey_pais,s8_0.str_nomestado,dc3_0.str_codcliente,dc3_0.fkey_modo_consolidado,dc3_0.str_mailconta1,dc3_0.str_mailconta2,dc3_0.str_nomconta1,dc3_0.str_nomconta2,dc3_0.fkey_creation_user,dc3_0.creation_date,dc3_0.flag_bloqcartera,dc3_0.str_nomaduanas,dc3_0.flag_requiere_descripcion,dc3_0.flag_requiere_conf_detalle,dc3_0.flag_requieredimension,dc3_0.fkey_comercial,dc3_0.flag_barcode,dc3_0.flag_distribuyepo,dc3_0.flag_parcializapo,dc3_0.indirequbrok,dc3_0.flag_requierefactura,dc3_0.modification_date,dc3_0.fkey_modification_user,dc3_0.str_nomcliente,dc3_0.normalized_address,dc3_0.str_observaciones,dc3_0.str_ppdcol,dc3_0.flag_requiere_po,dc3_0.salog_code,dc3_0.security_lock,dc3_0.str_codieuri,dc3_0.str_faxcliente,dc3_0.str_telcliente,dc3_0.flag_requiere_camion,dc3_0.str_tipcliente,dc3_0.flag_validaetiquetas,dc3_0.flag_requierevariedad,dc3_0.aud_version,dc3_0.zipcode,dc3_0.fkey_zona,rg1_0.fkey_cliedocu,dc4_0.codigo_cliente,dc4_0.flag_activo,dc4_0.str_dircliente,dc4_0.flag_carga_po,dc4_0.flag_bulk,dc4_0.cid_code,dc4_0.fkey_ciudad,c38_0.pkey_ciudad,c38_0.fkey_pais,c39_0.pkey_pais,c39_0.str_ci,c39_0.str_nompais,c39_0.clave_tel,c38_0.cod_aduana,c38_0.str_nomciudad,s9_0.pkey_estado,s9_0.str_codestado,s9_0.fkey_pais,s9_0.str_nomestado,dc4_0.str_codcliente,dc4_0.fkey_modo_consolidado,dc4_0.str_mailconta1,dc4_0.str_mailconta2,dc4_0.str_nomconta1,dc4_0.str_nomconta2,dc4_0.fkey_creation_user,dc4_0.creation_date,dc4_0.flag_bloqcartera,dc4_0.str_nomaduanas,dc4_0.flag_requiere_descripcion,dc4_0.flag_requiere_conf_detalle,dc4_0.flag_requieredimension,dc4_0.fkey_comercial,dc4_0.flag_barcode,dc4_0.flag_distribuyepo,dc4_0.flag_parcializapo,dc4_0.indirequbrok,dc4_0.flag_requierefactura,dc4_0.modification_date,dc4_0.fkey_modification_user,dc4_0.str_nomcliente,dc4_0.normalized_address,dc4_0.str_observaciones,dc4_0.str_ppdcol,dc4_0.flag_requiere_po,dc4_0.salog_code,dc4_0.security_lock,dc4_0.str_codieuri,dc4_0.str_faxcliente,dc4_0.str_telcliente,dc4_0.flag_requiere_camion,dc4_0.str_tipcliente,dc4_0.flag_validaetiquetas,dc4_0.flag_requierevariedad,dc4_0.aud_version,dc4_0.zipcode,dc4_0.fkey_zona,fa2_0.pkey_agrucliente,fa2_0.fkey_agruclie,fa2_0.codigo_documento,dt5_0.codigo_tipo_documento,dt5_0.abreviatura,dt5_0.scan_origin,dt5_0.manual_origin,dt5_0.fkey_tipo_cliente,dt5_0.dms_doc_type,dt5_0.mandatory,dt5_0.nombre_tipo_documento,dt5_0.flag_envio,fa2_0.codigo_cliente,it3_0.codigo_cliente,it3_0.flag_activo,it3_0.str_dircliente,it3_0.flag_carga_po,it3_0.flag_bulk,it3_0.cid_code,it3_0.fkey_ciudad,c41_0.pkey_ciudad,c41_0.fkey_pais,c42_0.pkey_pais,c42_0.str_ci,c42_0.str_nompais,c42_0.clave_tel,c41_0.cod_aduana,c41_0.str_nomciudad,s10_0.pkey_estado,s10_0.str_codestado,s10_0.fkey_pais,s10_0.str_nomestado,it3_0.str_codcliente,it3_0.fkey_modo_consolidado,it3_0.str_mailconta1,it3_0.str_mailconta2,it3_0.str_nomconta1,it3_0.str_nomconta2,it3_0.fkey_creation_user,it3_0.creation_date,it3_0.flag_bloqcartera,it3_0.str_nomaduanas,it3_0.flag_requiere_descripcion,it3_0.flag_requiere_conf_detalle,it3_0.flag_requieredimension,it3_0.fkey_comercial,it3_0.flag_barcode,it3_0.flag_distribuyepo,it3_0.flag_parcializapo,it3_0.indirequbrok,it3_0.flag_requierefactura,it3_0.modification_date,it3_0.fkey_modification_user,it3_0.str_nomcliente,it3_0.normalized_address,it3_0.str_observaciones,it3_0.str_ppdcol,it3_0.flag_requiere_po,it3_0.salog_code,it3_0.security_lock,it3_0.str_codieuri,it3_0.str_faxcliente,it3_0.str_telcliente,it3_0.flag_requiere_camion,it3_0.str_tipcliente,it3_0.flag_validaetiquetas,it3_0.flag_requierevariedad,it3_0.aud_version,it3_0.zipcode,it3_0.fkey_zona,fa2_0.str_sufijo,rg1_0.str_infoadichand,rg1_0.fkey_tipguiahija,rg1_0.str_actiadmi,rg1_0.str_textolabel,rg1_0.modification_date,rg1_0.fkey_modification_user,rg1_0.str_nombagrcl,rg1_0.fkey_agruclie,pd2_0.pkey_agrucliente,pd2_0.fkey_agruclie,pd2_0.codigo_documento,dt7_0.codigo_tipo_documento,dt7_0.abreviatura,dt7_0.scan_origin,dt7_0.manual_origin,dt7_0.fkey_tipo_cliente,dt7_0.dms_doc_type,dt7_0.mandatory,dt7_0.nombre_tipo_documento,dt7_0.flag_envio,pd2_0.codigo_cliente,it4_0.codigo_cliente,it4_0.flag_activo,it4_0.str_dircliente,it4_0.flag_carga_po,it4_0.flag_bulk,it4_0.cid_code,it4_0.fkey_ciudad,c44_0.pkey_ciudad,c44_0.fkey_pais,c45_0.pkey_pais,c45_0.str_ci,c45_0.str_nompais,c45_0.clave_tel,c44_0.cod_aduana,c44_0.str_nomciudad,s11_0.pkey_estado,s11_0.str_codestado,s11_0.fkey_pais,s11_0.str_nomestado,it4_0.str_codcliente,it4_0.fkey_modo_consolidado,it4_0.str_mailconta1,it4_0.str_mailconta2,it4_0.str_nomconta1,it4_0.str_nomconta2,it4_0.fkey_creation_user,it4_0.creation_date,it4_0.flag_bloqcartera,it4_0.str_nomaduanas,it4_0.flag_requiere_descripcion,it4_0.flag_requiere_conf_detalle,it4_0.flag_requieredimension,it4_0.fkey_comercial,it4_0.flag_barcode,it4_0.flag_distribuyepo,it4_0.flag_parcializapo,it4_0.indirequbrok,it4_0.flag_requierefactura,it4_0.modification_date,it4_0.fkey_modification_user,it4_0.str_nomcliente,it4_0.normalized_address,it4_0.str_observaciones,it4_0.str_ppdcol,it4_0.flag_requiere_po,it4_0.salog_code,it4_0.security_lock,it4_0.str_codieuri,it4_0.str_faxcliente,it4_0.str_telcliente,it4_0.flag_requiere_camion,it4_0.str_tipcliente,it4_0.flag_validaetiquetas,it4_0.flag_requierevariedad,it4_0.aud_version,it4_0.zipcode,it4_0.fkey_zona,pd2_0.str_sufijo,rg1_0.str_nomprealert,pc2_0.codigo_cliente,pc2_0.flag_activo,pc2_0.str_dircliente,pc2_0.flag_carga_po,pc2_0.flag_bulk,pc2_0.cid_code,pc2_0.fkey_ciudad,c47_0.pkey_ciudad,c47_0.fkey_pais,c48_0.pkey_pais,c48_0.str_ci,c48_0.str_nompais,c48_0.clave_tel,c47_0.cod_aduana,c47_0.str_nomciudad,s12_0.pkey_estado,s12_0.str_codestado,s12_0.fkey_pais,s12_0.str_nomestado,pc2_0.str_codcliente,pc2_0.fkey_modo_consolidado,pc2_0.str_mailconta1,pc2_0.str_mailconta2,pc2_0.str_nomconta1,pc2_0.str_nomconta2,pc2_0.fkey_creation_user,pc2_0.creation_date,pc2_0.flag_bloqcartera,pc2_0.str_nomaduanas,pc2_0.flag_requiere_descripcion,pc2_0.flag_requiere_conf_detalle,pc2_0.flag_requieredimension,pc2_0.fkey_comercial,pc2_0.flag_barcode,pc2_0.flag_distribuyepo,pc2_0.flag_parcializapo,pc2_0.indirequbrok,pc2_0.flag_requierefactura,pc2_0.modification_date,pc2_0.fkey_modification_user,pc2_0.str_nomcliente,pc2_0.normalized_address,pc2_0.str_observaciones,pc2_0.str_ppdcol,pc2_0.flag_requiere_po,pc2_0.salog_code,pc2_0.security_lock,pc2_0.str_codieuri,pc2_0.str_faxcliente,pc2_0.str_telcliente,pc2_0.flag_requiere_camion,pc2_0.str_tipcliente,pc2_0.flag_validaetiquetas,pc2_0.flag_requierevariedad,pc2_0.aud_version,pc2_0.zipcode,pc2_0.fkey_zona,rg1_0.str_nomcorto,rg1_0.aud_version,r1_0.fkey_tipo_venta,r1_0.cod_cultivo,s13_0.codigo_cliente,s13_0.flag_activo,s13_0.str_dircliente,s13_0.flag_carga_po,s13_0.flag_bulk,s13_0.cid_code,s13_0.fkey_ciudad,c50_0.pkey_ciudad,c50_0.fkey_pais,c51_0.pkey_pais,c51_0.str_ci,c51_0.str_nompais,c51_0.clave_tel,c50_0.cod_aduana,c50_0.str_nomciudad,s14_0.pkey_estado,s14_0.str_codestado,s14_0.fkey_pais,s14_0.str_nomestado,s13_0.str_codcliente,s13_0.fkey_modo_consolidado,s13_0.str_mailconta1,s13_0.str_mailconta2,s13_0.str_nomconta1,s13_0.str_nomconta2,s13_0.fkey_creation_user,s13_0.creation_date,s13_0.flag_bloqcartera,s13_0.str_nomaduanas,s13_0.flag_requiere_descripcion,s13_0.flag_requiere_conf_detalle,s13_0.flag_requieredimension,s13_0.fkey_comercial,s13_0.flag_barcode,s13_0.flag_distribuyepo,s13_0.flag_parcializapo,s13_0.indirequbrok,s13_0.flag_requierefactura,s13_0.modification_date,s13_0.fkey_modification_user,s13_0.str_nomcliente,s13_0.normalized_address,s13_0.str_observaciones,s13_0.str_ppdcol,s13_0.flag_requiere_po,s13_0.salog_code,s13_0.security_lock,s13_0.str_codieuri,s13_0.str_faxcliente,s13_0.str_telcliente,s13_0.flag_requiere_camion,s13_0.str_tipcliente,s13_0.flag_validaetiquetas,s13_0.flag_requierevariedad,s13_0.aud_version,s13_0.zipcode,s13_0.fkey_zona,r1_0.fec_estiarri,t1_0.codigo_cliente,t1_0.flag_activo,t1_0.str_dircliente,t1_0.flag_carga_po,t1_0.flag_bulk,t1_0.cid_code,t1_0.fkey_ciudad,c53_0.pkey_ciudad,c53_0.fkey_pais,c54_0.pkey_pais,c54_0.str_ci,c54_0.str_nompais,c54_0.clave_tel,c53_0.cod_aduana,c53_0.str_nomciudad,s15_0.pkey_estado,s15_0.str_codestado,s15_0.fkey_pais,s15_0.str_nomestado,t1_0.str_codcliente,t1_0.fkey_modo_consolidado,t1_0.str_mailconta1,t1_0.str_mailconta2,t1_0.str_nomconta1,t1_0.str_nomconta2,t1_0.fkey_creation_user,t1_0.creation_date,t1_0.flag_bloqcartera,t1_0.str_nomaduanas,t1_0.flag_requiere_descripcion,t1_0.flag_requiere_conf_detalle,t1_0.flag_requieredimension,t1_0.fkey_comercial,t1_0.flag_barcode,t1_0.flag_distribuyepo,t1_0.flag_parcializapo,t1_0.indirequbrok,t1_0.flag_requierefactura,t1_0.modification_date,t1_0.fkey_modification_user,t1_0.str_nomcliente,t1_0.normalized_address,t1_0.str_observaciones,t1_0.str_ppdcol,t1_0.flag_requiere_po,t1_0.salog_code,t1_0.security_lock,t1_0.str_codieuri,t1_0.str_faxcliente,t1_0.str_telcliente,t1_0.flag_requiere_camion,t1_0.str_tipcliente,t1_0.flag_validaetiquetas,t1_0.flag_requierevariedad,t1_0.aud_version,t1_0.zipcode,t1_0.fkey_zona,r1_0.fec_entrega_transfer,r1_0.aud_usuario,u2_0.codigo_usuario,u2_0.flag_activo,u2_0.email,u2_0.fkey_compania,u2_0.login,u2_0.nombre,u2_0.passwd,u2_0.contact_phone,u2_0.cargo,u2_0.id_usuario,r1_0.aud_version,r1_0.num_peso from reserva r1_0 left join guiamaster a1_0 on a1_0.pkey_guiamast=r1_0.fkey_guiamast left join guiamaster a2_0 on a2_0.pkey_guiamast=r1_0.fkey_guiamast left join cliente b2_0 on b2_0.codigo_cliente=a2_0.fkey_brocker left join cliente c2_0 on c2_0.codigo_cliente=a2_0.cod_cliente left join ciudad c3_0 on c3_0.pkey_ciudad=c2_0.fkey_ciudad left join pais c4_0 on c4_0.pkey_pais=c3_0.fkey_pais left join estado s1_0 on s1_0.pkey_estado=c3_0.fkey_estado left join vueloconecc fc1_0 on fc1_0.pkey_vuelcone=a2_0.fkey_vuelconeorig left join aeropuerto d1_0 on d1_0.pkey_aeropuerto=fc1_0.fkey_codaerde left join aeropuerto o1_0 on o1_0.pkey_aeropuerto=fc1_0.fkey_codaeror left join guia ia1_0 on a2_0.pkey_guiamast=ia1_0.fkey_guiamast left join vueloconecc lc1_0 on lc1_0.pkey_vuelcone=a2_0.fkey_vuelconedest left join aeropuerto d2_0 on d2_0.pkey_aeropuerto=lc1_0.fkey_codaerde left join aeropuerto o2_0 on o2_0.pkey_aeropuerto=lc1_0.fkey_codaeror left join bodegavuelo ra1_0 on ra1_0.fkeyvuelo=a2_0.fkey_vuelo and ra1_0.fkeybodega=a2_0.fkey_bodega left join res_vuelo f4_0 on f4_0.pkeyvuelo=ra1_0.fkeyvuelo left join aerolinea a6_0 on a6_0.pkey_aerolinea=f4_0.fkey_aerolinea left join bodega w2_0 on w2_0.pkey_bodega=ra1_0.fkeybodega left join usuario u1_0 on u1_0.codigo_usuario=a2_0.fkey_usuario join sede b6_0 on b6_0.pkey_sede=r1_0.fkey_sede join tipocarga ct1_0 on ct1_0.pkey_tipocarga=r1_0.chr_tipocarga left join tipoembalaje p2_0 on p2_0.pkeytipoembalaje=ct1_0.codigo_tipo_embalaje join agrupacion fc2_0 on fc2_0.pkey_agruclie=r1_0.fkey_destinat join cliente c15_0 on c15_0.codigo_cliente=fc2_0.str_codcliente join cliente dc1_0 on dc1_0.codigo_cliente=fc2_0.str_codcliagr join ciudad c17_0 on c17_0.pkey_ciudad=dc1_0.fkey_ciudad join pais c18_0 on c18_0.pkey_pais=c17_0.fkey_pais left join estado s3_0 on s3_0.pkey_estado=c17_0.fkey_estado join cliente dc2_0 on dc2_0.codigo_cliente=fc2_0.fkey_cliedocu join ciudad c20_0 on c20_0.pkey_ciudad=dc2_0.fkey_ciudad join pais c21_0 on c21_0.pkey_pais=c20_0.fkey_pais left join estado s4_0 on s4_0.pkey_estado=c20_0.fkey_estado left join (select * from agrucliente t where t.codigo_documento=9) fa1_0 on fa1_0.fkey_agruclie=fc2_0.pkey_agruclie and fa1_0.codigo_documento=9 left join tipodocumento dt1_0 on dt1_0.codigo_tipo_documento=fa1_0.codigo_documento left join cliente it1_0 on it1_0.codigo_cliente=fa1_0.codigo_cliente left join ciudad c23_0 on c23_0.pkey_ciudad=it1_0.fkey_ciudad left join pais c24_0 on c24_0.pkey_pais=c23_0.fkey_pais left join estado s5_0 on s5_0.pkey_estado=c23_0.fkey_estado left join (select * from agrucliente t where t.codigo_documento=8) pd1_0 on pd1_0.fkey_agruclie=fc2_0.pkey_agruclie and pd1_0.codigo_documento=8 left join tipodocumento dt3_0 on dt3_0.codigo_tipo_documento=pd1_0.codigo_documento left join cliente it2_0 on it2_0.codigo_cliente=pd1_0.codigo_cliente left join ciudad c26_0 on c26_0.pkey_ciudad=it2_0.fkey_ciudad left join pais c27_0 on c27_0.pkey_pais=c26_0.fkey_pais left join estado s6_0 on s6_0.pkey_estado=c26_0.fkey_estado left join cliente pc1_0 on pc1_0.codigo_cliente=fc2_0.fkey_clieprin left join ciudad c29_0 on c29_0.pkey_ciudad=pc1_0.fkey_ciudad left join pais c30_0 on c30_0.pkey_pais=c29_0.fkey_pais left join estado s7_0 on s7_0.pkey_estado=c29_0.fkey_estado left join reserva_last_po_modification lpm1_0 on r1_0.pkey_reserva=lpm1_0.pkey_reserva join agrupacion rg1_0 on rg1_0.pkey_agruclie=r1_0.fkey_agruclie join cliente c33_0 on c33_0.codigo_cliente=rg1_0.str_codcliente join cliente dc3_0 on dc3_0.codigo_cliente=rg1_0.str_codcliagr join ciudad c35_0 on c35_0.pkey_ciudad=dc3_0.fkey_ciudad join pais c36_0 on c36_0.pkey_pais=c35_0.fkey_pais left join estado s8_0 on s8_0.pkey_estado=c35_0.fkey_estado join cliente dc4_0 on dc4_0.codigo_cliente=rg1_0.fkey_cliedocu join ciudad c38_0 on c38_0.pkey_ciudad=dc4_0.fkey_ciudad join pais c39_0 on c39_0.pkey_pais=c38_0.fkey_pais left join estado s9_0 on s9_0.pkey_estado=c38_0.fkey_estado left join (select * from agrucliente t where t.codigo_documento=9) fa2_0 on fa2_0.fkey_agruclie=rg1_0.pkey_agruclie and fa2_0.codigo_documento=9 left join tipodocumento dt5_0 on dt5_0.codigo_tipo_documento=fa2_0.codigo_documento left join cliente it3_0 on it3_0.codigo_cliente=fa2_0.codigo_cliente left join ciudad c41_0 on c41_0.pkey_ciudad=it3_0.fkey_ciudad left join pais c42_0 on c42_0.pkey_pais=c41_0.fkey_pais left join estado s10_0 on s10_0.pkey_estado=c41_0.fkey_estado left join (select * from agrucliente t where t.codigo_documento=8) pd2_0 on pd2_0.fkey_agruclie=rg1_0.pkey_agruclie and pd2_0.codigo_documento=8 left join tipodocumento dt7_0 on dt7_0.codigo_tipo_documento=pd2_0.codigo_documento left join cliente it4_0 on it4_0.codigo_cliente=pd2_0.codigo_cliente left join ciudad c44_0 on c44_0.pkey_ciudad=it4_0.fkey_ciudad left join pais c45_0 on c45_0.pkey_pais=c44_0.fkey_pais left join estado s11_0 on s11_0.pkey_estado=c44_0.fkey_estado left join cliente pc2_0 on pc2_0.codigo_cliente=rg1_0.fkey_clieprin left join ciudad c47_0 on c47_0.pkey_ciudad=pc2_0.fkey_ciudad left join pais c48_0 on c48_0.pkey_pais=c47_0.fkey_pais left join estado s12_0 on s12_0.pkey_estado=c47_0.fkey_estado join cliente s13_0 on s13_0.codigo_cliente=r1_0.cod_cultivo join ciudad c50_0 on c50_0.pkey_ciudad=s13_0.fkey_ciudad join pais c51_0 on c51_0.pkey_pais=c50_0.fkey_pais left join estado s14_0 on s14_0.pkey_estado=c50_0.fkey_estado left join cliente t1_0 on t1_0.codigo_cliente=r1_0.fkey_comer left join ciudad c53_0 on c53_0.pkey_ciudad=t1_0.fkey_ciudad left join pais c54_0 on c54_0.pkey_pais=c53_0.fkey_pais left join estado s15_0 on s15_0.pkey_estado=c53_0.fkey_estado join usuario u2_0 on u2_0.codigo_usuario=r1_0.aud_usuario where a1_0.pkey_guiamast=? and r1_0.cod_causal=?] [El nombre de columna 'fkey_creation_user' no es válido.] [n/a]; SQL [n/a]",
-              "tryId": 79781,
-              "executionDate": "2026-08-12T23:32:27.843+00:00",
+              "message": "Task Id: 8 - Client: ECOPLANTS LLC. - id: 43075 - AWB: 369-10715526 - Sent by: DARIO CARREÑO - FAILED Ticket id d42b5660-96ab-11f1-b81f-57dba7f2e64e Errors: {error=no shipmentItem found for the following conditions, message=id: 5259c570-713b-4c91-94f0-03d986baa7e9, sourceMessageError=conditionsValidations};  Maximum retry attempts reached",
+              "tryId": 79783,
+              "executionDate": "2026-08-13T00:13:37.650+00:00",
               "taskTryStatus": "ERROR",
               "taskId": 8,
               "taskInstanceId": 97006
@@ -4855,8 +4282,8 @@
           ]
         }
       ],
-      "urgencia": "naranja",
-      "hoursToEtd": 1.02
+      "urgencia": "rojo",
+      "hoursToEtd": 0.77
     },
     {
       "id": 981487,
@@ -4882,8 +4309,8 @@
       "awbNumber": "369-10701176",
       "sede": "EC",
       "taskInstances": [],
-      "urgencia": "naranja",
-      "hoursToEtd": 1.02
+      "urgencia": "rojo",
+      "hoursToEtd": 0.77
     },
     {
       "id": 981488,
@@ -4909,8 +4336,8 @@
       "awbNumber": "369-10701191",
       "sede": "EC",
       "taskInstances": [],
-      "urgencia": "naranja",
-      "hoursToEtd": 1.02
+      "urgencia": "rojo",
+      "hoursToEtd": 0.77
     },
     {
       "id": 981489,
@@ -4936,8 +4363,8 @@
       "awbNumber": "369-10701460",
       "sede": "EC",
       "taskInstances": [],
-      "urgencia": "naranja",
-      "hoursToEtd": 1.02
+      "urgencia": "rojo",
+      "hoursToEtd": 0.77
     },
     {
       "id": 981610,
@@ -4963,8 +4390,8 @@
       "awbNumber": "369-10715740",
       "sede": "EC",
       "taskInstances": [],
-      "urgencia": "naranja",
-      "hoursToEtd": 1.02
+      "urgencia": "rojo",
+      "hoursToEtd": 0.77
     },
     {
       "id": 981308,
@@ -4990,8 +4417,8 @@
       "awbNumber": "369-10715460",
       "sede": "EC",
       "taskInstances": [],
-      "urgencia": "naranja",
-      "hoursToEtd": 1.02
+      "urgencia": "rojo",
+      "hoursToEtd": 0.77
     },
     {
       "id": 981309,
@@ -5017,8 +4444,8 @@
       "awbNumber": "369-10715471",
       "sede": "EC",
       "taskInstances": [],
-      "urgencia": "naranja",
-      "hoursToEtd": 1.02
+      "urgencia": "rojo",
+      "hoursToEtd": 0.77
     },
     {
       "id": 981448,
@@ -5045,7 +4472,7 @@
       "sede": "EC",
       "taskInstances": [],
       "urgencia": "verde",
-      "hoursToEtd": 3.27
+      "hoursToEtd": 3.02
     },
     {
       "id": 978289,
@@ -5072,7 +4499,7 @@
       "sede": "EC",
       "taskInstances": [],
       "urgencia": "verde",
-      "hoursToEtd": 3.52
+      "hoursToEtd": 3.27
     },
     {
       "id": 978381,
@@ -5099,7 +4526,7 @@
       "sede": "EC",
       "taskInstances": [],
       "urgencia": "verde",
-      "hoursToEtd": 3.52
+      "hoursToEtd": 3.27
     },
     {
       "id": 981486,
@@ -5183,7 +4610,7 @@
         }
       ],
       "urgencia": "verde",
-      "hoursToEtd": 6.35
+      "hoursToEtd": 6.1
     },
     {
       "id": 981638,
@@ -5233,7 +4660,7 @@
         }
       ],
       "urgencia": "verde",
-      "hoursToEtd": 10.52
+      "hoursToEtd": 10.27
     },
     {
       "id": 981640,
@@ -5283,7 +4710,7 @@
         }
       ],
       "urgencia": "verde",
-      "hoursToEtd": 16.02
+      "hoursToEtd": 15.77
     },
     {
       "id": 981660,
@@ -5377,7 +4804,821 @@
         }
       ],
       "urgencia": "verde",
-      "hoursToEtd": 16.22
+      "hoursToEtd": 15.97
+    },
+    {
+      "id": 979477,
+      "awbId": "GALLERIA-KOMET",
+      "airlinePrefix": "145",
+      "shipDate": "2026-08-13",
+      "processedErrors": 0,
+      "rateType": "REGULAR",
+      "consignee": "SUNBURST FARMS INC.",
+      "detailConfirmationRequired": true,
+      "piecesConfirmedActivity": "ACTIVE",
+      "weightConfirmedActivity": "INACTIVE",
+      "awbProducedActivity": "INACTIVE",
+      "invoiceProducedActivity": "ACTIVE",
+      "documentsSendActivity": "INACTIVE",
+      "interfaceSend": "PENDING",
+      "pieces": 72,
+      "fullBoxes": 18,
+      "piecesReceived": 0,
+      "fullBoxesReceived": 0,
+      "etd": "2026-08-13T17:30:00",
+      "awbStatus": 5,
+      "awbNumber": "145-11500683",
+      "sede": "EC",
+      "taskInstances": [
+        {
+          "awbId": 979477,
+          "taskTryStatus": "PENDING",
+          "clientId": null,
+          "taskId": 5,
+          "taskInstanceId": 97080,
+          "taskName": "SEND BOOKINGS TRAZE",
+          "clientName": null,
+          "taskUrlAddress": "/traze/sendBookings",
+          "tries": []
+        },
+        {
+          "awbId": 979477,
+          "taskTryStatus": "PENDING",
+          "clientId": null,
+          "taskId": 6,
+          "taskInstanceId": 97081,
+          "taskName": "SEND LABELS TRAZE",
+          "clientName": null,
+          "taskUrlAddress": "/traze/sendLabels",
+          "tries": []
+        }
+      ],
+      "urgencia": "verde",
+      "hoursToEtd": 17.27
+    },
+    {
+      "id": 976670,
+      "awbId": "MARIA FLOWERS",
+      "airlinePrefix": "145",
+      "shipDate": "2026-08-13",
+      "processedErrors": 0,
+      "rateType": "REGULAR",
+      "consignee": "SUNBURST FARMS INC.",
+      "detailConfirmationRequired": true,
+      "piecesConfirmedActivity": "ACTIVE",
+      "weightConfirmedActivity": "INACTIVE",
+      "awbProducedActivity": "INACTIVE",
+      "invoiceProducedActivity": "ACTIVE",
+      "documentsSendActivity": "INACTIVE",
+      "interfaceSend": "PENDING",
+      "pieces": 908,
+      "fullBoxes": 419.28999999999996,
+      "piecesReceived": 0,
+      "fullBoxesReceived": 0,
+      "etd": "2026-08-13T17:30:00",
+      "awbStatus": 5,
+      "awbNumber": "145-11501232",
+      "sede": "EC",
+      "taskInstances": [
+        {
+          "awbId": 976670,
+          "taskTryStatus": "PENDING",
+          "clientId": null,
+          "taskId": 5,
+          "taskInstanceId": 97082,
+          "taskName": "SEND BOOKINGS TRAZE",
+          "clientName": null,
+          "taskUrlAddress": "/traze/sendBookings",
+          "tries": []
+        },
+        {
+          "awbId": 976670,
+          "taskTryStatus": "PENDING",
+          "clientId": null,
+          "taskId": 6,
+          "taskInstanceId": 97083,
+          "taskName": "SEND LABELS TRAZE",
+          "clientName": null,
+          "taskUrlAddress": "/traze/sendLabels",
+          "tries": []
+        },
+        {
+          "awbId": 976670,
+          "taskTryStatus": "PENDING",
+          "clientId": 53046,
+          "taskId": 7,
+          "taskInstanceId": 97084,
+          "taskName": "SEND BOOKINGS TRAZE CLIENT",
+          "clientName": "MARIA FLOWERS INTERNATIONAL INC",
+          "taskUrlAddress": "/traze/sendClientBookings",
+          "tries": []
+        },
+        {
+          "awbId": 976670,
+          "taskTryStatus": "PENDING",
+          "clientId": 53046,
+          "taskId": 8,
+          "taskInstanceId": 97085,
+          "taskName": "SEND LABELS TRAZE CLIENT",
+          "clientName": "MARIA FLOWERS INTERNATIONAL INC",
+          "taskUrlAddress": "/traze/sendClientLabels",
+          "tries": []
+        }
+      ],
+      "urgencia": "verde",
+      "hoursToEtd": 17.27
+    },
+    {
+      "id": 979523,
+      "awbId": "GALLERIA",
+      "airlinePrefix": "145",
+      "shipDate": "2026-08-13",
+      "processedErrors": 0,
+      "rateType": "REGULAR",
+      "consignee": "SUNBURST FARMS INC.",
+      "detailConfirmationRequired": true,
+      "piecesConfirmedActivity": "ACTIVE",
+      "weightConfirmedActivity": "INACTIVE",
+      "awbProducedActivity": "INACTIVE",
+      "invoiceProducedActivity": "ACTIVE",
+      "documentsSendActivity": "INACTIVE",
+      "interfaceSend": "PENDING",
+      "pieces": 673,
+      "fullBoxes": 248.71,
+      "piecesReceived": 0,
+      "fullBoxesReceived": 0,
+      "etd": "2026-08-13T17:30:00",
+      "awbStatus": 5,
+      "awbNumber": "145-11502632",
+      "sede": "EC",
+      "taskInstances": [
+        {
+          "awbId": 979523,
+          "taskTryStatus": "PENDING",
+          "clientId": null,
+          "taskId": 5,
+          "taskInstanceId": 97086,
+          "taskName": "SEND BOOKINGS TRAZE",
+          "clientName": null,
+          "taskUrlAddress": "/traze/sendBookings",
+          "tries": []
+        },
+        {
+          "awbId": 979523,
+          "taskTryStatus": "PENDING",
+          "clientId": null,
+          "taskId": 6,
+          "taskInstanceId": 97087,
+          "taskName": "SEND LABELS TRAZE",
+          "clientName": null,
+          "taskUrlAddress": "/traze/sendLabels",
+          "tries": []
+        }
+      ],
+      "urgencia": "verde",
+      "hoursToEtd": 17.27
+    },
+    {
+      "id": 981389,
+      "awbId": "GALLERIA",
+      "airlinePrefix": "145",
+      "shipDate": "2026-08-13",
+      "processedErrors": 0,
+      "rateType": "REGULAR",
+      "consignee": "SUNBURST FARMS INC.",
+      "detailConfirmationRequired": true,
+      "piecesConfirmedActivity": "ACTIVE",
+      "weightConfirmedActivity": "INACTIVE",
+      "awbProducedActivity": "INACTIVE",
+      "invoiceProducedActivity": "ACTIVE",
+      "documentsSendActivity": "INACTIVE",
+      "interfaceSend": "PENDING",
+      "pieces": 849,
+      "fullBoxes": 291.34000000000003,
+      "piecesReceived": 0,
+      "fullBoxesReceived": 0,
+      "etd": "2026-08-13T17:30:00",
+      "awbStatus": 5,
+      "awbNumber": "145-11503553",
+      "sede": "EC",
+      "taskInstances": [
+        {
+          "awbId": 981389,
+          "taskTryStatus": "PENDING",
+          "clientId": null,
+          "taskId": 5,
+          "taskInstanceId": 97088,
+          "taskName": "SEND BOOKINGS TRAZE",
+          "clientName": null,
+          "taskUrlAddress": "/traze/sendBookings",
+          "tries": []
+        },
+        {
+          "awbId": 981389,
+          "taskTryStatus": "PENDING",
+          "clientId": null,
+          "taskId": 6,
+          "taskInstanceId": 97089,
+          "taskName": "SEND LABELS TRAZE",
+          "clientName": null,
+          "taskUrlAddress": "/traze/sendLabels",
+          "tries": []
+        }
+      ],
+      "urgencia": "verde",
+      "hoursToEtd": 17.27
+    },
+    {
+      "id": 981390,
+      "awbId": "GALLERIA",
+      "airlinePrefix": "145",
+      "shipDate": "2026-08-13",
+      "processedErrors": 0,
+      "rateType": "REGULAR",
+      "consignee": "SUNBURST FARMS INC.",
+      "detailConfirmationRequired": true,
+      "piecesConfirmedActivity": "ACTIVE",
+      "weightConfirmedActivity": "INACTIVE",
+      "awbProducedActivity": "INACTIVE",
+      "invoiceProducedActivity": "ACTIVE",
+      "documentsSendActivity": "INACTIVE",
+      "interfaceSend": "PENDING",
+      "pieces": 507,
+      "fullBoxes": 139.79000000000002,
+      "piecesReceived": 0,
+      "fullBoxesReceived": 0,
+      "etd": "2026-08-13T17:30:00",
+      "awbStatus": 5,
+      "awbNumber": "145-11503564",
+      "sede": "EC",
+      "taskInstances": [
+        {
+          "awbId": 981390,
+          "taskTryStatus": "PENDING",
+          "clientId": null,
+          "taskId": 5,
+          "taskInstanceId": 97090,
+          "taskName": "SEND BOOKINGS TRAZE",
+          "clientName": null,
+          "taskUrlAddress": "/traze/sendBookings",
+          "tries": []
+        },
+        {
+          "awbId": 981390,
+          "taskTryStatus": "PENDING",
+          "clientId": null,
+          "taskId": 6,
+          "taskInstanceId": 97091,
+          "taskName": "SEND LABELS TRAZE",
+          "clientName": null,
+          "taskUrlAddress": "/traze/sendLabels",
+          "tries": []
+        }
+      ],
+      "urgencia": "verde",
+      "hoursToEtd": 17.27
+    },
+    {
+      "id": 977485,
+      "awbId": "TWI. VARIOS",
+      "airlinePrefix": "369",
+      "shipDate": "2026-08-13",
+      "processedErrors": 0,
+      "rateType": "REGULAR",
+      "consignee": "TRADEWINDS INTL - SUITE 340",
+      "detailConfirmationRequired": true,
+      "piecesConfirmedActivity": "ACTIVE",
+      "weightConfirmedActivity": "INACTIVE",
+      "awbProducedActivity": "INACTIVE",
+      "invoiceProducedActivity": "ACTIVE",
+      "documentsSendActivity": "INACTIVE",
+      "interfaceSend": "PENDING",
+      "pieces": 115,
+      "fullBoxes": 30.440000000000005,
+      "piecesReceived": 0,
+      "fullBoxesReceived": 0,
+      "etd": "2026-08-13T20:00:00",
+      "awbStatus": 5,
+      "awbNumber": "369-10698726",
+      "sede": "EC",
+      "taskInstances": [
+        {
+          "awbId": 977485,
+          "taskTryStatus": "PENDING",
+          "clientId": null,
+          "taskId": 5,
+          "taskInstanceId": 97112,
+          "taskName": "SEND BOOKINGS TRAZE",
+          "clientName": null,
+          "taskUrlAddress": "/traze/sendBookings",
+          "tries": []
+        },
+        {
+          "awbId": 977485,
+          "taskTryStatus": "PENDING",
+          "clientId": null,
+          "taskId": 6,
+          "taskInstanceId": 97113,
+          "taskName": "SEND LABELS TRAZE",
+          "clientName": null,
+          "taskUrlAddress": "/traze/sendLabels",
+          "tries": []
+        }
+      ],
+      "urgencia": "verde",
+      "hoursToEtd": 19.77
+    },
+    {
+      "id": 977536,
+      "awbId": "TWI. ROSAS",
+      "airlinePrefix": "369",
+      "shipDate": "2026-08-13",
+      "processedErrors": 0,
+      "rateType": "REGULAR",
+      "consignee": "TRADEWINDS INTL - SUITE 340",
+      "detailConfirmationRequired": true,
+      "piecesConfirmedActivity": "ACTIVE",
+      "weightConfirmedActivity": "INACTIVE",
+      "awbProducedActivity": "INACTIVE",
+      "invoiceProducedActivity": "ACTIVE",
+      "documentsSendActivity": "INACTIVE",
+      "interfaceSend": "PENDING",
+      "pieces": 136,
+      "fullBoxes": 44.26,
+      "piecesReceived": 0,
+      "fullBoxesReceived": 0,
+      "etd": "2026-08-13T20:00:00",
+      "awbStatus": 5,
+      "awbNumber": "369-10699205",
+      "sede": "EC",
+      "taskInstances": [
+        {
+          "awbId": 977536,
+          "taskTryStatus": "PENDING",
+          "clientId": null,
+          "taskId": 5,
+          "taskInstanceId": 97114,
+          "taskName": "SEND BOOKINGS TRAZE",
+          "clientName": null,
+          "taskUrlAddress": "/traze/sendBookings",
+          "tries": []
+        },
+        {
+          "awbId": 977536,
+          "taskTryStatus": "PENDING",
+          "clientId": null,
+          "taskId": 6,
+          "taskInstanceId": 97115,
+          "taskName": "SEND LABELS TRAZE",
+          "clientName": null,
+          "taskUrlAddress": "/traze/sendLabels",
+          "tries": []
+        }
+      ],
+      "urgencia": "verde",
+      "hoursToEtd": 19.77
+    },
+    {
+      "id": 977585,
+      "awbId": "FM/BANDY RANCH//PINNACLE//CONTI",
+      "airlinePrefix": "369",
+      "shipDate": "2026-08-13",
+      "processedErrors": 0,
+      "rateType": "REGULAR",
+      "consignee": "SUNBURST FARMS INC.",
+      "detailConfirmationRequired": true,
+      "piecesConfirmedActivity": "ACTIVE",
+      "weightConfirmedActivity": "INACTIVE",
+      "awbProducedActivity": "INACTIVE",
+      "invoiceProducedActivity": "ACTIVE",
+      "documentsSendActivity": "INACTIVE",
+      "interfaceSend": "PENDING",
+      "pieces": 418,
+      "fullBoxes": 165.3,
+      "piecesReceived": 0,
+      "fullBoxesReceived": 0,
+      "etd": "2026-08-13T20:00:00",
+      "awbStatus": 5,
+      "awbNumber": "369-10699684",
+      "sede": "EC",
+      "taskInstances": [
+        {
+          "awbId": 977585,
+          "taskTryStatus": "PENDING",
+          "clientId": null,
+          "taskId": 5,
+          "taskInstanceId": 97092,
+          "taskName": "SEND BOOKINGS TRAZE",
+          "clientName": null,
+          "taskUrlAddress": "/traze/sendBookings",
+          "tries": []
+        },
+        {
+          "awbId": 977585,
+          "taskTryStatus": "PENDING",
+          "clientId": null,
+          "taskId": 6,
+          "taskInstanceId": 97093,
+          "taskName": "SEND LABELS TRAZE",
+          "clientName": null,
+          "taskUrlAddress": "/traze/sendLabels",
+          "tries": []
+        },
+        {
+          "awbId": 977585,
+          "taskTryStatus": "PENDING",
+          "clientId": 50,
+          "taskId": 7,
+          "taskInstanceId": 97094,
+          "taskName": "SEND BOOKINGS TRAZE CLIENT",
+          "clientName": "CONTINENTAL FARMS LLC",
+          "taskUrlAddress": "/traze/sendClientBookings",
+          "tries": []
+        },
+        {
+          "awbId": 977585,
+          "taskTryStatus": "PENDING",
+          "clientId": 50,
+          "taskId": 8,
+          "taskInstanceId": 97095,
+          "taskName": "SEND LABELS TRAZE CLIENT",
+          "clientName": "CONTINENTAL FARMS LLC",
+          "taskUrlAddress": "/traze/sendClientLabels",
+          "tries": []
+        }
+      ],
+      "urgencia": "verde",
+      "hoursToEtd": 19.77
+    },
+    {
+      "id": 980566,
+      "awbId": "DELAWARE",
+      "airlinePrefix": "369",
+      "shipDate": "2026-08-13",
+      "processedErrors": 0,
+      "rateType": "REGULAR",
+      "consignee": "SUNBURST FARMS INC.",
+      "detailConfirmationRequired": true,
+      "piecesConfirmedActivity": "ACTIVE",
+      "weightConfirmedActivity": "INACTIVE",
+      "awbProducedActivity": "INACTIVE",
+      "invoiceProducedActivity": "ACTIVE",
+      "documentsSendActivity": "INACTIVE",
+      "interfaceSend": "PENDING",
+      "pieces": 903,
+      "fullBoxes": 194.7199999999999,
+      "piecesReceived": 0,
+      "fullBoxesReceived": 0,
+      "etd": "2026-08-13T20:00:00",
+      "awbStatus": 5,
+      "awbNumber": "369-10714513",
+      "sede": "EC",
+      "taskInstances": [
+        {
+          "awbId": 980566,
+          "taskTryStatus": "PENDING",
+          "clientId": null,
+          "taskId": 5,
+          "taskInstanceId": 97096,
+          "taskName": "SEND BOOKINGS TRAZE",
+          "clientName": null,
+          "taskUrlAddress": "/traze/sendBookings",
+          "tries": []
+        },
+        {
+          "awbId": 980566,
+          "taskTryStatus": "PENDING",
+          "clientId": null,
+          "taskId": 6,
+          "taskInstanceId": 97097,
+          "taskName": "SEND LABELS TRAZE",
+          "clientName": null,
+          "taskUrlAddress": "/traze/sendLabels",
+          "tries": []
+        }
+      ],
+      "urgencia": "verde",
+      "hoursToEtd": 19.77
+    },
+    {
+      "id": 981312,
+      "awbId": "CANADA//DWF",
+      "airlinePrefix": "369",
+      "shipDate": "2026-08-13",
+      "processedErrors": 0,
+      "rateType": "REGULAR",
+      "consignee": "SUNBURST FARMS INC.",
+      "detailConfirmationRequired": true,
+      "piecesConfirmedActivity": "ACTIVE",
+      "weightConfirmedActivity": "INACTIVE",
+      "awbProducedActivity": "INACTIVE",
+      "invoiceProducedActivity": "ACTIVE",
+      "documentsSendActivity": "INACTIVE",
+      "interfaceSend": "PENDING",
+      "pieces": 484,
+      "fullBoxes": 195.49999999999997,
+      "piecesReceived": 0,
+      "fullBoxesReceived": 0,
+      "etd": "2026-08-13T20:00:00",
+      "awbStatus": 5,
+      "awbNumber": "369-10715504",
+      "sede": "EC",
+      "taskInstances": [
+        {
+          "awbId": 981312,
+          "taskTryStatus": "PENDING",
+          "clientId": null,
+          "taskId": 5,
+          "taskInstanceId": 97098,
+          "taskName": "SEND BOOKINGS TRAZE",
+          "clientName": null,
+          "taskUrlAddress": "/traze/sendBookings",
+          "tries": []
+        },
+        {
+          "awbId": 981312,
+          "taskTryStatus": "PENDING",
+          "clientId": null,
+          "taskId": 6,
+          "taskInstanceId": 97099,
+          "taskName": "SEND LABELS TRAZE",
+          "clientName": null,
+          "taskUrlAddress": "/traze/sendLabels",
+          "tries": []
+        }
+      ],
+      "urgencia": "verde",
+      "hoursToEtd": 19.77
+    },
+    {
+      "id": 981315,
+      "awbId": "SUN. OTROS",
+      "airlinePrefix": "369",
+      "shipDate": "2026-08-13",
+      "processedErrors": 0,
+      "rateType": "REGULAR",
+      "consignee": "SUNBURST FARMS INC.",
+      "detailConfirmationRequired": true,
+      "piecesConfirmedActivity": "ACTIVE",
+      "weightConfirmedActivity": "INACTIVE",
+      "awbProducedActivity": "INACTIVE",
+      "invoiceProducedActivity": "ACTIVE",
+      "documentsSendActivity": "INACTIVE",
+      "interfaceSend": "PENDING",
+      "pieces": 825,
+      "fullBoxes": 208.54999999999998,
+      "piecesReceived": 0,
+      "fullBoxesReceived": 0,
+      "etd": "2026-08-13T20:00:00",
+      "awbStatus": 5,
+      "awbNumber": "369-10715530",
+      "sede": "EC",
+      "taskInstances": [
+        {
+          "awbId": 981315,
+          "taskTryStatus": "PENDING",
+          "clientId": null,
+          "taskId": 5,
+          "taskInstanceId": 97100,
+          "taskName": "SEND BOOKINGS TRAZE",
+          "clientName": null,
+          "taskUrlAddress": "/traze/sendBookings",
+          "tries": []
+        },
+        {
+          "awbId": 981315,
+          "taskTryStatus": "PENDING",
+          "clientId": null,
+          "taskId": 6,
+          "taskInstanceId": 97101,
+          "taskName": "SEND LABELS TRAZE",
+          "clientName": null,
+          "taskUrlAddress": "/traze/sendLabels",
+          "tries": []
+        },
+        {
+          "awbId": 981315,
+          "taskTryStatus": "PENDING",
+          "clientId": 43075,
+          "taskId": 7,
+          "taskInstanceId": 97102,
+          "taskName": "SEND BOOKINGS TRAZE CLIENT",
+          "clientName": "ECOPLANTS LLC.",
+          "taskUrlAddress": "/traze/sendClientBookings",
+          "tries": []
+        },
+        {
+          "awbId": 981315,
+          "taskTryStatus": "PENDING",
+          "clientId": 45435,
+          "taskId": 7,
+          "taskInstanceId": 97103,
+          "taskName": "SEND BOOKINGS TRAZE CLIENT",
+          "clientName": "SOFIA FLOWERS USA LLC",
+          "taskUrlAddress": "/traze/sendClientBookings",
+          "tries": []
+        },
+        {
+          "awbId": 981315,
+          "taskTryStatus": "PENDING",
+          "clientId": 43075,
+          "taskId": 8,
+          "taskInstanceId": 97104,
+          "taskName": "SEND LABELS TRAZE CLIENT",
+          "clientName": "ECOPLANTS LLC.",
+          "taskUrlAddress": "/traze/sendClientLabels",
+          "tries": []
+        },
+        {
+          "awbId": 981315,
+          "taskTryStatus": "PENDING",
+          "clientId": 45435,
+          "taskId": 8,
+          "taskInstanceId": 97105,
+          "taskName": "SEND LABELS TRAZE CLIENT",
+          "clientName": "SOFIA FLOWERS USA LLC",
+          "taskUrlAddress": "/traze/sendClientLabels",
+          "tries": []
+        }
+      ],
+      "urgencia": "verde",
+      "hoursToEtd": 19.77
+    },
+    {
+      "id": 981318,
+      "awbId": "BLOOMSTAR-BLOOMISTIC-BILLDORAN",
+      "airlinePrefix": "369",
+      "shipDate": "2026-08-13",
+      "processedErrors": 0,
+      "rateType": "REGULAR",
+      "consignee": "SUNBURST FARMS INC.",
+      "detailConfirmationRequired": true,
+      "piecesConfirmedActivity": "ACTIVE",
+      "weightConfirmedActivity": "INACTIVE",
+      "awbProducedActivity": "INACTIVE",
+      "invoiceProducedActivity": "ACTIVE",
+      "documentsSendActivity": "INACTIVE",
+      "interfaceSend": "PENDING",
+      "pieces": 585,
+      "fullBoxes": 220.01,
+      "piecesReceived": 0,
+      "fullBoxesReceived": 0,
+      "etd": "2026-08-13T20:00:00",
+      "awbStatus": 5,
+      "awbNumber": "369-10715563",
+      "sede": "EC",
+      "taskInstances": [
+        {
+          "awbId": 981318,
+          "taskTryStatus": "PENDING",
+          "clientId": null,
+          "taskId": 5,
+          "taskInstanceId": 97106,
+          "taskName": "SEND BOOKINGS TRAZE",
+          "clientName": null,
+          "taskUrlAddress": "/traze/sendBookings",
+          "tries": []
+        },
+        {
+          "awbId": 981318,
+          "taskTryStatus": "PENDING",
+          "clientId": null,
+          "taskId": 6,
+          "taskInstanceId": 97107,
+          "taskName": "SEND LABELS TRAZE",
+          "clientName": null,
+          "taskUrlAddress": "/traze/sendLabels",
+          "tries": []
+        },
+        {
+          "awbId": 981318,
+          "taskTryStatus": "PENDING",
+          "clientId": 44826,
+          "taskId": 7,
+          "taskInstanceId": 97108,
+          "taskName": "SEND BOOKINGS TRAZE CLIENT",
+          "clientName": "BLOOMSTAR",
+          "taskUrlAddress": "/traze/sendClientBookings",
+          "tries": []
+        },
+        {
+          "awbId": 981318,
+          "taskTryStatus": "PENDING",
+          "clientId": 44826,
+          "taskId": 8,
+          "taskInstanceId": 97109,
+          "taskName": "SEND LABELS TRAZE CLIENT",
+          "clientName": "BLOOMSTAR",
+          "taskUrlAddress": "/traze/sendClientLabels",
+          "tries": []
+        }
+      ],
+      "urgencia": "verde",
+      "hoursToEtd": 19.77
+    },
+    {
+      "id": 981321,
+      "awbId": "LEGACY-SUNBURST",
+      "airlinePrefix": "369",
+      "shipDate": "2026-08-13",
+      "processedErrors": 0,
+      "rateType": "REGULAR",
+      "consignee": "SUNBURST FARMS INC.",
+      "detailConfirmationRequired": true,
+      "piecesConfirmedActivity": "ACTIVE",
+      "weightConfirmedActivity": "INACTIVE",
+      "awbProducedActivity": "INACTIVE",
+      "invoiceProducedActivity": "ACTIVE",
+      "documentsSendActivity": "INACTIVE",
+      "interfaceSend": "PENDING",
+      "pieces": 521,
+      "fullBoxes": 140.67,
+      "piecesReceived": 0,
+      "fullBoxesReceived": 0,
+      "etd": "2026-08-13T20:00:00",
+      "awbStatus": 5,
+      "awbNumber": "369-10715596",
+      "sede": "EC",
+      "taskInstances": [
+        {
+          "awbId": 981321,
+          "taskTryStatus": "PENDING",
+          "clientId": null,
+          "taskId": 5,
+          "taskInstanceId": 97110,
+          "taskName": "SEND BOOKINGS TRAZE",
+          "clientName": null,
+          "taskUrlAddress": "/traze/sendBookings",
+          "tries": []
+        },
+        {
+          "awbId": 981321,
+          "taskTryStatus": "PENDING",
+          "clientId": null,
+          "taskId": 6,
+          "taskInstanceId": 97111,
+          "taskName": "SEND LABELS TRAZE",
+          "clientName": null,
+          "taskUrlAddress": "/traze/sendLabels",
+          "tries": []
+        }
+      ],
+      "urgencia": "verde",
+      "hoursToEtd": 19.77
+    },
+    {
+      "id": 981624,
+      "awbId": "ELITE",
+      "airlinePrefix": "369",
+      "shipDate": "2026-08-13",
+      "processedErrors": 0,
+      "rateType": "REGULAR",
+      "consignee": "SUNBURST FARMS INC.",
+      "detailConfirmationRequired": true,
+      "piecesConfirmedActivity": "ACTIVE",
+      "weightConfirmedActivity": "INACTIVE",
+      "awbProducedActivity": "INACTIVE",
+      "invoiceProducedActivity": "ACTIVE",
+      "documentsSendActivity": "INACTIVE",
+      "interfaceSend": "PENDING",
+      "pieces": 961,
+      "fullBoxes": 379,
+      "piecesReceived": 0,
+      "fullBoxesReceived": 0,
+      "etd": "2026-08-13T20:00:00",
+      "awbStatus": 5,
+      "awbNumber": "369-10715762",
+      "sede": "EC",
+      "taskInstances": [],
+      "urgencia": "verde",
+      "hoursToEtd": 19.77
+    },
+    {
+      "id": 981625,
+      "awbId": "ELITE",
+      "airlinePrefix": "369",
+      "shipDate": "2026-08-13",
+      "processedErrors": 0,
+      "rateType": "REGULAR",
+      "consignee": "SUNBURST FARMS INC.",
+      "detailConfirmationRequired": true,
+      "piecesConfirmedActivity": "ACTIVE",
+      "weightConfirmedActivity": "INACTIVE",
+      "awbProducedActivity": "INACTIVE",
+      "invoiceProducedActivity": "ACTIVE",
+      "documentsSendActivity": "INACTIVE",
+      "interfaceSend": "PENDING",
+      "pieces": 334,
+      "fullBoxes": 126,
+      "piecesReceived": 0,
+      "fullBoxesReceived": 0,
+      "etd": "2026-08-13T20:00:00",
+      "awbStatus": 5,
+      "awbNumber": "369-10715773",
+      "sede": "EC",
+      "taskInstances": [],
+      "urgencia": "verde",
+      "hoursToEtd": 19.77
     },
     {
       "id": 976091,
@@ -5471,7 +5712,7 @@
         }
       ],
       "urgencia": "verde",
-      "hoursToEtd": 22.1
+      "hoursToEtd": 21.85
     },
     {
       "id": 981637,
@@ -5543,7 +5784,7 @@
         }
       ],
       "urgencia": "verde",
-      "hoursToEtd": 22.1
+      "hoursToEtd": 21.85
     },
     {
       "id": 981643,
@@ -5593,7 +5834,7 @@
         }
       ],
       "urgencia": "verde",
-      "hoursToEtd": 22.1
+      "hoursToEtd": 21.85
     },
     {
       "id": 981672,
@@ -5665,7 +5906,7 @@
         }
       ],
       "urgencia": "verde",
-      "hoursToEtd": 22.1
+      "hoursToEtd": 21.85
     },
     {
       "id": 981662,
@@ -5692,7 +5933,7 @@
       "sede": "CO",
       "taskInstances": [],
       "urgencia": "verde",
-      "hoursToEtd": 22.1
+      "hoursToEtd": 21.85
     },
     {
       "id": 981106,
@@ -5808,7 +6049,7 @@
         }
       ],
       "urgencia": "verde",
-      "hoursToEtd": 23.02
+      "hoursToEtd": 22.77
     },
     {
       "id": 981644,
@@ -5880,7 +6121,7 @@
         }
       ],
       "urgencia": "verde",
-      "hoursToEtd": 23.02
+      "hoursToEtd": 22.77
     },
     {
       "id": 981645,
@@ -5930,7 +6171,88 @@
         }
       ],
       "urgencia": "verde",
-      "hoursToEtd": 23.02
+      "hoursToEtd": 22.77
+    },
+    {
+      "id": 980541,
+      "awbId": "ELITE",
+      "airlinePrefix": "729",
+      "shipDate": "2026-08-13",
+      "processedErrors": 0,
+      "rateType": "REGULAR",
+      "consignee": "SUNBURST FARMS INC.",
+      "detailConfirmationRequired": true,
+      "piecesConfirmedActivity": "ACTIVE",
+      "weightConfirmedActivity": "INACTIVE",
+      "awbProducedActivity": "INACTIVE",
+      "invoiceProducedActivity": "ACTIVE",
+      "documentsSendActivity": "INACTIVE",
+      "interfaceSend": "PENDING",
+      "pieces": 923,
+      "fullBoxes": 224.88,
+      "piecesReceived": 0,
+      "fullBoxesReceived": 0,
+      "etd": "2026-08-14T03:30:00",
+      "awbStatus": 5,
+      "awbNumber": "729-91204610",
+      "sede": "EC",
+      "taskInstances": [],
+      "urgencia": "verde",
+      "hoursToEtd": 27.27
+    },
+    {
+      "id": 978036,
+      "awbId": "ELITE",
+      "airlinePrefix": "729",
+      "shipDate": "2026-08-13",
+      "processedErrors": 0,
+      "rateType": "REGULAR",
+      "consignee": "SUNBURST FARMS INC.",
+      "detailConfirmationRequired": true,
+      "piecesConfirmedActivity": "ACTIVE",
+      "weightConfirmedActivity": "INACTIVE",
+      "awbProducedActivity": "INACTIVE",
+      "invoiceProducedActivity": "ACTIVE",
+      "documentsSendActivity": "INACTIVE",
+      "interfaceSend": "PENDING",
+      "pieces": 594,
+      "fullBoxes": 278.75,
+      "piecesReceived": 0,
+      "fullBoxesReceived": 0,
+      "etd": "2026-08-14T03:30:00",
+      "awbStatus": 5,
+      "awbNumber": "729-91205015",
+      "sede": "EC",
+      "taskInstances": [],
+      "urgencia": "verde",
+      "hoursToEtd": 27.27
+    },
+    {
+      "id": 978382,
+      "awbId": "ELITE",
+      "airlinePrefix": "729",
+      "shipDate": "2026-08-13",
+      "processedErrors": 0,
+      "rateType": "REGULAR",
+      "consignee": "SUNBURST FARMS INC.",
+      "detailConfirmationRequired": true,
+      "piecesConfirmedActivity": "ACTIVE",
+      "weightConfirmedActivity": "INACTIVE",
+      "awbProducedActivity": "INACTIVE",
+      "invoiceProducedActivity": "ACTIVE",
+      "documentsSendActivity": "INACTIVE",
+      "interfaceSend": "PENDING",
+      "pieces": 723,
+      "fullBoxes": 245.5,
+      "piecesReceived": 0,
+      "fullBoxesReceived": 0,
+      "etd": "2026-08-14T03:30:00",
+      "awbStatus": 5,
+      "awbNumber": "729-91224335",
+      "sede": "EC",
+      "taskInstances": [],
+      "urgencia": "verde",
+      "hoursToEtd": 27.27
     },
     {
       "id": 981635,
@@ -6002,7 +6324,7 @@
         }
       ],
       "urgencia": "verde",
-      "hoursToEtd": 33.35
+      "hoursToEtd": 33.1
     },
     {
       "id": 981636,
@@ -6052,7 +6374,7 @@
         }
       ],
       "urgencia": "verde",
-      "hoursToEtd": 33.35
+      "hoursToEtd": 33.1
     },
     {
       "id": 981661,
@@ -6168,7 +6490,7 @@
         }
       ],
       "urgencia": "verde",
-      "hoursToEtd": 33.35
+      "hoursToEtd": 33.1
     }
   ],
   "erroresEnriquecimiento": []
