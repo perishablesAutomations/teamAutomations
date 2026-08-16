@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-16T17:59:56.365Z",
+  "generatedAt": "2026-08-16T18:14:56.610Z",
   "awbs": [
     {
       "id": 981434,
@@ -26,7 +26,7 @@
       "sede": "EC",
       "taskInstances": [],
       "urgencia": "rojo",
-      "hoursToEtd": -118.67
+      "hoursToEtd": -118.92
     },
     {
       "id": 981435,
@@ -53,7 +53,7 @@
       "sede": "EC",
       "taskInstances": [],
       "urgencia": "rojo",
-      "hoursToEtd": -118.67
+      "hoursToEtd": -118.92
     },
     {
       "id": 978034,
@@ -80,7 +80,7 @@
       "sede": "EC",
       "taskInstances": [],
       "urgencia": "rojo",
-      "hoursToEtd": -118.67
+      "hoursToEtd": -118.92
     },
     {
       "id": 978380,
@@ -107,7 +107,7 @@
       "sede": "EC",
       "taskInstances": [],
       "urgencia": "rojo",
-      "hoursToEtd": -118.67
+      "hoursToEtd": -118.92
     },
     {
       "id": 980564,
@@ -255,7 +255,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -116.25
+      "hoursToEtd": -116.5
     },
     {
       "id": 981307,
@@ -387,7 +387,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -116.25
+      "hoursToEtd": -116.5
     },
     {
       "id": 981108,
@@ -503,7 +503,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -101.5
+      "hoursToEtd": -101.75
     },
     {
       "id": 981500,
@@ -571,7 +571,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -101.17
+      "hoursToEtd": -101.42
     },
     {
       "id": 981504,
@@ -639,7 +639,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -101.17
+      "hoursToEtd": -101.42
     },
     {
       "id": 981485,
@@ -729,7 +729,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -101.17
+      "hoursToEtd": -101.42
     },
     {
       "id": 981505,
@@ -797,7 +797,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -101.17
+      "hoursToEtd": -101.42
     },
     {
       "id": 976090,
@@ -891,7 +891,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -101.17
+      "hoursToEtd": -101.42
     },
     {
       "id": 981526,
@@ -941,7 +941,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -101.17
+      "hoursToEtd": -101.42
     },
     {
       "id": 981621,
@@ -1013,7 +1013,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -101.17
+      "hoursToEtd": -101.42
     },
     {
       "id": 981524,
@@ -1040,7 +1040,7 @@
       "sede": "CO",
       "taskInstances": [],
       "urgencia": "rojo",
-      "hoursToEtd": -101.17
+      "hoursToEtd": -101.42
     },
     {
       "id": 981480,
@@ -1132,7 +1132,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -98
+      "hoursToEtd": -98.25
     },
     {
       "id": 981503,
@@ -1200,7 +1200,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -98
+      "hoursToEtd": -98.25
     },
     {
       "id": 981308,
@@ -1227,7 +1227,7 @@
       "sede": "EC",
       "taskInstances": [],
       "urgencia": "rojo",
-      "hoursToEtd": -89
+      "hoursToEtd": -89.25
     },
     {
       "id": 981309,
@@ -1254,7 +1254,7 @@
       "sede": "EC",
       "taskInstances": [],
       "urgencia": "rojo",
-      "hoursToEtd": -89
+      "hoursToEtd": -89.25
     },
     {
       "id": 981536,
@@ -1338,7 +1338,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -86.83
+      "hoursToEtd": -87.08
     },
     {
       "id": 981514,
@@ -1432,7 +1432,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -86.83
+      "hoursToEtd": -87.08
     },
     {
       "id": 981448,
@@ -1459,7 +1459,7 @@
       "sede": "EC",
       "taskInstances": [],
       "urgencia": "rojo",
-      "hoursToEtd": -86.75
+      "hoursToEtd": -87
     },
     {
       "id": 981486,
@@ -1543,7 +1543,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -83.67
+      "hoursToEtd": -83.92
     },
     {
       "id": 981314,
@@ -1686,7 +1686,7 @@
       "motivoDescarte": "descartar",
       "fechaDescarte": "2026-08-14T14:13:04.138Z",
       "urgencia": "rojo",
-      "hoursToEtd": -75
+      "hoursToEtd": -75.25
     },
     {
       "id": 981487,
@@ -1713,7 +1713,7 @@
       "sede": "EC",
       "taskInstances": [],
       "urgencia": "rojo",
-      "hoursToEtd": -75
+      "hoursToEtd": -75.25
     },
     {
       "id": 981488,
@@ -1740,7 +1740,7 @@
       "sede": "EC",
       "taskInstances": [],
       "urgencia": "rojo",
-      "hoursToEtd": -75
+      "hoursToEtd": -75.25
     },
     {
       "id": 981489,
@@ -1767,7 +1767,7 @@
       "sede": "EC",
       "taskInstances": [],
       "urgencia": "rojo",
-      "hoursToEtd": -75
+      "hoursToEtd": -75.25
     },
     {
       "id": 981610,
@@ -1794,7 +1794,7 @@
       "sede": "EC",
       "taskInstances": [],
       "urgencia": "rojo",
-      "hoursToEtd": -75
+      "hoursToEtd": -75.25
     },
     {
       "id": 981660,
@@ -1888,7 +1888,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -73.8
+      "hoursToEtd": -74.05
     },
     {
       "id": 981624,
@@ -1915,7 +1915,7 @@
       "sede": "EC",
       "taskInstances": [],
       "urgencia": "rojo",
-      "hoursToEtd": -70
+      "hoursToEtd": -70.25
     },
     {
       "id": 981625,
@@ -1942,7 +1942,7 @@
       "sede": "EC",
       "taskInstances": [],
       "urgencia": "rojo",
-      "hoursToEtd": -70
+      "hoursToEtd": -70.25
     },
     {
       "id": 978289,
@@ -1969,7 +1969,7 @@
       "sede": "EC",
       "taskInstances": [],
       "urgencia": "rojo",
-      "hoursToEtd": -68
+      "hoursToEtd": -68.25
     },
     {
       "id": 978381,
@@ -1996,7 +1996,7 @@
       "sede": "EC",
       "taskInstances": [],
       "urgencia": "rojo",
-      "hoursToEtd": -68
+      "hoursToEtd": -68.25
     },
     {
       "id": 976091,
@@ -2090,7 +2090,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -59
+      "hoursToEtd": -59.25
     },
     {
       "id": 981672,
@@ -2162,7 +2162,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -59
+      "hoursToEtd": -59.25
     },
     {
       "id": 981662,
@@ -2189,7 +2189,7 @@
       "sede": "CO",
       "taskInstances": [],
       "urgencia": "rojo",
-      "hoursToEtd": -59
+      "hoursToEtd": -59.25
     },
     {
       "id": 981106,
@@ -2305,7 +2305,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -58
+      "hoursToEtd": -58.25
     },
     {
       "id": 981750,
@@ -2421,7 +2421,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -52
+      "hoursToEtd": -52.25
     },
     {
       "id": 981840,
@@ -2448,7 +2448,7 @@
       "sede": "CO",
       "taskInstances": [],
       "urgencia": "rojo",
-      "hoursToEtd": -52
+      "hoursToEtd": -52.25
     },
     {
       "id": 981636,
@@ -2516,7 +2516,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -51.17
+      "hoursToEtd": -51.42
     },
     {
       "id": 981661,
@@ -2632,7 +2632,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -51.17
+      "hoursToEtd": -51.42
     },
     {
       "id": 981822,
@@ -2764,7 +2764,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -45.67
+      "hoursToEtd": -45.92
     },
     {
       "id": 981841,
@@ -2832,7 +2832,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -45.67
+      "hoursToEtd": -45.92
     },
     {
       "id": 981845,
@@ -2900,7 +2900,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -45.67
+      "hoursToEtd": -45.92
     },
     {
       "id": 976092,
@@ -3016,7 +3016,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -45.67
+      "hoursToEtd": -45.92
     },
     {
       "id": 981839,
@@ -3066,7 +3066,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -45.67
+      "hoursToEtd": -45.92
     },
     {
       "id": 981851,
@@ -3093,7 +3093,7 @@
       "sede": "CO",
       "taskInstances": [],
       "urgencia": "rojo",
-      "hoursToEtd": -45.67
+      "hoursToEtd": -45.92
     },
     {
       "id": 977537,
@@ -3161,7 +3161,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -42.5
+      "hoursToEtd": -42.75
     },
     {
       "id": 980567,
@@ -3229,7 +3229,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -42.5
+      "hoursToEtd": -42.75
     },
     {
       "id": 981313,
@@ -3297,7 +3297,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -42.5
+      "hoursToEtd": -42.75
     },
     {
       "id": 981322,
@@ -3365,7 +3365,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -42.5
+      "hoursToEtd": -42.75
     },
     {
       "id": 981758,
@@ -3392,7 +3392,7 @@
       "sede": "EC",
       "taskInstances": [],
       "urgencia": "rojo",
-      "hoursToEtd": -42.5
+      "hoursToEtd": -42.75
     },
     {
       "id": 981880,
@@ -3508,7 +3508,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -40.5
+      "hoursToEtd": -40.75
     },
     {
       "id": 981759,
@@ -3535,7 +3535,7 @@
       "sede": "EC",
       "taskInstances": [],
       "urgencia": "rojo",
-      "hoursToEtd": -32.5
+      "hoursToEtd": -32.75
     },
     {
       "id": 981881,
@@ -3629,7 +3629,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -25.8
+      "hoursToEtd": -26.05
     },
     {
       "id": 981939,
@@ -3745,7 +3745,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -21
+      "hoursToEtd": -21.25
     },
     {
       "id": 976093,
@@ -3861,7 +3861,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -16.75
+      "hoursToEtd": -17
     },
     {
       "id": 982047,
@@ -3911,7 +3911,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -16.75
+      "hoursToEtd": -17
     },
     {
       "id": 982012,
@@ -3938,7 +3938,7 @@
       "sede": "CO",
       "taskInstances": [],
       "urgencia": "rojo",
-      "hoursToEtd": -16.75
+      "hoursToEtd": -17
     },
     {
       "id": 980542,
@@ -3965,7 +3965,7 @@
       "sede": "EC",
       "taskInstances": [],
       "urgencia": "rojo",
-      "hoursToEtd": -15.73
+      "hoursToEtd": -15.98
     },
     {
       "id": 978037,
@@ -3992,7 +3992,7 @@
       "sede": "EC",
       "taskInstances": [],
       "urgencia": "rojo",
-      "hoursToEtd": -15.73
+      "hoursToEtd": -15.98
     },
     {
       "id": 980541,
@@ -4019,7 +4019,7 @@
       "sede": "EC",
       "taskInstances": [],
       "urgencia": "rojo",
-      "hoursToEtd": -15.73
+      "hoursToEtd": -15.98
     },
     {
       "id": 978036,
@@ -4046,7 +4046,7 @@
       "sede": "EC",
       "taskInstances": [],
       "urgencia": "rojo",
-      "hoursToEtd": -15.73
+      "hoursToEtd": -15.98
     },
     {
       "id": 978382,
@@ -4073,7 +4073,7 @@
       "sede": "EC",
       "taskInstances": [],
       "urgencia": "rojo",
-      "hoursToEtd": -15.73
+      "hoursToEtd": -15.98
     },
     {
       "id": 980568,
@@ -4149,7 +4149,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -13
+      "hoursToEtd": -13.25
     },
     {
       "id": 982009,
@@ -4217,7 +4217,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -13
+      "hoursToEtd": -13.25
     },
     {
       "id": 982010,
@@ -4285,7 +4285,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -13
+      "hoursToEtd": -13.25
     },
     {
       "id": 981757,
@@ -4312,7 +4312,7 @@
       "sede": "EC",
       "taskInstances": [],
       "urgencia": "rojo",
-      "hoursToEtd": -13
+      "hoursToEtd": -13.25
     },
     {
       "id": 982011,
@@ -4339,7 +4339,7 @@
       "sede": "CO",
       "taskInstances": [],
       "urgencia": "rojo",
-      "hoursToEtd": 0.33
+      "hoursToEtd": 0.08
     },
     {
       "id": 981864,
@@ -4447,7 +4447,7 @@
         }
       ],
       "urgencia": "verde",
-      "hoursToEtd": 5.75
+      "hoursToEtd": 5.5
     },
     {
       "id": 978039,
@@ -4474,7 +4474,7 @@
       "sede": "EC",
       "taskInstances": [],
       "urgencia": "verde",
-      "hoursToEtd": 5.75
+      "hoursToEtd": 5.5
     },
     {
       "id": 981806,
@@ -4501,7 +4501,7 @@
       "sede": "EC",
       "taskInstances": [],
       "urgencia": "verde",
-      "hoursToEtd": 5.75
+      "hoursToEtd": 5.5
     },
     {
       "id": 977488,
@@ -4569,7 +4569,7 @@
         }
       ],
       "urgencia": "verde",
-      "hoursToEtd": 7
+      "hoursToEtd": 6.75
     },
     {
       "id": 977538,
@@ -4637,7 +4637,7 @@
         }
       ],
       "urgencia": "verde",
-      "hoursToEtd": 7
+      "hoursToEtd": 6.75
     },
     {
       "id": 977587,
@@ -4735,7 +4735,7 @@
         }
       ],
       "urgencia": "verde",
-      "hoursToEtd": 7
+      "hoursToEtd": 6.75
     },
     {
       "id": 981977,
@@ -4762,7 +4762,7 @@
       "sede": "EC",
       "taskInstances": [],
       "urgencia": "verde",
-      "hoursToEtd": 7
+      "hoursToEtd": 6.75
     },
     {
       "id": 982046,
@@ -4789,7 +4789,7 @@
       "sede": "EC",
       "taskInstances": [],
       "urgencia": "verde",
-      "hoursToEtd": 7
+      "hoursToEtd": 6.75
     },
     {
       "id": 982049,
@@ -4816,7 +4816,7 @@
       "sede": "EC",
       "taskInstances": [],
       "urgencia": "verde",
-      "hoursToEtd": 7
+      "hoursToEtd": 6.75
     },
     {
       "id": 981978,
@@ -4843,7 +4843,7 @@
       "sede": "EC",
       "taskInstances": [],
       "urgencia": "verde",
-      "hoursToEtd": 7
+      "hoursToEtd": 6.75
     },
     {
       "id": 981979,
@@ -4870,7 +4870,7 @@
       "sede": "EC",
       "taskInstances": [],
       "urgencia": "verde",
-      "hoursToEtd": 7
+      "hoursToEtd": 6.75
     },
     {
       "id": 981980,
@@ -4897,7 +4897,7 @@
       "sede": "EC",
       "taskInstances": [],
       "urgencia": "verde",
-      "hoursToEtd": 7
+      "hoursToEtd": 6.75
     },
     {
       "id": 977588,
@@ -4956,7 +4956,7 @@
         }
       ],
       "urgencia": "verde",
-      "hoursToEtd": 9
+      "hoursToEtd": 8.75
     },
     {
       "id": 977489,
@@ -5006,7 +5006,7 @@
         }
       ],
       "urgencia": "verde",
-      "hoursToEtd": 9
+      "hoursToEtd": 8.75
     },
     {
       "id": 982104,
@@ -5122,7 +5122,7 @@
         }
       ],
       "urgencia": "verde",
-      "hoursToEtd": 10
+      "hoursToEtd": 9.75
     },
     {
       "id": 982055,
@@ -5172,7 +5172,7 @@
         }
       ],
       "urgencia": "verde",
-      "hoursToEtd": 10
+      "hoursToEtd": 9.75
     },
     {
       "id": 981941,
@@ -5288,7 +5288,7 @@
         }
       ],
       "urgencia": "verde",
-      "hoursToEtd": 16
+      "hoursToEtd": 15.75
     },
     {
       "id": 982034,
@@ -5315,7 +5315,7 @@
       "sede": "CO",
       "taskInstances": [],
       "urgencia": "verde",
-      "hoursToEtd": 16
+      "hoursToEtd": 15.75
     },
     {
       "id": 982023,
@@ -5455,7 +5455,7 @@
         }
       ],
       "urgencia": "verde",
-      "hoursToEtd": 19.23
+      "hoursToEtd": 18.98
     },
     {
       "id": 976094,
@@ -5571,7 +5571,7 @@
         }
       ],
       "urgencia": "verde",
-      "hoursToEtd": 19.23
+      "hoursToEtd": 18.98
     },
     {
       "id": 982036,
@@ -5687,7 +5687,7 @@
         }
       ],
       "urgencia": "verde",
-      "hoursToEtd": 19.23
+      "hoursToEtd": 18.98
     },
     {
       "id": 982044,
@@ -5737,7 +5737,7 @@
         }
       ],
       "urgencia": "verde",
-      "hoursToEtd": 19.23
+      "hoursToEtd": 18.98
     },
     {
       "id": 982105,
@@ -5764,7 +5764,7 @@
       "sede": "CO",
       "taskInstances": [],
       "urgencia": "verde",
-      "hoursToEtd": 19.23
+      "hoursToEtd": 18.98
     },
     {
       "id": 976673,
@@ -5836,7 +5836,7 @@
         }
       ],
       "urgencia": "verde",
-      "hoursToEtd": 29
+      "hoursToEtd": 28.75
     },
     {
       "id": 982094,
@@ -5886,7 +5886,7 @@
         }
       ],
       "urgencia": "verde",
-      "hoursToEtd": 29
+      "hoursToEtd": 28.75
     },
     {
       "id": 982095,
@@ -5980,7 +5980,7 @@
         }
       ],
       "urgencia": "verde",
-      "hoursToEtd": 29
+      "hoursToEtd": 28.75
     },
     {
       "id": 981866,
@@ -6030,7 +6030,7 @@
         }
       ],
       "urgencia": "verde",
-      "hoursToEtd": 29
+      "hoursToEtd": 28.75
     },
     {
       "id": 981868,
@@ -6080,7 +6080,7 @@
         }
       ],
       "urgencia": "verde",
-      "hoursToEtd": 29
+      "hoursToEtd": 28.75
     },
     {
       "id": 976845,
@@ -6107,7 +6107,7 @@
       "sede": "EC",
       "taskInstances": [],
       "urgencia": "verde",
-      "hoursToEtd": 29
+      "hoursToEtd": 28.75
     },
     {
       "id": 976846,
@@ -6134,7 +6134,7 @@
       "sede": "EC",
       "taskInstances": [],
       "urgencia": "verde",
-      "hoursToEtd": 29
+      "hoursToEtd": 28.75
     },
     {
       "id": 982102,
@@ -6161,7 +6161,7 @@
       "sede": "EC",
       "taskInstances": [],
       "urgencia": "verde",
-      "hoursToEtd": 29
+      "hoursToEtd": 28.75
     },
     {
       "id": 982103,
@@ -6188,7 +6188,7 @@
       "sede": "EC",
       "taskInstances": [],
       "urgencia": "verde",
-      "hoursToEtd": 29
+      "hoursToEtd": 28.75
     },
     {
       "id": 982116,
@@ -6215,7 +6215,7 @@
       "sede": "EC",
       "taskInstances": [],
       "urgencia": "verde",
-      "hoursToEtd": 29
+      "hoursToEtd": 28.75
     },
     {
       "id": 982118,
@@ -6242,7 +6242,7 @@
       "sede": "EC",
       "taskInstances": [],
       "urgencia": "verde",
-      "hoursToEtd": 29
+      "hoursToEtd": 28.75
     }
   ],
   "erroresEnriquecimiento": []
