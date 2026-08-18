@@ -1,351 +1,6 @@
 {
-  "generatedAt": "2026-08-17T23:45:18.460Z",
+  "generatedAt": "2026-08-18T00:00:18.791Z",
   "awbs": [
-    {
-      "id": 981314,
-      "awbId": "SUN. OTROS",
-      "airlinePrefix": "369",
-      "shipDate": "2026-08-12",
-      "processedErrors": 0,
-      "rateType": "REGULAR",
-      "consignee": "SUNBURST FARMS INC.",
-      "detailConfirmationRequired": true,
-      "piecesConfirmedActivity": "DONE",
-      "weightConfirmedActivity": "DONE",
-      "awbProducedActivity": "DONE",
-      "invoiceProducedActivity": "ACTIVE",
-      "documentsSendActivity": "ACTIVE",
-      "interfaceSend": "ERROR",
-      "pieces": 516,
-      "fullBoxes": 139.76,
-      "piecesReceived": 491,
-      "fullBoxesReceived": 127.75999999999999,
-      "etd": "2026-08-13T15:00:00",
-      "awbStatus": 6,
-      "awbNumber": "369-10715526",
-      "sede": "EC",
-      "taskInstances": [
-        {
-          "awbId": 981314,
-          "taskTryStatus": "DONE",
-          "clientId": null,
-          "taskId": 5,
-          "taskInstanceId": 97003,
-          "taskName": "SEND BOOKINGS TRAZE",
-          "clientName": null,
-          "taskUrlAddress": "/traze/sendBookings",
-          "tries": [
-            {
-              "message": "Task Id: 5 - AWB: 369-10715526 - Sent by: Francisco Rodriguez - SUCCESS Ticket id 8183e860-967d-11f1-993a-8392098bdf56 Status: succeed",
-              "tryId": 79778,
-              "executionDate": "2026-08-12T18:42:11.997+00:00",
-              "taskTryStatus": "DONE",
-              "taskId": 5,
-              "taskInstanceId": 97003
-            }
-          ]
-        },
-        {
-          "awbId": 981314,
-          "taskTryStatus": "DONE",
-          "clientId": null,
-          "taskId": 6,
-          "taskInstanceId": 97004,
-          "taskName": "SEND LABELS TRAZE",
-          "clientName": null,
-          "taskUrlAddress": "/traze/sendLabels",
-          "tries": [
-            {
-              "message": "Task Id: 6 - AWB: 369-10715526 - Sent by: Francisco Rodriguez - SUCCESS Ticket id 8953e090-967d-11f1-b6fb-b7be2bbc42aa Status: succeed",
-              "tryId": 79779,
-              "executionDate": "2026-08-12T18:42:15.097+00:00",
-              "taskTryStatus": "DONE",
-              "taskId": 6,
-              "taskInstanceId": 97004
-            }
-          ]
-        },
-        {
-          "awbId": 981314,
-          "taskTryStatus": "DONE",
-          "clientId": 43075,
-          "taskId": 7,
-          "taskInstanceId": 97005,
-          "taskName": "SEND BOOKINGS TRAZE CLIENT",
-          "clientName": "ECOPLANTS LLC.",
-          "taskUrlAddress": "/traze/sendClientBookings",
-          "tries": [
-            {
-              "message": "Task Id: 7 - Client: ECOPLANTS LLC. - id: 43075 - AWB: 369-1071-5526 - Sent by: Viviana Triana - SUCCESS Ticket id 1694f240-971a-11f1-9b0b-cbaa64ba6cd8 Status: succeed",
-              "tryId": 79836,
-              "executionDate": "2026-08-13T13:22:58.330+00:00",
-              "taskTryStatus": "DONE",
-              "taskId": 7,
-              "taskInstanceId": 97005
-            },
-            {
-              "message": "Task Id: 7 - Client: ECOPLANTS LLC. - id: 43075 - AWB: 369-1071-5526 - Sent by: Francisco Rodriguez - SUCCESS Ticket id 8baf0ea0-967d-11f1-993a-8392098bdf56 Status: succeed",
-              "tryId": 79780,
-              "executionDate": "2026-08-12T18:42:23.873+00:00",
-              "taskTryStatus": "DONE",
-              "taskId": 7,
-              "taskInstanceId": 97005
-            }
-          ]
-        },
-        {
-          "awbId": 981314,
-          "taskTryStatus": "ERROR",
-          "clientId": 43075,
-          "taskId": 8,
-          "taskInstanceId": 97006,
-          "taskName": "SEND LABELS TRAZE CLIENT",
-          "clientName": "ECOPLANTS LLC.",
-          "taskUrlAddress": "/traze/sendClientLabels",
-          "tries": [
-            {
-              "message": "Task Id: 8 - Client: ECOPLANTS LLC. - id: 43075 - AWB: 369-10715526 - Sent by: Viviana Triana - FAILED Ticket id 39336750-971a-11f1-8c45-870b9021345e Errors: {error=no shipmentItem found for the following conditions, message=id: 5259c570-713b-4c91-94f0-03d986baa7e9, sourceMessageError=conditionsValidations};  Maximum retry attempts reached",
-              "tryId": 79837,
-              "executionDate": "2026-08-13T13:23:51.757+00:00",
-              "taskTryStatus": "ERROR",
-              "taskId": 8,
-              "taskInstanceId": 97006
-            },
-            {
-              "message": "Task Id: 8 - Client: ECOPLANTS LLC. - id: 43075 - AWB: 369-10715526 - Sent by: Viviana Triana - FAILED Ticket id 0efe3280-971a-11f1-8c45-870b9021345e Errors: {error=no shipmentItem found for the following conditions, message=id: 5259c570-713b-4c91-94f0-03d986baa7e9, sourceMessageError=conditionsValidations};  Maximum retry attempts reached",
-              "tryId": 79835,
-              "executionDate": "2026-08-13T13:22:40.967+00:00",
-              "taskTryStatus": "ERROR",
-              "taskId": 8,
-              "taskInstanceId": 97006
-            },
-            {
-              "message": "Task Id: 8 - Client: ECOPLANTS LLC. - id: 43075 - AWB: 369-10715526 - Sent by: DARIO CARREÑO - FAILED Ticket id 384da860-96b0-11f1-91d4-3df504ee55a2 Errors: {error=no shipmentItem found for the following conditions, message=id: 5259c570-713b-4c91-94f0-03d986baa7e9, sourceMessageError=conditionsValidations};  Maximum retry attempts reached",
-              "tryId": 79784,
-              "executionDate": "2026-08-13T00:45:04.897+00:00",
-              "taskTryStatus": "ERROR",
-              "taskId": 8,
-              "taskInstanceId": 97006
-            },
-            {
-              "message": "Task Id: 8 - Client: ECOPLANTS LLC. - id: 43075 - AWB: 369-10715526 - Sent by: DARIO CARREÑO - FAILED Ticket id d42b5660-96ab-11f1-b81f-57dba7f2e64e Errors: {error=no shipmentItem found for the following conditions, message=id: 5259c570-713b-4c91-94f0-03d986baa7e9, sourceMessageError=conditionsValidations};  Maximum retry attempts reached",
-              "tryId": 79783,
-              "executionDate": "2026-08-13T00:13:37.650+00:00",
-              "taskTryStatus": "ERROR",
-              "taskId": 8,
-              "taskInstanceId": 97006
-            }
-          ]
-        }
-      ],
-      "descartadaManual": true,
-      "motivoDescarte": "descartar",
-      "fechaDescarte": "2026-08-14T14:13:04.138Z",
-      "urgencia": "rojo",
-      "hoursToEtd": -104.76
-    },
-    {
-      "id": 981487,
-      "awbId": "ELITE",
-      "airlinePrefix": "369",
-      "shipDate": "2026-08-12",
-      "processedErrors": 0,
-      "rateType": "REGULAR",
-      "consignee": "SUNBURST FARMS INC.",
-      "detailConfirmationRequired": true,
-      "piecesConfirmedActivity": "DONE",
-      "weightConfirmedActivity": "DONE",
-      "awbProducedActivity": "DONE",
-      "invoiceProducedActivity": "ACTIVE",
-      "documentsSendActivity": "ACTIVE",
-      "interfaceSend": "PENDING",
-      "pieces": 1116,
-      "fullBoxes": 410.63,
-      "piecesReceived": 1116,
-      "fullBoxesReceived": 411.88,
-      "etd": "2026-08-13T15:00:00",
-      "awbStatus": 6,
-      "awbNumber": "369-10701176",
-      "sede": "EC",
-      "taskInstances": [],
-      "urgencia": "rojo",
-      "hoursToEtd": -104.76
-    },
-    {
-      "id": 981488,
-      "awbId": "ELITE",
-      "airlinePrefix": "369",
-      "shipDate": "2026-08-12",
-      "processedErrors": 0,
-      "rateType": "REGULAR",
-      "consignee": "SUNBURST FARMS INC.",
-      "detailConfirmationRequired": true,
-      "piecesConfirmedActivity": "DONE",
-      "weightConfirmedActivity": "DONE",
-      "awbProducedActivity": "DONE",
-      "invoiceProducedActivity": "ACTIVE",
-      "documentsSendActivity": "ACTIVE",
-      "interfaceSend": "PENDING",
-      "pieces": 732,
-      "fullBoxes": 313.25,
-      "piecesReceived": 695,
-      "fullBoxesReceived": 295.75,
-      "etd": "2026-08-13T15:00:00",
-      "awbStatus": 6,
-      "awbNumber": "369-10701191",
-      "sede": "EC",
-      "taskInstances": [],
-      "urgencia": "rojo",
-      "hoursToEtd": -104.76
-    },
-    {
-      "id": 981489,
-      "awbId": "ELITE",
-      "airlinePrefix": "369",
-      "shipDate": "2026-08-12",
-      "processedErrors": 0,
-      "rateType": "REGULAR",
-      "consignee": "SUNBURST FARMS INC.",
-      "detailConfirmationRequired": true,
-      "piecesConfirmedActivity": "DONE",
-      "weightConfirmedActivity": "DONE",
-      "awbProducedActivity": "DONE",
-      "invoiceProducedActivity": "ACTIVE",
-      "documentsSendActivity": "ACTIVE",
-      "interfaceSend": "PENDING",
-      "pieces": 721,
-      "fullBoxes": 305.75,
-      "piecesReceived": 720,
-      "fullBoxesReceived": 305.25,
-      "etd": "2026-08-13T15:00:00",
-      "awbStatus": 6,
-      "awbNumber": "369-10701460",
-      "sede": "EC",
-      "taskInstances": [],
-      "urgencia": "rojo",
-      "hoursToEtd": -104.76
-    },
-    {
-      "id": 981610,
-      "awbId": "ELITE",
-      "airlinePrefix": "369",
-      "shipDate": "2026-08-12",
-      "processedErrors": 0,
-      "rateType": "REGULAR",
-      "consignee": "SUNBURST FARMS INC.",
-      "detailConfirmationRequired": true,
-      "piecesConfirmedActivity": "DONE",
-      "weightConfirmedActivity": "DONE",
-      "awbProducedActivity": "DONE",
-      "invoiceProducedActivity": "ACTIVE",
-      "documentsSendActivity": "ACTIVE",
-      "interfaceSend": "PENDING",
-      "pieces": 1366,
-      "fullBoxes": 322.38,
-      "piecesReceived": 1331,
-      "fullBoxesReceived": 305.13,
-      "etd": "2026-08-13T15:00:00",
-      "awbStatus": 6,
-      "awbNumber": "369-10715740",
-      "sede": "EC",
-      "taskInstances": [],
-      "urgencia": "rojo",
-      "hoursToEtd": -104.76
-    },
-    {
-      "id": 981660,
-      "awbId": "1 SOLO ELITE ",
-      "airlinePrefix": "729",
-      "shipDate": "2026-08-12",
-      "processedErrors": 0,
-      "rateType": "REGULAR",
-      "consignee": "SUNBURST FARMS INC.",
-      "detailConfirmationRequired": true,
-      "piecesConfirmedActivity": "DONE",
-      "weightConfirmedActivity": "ACTIVE",
-      "awbProducedActivity": "INACTIVE",
-      "invoiceProducedActivity": "ACTIVE",
-      "documentsSendActivity": "INACTIVE",
-      "interfaceSend": "PENDING",
-      "pieces": 1014,
-      "fullBoxes": 253.5,
-      "piecesReceived": 208,
-      "fullBoxesReceived": 103.25,
-      "etd": "2026-08-13T16:12:00",
-      "awbStatus": 6,
-      "awbNumber": "729-94975915",
-      "sede": "CO",
-      "taskInstances": [
-        {
-          "awbId": 981660,
-          "taskTryStatus": "PENDING",
-          "clientId": null,
-          "taskId": 5,
-          "taskInstanceId": 97051,
-          "taskName": "SEND BOOKINGS TRAZE",
-          "clientName": null,
-          "taskUrlAddress": "/traze/sendBookings",
-          "tries": []
-        },
-        {
-          "awbId": 981660,
-          "taskTryStatus": "PENDING",
-          "clientId": null,
-          "taskId": 6,
-          "taskInstanceId": 97052,
-          "taskName": "SEND LABELS TRAZE",
-          "clientName": null,
-          "taskUrlAddress": "/traze/sendLabels",
-          "tries": []
-        },
-        {
-          "awbId": 981660,
-          "taskTryStatus": "PENDING",
-          "clientId": 43075,
-          "taskId": 7,
-          "taskInstanceId": 97053,
-          "taskName": "SEND BOOKINGS TRAZE CLIENT",
-          "clientName": "ECOPLANTS LLC.",
-          "taskUrlAddress": "/traze/sendClientBookings",
-          "tries": []
-        },
-        {
-          "awbId": 981660,
-          "taskTryStatus": "PENDING",
-          "clientId": 45435,
-          "taskId": 7,
-          "taskInstanceId": 97054,
-          "taskName": "SEND BOOKINGS TRAZE CLIENT",
-          "clientName": "SOFIA FLOWERS USA LLC",
-          "taskUrlAddress": "/traze/sendClientBookings",
-          "tries": []
-        },
-        {
-          "awbId": 981660,
-          "taskTryStatus": "PENDING",
-          "clientId": 43075,
-          "taskId": 8,
-          "taskInstanceId": 97055,
-          "taskName": "SEND LABELS TRAZE CLIENT",
-          "clientName": "ECOPLANTS LLC.",
-          "taskUrlAddress": "/traze/sendClientLabels",
-          "tries": []
-        },
-        {
-          "awbId": 981660,
-          "taskTryStatus": "PENDING",
-          "clientId": 45435,
-          "taskId": 8,
-          "taskInstanceId": 97056,
-          "taskName": "SEND LABELS TRAZE CLIENT",
-          "clientName": "SOFIA FLOWERS USA LLC",
-          "taskUrlAddress": "/traze/sendClientLabels",
-          "tries": []
-        }
-      ],
-      "urgencia": "rojo",
-      "hoursToEtd": -103.56
-    },
     {
       "id": 981624,
       "awbId": "ELITE",
@@ -371,7 +26,7 @@
       "sede": "EC",
       "taskInstances": [],
       "urgencia": "rojo",
-      "hoursToEtd": -99.76
+      "hoursToEtd": -100.01
     },
     {
       "id": 981625,
@@ -398,370 +53,7 @@
       "sede": "EC",
       "taskInstances": [],
       "urgencia": "rojo",
-      "hoursToEtd": -99.76
-    },
-    {
-      "id": 978289,
-      "awbId": "ELITE",
-      "airlinePrefix": "729",
-      "shipDate": "2026-08-12",
-      "processedErrors": 0,
-      "rateType": "REGULAR",
-      "consignee": "SUNBURST FARMS INC.",
-      "detailConfirmationRequired": true,
-      "piecesConfirmedActivity": "DONE",
-      "weightConfirmedActivity": "DONE",
-      "awbProducedActivity": "DONE",
-      "invoiceProducedActivity": "ACTIVE",
-      "documentsSendActivity": "ACTIVE",
-      "interfaceSend": "PENDING",
-      "pieces": 386,
-      "fullBoxes": 164,
-      "piecesReceived": 386,
-      "fullBoxesReceived": 164,
-      "etd": "2026-08-13T22:00:00",
-      "awbStatus": 6,
-      "awbNumber": "729-91205483",
-      "sede": "EC",
-      "taskInstances": [],
-      "urgencia": "rojo",
-      "hoursToEtd": -97.76
-    },
-    {
-      "id": 978381,
-      "awbId": "ELITE",
-      "airlinePrefix": "729",
-      "shipDate": "2026-08-12",
-      "processedErrors": 0,
-      "rateType": "REGULAR",
-      "consignee": "SUNBURST FARMS INC.",
-      "detailConfirmationRequired": true,
-      "piecesConfirmedActivity": "DONE",
-      "weightConfirmedActivity": "DONE",
-      "awbProducedActivity": "DONE",
-      "invoiceProducedActivity": "ACTIVE",
-      "documentsSendActivity": "ACTIVE",
-      "interfaceSend": "PENDING",
-      "pieces": 433,
-      "fullBoxes": 193.75,
-      "piecesReceived": 433,
-      "fullBoxesReceived": 193.75,
-      "etd": "2026-08-13T22:00:00",
-      "awbStatus": 6,
-      "awbNumber": "729-91224324",
-      "sede": "EC",
-      "taskInstances": [],
-      "urgencia": "rojo",
-      "hoursToEtd": -97.76
-    },
-    {
-      "id": 976091,
-      "awbId": "1 SOLO ELITE ",
-      "airlinePrefix": "985",
-      "shipDate": "2026-08-12",
-      "processedErrors": 0,
-      "rateType": "REGULAR",
-      "consignee": "SUNBURST FARMS INC.",
-      "detailConfirmationRequired": true,
-      "piecesConfirmedActivity": "DONE",
-      "weightConfirmedActivity": "DONE",
-      "awbProducedActivity": "DONE",
-      "invoiceProducedActivity": "ACTIVE",
-      "documentsSendActivity": "ACTIVE",
-      "interfaceSend": "PENDING",
-      "pieces": 1029,
-      "fullBoxes": 258.82000000000005,
-      "piecesReceived": 1081,
-      "fullBoxesReceived": 576.4300000000001,
-      "etd": "2026-08-14T07:00:00",
-      "awbStatus": 6,
-      "awbNumber": "985-63930145",
-      "sede": "CO",
-      "taskInstances": [
-        {
-          "awbId": 976091,
-          "taskTryStatus": "PENDING",
-          "clientId": null,
-          "taskId": 5,
-          "taskInstanceId": 97021,
-          "taskName": "SEND BOOKINGS TRAZE",
-          "clientName": null,
-          "taskUrlAddress": "/traze/sendBookings",
-          "tries": []
-        },
-        {
-          "awbId": 976091,
-          "taskTryStatus": "PENDING",
-          "clientId": null,
-          "taskId": 6,
-          "taskInstanceId": 97022,
-          "taskName": "SEND LABELS TRAZE",
-          "clientName": null,
-          "taskUrlAddress": "/traze/sendLabels",
-          "tries": []
-        },
-        {
-          "awbId": 976091,
-          "taskTryStatus": "PENDING",
-          "clientId": 43075,
-          "taskId": 7,
-          "taskInstanceId": 97023,
-          "taskName": "SEND BOOKINGS TRAZE CLIENT",
-          "clientName": "ECOPLANTS LLC.",
-          "taskUrlAddress": "/traze/sendClientBookings",
-          "tries": []
-        },
-        {
-          "awbId": 976091,
-          "taskTryStatus": "PENDING",
-          "clientId": 45435,
-          "taskId": 7,
-          "taskInstanceId": 97024,
-          "taskName": "SEND BOOKINGS TRAZE CLIENT",
-          "clientName": "SOFIA FLOWERS USA LLC",
-          "taskUrlAddress": "/traze/sendClientBookings",
-          "tries": []
-        },
-        {
-          "awbId": 976091,
-          "taskTryStatus": "PENDING",
-          "clientId": 43075,
-          "taskId": 8,
-          "taskInstanceId": 97025,
-          "taskName": "SEND LABELS TRAZE CLIENT",
-          "clientName": "ECOPLANTS LLC.",
-          "taskUrlAddress": "/traze/sendClientLabels",
-          "tries": []
-        },
-        {
-          "awbId": 976091,
-          "taskTryStatus": "PENDING",
-          "clientId": 45435,
-          "taskId": 8,
-          "taskInstanceId": 97026,
-          "taskName": "SEND LABELS TRAZE CLIENT",
-          "clientName": "SOFIA FLOWERS USA LLC",
-          "taskUrlAddress": "/traze/sendClientLabels",
-          "tries": []
-        }
-      ],
-      "urgencia": "rojo",
-      "hoursToEtd": -88.76
-    },
-    {
-      "id": 981672,
-      "awbId": "1 SOLO ELITE - NATIVE",
-      "airlinePrefix": "985",
-      "shipDate": "2026-08-12",
-      "processedErrors": 0,
-      "rateType": "REGULAR",
-      "consignee": "SUNBURST FARMS INC.",
-      "detailConfirmationRequired": true,
-      "piecesConfirmedActivity": "DONE",
-      "weightConfirmedActivity": "DONE",
-      "awbProducedActivity": "DONE",
-      "invoiceProducedActivity": "ACTIVE",
-      "documentsSendActivity": "ACTIVE",
-      "interfaceSend": "PENDING",
-      "pieces": 515,
-      "fullBoxes": 334,
-      "piecesReceived": 662,
-      "fullBoxesReceived": 526.5,
-      "etd": "2026-08-14T07:00:00",
-      "awbStatus": 6,
-      "awbNumber": "985-63969780",
-      "sede": "CO",
-      "taskInstances": [
-        {
-          "awbId": 981672,
-          "taskTryStatus": "PENDING",
-          "clientId": null,
-          "taskId": 5,
-          "taskInstanceId": 97033,
-          "taskName": "SEND BOOKINGS TRAZE",
-          "clientName": null,
-          "taskUrlAddress": "/traze/sendBookings",
-          "tries": []
-        },
-        {
-          "awbId": 981672,
-          "taskTryStatus": "PENDING",
-          "clientId": null,
-          "taskId": 6,
-          "taskInstanceId": 97034,
-          "taskName": "SEND LABELS TRAZE",
-          "clientName": null,
-          "taskUrlAddress": "/traze/sendLabels",
-          "tries": []
-        },
-        {
-          "awbId": 981672,
-          "taskTryStatus": "PENDING",
-          "clientId": 44826,
-          "taskId": 7,
-          "taskInstanceId": 97035,
-          "taskName": "SEND BOOKINGS TRAZE CLIENT",
-          "clientName": "BLOOMSTAR",
-          "taskUrlAddress": "/traze/sendClientBookings",
-          "tries": []
-        },
-        {
-          "awbId": 981672,
-          "taskTryStatus": "PENDING",
-          "clientId": 44826,
-          "taskId": 8,
-          "taskInstanceId": 97036,
-          "taskName": "SEND LABELS TRAZE CLIENT",
-          "clientName": "BLOOMSTAR",
-          "taskUrlAddress": "/traze/sendClientLabels",
-          "tries": []
-        }
-      ],
-      "urgencia": "rojo",
-      "hoursToEtd": -88.76
-    },
-    {
-      "id": 981662,
-      "awbId": "TERCEROS san juan - luisiana",
-      "airlinePrefix": "985",
-      "shipDate": "2026-08-12",
-      "processedErrors": 0,
-      "rateType": "REGULAR",
-      "consignee": "SUNBURST FARMS INC.",
-      "detailConfirmationRequired": true,
-      "piecesConfirmedActivity": "DONE",
-      "weightConfirmedActivity": "DONE",
-      "awbProducedActivity": "DONE",
-      "invoiceProducedActivity": "ACTIVE",
-      "documentsSendActivity": "ACTIVE",
-      "interfaceSend": "PENDING",
-      "pieces": 590,
-      "fullBoxes": 454,
-      "piecesReceived": 440,
-      "fullBoxesReceived": 319,
-      "etd": "2026-08-14T07:00:00",
-      "awbStatus": 6,
-      "awbNumber": "985-63969776",
-      "sede": "CO",
-      "taskInstances": [],
-      "urgencia": "rojo",
-      "hoursToEtd": -88.76
-    },
-    {
-      "id": 981106,
-      "awbId": "1 SOLO ELITE ",
-      "airlinePrefix": "369",
-      "shipDate": "2026-08-12",
-      "processedErrors": 0,
-      "rateType": "REGULAR",
-      "consignee": "SUNBURST FARMS INC.",
-      "detailConfirmationRequired": true,
-      "piecesConfirmedActivity": "DONE",
-      "weightConfirmedActivity": "DONE",
-      "awbProducedActivity": "DONE",
-      "invoiceProducedActivity": "ACTIVE",
-      "documentsSendActivity": "ACTIVE",
-      "interfaceSend": "PENDING",
-      "pieces": 1285,
-      "fullBoxes": 321.25,
-      "piecesReceived": 523,
-      "fullBoxesReceived": 239,
-      "etd": "2026-08-14T08:00:00",
-      "awbStatus": 6,
-      "awbNumber": "369-99306981",
-      "sede": "CO",
-      "taskInstances": [
-        {
-          "awbId": 981106,
-          "taskTryStatus": "PENDING",
-          "clientId": null,
-          "taskId": 5,
-          "taskInstanceId": 97037,
-          "taskName": "SEND BOOKINGS TRAZE",
-          "clientName": null,
-          "taskUrlAddress": "/traze/sendBookings",
-          "tries": []
-        },
-        {
-          "awbId": 981106,
-          "taskTryStatus": "PENDING",
-          "clientId": null,
-          "taskId": 6,
-          "taskInstanceId": 97038,
-          "taskName": "SEND LABELS TRAZE",
-          "clientName": null,
-          "taskUrlAddress": "/traze/sendLabels",
-          "tries": []
-        },
-        {
-          "awbId": 981106,
-          "taskTryStatus": "PENDING",
-          "clientId": 43075,
-          "taskId": 7,
-          "taskInstanceId": 97039,
-          "taskName": "SEND BOOKINGS TRAZE CLIENT",
-          "clientName": "ECOPLANTS LLC.",
-          "taskUrlAddress": "/traze/sendClientBookings",
-          "tries": []
-        },
-        {
-          "awbId": 981106,
-          "taskTryStatus": "PENDING",
-          "clientId": 44826,
-          "taskId": 7,
-          "taskInstanceId": 97040,
-          "taskName": "SEND BOOKINGS TRAZE CLIENT",
-          "clientName": "BLOOMSTAR",
-          "taskUrlAddress": "/traze/sendClientBookings",
-          "tries": []
-        },
-        {
-          "awbId": 981106,
-          "taskTryStatus": "PENDING",
-          "clientId": 45435,
-          "taskId": 7,
-          "taskInstanceId": 97041,
-          "taskName": "SEND BOOKINGS TRAZE CLIENT",
-          "clientName": "SOFIA FLOWERS USA LLC",
-          "taskUrlAddress": "/traze/sendClientBookings",
-          "tries": []
-        },
-        {
-          "awbId": 981106,
-          "taskTryStatus": "PENDING",
-          "clientId": 43075,
-          "taskId": 8,
-          "taskInstanceId": 97042,
-          "taskName": "SEND LABELS TRAZE CLIENT",
-          "clientName": "ECOPLANTS LLC.",
-          "taskUrlAddress": "/traze/sendClientLabels",
-          "tries": []
-        },
-        {
-          "awbId": 981106,
-          "taskTryStatus": "PENDING",
-          "clientId": 44826,
-          "taskId": 8,
-          "taskInstanceId": 97043,
-          "taskName": "SEND LABELS TRAZE CLIENT",
-          "clientName": "BLOOMSTAR",
-          "taskUrlAddress": "/traze/sendClientLabels",
-          "tries": []
-        },
-        {
-          "awbId": 981106,
-          "taskTryStatus": "PENDING",
-          "clientId": 45435,
-          "taskId": 8,
-          "taskInstanceId": 97044,
-          "taskName": "SEND LABELS TRAZE CLIENT",
-          "clientName": "SOFIA FLOWERS USA LLC",
-          "taskUrlAddress": "/traze/sendClientLabels",
-          "tries": []
-        }
-      ],
-      "urgencia": "rojo",
-      "hoursToEtd": -87.76
+      "hoursToEtd": -100.01
     },
     {
       "id": 981750,
@@ -877,7 +169,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -81.76
+      "hoursToEtd": -82.01
     },
     {
       "id": 981840,
@@ -904,191 +196,7 @@
       "sede": "CO",
       "taskInstances": [],
       "urgencia": "rojo",
-      "hoursToEtd": -81.76
-    },
-    {
-      "id": 981636,
-      "awbId": "TERCEROS  USAB ",
-      "airlinePrefix": "985",
-      "shipDate": "2026-08-12",
-      "processedErrors": 0,
-      "rateType": "REGULAR",
-      "consignee": "SUNBURST FARMS INC.",
-      "detailConfirmationRequired": true,
-      "piecesConfirmedActivity": "DONE",
-      "weightConfirmedActivity": "ACTIVE",
-      "awbProducedActivity": "INACTIVE",
-      "invoiceProducedActivity": "ACTIVE",
-      "documentsSendActivity": "INACTIVE",
-      "interfaceSend": "PENDING",
-      "pieces": 366,
-      "fullBoxes": 158.75,
-      "piecesReceived": 366,
-      "fullBoxesReceived": 158.75,
-      "etd": "2026-08-14T14:50:00",
-      "awbStatus": 6,
-      "awbNumber": "985-63969695",
-      "sede": "CO",
-      "taskInstances": [
-        {
-          "awbId": 981636,
-          "taskTryStatus": "DONE",
-          "clientId": null,
-          "taskId": 5,
-          "taskInstanceId": 97061,
-          "taskName": "SEND BOOKINGS TRAZE",
-          "clientName": null,
-          "taskUrlAddress": "/traze/sendBookings",
-          "tries": [
-            {
-              "message": "Ticket id 94937ea0-972e-11f1-ad9f-e9f4d546cbcc Status succeed",
-              "tryId": 79866,
-              "executionDate": "2026-08-13T11:49:45.503+00:00",
-              "taskTryStatus": "DONE",
-              "taskId": 5,
-              "taskInstanceId": 97061
-            }
-          ]
-        },
-        {
-          "awbId": 981636,
-          "taskTryStatus": "DONE",
-          "clientId": null,
-          "taskId": 6,
-          "taskInstanceId": 97062,
-          "taskName": "SEND LABELS TRAZE",
-          "clientName": null,
-          "taskUrlAddress": "/traze/sendLabels",
-          "tries": [
-            {
-              "message": "Ticket id a27a7460-972e-11f1-b3a7-7774e7ea5735 Status succeed",
-              "tryId": 79867,
-              "executionDate": "2026-08-13T11:49:58.570+00:00",
-              "taskTryStatus": "DONE",
-              "taskId": 6,
-              "taskInstanceId": 97062
-            }
-          ]
-        }
-      ],
-      "urgencia": "rojo",
-      "hoursToEtd": -80.92
-    },
-    {
-      "id": 981661,
-      "awbId": "2 SOLO ELITE ",
-      "airlinePrefix": "985",
-      "shipDate": "2026-08-12",
-      "processedErrors": 0,
-      "rateType": "REGULAR",
-      "consignee": "SUNBURST FARMS INC.",
-      "detailConfirmationRequired": true,
-      "piecesConfirmedActivity": "DONE",
-      "weightConfirmedActivity": "ACTIVE",
-      "awbProducedActivity": "INACTIVE",
-      "invoiceProducedActivity": "ACTIVE",
-      "documentsSendActivity": "INACTIVE",
-      "interfaceSend": "PENDING",
-      "pieces": 1476,
-      "fullBoxes": 410.57,
-      "piecesReceived": 627,
-      "fullBoxesReceived": 386.17,
-      "etd": "2026-08-14T14:50:00",
-      "awbStatus": 6,
-      "awbNumber": "985-63969765",
-      "sede": "CO",
-      "taskInstances": [
-        {
-          "awbId": 981661,
-          "taskTryStatus": "PENDING",
-          "clientId": null,
-          "taskId": 5,
-          "taskInstanceId": 97063,
-          "taskName": "SEND BOOKINGS TRAZE",
-          "clientName": null,
-          "taskUrlAddress": "/traze/sendBookings",
-          "tries": []
-        },
-        {
-          "awbId": 981661,
-          "taskTryStatus": "PENDING",
-          "clientId": null,
-          "taskId": 6,
-          "taskInstanceId": 97064,
-          "taskName": "SEND LABELS TRAZE",
-          "clientName": null,
-          "taskUrlAddress": "/traze/sendLabels",
-          "tries": []
-        },
-        {
-          "awbId": 981661,
-          "taskTryStatus": "PENDING",
-          "clientId": 43075,
-          "taskId": 7,
-          "taskInstanceId": 97065,
-          "taskName": "SEND BOOKINGS TRAZE CLIENT",
-          "clientName": "ECOPLANTS LLC.",
-          "taskUrlAddress": "/traze/sendClientBookings",
-          "tries": []
-        },
-        {
-          "awbId": 981661,
-          "taskTryStatus": "PENDING",
-          "clientId": 44826,
-          "taskId": 7,
-          "taskInstanceId": 97066,
-          "taskName": "SEND BOOKINGS TRAZE CLIENT",
-          "clientName": "BLOOMSTAR",
-          "taskUrlAddress": "/traze/sendClientBookings",
-          "tries": []
-        },
-        {
-          "awbId": 981661,
-          "taskTryStatus": "PENDING",
-          "clientId": 45435,
-          "taskId": 7,
-          "taskInstanceId": 97067,
-          "taskName": "SEND BOOKINGS TRAZE CLIENT",
-          "clientName": "SOFIA FLOWERS USA LLC",
-          "taskUrlAddress": "/traze/sendClientBookings",
-          "tries": []
-        },
-        {
-          "awbId": 981661,
-          "taskTryStatus": "PENDING",
-          "clientId": 43075,
-          "taskId": 8,
-          "taskInstanceId": 97068,
-          "taskName": "SEND LABELS TRAZE CLIENT",
-          "clientName": "ECOPLANTS LLC.",
-          "taskUrlAddress": "/traze/sendClientLabels",
-          "tries": []
-        },
-        {
-          "awbId": 981661,
-          "taskTryStatus": "PENDING",
-          "clientId": 44826,
-          "taskId": 8,
-          "taskInstanceId": 97069,
-          "taskName": "SEND LABELS TRAZE CLIENT",
-          "clientName": "BLOOMSTAR",
-          "taskUrlAddress": "/traze/sendClientLabels",
-          "tries": []
-        },
-        {
-          "awbId": 981661,
-          "taskTryStatus": "PENDING",
-          "clientId": 45435,
-          "taskId": 8,
-          "taskInstanceId": 97070,
-          "taskName": "SEND LABELS TRAZE CLIENT",
-          "clientName": "SOFIA FLOWERS USA LLC",
-          "taskUrlAddress": "/traze/sendClientLabels",
-          "tries": []
-        }
-      ],
-      "urgencia": "rojo",
-      "hoursToEtd": -80.92
+      "hoursToEtd": -82.01
     },
     {
       "id": 981822,
@@ -1223,7 +331,7 @@
       "motivoDescarte": "La transmiti manual - VT",
       "fechaDescarte": "2026-08-17T16:51:23.002Z",
       "urgencia": "rojo",
-      "hoursToEtd": -75.42
+      "hoursToEtd": -75.67
     },
     {
       "id": 981841,
@@ -1291,7 +399,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -75.42
+      "hoursToEtd": -75.67
     },
     {
       "id": 981845,
@@ -1359,7 +467,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -75.42
+      "hoursToEtd": -75.67
     },
     {
       "id": 976092,
@@ -1475,7 +583,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -75.42
+      "hoursToEtd": -75.67
     },
     {
       "id": 981839,
@@ -1528,7 +636,7 @@
       "motivoDescarte": "Es de elite no se transmite - VT",
       "fechaDescarte": "2026-08-17T16:52:36.931Z",
       "urgencia": "rojo",
-      "hoursToEtd": -75.42
+      "hoursToEtd": -75.67
     },
     {
       "id": 981851,
@@ -1555,7 +663,7 @@
       "sede": "CO",
       "taskInstances": [],
       "urgencia": "rojo",
-      "hoursToEtd": -75.42
+      "hoursToEtd": -75.67
     },
     {
       "id": 977537,
@@ -1623,7 +731,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -72.26
+      "hoursToEtd": -72.51
     },
     {
       "id": 980567,
@@ -1691,7 +799,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -72.26
+      "hoursToEtd": -72.51
     },
     {
       "id": 981313,
@@ -1759,7 +867,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -72.26
+      "hoursToEtd": -72.51
     },
     {
       "id": 981322,
@@ -1827,7 +935,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -72.26
+      "hoursToEtd": -72.51
     },
     {
       "id": 981758,
@@ -1854,7 +962,7 @@
       "sede": "EC",
       "taskInstances": [],
       "urgencia": "rojo",
-      "hoursToEtd": -72.26
+      "hoursToEtd": -72.51
     },
     {
       "id": 981880,
@@ -1970,7 +1078,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -70.26
+      "hoursToEtd": -70.51
     },
     {
       "id": 981759,
@@ -1997,7 +1105,7 @@
       "sede": "EC",
       "taskInstances": [],
       "urgencia": "rojo",
-      "hoursToEtd": -62.26
+      "hoursToEtd": -62.51
     },
     {
       "id": 981881,
@@ -2091,7 +1199,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -55.56
+      "hoursToEtd": -55.81
     },
     {
       "id": 981939,
@@ -2207,7 +1315,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -50.76
+      "hoursToEtd": -51.01
     },
     {
       "id": 976093,
@@ -2323,7 +1431,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -46.51
+      "hoursToEtd": -46.76
     },
     {
       "id": 982047,
@@ -2376,7 +1484,7 @@
       "motivoDescarte": "Es de elite no se transmite - VT",
       "fechaDescarte": "2026-08-17T16:53:06.516Z",
       "urgencia": "rojo",
-      "hoursToEtd": -46.51
+      "hoursToEtd": -46.76
     },
     {
       "id": 982012,
@@ -2403,7 +1511,7 @@
       "sede": "CO",
       "taskInstances": [],
       "urgencia": "rojo",
-      "hoursToEtd": -46.51
+      "hoursToEtd": -46.76
     },
     {
       "id": 980542,
@@ -2430,7 +1538,7 @@
       "sede": "EC",
       "taskInstances": [],
       "urgencia": "rojo",
-      "hoursToEtd": -45.49
+      "hoursToEtd": -45.74
     },
     {
       "id": 978037,
@@ -2457,7 +1565,7 @@
       "sede": "EC",
       "taskInstances": [],
       "urgencia": "rojo",
-      "hoursToEtd": -45.49
+      "hoursToEtd": -45.74
     },
     {
       "id": 980541,
@@ -2484,7 +1592,7 @@
       "sede": "EC",
       "taskInstances": [],
       "urgencia": "rojo",
-      "hoursToEtd": -45.49
+      "hoursToEtd": -45.74
     },
     {
       "id": 978036,
@@ -2511,7 +1619,7 @@
       "sede": "EC",
       "taskInstances": [],
       "urgencia": "rojo",
-      "hoursToEtd": -45.49
+      "hoursToEtd": -45.74
     },
     {
       "id": 978382,
@@ -2538,7 +1646,7 @@
       "sede": "EC",
       "taskInstances": [],
       "urgencia": "rojo",
-      "hoursToEtd": -45.49
+      "hoursToEtd": -45.74
     },
     {
       "id": 980568,
@@ -2614,7 +1722,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -42.76
+      "hoursToEtd": -43.01
     },
     {
       "id": 982009,
@@ -2682,7 +1790,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -42.76
+      "hoursToEtd": -43.01
     },
     {
       "id": 982010,
@@ -2750,7 +1858,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -42.76
+      "hoursToEtd": -43.01
     },
     {
       "id": 981757,
@@ -2777,7 +1885,7 @@
       "sede": "EC",
       "taskInstances": [],
       "urgencia": "rojo",
-      "hoursToEtd": -42.76
+      "hoursToEtd": -43.01
     },
     {
       "id": 981864,
@@ -2885,7 +1993,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -24.01
+      "hoursToEtd": -24.26
     },
     {
       "id": 981806,
@@ -2912,7 +2020,7 @@
       "sede": "EC",
       "taskInstances": [],
       "urgencia": "rojo",
-      "hoursToEtd": -24.01
+      "hoursToEtd": -24.26
     },
     {
       "id": 977488,
@@ -2980,7 +2088,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -22.76
+      "hoursToEtd": -23.01
     },
     {
       "id": 977538,
@@ -3048,7 +2156,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -22.76
+      "hoursToEtd": -23.01
     },
     {
       "id": 981977,
@@ -3075,7 +2183,7 @@
       "sede": "EC",
       "taskInstances": [],
       "urgencia": "rojo",
-      "hoursToEtd": -22.76
+      "hoursToEtd": -23.01
     },
     {
       "id": 982046,
@@ -3102,7 +2210,7 @@
       "sede": "EC",
       "taskInstances": [],
       "urgencia": "rojo",
-      "hoursToEtd": -22.76
+      "hoursToEtd": -23.01
     },
     {
       "id": 982049,
@@ -3129,7 +2237,7 @@
       "sede": "EC",
       "taskInstances": [],
       "urgencia": "rojo",
-      "hoursToEtd": -22.76
+      "hoursToEtd": -23.01
     },
     {
       "id": 981978,
@@ -3156,7 +2264,7 @@
       "sede": "EC",
       "taskInstances": [],
       "urgencia": "rojo",
-      "hoursToEtd": -22.76
+      "hoursToEtd": -23.01
     },
     {
       "id": 981979,
@@ -3183,7 +2291,7 @@
       "sede": "EC",
       "taskInstances": [],
       "urgencia": "rojo",
-      "hoursToEtd": -22.76
+      "hoursToEtd": -23.01
     },
     {
       "id": 981980,
@@ -3210,7 +2318,7 @@
       "sede": "EC",
       "taskInstances": [],
       "urgencia": "rojo",
-      "hoursToEtd": -22.76
+      "hoursToEtd": -23.01
     },
     {
       "id": 977489,
@@ -3294,7 +2402,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -20.76
+      "hoursToEtd": -21.01
     },
     {
       "id": 977588,
@@ -3370,7 +2478,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -20.76
+      "hoursToEtd": -21.01
     },
     {
       "id": 981941,
@@ -3486,7 +2594,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -13.76
+      "hoursToEtd": -14.01
     },
     {
       "id": 982034,
@@ -3513,7 +2621,7 @@
       "sede": "CO",
       "taskInstances": [],
       "urgencia": "rojo",
-      "hoursToEtd": -13.76
+      "hoursToEtd": -14.01
     },
     {
       "id": 982023,
@@ -3656,7 +2764,7 @@
       "motivoDescarte": "Deybe la transmitio manual - VT",
       "fechaDescarte": "2026-08-17T16:55:29.901Z",
       "urgencia": "rojo",
-      "hoursToEtd": -10.52
+      "hoursToEtd": -10.77
     },
     {
       "id": 976094,
@@ -3772,7 +2880,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -10.52
+      "hoursToEtd": -10.77
     },
     {
       "id": 982105,
@@ -3799,7 +2907,7 @@
       "sede": "CO",
       "taskInstances": [],
       "urgencia": "rojo",
-      "hoursToEtd": -10.52
+      "hoursToEtd": -10.77
     },
     {
       "id": 982011,
@@ -3826,7 +2934,7 @@
       "sede": "CO",
       "taskInstances": [],
       "urgencia": "rojo",
-      "hoursToEtd": -7.26
+      "hoursToEtd": -7.51
     },
     {
       "id": 978039,
@@ -3853,7 +2961,7 @@
       "sede": "EC",
       "taskInstances": [],
       "urgencia": "rojo",
-      "hoursToEtd": -4.59
+      "hoursToEtd": -4.84
     },
     {
       "id": 976673,
@@ -3959,7 +3067,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -0.76
+      "hoursToEtd": -1.01
     },
     {
       "id": 982094,
@@ -4009,7 +3117,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -0.76
+      "hoursToEtd": -1.01
     },
     {
       "id": 976845,
@@ -4036,7 +3144,7 @@
       "sede": "EC",
       "taskInstances": [],
       "urgencia": "rojo",
-      "hoursToEtd": -0.76
+      "hoursToEtd": -1.01
     },
     {
       "id": 976846,
@@ -4063,7 +3171,7 @@
       "sede": "EC",
       "taskInstances": [],
       "urgencia": "rojo",
-      "hoursToEtd": -0.76
+      "hoursToEtd": -1.01
     },
     {
       "id": 982102,
@@ -4090,7 +3198,7 @@
       "sede": "EC",
       "taskInstances": [],
       "urgencia": "rojo",
-      "hoursToEtd": -0.76
+      "hoursToEtd": -1.01
     },
     {
       "id": 982103,
@@ -4117,7 +3225,7 @@
       "sede": "EC",
       "taskInstances": [],
       "urgencia": "rojo",
-      "hoursToEtd": -0.76
+      "hoursToEtd": -1.01
     },
     {
       "id": 982116,
@@ -4144,7 +3252,7 @@
       "sede": "EC",
       "taskInstances": [],
       "urgencia": "rojo",
-      "hoursToEtd": -0.76
+      "hoursToEtd": -1.01
     },
     {
       "id": 982118,
@@ -4171,7 +3279,7 @@
       "sede": "EC",
       "taskInstances": [],
       "urgencia": "rojo",
-      "hoursToEtd": -0.76
+      "hoursToEtd": -1.01
     },
     {
       "id": 982104,
@@ -4287,7 +3395,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": 0.74
+      "hoursToEtd": 0.49
     },
     {
       "id": 982042,
@@ -4337,7 +3445,7 @@
         }
       ],
       "urgencia": "verde",
-      "hoursToEtd": 10.74
+      "hoursToEtd": 10.49
     },
     {
       "id": 982043,
@@ -4387,7 +3495,7 @@
         }
       ],
       "urgencia": "verde",
-      "hoursToEtd": 10.74
+      "hoursToEtd": 10.49
     },
     {
       "id": 982081,
@@ -4481,7 +3589,7 @@
         }
       ],
       "urgencia": "verde",
-      "hoursToEtd": 16.24
+      "hoursToEtd": 15.99
     },
     {
       "id": 982082,
@@ -4531,7 +3639,7 @@
         }
       ],
       "urgencia": "verde",
-      "hoursToEtd": 16.24
+      "hoursToEtd": 15.99
     },
     {
       "id": 982093,
@@ -4581,7 +3689,522 @@
         }
       ],
       "urgencia": "verde",
-      "hoursToEtd": 16.24
+      "hoursToEtd": 15.99
+    },
+    {
+      "id": 978388,
+      "awbId": "ELITE-BELLAROSA",
+      "airlinePrefix": "729",
+      "shipDate": "2026-08-18",
+      "processedErrors": 0,
+      "rateType": "REGULAR",
+      "consignee": "SUNBURST FARMS INC.",
+      "detailConfirmationRequired": true,
+      "piecesConfirmedActivity": "ACTIVE",
+      "weightConfirmedActivity": "INACTIVE",
+      "awbProducedActivity": "INACTIVE",
+      "invoiceProducedActivity": "ACTIVE",
+      "documentsSendActivity": "INACTIVE",
+      "interfaceSend": "PENDING",
+      "pieces": 531,
+      "fullBoxes": 204.5,
+      "piecesReceived": 0,
+      "fullBoxesReceived": 0,
+      "etd": "2026-08-18T16:16:00",
+      "awbStatus": 5,
+      "awbNumber": "729-91224372",
+      "sede": "EC",
+      "taskInstances": [],
+      "urgencia": "verde",
+      "hoursToEtd": 16.26
+    },
+    {
+      "id": 977490,
+      "awbId": "TWI. VARIOS",
+      "airlinePrefix": "369",
+      "shipDate": "2026-08-18",
+      "processedErrors": 0,
+      "rateType": "REGULAR",
+      "consignee": "TRADEWINDS INTL - SUITE 340",
+      "detailConfirmationRequired": true,
+      "piecesConfirmedActivity": "ACTIVE",
+      "weightConfirmedActivity": "INACTIVE",
+      "awbProducedActivity": "INACTIVE",
+      "invoiceProducedActivity": "ACTIVE",
+      "documentsSendActivity": "INACTIVE",
+      "interfaceSend": "PENDING",
+      "pieces": 510,
+      "fullBoxes": 126.61999999999998,
+      "piecesReceived": 0,
+      "fullBoxesReceived": 0,
+      "etd": "2026-08-18T20:00:00",
+      "awbStatus": 5,
+      "awbNumber": "369-10698763",
+      "sede": "EC",
+      "taskInstances": [
+        {
+          "awbId": 977490,
+          "taskTryStatus": "PENDING",
+          "clientId": null,
+          "taskId": 5,
+          "taskInstanceId": 97394,
+          "taskName": "SEND BOOKINGS TRAZE",
+          "clientName": null,
+          "taskUrlAddress": "/traze/sendBookings",
+          "tries": []
+        },
+        {
+          "awbId": 977490,
+          "taskTryStatus": "PENDING",
+          "clientId": null,
+          "taskId": 6,
+          "taskInstanceId": 97395,
+          "taskName": "SEND LABELS TRAZE",
+          "clientName": null,
+          "taskUrlAddress": "/traze/sendLabels",
+          "tries": []
+        }
+      ],
+      "urgencia": "verde",
+      "hoursToEtd": 19.99
+    },
+    {
+      "id": 977540,
+      "awbId": "TWI. ROSAS",
+      "airlinePrefix": "369",
+      "shipDate": "2026-08-18",
+      "processedErrors": 0,
+      "rateType": "REGULAR",
+      "consignee": "TRADEWINDS INTL - SUITE 340",
+      "detailConfirmationRequired": true,
+      "piecesConfirmedActivity": "ACTIVE",
+      "weightConfirmedActivity": "INACTIVE",
+      "awbProducedActivity": "INACTIVE",
+      "invoiceProducedActivity": "ACTIVE",
+      "documentsSendActivity": "INACTIVE",
+      "interfaceSend": "PENDING",
+      "pieces": 629,
+      "fullBoxes": 185.01,
+      "piecesReceived": 0,
+      "fullBoxesReceived": 0,
+      "etd": "2026-08-18T20:00:00",
+      "awbStatus": 5,
+      "awbNumber": "369-10699242",
+      "sede": "EC",
+      "taskInstances": [
+        {
+          "awbId": 977540,
+          "taskTryStatus": "PENDING",
+          "clientId": null,
+          "taskId": 5,
+          "taskInstanceId": 97396,
+          "taskName": "SEND BOOKINGS TRAZE",
+          "clientName": null,
+          "taskUrlAddress": "/traze/sendBookings",
+          "tries": []
+        },
+        {
+          "awbId": 977540,
+          "taskTryStatus": "PENDING",
+          "clientId": null,
+          "taskId": 6,
+          "taskInstanceId": 97397,
+          "taskName": "SEND LABELS TRAZE",
+          "clientName": null,
+          "taskUrlAddress": "/traze/sendLabels",
+          "tries": []
+        }
+      ],
+      "urgencia": "verde",
+      "hoursToEtd": 19.99
+    },
+    {
+      "id": 977589,
+      "awbId": "FM/BANDY RANCH//PINNACLE//CONTI",
+      "airlinePrefix": "369",
+      "shipDate": "2026-08-18",
+      "processedErrors": 0,
+      "rateType": "REGULAR",
+      "consignee": "SUNBURST FARMS INC.",
+      "detailConfirmationRequired": true,
+      "piecesConfirmedActivity": "ACTIVE",
+      "weightConfirmedActivity": "INACTIVE",
+      "awbProducedActivity": "INACTIVE",
+      "invoiceProducedActivity": "ACTIVE",
+      "documentsSendActivity": "INACTIVE",
+      "interfaceSend": "PENDING",
+      "pieces": 393,
+      "fullBoxes": 116.16,
+      "piecesReceived": 0,
+      "fullBoxesReceived": 0,
+      "etd": "2026-08-18T20:00:00",
+      "awbStatus": 5,
+      "awbNumber": "369-10699721",
+      "sede": "EC",
+      "taskInstances": [
+        {
+          "awbId": 977589,
+          "taskTryStatus": "PENDING",
+          "clientId": null,
+          "taskId": 5,
+          "taskInstanceId": 97388,
+          "taskName": "SEND BOOKINGS TRAZE",
+          "clientName": null,
+          "taskUrlAddress": "/traze/sendBookings",
+          "tries": []
+        },
+        {
+          "awbId": 977589,
+          "taskTryStatus": "PENDING",
+          "clientId": null,
+          "taskId": 6,
+          "taskInstanceId": 97389,
+          "taskName": "SEND LABELS TRAZE",
+          "clientName": null,
+          "taskUrlAddress": "/traze/sendLabels",
+          "tries": []
+        },
+        {
+          "awbId": 977589,
+          "taskTryStatus": "PENDING",
+          "clientId": 50,
+          "taskId": 7,
+          "taskInstanceId": 97390,
+          "taskName": "SEND BOOKINGS TRAZE CLIENT",
+          "clientName": "CONTINENTAL FARMS LLC",
+          "taskUrlAddress": "/traze/sendClientBookings",
+          "tries": []
+        },
+        {
+          "awbId": 977589,
+          "taskTryStatus": "PENDING",
+          "clientId": 50,
+          "taskId": 8,
+          "taskInstanceId": 97391,
+          "taskName": "SEND LABELS TRAZE CLIENT",
+          "clientName": "CONTINENTAL FARMS LLC",
+          "taskUrlAddress": "/traze/sendClientLabels",
+          "tries": []
+        }
+      ],
+      "urgencia": "verde",
+      "hoursToEtd": 19.99
+    },
+    {
+      "id": 980570,
+      "awbId": "DELAWARE",
+      "airlinePrefix": "369",
+      "shipDate": "2026-08-18",
+      "processedErrors": 0,
+      "rateType": "REGULAR",
+      "consignee": "SUNBURST FARMS INC.",
+      "detailConfirmationRequired": true,
+      "piecesConfirmedActivity": "ACTIVE",
+      "weightConfirmedActivity": "INACTIVE",
+      "awbProducedActivity": "INACTIVE",
+      "invoiceProducedActivity": "ACTIVE",
+      "documentsSendActivity": "INACTIVE",
+      "interfaceSend": "PENDING",
+      "pieces": 2230,
+      "fullBoxes": 469.92999999999967,
+      "piecesReceived": 0,
+      "fullBoxesReceived": 0,
+      "etd": "2026-08-18T20:00:00",
+      "awbStatus": 5,
+      "awbNumber": "369-10714550",
+      "sede": "EC",
+      "taskInstances": [
+        {
+          "awbId": 980570,
+          "taskTryStatus": "PENDING",
+          "clientId": null,
+          "taskId": 5,
+          "taskInstanceId": 97392,
+          "taskName": "SEND BOOKINGS TRAZE",
+          "clientName": null,
+          "taskUrlAddress": "/traze/sendBookings",
+          "tries": []
+        },
+        {
+          "awbId": 980570,
+          "taskTryStatus": "PENDING",
+          "clientId": null,
+          "taskId": 6,
+          "taskInstanceId": 97393,
+          "taskName": "SEND LABELS TRAZE",
+          "clientName": null,
+          "taskUrlAddress": "/traze/sendLabels",
+          "tries": []
+        }
+      ],
+      "urgencia": "verde",
+      "hoursToEtd": 19.99
+    },
+    {
+      "id": 981762,
+      "awbId": "CANADA//DWF",
+      "airlinePrefix": "369",
+      "shipDate": "2026-08-18",
+      "processedErrors": 0,
+      "rateType": "REGULAR",
+      "consignee": "SUNBURST FARMS INC.",
+      "detailConfirmationRequired": true,
+      "piecesConfirmedActivity": "ACTIVE",
+      "weightConfirmedActivity": "INACTIVE",
+      "awbProducedActivity": "INACTIVE",
+      "invoiceProducedActivity": "ACTIVE",
+      "documentsSendActivity": "INACTIVE",
+      "interfaceSend": "PENDING",
+      "pieces": 583,
+      "fullBoxes": 146.26,
+      "piecesReceived": 0,
+      "fullBoxesReceived": 0,
+      "etd": "2026-08-18T20:00:00",
+      "awbStatus": 5,
+      "awbNumber": "369-11498093",
+      "sede": "EC",
+      "taskInstances": [
+        {
+          "awbId": 981762,
+          "taskTryStatus": "PENDING",
+          "clientId": null,
+          "taskId": 5,
+          "taskInstanceId": 97398,
+          "taskName": "SEND BOOKINGS TRAZE",
+          "clientName": null,
+          "taskUrlAddress": "/traze/sendBookings",
+          "tries": []
+        },
+        {
+          "awbId": 981762,
+          "taskTryStatus": "PENDING",
+          "clientId": null,
+          "taskId": 6,
+          "taskInstanceId": 97399,
+          "taskName": "SEND LABELS TRAZE",
+          "clientName": null,
+          "taskUrlAddress": "/traze/sendLabels",
+          "tries": []
+        }
+      ],
+      "urgencia": "verde",
+      "hoursToEtd": 19.99
+    },
+    {
+      "id": 981772,
+      "awbId": "SUN. OTROS",
+      "airlinePrefix": "369",
+      "shipDate": "2026-08-18",
+      "processedErrors": 0,
+      "rateType": "REGULAR",
+      "consignee": "SUNBURST FARMS INC.",
+      "detailConfirmationRequired": true,
+      "piecesConfirmedActivity": "ACTIVE",
+      "weightConfirmedActivity": "INACTIVE",
+      "awbProducedActivity": "INACTIVE",
+      "invoiceProducedActivity": "ACTIVE",
+      "documentsSendActivity": "INACTIVE",
+      "interfaceSend": "PENDING",
+      "pieces": 768,
+      "fullBoxes": 201.89,
+      "piecesReceived": 0,
+      "fullBoxesReceived": 0,
+      "etd": "2026-08-18T20:00:00",
+      "awbStatus": 5,
+      "awbNumber": "369-11498196",
+      "sede": "EC",
+      "taskInstances": [
+        {
+          "awbId": 981772,
+          "taskTryStatus": "PENDING",
+          "clientId": null,
+          "taskId": 5,
+          "taskInstanceId": 97400,
+          "taskName": "SEND BOOKINGS TRAZE",
+          "clientName": null,
+          "taskUrlAddress": "/traze/sendBookings",
+          "tries": []
+        },
+        {
+          "awbId": 981772,
+          "taskTryStatus": "PENDING",
+          "clientId": null,
+          "taskId": 6,
+          "taskInstanceId": 97401,
+          "taskName": "SEND LABELS TRAZE",
+          "clientName": null,
+          "taskUrlAddress": "/traze/sendLabels",
+          "tries": []
+        },
+        {
+          "awbId": 981772,
+          "taskTryStatus": "PENDING",
+          "clientId": 43075,
+          "taskId": 7,
+          "taskInstanceId": 97402,
+          "taskName": "SEND BOOKINGS TRAZE CLIENT",
+          "clientName": "ECOPLANTS LLC.",
+          "taskUrlAddress": "/traze/sendClientBookings",
+          "tries": []
+        },
+        {
+          "awbId": 981772,
+          "taskTryStatus": "PENDING",
+          "clientId": 45435,
+          "taskId": 7,
+          "taskInstanceId": 97403,
+          "taskName": "SEND BOOKINGS TRAZE CLIENT",
+          "clientName": "SOFIA FLOWERS USA LLC",
+          "taskUrlAddress": "/traze/sendClientBookings",
+          "tries": []
+        },
+        {
+          "awbId": 981772,
+          "taskTryStatus": "PENDING",
+          "clientId": 43075,
+          "taskId": 8,
+          "taskInstanceId": 97404,
+          "taskName": "SEND LABELS TRAZE CLIENT",
+          "clientName": "ECOPLANTS LLC.",
+          "taskUrlAddress": "/traze/sendClientLabels",
+          "tries": []
+        },
+        {
+          "awbId": 981772,
+          "taskTryStatus": "PENDING",
+          "clientId": 45435,
+          "taskId": 8,
+          "taskInstanceId": 97405,
+          "taskName": "SEND LABELS TRAZE CLIENT",
+          "clientName": "SOFIA FLOWERS USA LLC",
+          "taskUrlAddress": "/traze/sendClientLabels",
+          "tries": []
+        }
+      ],
+      "urgencia": "verde",
+      "hoursToEtd": 19.99
+    },
+    {
+      "id": 981783,
+      "awbId": "BLOOMSTAR-BLOOMISTIC-BILLDORAN",
+      "airlinePrefix": "369",
+      "shipDate": "2026-08-18",
+      "processedErrors": 0,
+      "rateType": "REGULAR",
+      "consignee": "SUNBURST FARMS INC.",
+      "detailConfirmationRequired": true,
+      "piecesConfirmedActivity": "ACTIVE",
+      "weightConfirmedActivity": "INACTIVE",
+      "awbProducedActivity": "INACTIVE",
+      "invoiceProducedActivity": "ACTIVE",
+      "documentsSendActivity": "INACTIVE",
+      "interfaceSend": "PENDING",
+      "pieces": 531,
+      "fullBoxes": 237.13,
+      "piecesReceived": 0,
+      "fullBoxesReceived": 0,
+      "etd": "2026-08-18T20:00:00",
+      "awbStatus": 5,
+      "awbNumber": "369-11498292",
+      "sede": "EC",
+      "taskInstances": [
+        {
+          "awbId": 981783,
+          "taskTryStatus": "PENDING",
+          "clientId": null,
+          "taskId": 5,
+          "taskInstanceId": 97406,
+          "taskName": "SEND BOOKINGS TRAZE",
+          "clientName": null,
+          "taskUrlAddress": "/traze/sendBookings",
+          "tries": []
+        },
+        {
+          "awbId": 981783,
+          "taskTryStatus": "PENDING",
+          "clientId": null,
+          "taskId": 6,
+          "taskInstanceId": 97407,
+          "taskName": "SEND LABELS TRAZE",
+          "clientName": null,
+          "taskUrlAddress": "/traze/sendLabels",
+          "tries": []
+        },
+        {
+          "awbId": 981783,
+          "taskTryStatus": "PENDING",
+          "clientId": 44826,
+          "taskId": 7,
+          "taskInstanceId": 97408,
+          "taskName": "SEND BOOKINGS TRAZE CLIENT",
+          "clientName": "BLOOMSTAR",
+          "taskUrlAddress": "/traze/sendClientBookings",
+          "tries": []
+        },
+        {
+          "awbId": 981783,
+          "taskTryStatus": "PENDING",
+          "clientId": 44826,
+          "taskId": 8,
+          "taskInstanceId": 97409,
+          "taskName": "SEND LABELS TRAZE CLIENT",
+          "clientName": "BLOOMSTAR",
+          "taskUrlAddress": "/traze/sendClientLabels",
+          "tries": []
+        }
+      ],
+      "urgencia": "verde",
+      "hoursToEtd": 19.99
+    },
+    {
+      "id": 981793,
+      "awbId": "LEGACY-SUNBURST",
+      "airlinePrefix": "369",
+      "shipDate": "2026-08-18",
+      "processedErrors": 0,
+      "rateType": "REGULAR",
+      "consignee": "SUNBURST FARMS INC.",
+      "detailConfirmationRequired": true,
+      "piecesConfirmedActivity": "ACTIVE",
+      "weightConfirmedActivity": "INACTIVE",
+      "awbProducedActivity": "INACTIVE",
+      "invoiceProducedActivity": "ACTIVE",
+      "documentsSendActivity": "INACTIVE",
+      "interfaceSend": "PENDING",
+      "pieces": 309,
+      "fullBoxes": 106.65999999999998,
+      "piecesReceived": 0,
+      "fullBoxesReceived": 0,
+      "etd": "2026-08-18T20:00:00",
+      "awbStatus": 5,
+      "awbNumber": "369-11498395",
+      "sede": "EC",
+      "taskInstances": [
+        {
+          "awbId": 981793,
+          "taskTryStatus": "PENDING",
+          "clientId": null,
+          "taskId": 5,
+          "taskInstanceId": 97410,
+          "taskName": "SEND BOOKINGS TRAZE",
+          "clientName": null,
+          "taskUrlAddress": "/traze/sendBookings",
+          "tries": []
+        },
+        {
+          "awbId": 981793,
+          "taskTryStatus": "PENDING",
+          "clientId": null,
+          "taskId": 6,
+          "taskInstanceId": 97411,
+          "taskName": "SEND LABELS TRAZE",
+          "clientName": null,
+          "taskUrlAddress": "/traze/sendLabels",
+          "tries": []
+        }
+      ],
+      "urgencia": "verde",
+      "hoursToEtd": 19.99
     },
     {
       "id": 981117,
@@ -4675,7 +4298,391 @@
         }
       ],
       "urgencia": "verde",
-      "hoursToEtd": 21.74
+      "hoursToEtd": 21.49
+    },
+    {
+      "id": 979479,
+      "awbId": "GALLERIA-KOMET",
+      "airlinePrefix": "145",
+      "shipDate": "2026-08-18",
+      "processedErrors": 0,
+      "rateType": "REGULAR",
+      "consignee": "SUNBURST FARMS INC.",
+      "detailConfirmationRequired": true,
+      "piecesConfirmedActivity": "ACTIVE",
+      "weightConfirmedActivity": "INACTIVE",
+      "awbProducedActivity": "INACTIVE",
+      "invoiceProducedActivity": "ACTIVE",
+      "documentsSendActivity": "INACTIVE",
+      "interfaceSend": "PENDING",
+      "pieces": 113,
+      "fullBoxes": 28.009999999999998,
+      "piecesReceived": 0,
+      "fullBoxesReceived": 0,
+      "etd": "2026-08-18T23:45:00",
+      "awbStatus": 5,
+      "awbNumber": "145-11500705",
+      "sede": "EC",
+      "taskInstances": [
+        {
+          "awbId": 979479,
+          "taskTryStatus": "PENDING",
+          "clientId": null,
+          "taskId": 5,
+          "taskInstanceId": 97412,
+          "taskName": "SEND BOOKINGS TRAZE",
+          "clientName": null,
+          "taskUrlAddress": "/traze/sendBookings",
+          "tries": []
+        },
+        {
+          "awbId": 979479,
+          "taskTryStatus": "PENDING",
+          "clientId": null,
+          "taskId": 6,
+          "taskInstanceId": 97413,
+          "taskName": "SEND LABELS TRAZE",
+          "clientName": null,
+          "taskUrlAddress": "/traze/sendLabels",
+          "tries": []
+        }
+      ],
+      "urgencia": "verde",
+      "hoursToEtd": 23.74
+    },
+    {
+      "id": 976674,
+      "awbId": "MARIA FLOWERS",
+      "airlinePrefix": "145",
+      "shipDate": "2026-08-18",
+      "processedErrors": 0,
+      "rateType": "REGULAR",
+      "consignee": "SUNBURST FARMS INC.",
+      "detailConfirmationRequired": true,
+      "piecesConfirmedActivity": "ACTIVE",
+      "weightConfirmedActivity": "INACTIVE",
+      "awbProducedActivity": "INACTIVE",
+      "invoiceProducedActivity": "ACTIVE",
+      "documentsSendActivity": "INACTIVE",
+      "interfaceSend": "PENDING",
+      "pieces": 689,
+      "fullBoxes": 378.31,
+      "piecesReceived": 0,
+      "fullBoxesReceived": 0,
+      "etd": "2026-08-18T23:45:00",
+      "awbStatus": 5,
+      "awbNumber": "145-11501276",
+      "sede": "EC",
+      "taskInstances": [
+        {
+          "awbId": 976674,
+          "taskTryStatus": "PENDING",
+          "clientId": null,
+          "taskId": 5,
+          "taskInstanceId": 97414,
+          "taskName": "SEND BOOKINGS TRAZE",
+          "clientName": null,
+          "taskUrlAddress": "/traze/sendBookings",
+          "tries": []
+        },
+        {
+          "awbId": 976674,
+          "taskTryStatus": "PENDING",
+          "clientId": null,
+          "taskId": 6,
+          "taskInstanceId": 97415,
+          "taskName": "SEND LABELS TRAZE",
+          "clientName": null,
+          "taskUrlAddress": "/traze/sendLabels",
+          "tries": []
+        },
+        {
+          "awbId": 976674,
+          "taskTryStatus": "PENDING",
+          "clientId": 53046,
+          "taskId": 7,
+          "taskInstanceId": 97416,
+          "taskName": "SEND BOOKINGS TRAZE CLIENT",
+          "clientName": "MARIA FLOWERS INTERNATIONAL INC",
+          "taskUrlAddress": "/traze/sendClientBookings",
+          "tries": []
+        },
+        {
+          "awbId": 976674,
+          "taskTryStatus": "PENDING",
+          "clientId": 53046,
+          "taskId": 8,
+          "taskInstanceId": 97417,
+          "taskName": "SEND LABELS TRAZE CLIENT",
+          "clientName": "MARIA FLOWERS INTERNATIONAL INC",
+          "taskUrlAddress": "/traze/sendClientLabels",
+          "tries": []
+        }
+      ],
+      "urgencia": "verde",
+      "hoursToEtd": 23.74
+    },
+    {
+      "id": 979527,
+      "awbId": "GALLERIA",
+      "airlinePrefix": "145",
+      "shipDate": "2026-08-18",
+      "processedErrors": 0,
+      "rateType": "REGULAR",
+      "consignee": "SUNBURST FARMS INC.",
+      "detailConfirmationRequired": true,
+      "piecesConfirmedActivity": "ACTIVE",
+      "weightConfirmedActivity": "INACTIVE",
+      "awbProducedActivity": "INACTIVE",
+      "invoiceProducedActivity": "ACTIVE",
+      "documentsSendActivity": "INACTIVE",
+      "interfaceSend": "PENDING",
+      "pieces": 820,
+      "fullBoxes": 261.5899999999999,
+      "piecesReceived": 0,
+      "fullBoxesReceived": 0,
+      "etd": "2026-08-18T23:45:00",
+      "awbStatus": 5,
+      "awbNumber": "145-11502676",
+      "sede": "EC",
+      "taskInstances": [
+        {
+          "awbId": 979527,
+          "taskTryStatus": "PENDING",
+          "clientId": null,
+          "taskId": 5,
+          "taskInstanceId": 97418,
+          "taskName": "SEND BOOKINGS TRAZE",
+          "clientName": null,
+          "taskUrlAddress": "/traze/sendBookings",
+          "tries": []
+        },
+        {
+          "awbId": 979527,
+          "taskTryStatus": "PENDING",
+          "clientId": null,
+          "taskId": 6,
+          "taskInstanceId": 97419,
+          "taskName": "SEND LABELS TRAZE",
+          "clientName": null,
+          "taskUrlAddress": "/traze/sendLabels",
+          "tries": []
+        }
+      ],
+      "urgencia": "verde",
+      "hoursToEtd": 23.74
+    },
+    {
+      "id": 981805,
+      "awbId": "GALLERIA",
+      "airlinePrefix": "145",
+      "shipDate": "2026-08-18",
+      "processedErrors": 0,
+      "rateType": "REGULAR",
+      "consignee": "SUNBURST FARMS INC.",
+      "detailConfirmationRequired": true,
+      "piecesConfirmedActivity": "ACTIVE",
+      "weightConfirmedActivity": "INACTIVE",
+      "awbProducedActivity": "INACTIVE",
+      "invoiceProducedActivity": "ACTIVE",
+      "documentsSendActivity": "INACTIVE",
+      "interfaceSend": "PENDING",
+      "pieces": 199,
+      "fullBoxes": 127.83,
+      "piecesReceived": 0,
+      "fullBoxesReceived": 0,
+      "etd": "2026-08-18T23:45:00",
+      "awbStatus": 5,
+      "awbNumber": "145-11503192",
+      "sede": "EC",
+      "taskInstances": [
+        {
+          "awbId": 981805,
+          "taskTryStatus": "PENDING",
+          "clientId": null,
+          "taskId": 5,
+          "taskInstanceId": 97420,
+          "taskName": "SEND BOOKINGS TRAZE",
+          "clientName": null,
+          "taskUrlAddress": "/traze/sendBookings",
+          "tries": []
+        },
+        {
+          "awbId": 981805,
+          "taskTryStatus": "PENDING",
+          "clientId": null,
+          "taskId": 6,
+          "taskInstanceId": 97421,
+          "taskName": "SEND LABELS TRAZE",
+          "clientName": null,
+          "taskUrlAddress": "/traze/sendLabels",
+          "tries": []
+        }
+      ],
+      "urgencia": "verde",
+      "hoursToEtd": 23.74
+    },
+    {
+      "id": 982132,
+      "awbId": "USA BOUQUET LLC",
+      "airlinePrefix": "145",
+      "shipDate": "2026-08-18",
+      "processedErrors": 0,
+      "rateType": "REGULAR",
+      "consignee": "SUNBURST FARMS INC.",
+      "detailConfirmationRequired": true,
+      "piecesConfirmedActivity": "ACTIVE",
+      "weightConfirmedActivity": "INACTIVE",
+      "awbProducedActivity": "INACTIVE",
+      "invoiceProducedActivity": "ACTIVE",
+      "documentsSendActivity": "INACTIVE",
+      "interfaceSend": "PENDING",
+      "pieces": 145,
+      "fullBoxes": 67.5,
+      "piecesReceived": 0,
+      "fullBoxesReceived": 0,
+      "etd": "2026-08-18T23:45:00",
+      "awbStatus": 5,
+      "awbNumber": "145-11500694",
+      "sede": "EC",
+      "taskInstances": [],
+      "urgencia": "verde",
+      "hoursToEtd": 23.74
+    },
+    {
+      "id": 982147,
+      "awbId": "ELITE",
+      "airlinePrefix": "729",
+      "shipDate": "2026-08-18",
+      "processedErrors": 0,
+      "rateType": "REGULAR",
+      "consignee": "SUNBURST FARMS INC.",
+      "detailConfirmationRequired": true,
+      "piecesConfirmedActivity": "ACTIVE",
+      "weightConfirmedActivity": "INACTIVE",
+      "awbProducedActivity": "INACTIVE",
+      "invoiceProducedActivity": "ACTIVE",
+      "documentsSendActivity": "INACTIVE",
+      "interfaceSend": "PENDING",
+      "pieces": 807,
+      "fullBoxes": 332.75,
+      "piecesReceived": 0,
+      "fullBoxesReceived": 0,
+      "etd": "2026-08-19T03:30:00",
+      "awbStatus": 5,
+      "awbNumber": "729-91204201",
+      "sede": "EC",
+      "taskInstances": [],
+      "urgencia": "verde",
+      "hoursToEtd": 27.49
+    },
+    {
+      "id": 982148,
+      "awbId": "ELITE",
+      "airlinePrefix": "729",
+      "shipDate": "2026-08-18",
+      "processedErrors": 0,
+      "rateType": "REGULAR",
+      "consignee": "SUNBURST FARMS INC.",
+      "detailConfirmationRequired": true,
+      "piecesConfirmedActivity": "ACTIVE",
+      "weightConfirmedActivity": "INACTIVE",
+      "awbProducedActivity": "INACTIVE",
+      "invoiceProducedActivity": "ACTIVE",
+      "documentsSendActivity": "INACTIVE",
+      "interfaceSend": "PENDING",
+      "pieces": 740,
+      "fullBoxes": 226.75,
+      "piecesReceived": 0,
+      "fullBoxesReceived": 0,
+      "etd": "2026-08-19T03:30:00",
+      "awbStatus": 5,
+      "awbNumber": "729-91204212",
+      "sede": "EC",
+      "taskInstances": [],
+      "urgencia": "verde",
+      "hoursToEtd": 27.49
+    },
+    {
+      "id": 982234,
+      "awbId": "ELITE",
+      "airlinePrefix": "729",
+      "shipDate": "2026-08-18",
+      "processedErrors": 0,
+      "rateType": "REGULAR",
+      "consignee": "SUNBURST FARMS INC.",
+      "detailConfirmationRequired": true,
+      "piecesConfirmedActivity": "ACTIVE",
+      "weightConfirmedActivity": "INACTIVE",
+      "awbProducedActivity": "INACTIVE",
+      "invoiceProducedActivity": "ACTIVE",
+      "documentsSendActivity": "INACTIVE",
+      "interfaceSend": "PENDING",
+      "pieces": 810,
+      "fullBoxes": 308.75,
+      "piecesReceived": 0,
+      "fullBoxesReceived": 0,
+      "etd": "2026-08-19T03:30:00",
+      "awbStatus": 5,
+      "awbNumber": "729-91204223",
+      "sede": "EC",
+      "taskInstances": [],
+      "urgencia": "verde",
+      "hoursToEtd": 27.49
+    },
+    {
+      "id": 978333,
+      "awbId": "ELITE",
+      "airlinePrefix": "729",
+      "shipDate": "2026-08-18",
+      "processedErrors": 0,
+      "rateType": "REGULAR",
+      "consignee": "SUNBURST FARMS INC.",
+      "detailConfirmationRequired": true,
+      "piecesConfirmedActivity": "ACTIVE",
+      "weightConfirmedActivity": "INACTIVE",
+      "awbProducedActivity": "INACTIVE",
+      "invoiceProducedActivity": "ACTIVE",
+      "documentsSendActivity": "INACTIVE",
+      "interfaceSend": "PENDING",
+      "pieces": 780,
+      "fullBoxes": 291.25,
+      "piecesReceived": 0,
+      "fullBoxesReceived": 0,
+      "etd": "2026-08-19T03:30:00",
+      "awbStatus": 5,
+      "awbNumber": "729-91204396",
+      "sede": "EC",
+      "taskInstances": [],
+      "urgencia": "verde",
+      "hoursToEtd": 27.49
+    },
+    {
+      "id": 978040,
+      "awbId": "ELITE",
+      "airlinePrefix": "729",
+      "shipDate": "2026-08-18",
+      "processedErrors": 0,
+      "rateType": "REGULAR",
+      "consignee": "SUNBURST FARMS INC.",
+      "detailConfirmationRequired": true,
+      "piecesConfirmedActivity": "ACTIVE",
+      "weightConfirmedActivity": "INACTIVE",
+      "awbProducedActivity": "INACTIVE",
+      "invoiceProducedActivity": "ACTIVE",
+      "documentsSendActivity": "INACTIVE",
+      "interfaceSend": "PENDING",
+      "pieces": 913,
+      "fullBoxes": 365,
+      "piecesReceived": 0,
+      "fullBoxesReceived": 0,
+      "etd": "2026-08-19T03:30:00",
+      "awbStatus": 5,
+      "awbNumber": "729-91205052",
+      "sede": "EC",
+      "taskInstances": [],
+      "urgencia": "verde",
+      "hoursToEtd": 27.49
     },
     {
       "id": 982067,
@@ -4747,7 +4754,7 @@
         }
       ],
       "urgencia": "verde",
-      "hoursToEtd": 34.74
+      "hoursToEtd": 34.49
     }
   ],
   "erroresEnriquecimiento": []
