@@ -1,42 +1,62 @@
 {
-  "generated_at": "2026-08-18T21:32:40.239Z",
+  "generated_at": "2026-08-18T23:32:32.196Z",
   "diaria": [
+    {
+      "id": "MI5Isnt350OD08jAMsHXKJgAOE34",
+      "titulo": "Documentos timeline proyecto bodega.",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Moreno, Sebastian / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "diaria"
+    },
+    {
+      "id": "s2Y-XNQ4F0yschjacQ9UNZgACDEP",
+      "titulo": "Reunión para revisar avances migración",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Moreno, Sebastian / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "diaria"
+    },
+    {
+      "id": "5-zaO4uKE0eys68SPOb-RZgAOQ9h",
+      "titulo": "Nuevo método get labels DVF",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Moreno, Sebastian / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "diaria"
+    },
+    {
+      "id": "YgNjvwyO_EOOufJhU8_WgJgAOrxd",
+      "titulo": "Investigar casos de pesos en 0",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "diaria"
+    },
+    {
+      "id": "SS4TVqtL8kWcATR5OqZdIpgAM2Ym",
+      "titulo": "Testing upload PO shipper",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "diaria"
+    },
     {
       "id": "FJvKPPn140eyQ68X4RrRg5gANSwd",
       "titulo": "Oswaldo WH recipt nuevo tamaño.",
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "diaria"
-    },
-    {
-      "id": "GTWlrPpqvkGqi5ohAdH8VJgANVb-",
-      "titulo": "Definir proceso de gear management",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Moreno, Sebastian / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "diaria"
-    },
-    {
-      "id": "qATZgCNrQEC0RdShPKTFpZgAGM0h",
-      "titulo": "Definir diseño de ubicaciones",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Moreno, Sebastian / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "diaria"
-    },
-    {
-      "id": "f1Dmvy14-kStlDryCW67OpgANmHo",
-      "titulo": "Coordinar fecha capactiación dimensiones.",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
       "fecha_limite": "",
       "prioridad": 5,
       "deposito": "diaria"
@@ -102,21 +122,21 @@
       "deposito": "diaria"
     },
     {
-      "id": "3LADe2YZrUi9u0u1GGmzIZgAAH_f",
-      "titulo": "Conseguir cubicaje camiones GTL",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "diaria"
-    },
-    {
       "id": "JyxVch5h7UKNZW3Rx8qEh5gAAzGh",
       "titulo": "Test programación todos los estados de las AWB",
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "diaria"
+    },
+    {
+      "id": "Zs1l3XA4i0KVlMCtbpwg15gAJArg",
+      "titulo": "Implementación dimensiones EC",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
       "fecha_limite": "",
       "prioridad": 5,
       "deposito": "diaria"
@@ -152,21 +172,21 @@
       "deposito": "diaria"
     },
     {
-      "id": "Unc_VnCud0iQGmdOSOEl9ZgAAXk6",
-      "titulo": "Test Ticket ajuste tarifas: estatus activa paso 5 - el cliente principal lo tome en cuenta junto con el consignee - filtro buscar por id de tarifa",
+      "id": "ODcYr0JUMUmrMnwZFqWKdJgABqTw",
+      "titulo": "Asignarlo reprogramación de carga paso 1 y 2",
       "descripcion": "",
       "etiqueta": "",
-      "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
+      "asignado": "Moreno, Sebastian / Kuehne + Nagel / Bog ZA-OM",
       "fecha_limite": "",
       "prioridad": 5,
       "deposito": "diaria"
     },
     {
-      "id": "LOBuWBSa0Emj85yTIp42fpgAFN-4",
-      "titulo": "Entregar Etiquetas DV",
+      "id": "Unc_VnCud0iQGmdOSOEl9ZgAAXk6",
+      "titulo": "Test Ticket ajuste tarifas: estatus activa paso 5 - el cliente principal lo tome en cuenta junto con el consignee - filtro buscar por id de tarifa",
       "descripcion": "",
       "etiqueta": "",
-      "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
+      "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
       "fecha_limite": "",
       "prioridad": 5,
       "deposito": "diaria"
@@ -242,16 +262,6 @@
       "deposito": "diaria"
     },
     {
-      "id": "HmUjAPP--0K7oyNdPpJNpJgAOtwc",
-      "titulo": "Testing Ajustes manifestar hawbs",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "diaria"
-    },
-    {
       "id": "YmuQC3nykUy4_lJvPYSN65gAMeqO",
       "titulo": "Facturas en ingreso de bodega",
       "descripcion": "",
@@ -263,6 +273,16 @@
     }
   ],
   "semanal": [
+    {
+      "id": "n7xwfPU4vEG-VxHffV4_j5gAMAGv",
+      "titulo": "Revisar caso de maximun attempts transmitir traze",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "semanal"
+    },
     {
       "id": "ImpVhv0ymkaueIwAPWnYFZgAI_qn",
       "titulo": "Test Invoicing report",
@@ -304,28 +324,8 @@
       "deposito": "semanal"
     },
     {
-      "id": "rrTcAeZazEWrq92aaLxCW5gAMp7h",
-      "titulo": "Errores transmisión traze",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "semanal"
-    },
-    {
       "id": "gTbI0REDB0qVyNGOS5xUX5gAAomR",
       "titulo": "Investigar método consultar Po traze",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "semanal"
-    },
-    {
-      "id": "Zs1l3XA4i0KVlMCtbpwg15gAJArg",
-      "titulo": "Implementación dimensiones EC",
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
@@ -349,16 +349,6 @@
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "semanal"
-    },
-    {
-      "id": "ODcYr0JUMUmrMnwZFqWKdJgABqTw",
-      "titulo": "Documentar reprogramación de carga",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Moreno, Sebastian / Kuehne + Nagel / Bog ZA-OM",
       "fecha_limite": "",
       "prioridad": 5,
       "deposito": "semanal"
@@ -469,16 +459,6 @@
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Moreno, Sebastian / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "semanal"
-    },
-    {
-      "id": "CKIRqgv_MUukFytCQOQitpgAGPqi",
-      "titulo": "Revisar y consolidar cosas reportadas por Magno",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
       "fecha_limite": "",
       "prioridad": 5,
       "deposito": "semanal"
