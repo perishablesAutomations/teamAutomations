@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-08-18T19:32:24.942Z",
+  "generated_at": "2026-08-18T21:32:40.239Z",
   "diaria": [
     {
-      "id": "Vy2nkfbn4UuYgZN6fLWcSZgAF7iB",
-      "titulo": "Seguimiento USA BQ con Diego",
+      "id": "FJvKPPn140eyQ68X4RrRg5gANSwd",
+      "titulo": "Oswaldo WH recipt nuevo tamaño.",
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
@@ -52,8 +52,18 @@
       "deposito": "diaria"
     },
     {
+      "id": "SqzmUGC3vUqapOP4tuY-qZgAJwKC",
+      "titulo": "Testing Fuente AWB",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "diaria"
+    },
+    {
       "id": "ZeVA-ZJWbEOUSeCX8gsPWZgAMo5e",
-      "titulo": "Asignar y test agrupación de exportadores paso 2",
+      "titulo": "Cerrar agrupación de exportadores paso 2",
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
@@ -63,7 +73,7 @@
     },
     {
       "id": "5jI9ZO7d0Emq-Cx2T3SkzpgAOM69",
-      "titulo": "Documentar casos pendientes confirmar track con bodega",
+      "titulo": "Hoy Documentar casos pendientes confirmar track con bodega",
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
@@ -72,18 +82,8 @@
       "deposito": "diaria"
     },
     {
-      "id": "wEhgH21Ju0WgLNVgBueO_ZgAD5om",
-      "titulo": "Prueba bogota nueva lectura",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "diaria"
-    },
-    {
       "id": "v9II3yIB40ehYF6ZHYxI-pgAP9TG",
-      "titulo": "Edición tarifas",
+      "titulo": "Test Edición tarifas",
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
@@ -112,31 +112,11 @@
       "deposito": "diaria"
     },
     {
-      "id": "esUFmw91vE6Lmk6PoG91WpgACVr_",
-      "titulo": "En asignar exportadores a consignee - atar agrupaciones con check todos los eportadores",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "diaria"
-    },
-    {
       "id": "JyxVch5h7UKNZW3Rx8qEh5gAAzGh",
-      "titulo": "Documentar programación todos los estados de las AWB",
+      "titulo": "Test programación todos los estados de las AWB",
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "diaria"
-    },
-    {
-      "id": "5E8N4Rx6Jkq9e-ICMg8wZJgAIoue",
-      "titulo": "Ajustes - Etiqueta por defecto y cambio LAX",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
       "fecha_limite": "",
       "prioridad": 5,
       "deposito": "diaria"
@@ -152,8 +132,28 @@
       "deposito": "diaria"
     },
     {
+      "id": "NTZi68B7OUarrvtQbi8fJZgADTCT",
+      "titulo": "Sincronizar lectoras en Bogotá",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "diaria"
+    },
+    {
+      "id": "lubcAN6stkSnY2EJBRJ23pgAIzgR",
+      "titulo": "Reunión con Oswaldo para sincronizar app en lectoras",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "diaria"
+    },
+    {
       "id": "Unc_VnCud0iQGmdOSOEl9ZgAAXk6",
-      "titulo": "Ticket ajuste tarifas: estatus activa paso 5 - el cliente principal lo tome en cuenta junto con el consignee - filtro buscar por id de tarifa",
+      "titulo": "Test Ticket ajuste tarifas: estatus activa paso 5 - el cliente principal lo tome en cuenta junto con el consignee - filtro buscar por id de tarifa",
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
@@ -193,7 +193,7 @@
     },
     {
       "id": "4047u9rF8kWLVp0ihJl8qJgACMPQ",
-      "titulo": "Ticket generar etiquetas bodega a nivel de master - acciones masivas",
+      "titulo": "Test Ticket generar etiquetas bodega a nivel de master - acciones masivas",
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
@@ -202,18 +202,8 @@
       "deposito": "diaria"
     },
     {
-      "id": "OzU0TLJT8kOK3D9PEU_A_JgAFMKB",
-      "titulo": "Ajuste AWB dashboard: tipo de caja - porcentaje de cumplimiento. observaciones en el ingreso",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 3,
-      "deposito": "diaria"
-    },
-    {
       "id": "dEI8BYdVSkOEovkNNXNKTpgALiR7",
-      "titulo": "Test ingresos paso 1 total y caso reportado",
+      "titulo": "Cerrar ingresos paso 1 total y caso reportado",
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
@@ -284,8 +274,8 @@
       "deposito": "semanal"
     },
     {
-      "id": "SqzmUGC3vUqapOP4tuY-qZgAJwKC",
-      "titulo": "Testing Fuente AWB",
+      "id": "esUFmw91vE6Lmk6PoG91WpgACVr_",
+      "titulo": "Test exportadores a consignee - atar agrupaciones con check todos los eportadores",
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
@@ -299,6 +289,16 @@
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "semanal"
+    },
+    {
+      "id": "5E8N4Rx6Jkq9e-ICMg8wZJgAIoue",
+      "titulo": "Test Ajustes - Etiqueta por defecto y cambio LAX",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
       "fecha_limite": "",
       "prioridad": 5,
       "deposito": "semanal"
@@ -354,26 +354,6 @@
       "deposito": "semanal"
     },
     {
-      "id": "NTZi68B7OUarrvtQbi8fJZgADTCT",
-      "titulo": "Sincronizar lectoras en Bogotá",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "semanal"
-    },
-    {
-      "id": "lubcAN6stkSnY2EJBRJ23pgAIzgR",
-      "titulo": "Reunión con Oswaldo para sincronizar app en lectoras",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "semanal"
-    },
-    {
       "id": "ODcYr0JUMUmrMnwZFqWKdJgABqTw",
       "titulo": "Documentar reprogramación de carga",
       "descripcion": "",
@@ -421,6 +401,16 @@
       "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
       "fecha_limite": "",
       "prioridad": 5,
+      "deposito": "semanal"
+    },
+    {
+      "id": "OzU0TLJT8kOK3D9PEU_A_JgAFMKB",
+      "titulo": "Asignar Ajuste AWB dashboard: tipo de caja - porcentaje de cumplimiento. observaciones en el ingreso",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 3,
       "deposito": "semanal"
     },
     {
