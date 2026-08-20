@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-20T15:32:45.561Z",
+  "generated_at": "2026-08-20T17:32:35.859Z",
   "diaria": [
     {
       "id": "D9c2iwWUy0aNKKH8gVgoPJgAF9i2",
@@ -8,7 +8,7 @@
       "etiqueta": "",
       "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
       "fecha_limite": "",
-      "prioridad": 5,
+      "prioridad": 3,
       "deposito": "diaria"
     },
     {
@@ -77,16 +77,6 @@
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "diaria"
-    },
-    {
-      "id": "ImpVhv0ymkaueIwAPWnYFZgAI_qn",
-      "titulo": "Test Invoicing report",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
       "fecha_limite": "",
       "prioridad": 5,
       "deposito": "diaria"
@@ -204,26 +194,6 @@
     {
       "id": "Unc_VnCud0iQGmdOSOEl9ZgAAXk6",
       "titulo": "Test Ticket ajuste tarifas: estatus activa paso 5 - el cliente principal lo tome en cuenta junto con el consignee - filtro buscar por id de tarifa",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "diaria"
-    },
-    {
-      "id": "JtL8S3ZFukqnSsc7wdm0oJgABUzh",
-      "titulo": "Test Consultar/Crear/edtar aeropuertos",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "diaria"
-    },
-    {
-      "id": "oHXN_ofEdUmS-F6tq2PdN5gAKUp0",
-      "titulo": "Testing editar ciudad - paises",
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
@@ -399,6 +369,16 @@
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "semanal"
+    },
+    {
+      "id": "JtL8S3ZFukqnSsc7wdm0oJgABUzh",
+      "titulo": "Test Consultar/Crear/edtar aeropuertos",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
       "fecha_limite": "",
       "prioridad": 5,
       "deposito": "semanal"
