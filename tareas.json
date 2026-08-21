@@ -1,12 +1,52 @@
 {
-  "generated_at": "2026-08-21T19:32:46.018Z",
+  "generated_at": "2026-08-21T21:32:37.322Z",
   "diaria": [
+    {
+      "id": "QVDKx_IoH0OVLjR1ADQJlpgAMj3x",
+      "titulo": "Testing de ajustes dimensiones",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "diaria"
+    },
+    {
+      "id": "bgdvdVvaUEKgAZZA1JmBApgANLPr",
+      "titulo": "Documentar casos hijas y consolidadas en 0",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 3,
+      "deposito": "diaria"
+    },
+    {
+      "id": "Huy12XKT8kCNuadJb2pudJgAG6-J",
+      "titulo": "Ajustes envío de documentos y reenvío",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 3,
+      "deposito": "diaria"
+    },
     {
       "id": "D9c2iwWUy0aNKKH8gVgoPJgAF9i2",
       "titulo": "En la pantalla de dimensiones agregar promedio volumen por full",
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 3,
+      "deposito": "diaria"
+    },
+    {
+      "id": "n7xwfPU4vEG-VxHffV4_j5gAMAGv",
+      "titulo": "Testing transmitir a traze",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
       "fecha_limite": "",
       "prioridad": 3,
       "deposito": "diaria"
@@ -63,10 +103,10 @@
     },
     {
       "id": "FJvKPPn140eyQ68X4RrRg5gANSwd",
-      "titulo": "Oswaldo WH recipt nuevo tamaño.",
+      "titulo": "Testing WH recipt nuevo tamaño y ajustes etiqueta bodega",
       "descripcion": "",
       "etiqueta": "",
-      "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
+      "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
       "fecha_limite": "",
       "prioridad": 5,
       "deposito": "diaria"
@@ -79,36 +119,6 @@
       "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
       "fecha_limite": "",
       "prioridad": 5,
-      "deposito": "diaria"
-    },
-    {
-      "id": "SqzmUGC3vUqapOP4tuY-qZgAJwKC",
-      "titulo": "Testing Fuente AWB",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "diaria"
-    },
-    {
-      "id": "ZeVA-ZJWbEOUSeCX8gsPWZgAMo5e",
-      "titulo": "Cerrar agrupación de exportadores paso 2",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 1,
-      "deposito": "diaria"
-    },
-    {
-      "id": "5jI9ZO7d0Emq-Cx2T3SkzpgAOM69",
-      "titulo": "Hoy Documentar casos pendientes confirmar track con bodega",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 3,
       "deposito": "diaria"
     },
     {
@@ -132,21 +142,11 @@
       "deposito": "diaria"
     },
     {
-      "id": "JyxVch5h7UKNZW3Rx8qEh5gAAzGh",
-      "titulo": "Test programación todos los estados de las AWB",
+      "id": "a9k3I_pkb0uCpUTgRaWoJJgAPOUf",
+      "titulo": "Prueba prorrateo con peso fisico y volumen WH y comapara con el legacy.",
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "diaria"
-    },
-    {
-      "id": "Zs1l3XA4i0KVlMCtbpwg15gAJArg",
-      "titulo": "Implementación dimensiones EC",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
       "fecha_limite": "",
       "prioridad": 5,
       "deposito": "diaria"
@@ -157,16 +157,6 @@
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Sin asignar",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "diaria"
-    },
-    {
-      "id": "NTZi68B7OUarrvtQbi8fJZgADTCT",
-      "titulo": "Sincronizar lectoras en Bogotá",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
       "fecha_limite": "",
       "prioridad": 5,
       "deposito": "diaria"
@@ -202,16 +192,6 @@
       "deposito": "diaria"
     },
     {
-      "id": "dEI8BYdVSkOEovkNNXNKTpgALiR7",
-      "titulo": "Cerrar ingresos paso 1 total y caso reportado",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "diaria"
-    },
-    {
       "id": "2Njg4TNpCUCUHjK5hh4udpgAHzXM",
       "titulo": "Caso Facturas múltiples",
       "descripcion": "",
@@ -219,16 +199,6 @@
       "asignado": "Moreno, Sebastian / Kuehne + Nagel / Bog ZA-OM",
       "fecha_limite": "",
       "prioridad": 5,
-      "deposito": "diaria"
-    },
-    {
-      "id": "0vrfLTWU90OzKuJIdyfPV5gABj06",
-      "titulo": "Test Ajustar check configuración de comercializadoras NEW",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
-      "fecha_limite": "",
-      "prioridad": 9,
       "deposito": "diaria"
     },
     {
@@ -264,13 +234,13 @@
   ],
   "semanal": [
     {
-      "id": "n7xwfPU4vEG-VxHffV4_j5gAMAGv",
-      "titulo": "Revisar caso de maximun attempts transmitir traze",
+      "id": "5jI9ZO7d0Emq-Cx2T3SkzpgAOM69",
+      "titulo": "Testing Documentar casos pendientes confirmar track con bodega",
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
       "fecha_limite": "",
-      "prioridad": 5,
+      "prioridad": 3,
       "deposito": "semanal"
     },
     {
@@ -316,16 +286,6 @@
     {
       "id": "oC3ordsWh0-NEfOhc1SZW5gAP8Et",
       "titulo": "Validación ingresos en liquidación",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "semanal"
-    },
-    {
-      "id": "a9k3I_pkb0uCpUTgRaWoJJgAPOUf",
-      "titulo": "Validación del 5% con prorrateo de bodega",
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
@@ -614,16 +574,6 @@
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "sin_deposito"
-    },
-    {
-      "id": "bySDR7esxkCjMm1jSeNXFpgAFpXQ",
-      "titulo": "Opción sin transportador - Administración AWB",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
       "fecha_limite": "",
       "prioridad": 5,
       "deposito": "sin_deposito"
