@@ -1,6 +1,26 @@
 {
-  "generated_at": "2026-08-21T21:32:37.322Z",
+  "generated_at": "2026-08-21T23:32:41.712Z",
   "diaria": [
+    {
+      "id": "7MF5KGP2KU6Nsj0nvRsnTZgAEgRE",
+      "titulo": "Revisar zona horaria de los estados paletizadora",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "diaria"
+    },
+    {
+      "id": "0blFkWW0mESNbMr3CTe9VZgAONps",
+      "titulo": "Asignar ticket lblseq delaware 4328",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "diaria"
+    },
     {
       "id": "QVDKx_IoH0OVLjR1ADQJlpgAMj3x",
       "titulo": "Testing de ajustes dimensiones",
@@ -27,16 +47,6 @@
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 3,
-      "deposito": "diaria"
-    },
-    {
-      "id": "D9c2iwWUy0aNKKH8gVgoPJgAF9i2",
-      "titulo": "En la pantalla de dimensiones agregar promedio volumen por full",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
       "fecha_limite": "",
       "prioridad": 3,
       "deposito": "diaria"
@@ -96,7 +106,7 @@
       "titulo": "Testing upload PO shipper",
       "descripcion": "",
       "etiqueta": "",
-      "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
+      "asignado": "Moreno, Sebastian / Kuehne + Nagel / Bog ZA-OM",
       "fecha_limite": "",
       "prioridad": 5,
       "deposito": "diaria"
@@ -129,16 +139,6 @@
       "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
       "fecha_limite": "",
       "prioridad": 5,
-      "deposito": "diaria"
-    },
-    {
-      "id": "arWnibozYkGj9exR2MIzX5gAOpVc",
-      "titulo": "Ticket calculo ocupación camiones",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 3,
       "deposito": "diaria"
     },
     {
@@ -358,7 +358,7 @@
       "titulo": "Asignar Ajuste AWB dashboard: tipo de caja - porcentaje de cumplimiento. observaciones en el ingreso",
       "descripcion": "",
       "etiqueta": "",
-      "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
+      "asignado": "Moreno, Sebastian / Kuehne + Nagel / Bog ZA-OM",
       "fecha_limite": "",
       "prioridad": 3,
       "deposito": "semanal"
