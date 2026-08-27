@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-27T21:32:55.896Z",
+  "generated_at": "2026-08-27T23:32:55.422Z",
   "diaria": [
     {
       "id": "0jaGBfGKSE-v-6kdFPJdoZgAC7Jt",
@@ -82,28 +82,8 @@
       "deposito": "diaria"
     },
     {
-      "id": "MI5Isnt350OD08jAMsHXKJgAOE34",
-      "titulo": "Documentos timeline proyecto bodega.",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Moreno, Sebastian / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "diaria"
-    },
-    {
       "id": "s2Y-XNQ4F0yschjacQ9UNZgACDEP",
       "titulo": "Reunión para revisar avances migración",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Moreno, Sebastian / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "diaria"
-    },
-    {
-      "id": "5-zaO4uKE0eys68SPOb-RZgAOQ9h",
-      "titulo": "Nuevo método get labels DVF",
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Moreno, Sebastian / Kuehne + Nagel / Bog ZA-OM",
@@ -468,6 +448,16 @@
     }
   ],
   "sin_deposito": [
+    {
+      "id": "5-zaO4uKE0eys68SPOb-RZgAOQ9h",
+      "titulo": "Nuevo método get labels DVF",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Moreno, Sebastian / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "sin_deposito"
+    },
     {
       "id": "Nd2y4bChj0GzPu4ZD5fEXZgAKwYH",
       "titulo": "Implementar dimensiones CO",
