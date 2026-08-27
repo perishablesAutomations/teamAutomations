@@ -1,6 +1,26 @@
 {
-  "generated_at": "2026-08-27T15:32:56.443Z",
+  "generated_at": "2026-08-27T17:32:54.743Z",
   "diaria": [
+    {
+      "id": "0jaGBfGKSE-v-6kdFPJdoZgAC7Jt",
+      "titulo": "Alerta de bajo stock de guías por aerolínea",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "diaria"
+    },
+    {
+      "id": "1MIK8lpofEKBTSeFqji2K5gAIV3K",
+      "titulo": "Documentar Caso que no se habilita los datos del paso 2 Gerardo",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "diaria"
+    },
     {
       "id": "7MF5KGP2KU6Nsj0nvRsnTZgAEgRE",
       "titulo": "Revisar zona horaria de los estados paletizadora",
@@ -334,16 +354,6 @@
       "deposito": "semanal"
     },
     {
-      "id": "JtL8S3ZFukqnSsc7wdm0oJgABUzh",
-      "titulo": "Test Consultar/Crear/edtar aeropuertos",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "semanal"
-    },
-    {
       "id": "4047u9rF8kWLVp0ihJl8qJgACMPQ",
       "titulo": "Test Ticket generar etiquetas bodega a nivel de master - acciones masivas",
       "descripcion": "",
@@ -409,16 +419,6 @@
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Moreno, Sebastian / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "semanal"
-    },
-    {
-      "id": "c1QO8Cf1EEe4cvx_YnInyZgABcQf",
-      "titulo": "Test Ajuste de filtros – Administrar Reservas",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
       "fecha_limite": "",
       "prioridad": 5,
       "deposito": "semanal"
