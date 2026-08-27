@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-27T18:48:10.741Z",
+  "generatedAt": "2026-08-27T19:03:10.457Z",
   "awbs": [
     {
       "id": 982800,
@@ -93,7 +93,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -108.09
+      "hoursToEtd": -108.34
     },
     {
       "id": 982743,
@@ -120,7 +120,7 @@
       "sede": "CO",
       "taskInstances": [],
       "urgencia": "rojo",
-      "hoursToEtd": -107.24
+      "hoursToEtd": -107.49
     },
     {
       "id": 982754,
@@ -210,7 +210,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -104.8
+      "hoursToEtd": -105.05
     },
     {
       "id": 982758,
@@ -278,7 +278,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -104.8
+      "hoursToEtd": -105.05
     },
     {
       "id": 982670,
@@ -394,7 +394,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -104.8
+      "hoursToEtd": -105.05
     },
     {
       "id": 982749,
@@ -484,7 +484,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -85.9
+      "hoursToEtd": -86.15
     },
     {
       "id": 982803,
@@ -559,7 +559,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -85.9
+      "hoursToEtd": -86.15
     },
     {
       "id": 976100,
@@ -675,7 +675,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -85.9
+      "hoursToEtd": -86.15
     },
     {
       "id": 982793,
@@ -702,7 +702,7 @@
       "sede": "CO",
       "taskInstances": [],
       "urgencia": "rojo",
-      "hoursToEtd": -85.9
+      "hoursToEtd": -86.15
     },
     {
       "id": 982729,
@@ -729,7 +729,7 @@
       "sede": "EC",
       "taskInstances": [],
       "urgencia": "rojo",
-      "hoursToEtd": -84.8
+      "hoursToEtd": -85.05
     },
     {
       "id": 982730,
@@ -756,7 +756,7 @@
       "sede": "EC",
       "taskInstances": [],
       "urgencia": "rojo",
-      "hoursToEtd": -84.8
+      "hoursToEtd": -85.05
     },
     {
       "id": 978315,
@@ -846,7 +846,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -72.8
+      "hoursToEtd": -73.05
     },
     {
       "id": 982517,
@@ -873,7 +873,7 @@
       "sede": "EC",
       "taskInstances": [],
       "urgencia": "rojo",
-      "hoursToEtd": -72.8
+      "hoursToEtd": -73.05
     },
     {
       "id": 982518,
@@ -900,7 +900,7 @@
       "sede": "EC",
       "taskInstances": [],
       "urgencia": "rojo",
-      "hoursToEtd": -72.8
+      "hoursToEtd": -73.05
     },
     {
       "id": 982709,
@@ -927,7 +927,7 @@
       "sede": "EC",
       "taskInstances": [],
       "urgencia": "rojo",
-      "hoursToEtd": -72.8
+      "hoursToEtd": -73.05
     },
     {
       "id": 982710,
@@ -954,7 +954,7 @@
       "sede": "EC",
       "taskInstances": [],
       "urgencia": "rojo",
-      "hoursToEtd": -72.8
+      "hoursToEtd": -73.05
     },
     {
       "id": 982711,
@@ -981,7 +981,7 @@
       "sede": "EC",
       "taskInstances": [],
       "urgencia": "rojo",
-      "hoursToEtd": -72.8
+      "hoursToEtd": -73.05
     },
     {
       "id": 982835,
@@ -1008,7 +1008,7 @@
       "sede": "EC",
       "taskInstances": [],
       "urgencia": "rojo",
-      "hoursToEtd": -69.8
+      "hoursToEtd": -70.05
     },
     {
       "id": 982818,
@@ -1124,7 +1124,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -57.3
+      "hoursToEtd": -57.55
     },
     {
       "id": 976847,
@@ -1151,7 +1151,7 @@
       "sede": "EC",
       "taskInstances": [],
       "urgencia": "rojo",
-      "hoursToEtd": -48.55
+      "hoursToEtd": -48.8
     },
     {
       "id": 982796,
@@ -1178,7 +1178,7 @@
       "sede": "EC",
       "taskInstances": [],
       "urgencia": "rojo",
-      "hoursToEtd": -48.55
+      "hoursToEtd": -48.8
     },
     {
       "id": 982797,
@@ -1205,7 +1205,7 @@
       "sede": "EC",
       "taskInstances": [],
       "urgencia": "rojo",
-      "hoursToEtd": -48.55
+      "hoursToEtd": -48.8
     },
     {
       "id": 982798,
@@ -1232,7 +1232,7 @@
       "sede": "EC",
       "taskInstances": [],
       "urgencia": "rojo",
-      "hoursToEtd": -48.55
+      "hoursToEtd": -48.8
     },
     {
       "id": 982831,
@@ -1300,7 +1300,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -47.64
+      "hoursToEtd": -47.89
     },
     {
       "id": 976101,
@@ -1416,7 +1416,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -47.64
+      "hoursToEtd": -47.89
     },
     {
       "id": 982890,
@@ -1466,7 +1466,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -47.64
+      "hoursToEtd": -47.89
     },
     {
       "id": 982861,
@@ -1493,7 +1493,7 @@
       "sede": "CO",
       "taskInstances": [],
       "urgencia": "rojo",
-      "hoursToEtd": -47.64
+      "hoursToEtd": -47.89
     },
     {
       "id": 982898,
@@ -1520,7 +1520,7 @@
       "sede": "EC",
       "taskInstances": [],
       "urgencia": "rojo",
-      "hoursToEtd": -41.3
+      "hoursToEtd": -41.55
     },
     {
       "id": 982896,
@@ -1547,7 +1547,7 @@
       "sede": "CO",
       "taskInstances": [],
       "urgencia": "rojo",
-      "hoursToEtd": -39.64
+      "hoursToEtd": -39.89
     },
     {
       "id": 982763,
@@ -1623,7 +1623,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -29.55
+      "hoursToEtd": -29.8
     },
     {
       "id": 976102,
@@ -1717,7 +1717,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -19.72
+      "hoursToEtd": -19.97
     },
     {
       "id": 983002,
@@ -1789,7 +1789,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -19.72
+      "hoursToEtd": -19.97
     },
     {
       "id": 982988,
@@ -1816,7 +1816,7 @@
       "sede": "CO",
       "taskInstances": [],
       "urgencia": "rojo",
-      "hoursToEtd": -19.72
+      "hoursToEtd": -19.97
     },
     {
       "id": 978340,
@@ -1843,7 +1843,7 @@
       "sede": "EC",
       "taskInstances": [],
       "urgencia": "rojo",
-      "hoursToEtd": -19.3
+      "hoursToEtd": -19.55
     },
     {
       "id": 978047,
@@ -1870,7 +1870,7 @@
       "sede": "EC",
       "taskInstances": [],
       "urgencia": "rojo",
-      "hoursToEtd": -19.3
+      "hoursToEtd": -19.55
     },
     {
       "id": 982881,
@@ -1986,7 +1986,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -15.64
+      "hoursToEtd": -15.89
     },
     {
       "id": 982828,
@@ -2013,7 +2013,7 @@
       "sede": "EC",
       "taskInstances": [],
       "urgencia": "rojo",
-      "hoursToEtd": -15.3
+      "hoursToEtd": -15.55
     },
     {
       "id": 982829,
@@ -2040,7 +2040,7 @@
       "sede": "EC",
       "taskInstances": [],
       "urgencia": "rojo",
-      "hoursToEtd": -15.3
+      "hoursToEtd": -15.55
     },
     {
       "id": 978046,
@@ -2067,7 +2067,7 @@
       "sede": "EC",
       "taskInstances": [],
       "urgencia": "rojo",
-      "hoursToEtd": -15.3
+      "hoursToEtd": -15.55
     },
     {
       "id": 982962,
@@ -2094,7 +2094,7 @@
       "sede": "EC",
       "taskInstances": [],
       "urgencia": "rojo",
-      "hoursToEtd": -13.3
+      "hoursToEtd": -13.55
     },
     {
       "id": 982963,
@@ -2121,7 +2121,7 @@
       "sede": "EC",
       "taskInstances": [],
       "urgencia": "rojo",
-      "hoursToEtd": -13.3
+      "hoursToEtd": -13.55
     },
     {
       "id": 982964,
@@ -2148,7 +2148,7 @@
       "sede": "EC",
       "taskInstances": [],
       "urgencia": "rojo",
-      "hoursToEtd": -13.3
+      "hoursToEtd": -13.55
     },
     {
       "id": 982965,
@@ -2175,7 +2175,7 @@
       "sede": "EC",
       "taskInstances": [],
       "urgencia": "rojo",
-      "hoursToEtd": -13.3
+      "hoursToEtd": -13.55
     },
     {
       "id": 983108,
@@ -2330,7 +2330,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -12.24
+      "hoursToEtd": -12.49
     },
     {
       "id": 983073,
@@ -2357,7 +2357,7 @@
       "sede": "CO",
       "taskInstances": [],
       "urgencia": "rojo",
-      "hoursToEtd": -6.99
+      "hoursToEtd": -7.24
     },
     {
       "id": 983147,
@@ -2451,7 +2451,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -2.6
+      "hoursToEtd": -2.85
     },
     {
       "id": 982945,
@@ -2567,7 +2567,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -0.97
+      "hoursToEtd": -1.22
     },
     {
       "id": 983107,
@@ -2692,7 +2692,7 @@
         }
       ],
       "urgencia": "rojo",
-      "hoursToEtd": -0.8
+      "hoursToEtd": -1.05
     },
     {
       "id": 983114,
@@ -2760,7 +2760,7 @@
         }
       ],
       "urgencia": "verde",
-      "hoursToEtd": 3.53
+      "hoursToEtd": 3.28
     },
     {
       "id": 983129,
@@ -2828,7 +2828,7 @@
         }
       ],
       "urgencia": "verde",
-      "hoursToEtd": 3.53
+      "hoursToEtd": 3.28
     },
     {
       "id": 976103,
@@ -2944,7 +2944,7 @@
         }
       ],
       "urgencia": "verde",
-      "hoursToEtd": 3.53
+      "hoursToEtd": 3.28
     },
     {
       "id": 983113,
@@ -2994,7 +2994,7 @@
         }
       ],
       "urgencia": "verde",
-      "hoursToEtd": 3.53
+      "hoursToEtd": 3.28
     },
     {
       "id": 983141,
@@ -3021,7 +3021,7 @@
       "sede": "CO",
       "taskInstances": [],
       "urgencia": "verde",
-      "hoursToEtd": 3.53
+      "hoursToEtd": 3.28
     },
     {
       "id": 981790,
@@ -3102,7 +3102,7 @@
         }
       ],
       "urgencia": "verde",
-      "hoursToEtd": 3.7
+      "hoursToEtd": 3.45
     },
     {
       "id": 983154,
@@ -3218,7 +3218,7 @@
         }
       ],
       "urgencia": "verde",
-      "hoursToEtd": 3.7
+      "hoursToEtd": 3.45
     },
     {
       "id": 983145,
@@ -3245,7 +3245,7 @@
       "sede": "EC",
       "taskInstances": [],
       "urgencia": "verde",
-      "hoursToEtd": 3.7
+      "hoursToEtd": 3.45
     },
     {
       "id": 983146,
@@ -3272,7 +3272,7 @@
       "sede": "EC",
       "taskInstances": [],
       "urgencia": "verde",
-      "hoursToEtd": 3.7
+      "hoursToEtd": 3.45
     },
     {
       "id": 983105,
@@ -3299,7 +3299,7 @@
       "sede": "EC",
       "taskInstances": [],
       "urgencia": "verde",
-      "hoursToEtd": 8.7
+      "hoursToEtd": 8.45
     },
     {
       "id": 983124,
@@ -3326,7 +3326,7 @@
       "sede": "EC",
       "taskInstances": [],
       "urgencia": "verde",
-      "hoursToEtd": 8.7
+      "hoursToEtd": 8.45
     },
     {
       "id": 978048,
@@ -3353,7 +3353,7 @@
       "sede": "EC",
       "taskInstances": [],
       "urgencia": "verde",
-      "hoursToEtd": 8.7
+      "hoursToEtd": 8.45
     },
     {
       "id": 979535,
@@ -3412,7 +3412,7 @@
         }
       ],
       "urgencia": "verde",
-      "hoursToEtd": 11.7
+      "hoursToEtd": 11.45
     },
     {
       "id": 976682,
@@ -3484,7 +3484,7 @@
         }
       ],
       "urgencia": "verde",
-      "hoursToEtd": 11.7
+      "hoursToEtd": 11.45
     },
     {
       "id": 983222,
@@ -3600,7 +3600,7 @@
         }
       ],
       "urgencia": "verde",
-      "hoursToEtd": 15.2
+      "hoursToEtd": 14.95
     },
     {
       "id": 983230,
@@ -3650,7 +3650,7 @@
         }
       ],
       "urgencia": "verde",
-      "hoursToEtd": 15.2
+      "hoursToEtd": 14.95
     },
     {
       "id": 983243,
@@ -3700,7 +3700,7 @@
         }
       ],
       "urgencia": "verde",
-      "hoursToEtd": 15.2
+      "hoursToEtd": 14.95
     },
     {
       "id": 983244,
@@ -3750,7 +3750,7 @@
         }
       ],
       "urgencia": "verde",
-      "hoursToEtd": 15.2
+      "hoursToEtd": 14.95
     },
     {
       "id": 983257,
@@ -3822,7 +3822,7 @@
         }
       ],
       "urgencia": "verde",
-      "hoursToEtd": 15.2
+      "hoursToEtd": 14.95
     },
     {
       "id": 983258,
@@ -3894,7 +3894,7 @@
         }
       ],
       "urgencia": "verde",
-      "hoursToEtd": 15.2
+      "hoursToEtd": 14.95
     },
     {
       "id": 983151,
@@ -3988,7 +3988,7 @@
         }
       ],
       "urgencia": "verde",
-      "hoursToEtd": 21.2
+      "hoursToEtd": 20.95
     },
     {
       "id": 983356,
@@ -4038,7 +4038,544 @@
         }
       ],
       "urgencia": "verde",
-      "hoursToEtd": 21.2
+      "hoursToEtd": 20.95
+    },
+    {
+      "id": 976104,
+      "awbId": "1 SOLO ELITE ",
+      "airlinePrefix": "985",
+      "shipDate": "2026-08-27",
+      "processedErrors": 0,
+      "rateType": "REGULAR",
+      "consignee": "SUNBURST FARMS INC.",
+      "detailConfirmationRequired": true,
+      "piecesConfirmedActivity": "ACTIVE",
+      "weightConfirmedActivity": "INACTIVE",
+      "awbProducedActivity": "INACTIVE",
+      "invoiceProducedActivity": "ACTIVE",
+      "documentsSendActivity": "INACTIVE",
+      "interfaceSend": "PENDING",
+      "pieces": 1506,
+      "fullBoxes": 397.81,
+      "piecesReceived": 0,
+      "fullBoxesReceived": 0,
+      "etd": "2026-08-28T18:50:00",
+      "awbStatus": 5,
+      "awbNumber": "985-63930274",
+      "sede": "CO",
+      "taskInstances": [
+        {
+          "awbId": 976104,
+          "taskTryStatus": "PENDING",
+          "clientId": null,
+          "taskId": 5,
+          "taskInstanceId": 98176,
+          "taskName": "SEND BOOKINGS TRAZE",
+          "clientName": null,
+          "taskUrlAddress": "/traze/sendBookings",
+          "tries": []
+        },
+        {
+          "awbId": 976104,
+          "taskTryStatus": "PENDING",
+          "clientId": null,
+          "taskId": 6,
+          "taskInstanceId": 98177,
+          "taskName": "SEND LABELS TRAZE",
+          "clientName": null,
+          "taskUrlAddress": "/traze/sendLabels",
+          "tries": []
+        },
+        {
+          "awbId": 976104,
+          "taskTryStatus": "PENDING",
+          "clientId": 44826,
+          "taskId": 7,
+          "taskInstanceId": 98178,
+          "taskName": "SEND BOOKINGS TRAZE CLIENT",
+          "clientName": "BLOOMSTAR",
+          "taskUrlAddress": "/traze/sendClientBookings",
+          "tries": []
+        },
+        {
+          "awbId": 976104,
+          "taskTryStatus": "PENDING",
+          "clientId": 44826,
+          "taskId": 8,
+          "taskInstanceId": 98179,
+          "taskName": "SEND LABELS TRAZE CLIENT",
+          "clientName": "BLOOMSTAR",
+          "taskUrlAddress": "/traze/sendClientLabels",
+          "tries": []
+        },
+        {
+          "awbId": 976104,
+          "taskTryStatus": "PENDING",
+          "clientId": 43075,
+          "taskId": 7,
+          "taskInstanceId": 98206,
+          "taskName": "SEND BOOKINGS TRAZE CLIENT",
+          "clientName": "ECOPLANTS LLC.",
+          "taskUrlAddress": "/traze/sendClientBookings",
+          "tries": []
+        },
+        {
+          "awbId": 976104,
+          "taskTryStatus": "PENDING",
+          "clientId": 45435,
+          "taskId": 7,
+          "taskInstanceId": 98207,
+          "taskName": "SEND BOOKINGS TRAZE CLIENT",
+          "clientName": "SOFIA FLOWERS USA LLC",
+          "taskUrlAddress": "/traze/sendClientBookings",
+          "tries": []
+        },
+        {
+          "awbId": 976104,
+          "taskTryStatus": "PENDING",
+          "clientId": 43075,
+          "taskId": 8,
+          "taskInstanceId": 98208,
+          "taskName": "SEND LABELS TRAZE CLIENT",
+          "clientName": "ECOPLANTS LLC.",
+          "taskUrlAddress": "/traze/sendClientLabels",
+          "tries": []
+        },
+        {
+          "awbId": 976104,
+          "taskTryStatus": "PENDING",
+          "clientId": 45435,
+          "taskId": 8,
+          "taskInstanceId": 98209,
+          "taskName": "SEND LABELS TRAZE CLIENT",
+          "clientName": "SOFIA FLOWERS USA LLC",
+          "taskUrlAddress": "/traze/sendClientLabels",
+          "tries": []
+        }
+      ],
+      "urgencia": "verde",
+      "hoursToEtd": 23.78
+    },
+    {
+      "id": 983225,
+      "awbId": "TERCEROS 1 FRESH STAR ",
+      "airlinePrefix": "985",
+      "shipDate": "2026-08-27",
+      "processedErrors": 0,
+      "rateType": "REGULAR",
+      "consignee": "SUNBURST FARMS INC.",
+      "detailConfirmationRequired": true,
+      "piecesConfirmedActivity": "ACTIVE",
+      "weightConfirmedActivity": "INACTIVE",
+      "awbProducedActivity": "INACTIVE",
+      "invoiceProducedActivity": "ACTIVE",
+      "documentsSendActivity": "INACTIVE",
+      "interfaceSend": "PENDING",
+      "pieces": 231,
+      "fullBoxes": 115.5,
+      "piecesReceived": 0,
+      "fullBoxesReceived": 0,
+      "etd": "2026-08-28T18:50:00",
+      "awbStatus": 5,
+      "awbNumber": "985-63970620",
+      "sede": "CO",
+      "taskInstances": [
+        {
+          "awbId": 983225,
+          "taskTryStatus": "PENDING",
+          "clientId": null,
+          "taskId": 5,
+          "taskInstanceId": 98180,
+          "taskName": "SEND BOOKINGS TRAZE",
+          "clientName": null,
+          "taskUrlAddress": "/traze/sendBookings",
+          "tries": []
+        },
+        {
+          "awbId": 983225,
+          "taskTryStatus": "PENDING",
+          "clientId": null,
+          "taskId": 6,
+          "taskInstanceId": 98181,
+          "taskName": "SEND LABELS TRAZE",
+          "clientName": null,
+          "taskUrlAddress": "/traze/sendLabels",
+          "tries": []
+        }
+      ],
+      "urgencia": "verde",
+      "hoursToEtd": 23.78
+    },
+    {
+      "id": 983226,
+      "awbId": "TERCEROS 2 FRESH STAR ",
+      "airlinePrefix": "985",
+      "shipDate": "2026-08-27",
+      "processedErrors": 0,
+      "rateType": "REGULAR",
+      "consignee": "SUNBURST FARMS INC.",
+      "detailConfirmationRequired": true,
+      "piecesConfirmedActivity": "ACTIVE",
+      "weightConfirmedActivity": "INACTIVE",
+      "awbProducedActivity": "INACTIVE",
+      "invoiceProducedActivity": "ACTIVE",
+      "documentsSendActivity": "INACTIVE",
+      "interfaceSend": "PENDING",
+      "pieces": 424,
+      "fullBoxes": 212,
+      "piecesReceived": 0,
+      "fullBoxesReceived": 0,
+      "etd": "2026-08-28T18:50:00",
+      "awbStatus": 5,
+      "awbNumber": "985-63970631",
+      "sede": "CO",
+      "taskInstances": [
+        {
+          "awbId": 983226,
+          "taskTryStatus": "PENDING",
+          "clientId": null,
+          "taskId": 5,
+          "taskInstanceId": 98182,
+          "taskName": "SEND BOOKINGS TRAZE",
+          "clientName": null,
+          "taskUrlAddress": "/traze/sendBookings",
+          "tries": []
+        },
+        {
+          "awbId": 983226,
+          "taskTryStatus": "PENDING",
+          "clientId": null,
+          "taskId": 6,
+          "taskInstanceId": 98183,
+          "taskName": "SEND LABELS TRAZE",
+          "clientName": null,
+          "taskUrlAddress": "/traze/sendLabels",
+          "tries": []
+        }
+      ],
+      "urgencia": "verde",
+      "hoursToEtd": 23.78
+    },
+    {
+      "id": 983227,
+      "awbId": "TERCEROS 3 FRESH STAR ",
+      "airlinePrefix": "985",
+      "shipDate": "2026-08-27",
+      "processedErrors": 0,
+      "rateType": "REGULAR",
+      "consignee": "SUNBURST FARMS INC.",
+      "detailConfirmationRequired": true,
+      "piecesConfirmedActivity": "ACTIVE",
+      "weightConfirmedActivity": "INACTIVE",
+      "awbProducedActivity": "INACTIVE",
+      "invoiceProducedActivity": "ACTIVE",
+      "documentsSendActivity": "INACTIVE",
+      "interfaceSend": "PENDING",
+      "pieces": 146,
+      "fullBoxes": 73,
+      "piecesReceived": 0,
+      "fullBoxesReceived": 0,
+      "etd": "2026-08-28T18:50:00",
+      "awbStatus": 5,
+      "awbNumber": "985-63970642",
+      "sede": "CO",
+      "taskInstances": [
+        {
+          "awbId": 983227,
+          "taskTryStatus": "PENDING",
+          "clientId": null,
+          "taskId": 5,
+          "taskInstanceId": 98184,
+          "taskName": "SEND BOOKINGS TRAZE",
+          "clientName": null,
+          "taskUrlAddress": "/traze/sendBookings",
+          "tries": []
+        },
+        {
+          "awbId": 983227,
+          "taskTryStatus": "PENDING",
+          "clientId": null,
+          "taskId": 6,
+          "taskInstanceId": 98185,
+          "taskName": "SEND LABELS TRAZE",
+          "clientName": null,
+          "taskUrlAddress": "/traze/sendLabels",
+          "tries": []
+        }
+      ],
+      "urgencia": "verde",
+      "hoursToEtd": 23.78
+    },
+    {
+      "id": 983228,
+      "awbId": "TERCEROS  MARIA FLOWER Y USAB",
+      "airlinePrefix": "985",
+      "shipDate": "2026-08-27",
+      "processedErrors": 0,
+      "rateType": "REGULAR",
+      "consignee": "SUNBURST FARMS INC.",
+      "detailConfirmationRequired": true,
+      "piecesConfirmedActivity": "ACTIVE",
+      "weightConfirmedActivity": "INACTIVE",
+      "awbProducedActivity": "INACTIVE",
+      "invoiceProducedActivity": "ACTIVE",
+      "documentsSendActivity": "INACTIVE",
+      "interfaceSend": "PENDING",
+      "pieces": 291,
+      "fullBoxes": 118.25,
+      "piecesReceived": 0,
+      "fullBoxesReceived": 0,
+      "etd": "2026-08-28T18:50:00",
+      "awbStatus": 5,
+      "awbNumber": "985-63970653",
+      "sede": "CO",
+      "taskInstances": [
+        {
+          "awbId": 983228,
+          "taskTryStatus": "PENDING",
+          "clientId": null,
+          "taskId": 5,
+          "taskInstanceId": 98186,
+          "taskName": "SEND BOOKINGS TRAZE",
+          "clientName": null,
+          "taskUrlAddress": "/traze/sendBookings",
+          "tries": []
+        },
+        {
+          "awbId": 983228,
+          "taskTryStatus": "PENDING",
+          "clientId": null,
+          "taskId": 6,
+          "taskInstanceId": 98187,
+          "taskName": "SEND LABELS TRAZE",
+          "clientName": null,
+          "taskUrlAddress": "/traze/sendLabels",
+          "tries": []
+        },
+        {
+          "awbId": 983228,
+          "taskTryStatus": "PENDING",
+          "clientId": 53046,
+          "taskId": 7,
+          "taskInstanceId": 98188,
+          "taskName": "SEND BOOKINGS TRAZE CLIENT",
+          "clientName": "MARIA FLOWERS INTERNATIONAL INC",
+          "taskUrlAddress": "/traze/sendClientBookings",
+          "tries": []
+        },
+        {
+          "awbId": 983228,
+          "taskTryStatus": "PENDING",
+          "clientId": 53046,
+          "taskId": 8,
+          "taskInstanceId": 98189,
+          "taskName": "SEND LABELS TRAZE CLIENT",
+          "clientName": "MARIA FLOWERS INTERNATIONAL INC",
+          "taskUrlAddress": "/traze/sendClientLabels",
+          "tries": []
+        }
+      ],
+      "urgencia": "verde",
+      "hoursToEtd": 23.78
+    },
+    {
+      "id": 983242,
+      "awbId": "TERCEROS CONTINENTAL",
+      "airlinePrefix": "985",
+      "shipDate": "2026-08-27",
+      "processedErrors": 0,
+      "rateType": "REGULAR",
+      "consignee": "SUNBURST FARMS INC.",
+      "detailConfirmationRequired": true,
+      "piecesConfirmedActivity": "ACTIVE",
+      "weightConfirmedActivity": "INACTIVE",
+      "awbProducedActivity": "INACTIVE",
+      "invoiceProducedActivity": "ACTIVE",
+      "documentsSendActivity": "INACTIVE",
+      "interfaceSend": "PENDING",
+      "pieces": 77,
+      "fullBoxes": 16.889999999999997,
+      "piecesReceived": 0,
+      "fullBoxesReceived": 0,
+      "etd": "2026-08-28T18:50:00",
+      "awbStatus": 5,
+      "awbNumber": "985-63970675",
+      "sede": "CO",
+      "taskInstances": [
+        {
+          "awbId": 983242,
+          "taskTryStatus": "PENDING",
+          "clientId": null,
+          "taskId": 5,
+          "taskInstanceId": 98190,
+          "taskName": "SEND BOOKINGS TRAZE",
+          "clientName": null,
+          "taskUrlAddress": "/traze/sendBookings",
+          "tries": []
+        },
+        {
+          "awbId": 983242,
+          "taskTryStatus": "PENDING",
+          "clientId": null,
+          "taskId": 6,
+          "taskInstanceId": 98191,
+          "taskName": "SEND LABELS TRAZE",
+          "clientName": null,
+          "taskUrlAddress": "/traze/sendLabels",
+          "tries": []
+        },
+        {
+          "awbId": 983242,
+          "taskTryStatus": "PENDING",
+          "clientId": 50,
+          "taskId": 7,
+          "taskInstanceId": 98192,
+          "taskName": "SEND BOOKINGS TRAZE CLIENT",
+          "clientName": "CONTINENTAL FARMS LLC",
+          "taskUrlAddress": "/traze/sendClientBookings",
+          "tries": []
+        },
+        {
+          "awbId": 983242,
+          "taskTryStatus": "PENDING",
+          "clientId": 50,
+          "taskId": 8,
+          "taskInstanceId": 98193,
+          "taskName": "SEND LABELS TRAZE CLIENT",
+          "clientName": "CONTINENTAL FARMS LLC",
+          "taskUrlAddress": "/traze/sendClientLabels",
+          "tries": []
+        }
+      ],
+      "urgencia": "verde",
+      "hoursToEtd": 23.78
+    },
+    {
+      "id": 983252,
+      "awbId": "TERCEROS GALLERIA 1 TODO",
+      "airlinePrefix": "985",
+      "shipDate": "2026-08-27",
+      "processedErrors": 0,
+      "rateType": "REGULAR",
+      "consignee": "SUNBURST FARMS INC.",
+      "detailConfirmationRequired": true,
+      "piecesConfirmedActivity": "ACTIVE",
+      "weightConfirmedActivity": "INACTIVE",
+      "awbProducedActivity": "INACTIVE",
+      "invoiceProducedActivity": "ACTIVE",
+      "documentsSendActivity": "INACTIVE",
+      "interfaceSend": "PENDING",
+      "pieces": 1421,
+      "fullBoxes": 351.12,
+      "piecesReceived": 0,
+      "fullBoxesReceived": 0,
+      "etd": "2026-08-28T18:50:00",
+      "awbStatus": 5,
+      "awbNumber": "985-63970686",
+      "sede": "CO",
+      "taskInstances": [
+        {
+          "awbId": 983252,
+          "taskTryStatus": "PENDING",
+          "clientId": null,
+          "taskId": 5,
+          "taskInstanceId": 98194,
+          "taskName": "SEND BOOKINGS TRAZE",
+          "clientName": null,
+          "taskUrlAddress": "/traze/sendBookings",
+          "tries": []
+        },
+        {
+          "awbId": 983252,
+          "taskTryStatus": "PENDING",
+          "clientId": null,
+          "taskId": 6,
+          "taskInstanceId": 98195,
+          "taskName": "SEND LABELS TRAZE",
+          "clientName": null,
+          "taskUrlAddress": "/traze/sendLabels",
+          "tries": []
+        }
+      ],
+      "urgencia": "verde",
+      "hoursToEtd": 23.78
+    },
+    {
+      "id": 983294,
+      "awbId": "TERCEROS 1",
+      "airlinePrefix": "985",
+      "shipDate": "2026-08-27",
+      "processedErrors": 0,
+      "rateType": "REGULAR",
+      "consignee": "SUNBURST FARMS INC.",
+      "detailConfirmationRequired": true,
+      "piecesConfirmedActivity": "ACTIVE",
+      "weightConfirmedActivity": "INACTIVE",
+      "awbProducedActivity": "INACTIVE",
+      "invoiceProducedActivity": "ACTIVE",
+      "documentsSendActivity": "INACTIVE",
+      "interfaceSend": "PENDING",
+      "pieces": 397,
+      "fullBoxes": 145.03,
+      "piecesReceived": 0,
+      "fullBoxesReceived": 0,
+      "etd": "2026-08-28T18:50:00",
+      "awbStatus": 5,
+      "awbNumber": "985-63970690",
+      "sede": "CO",
+      "taskInstances": [
+        {
+          "awbId": 983294,
+          "taskTryStatus": "PENDING",
+          "clientId": null,
+          "taskId": 5,
+          "taskInstanceId": 98196,
+          "taskName": "SEND BOOKINGS TRAZE",
+          "clientName": null,
+          "taskUrlAddress": "/traze/sendBookings",
+          "tries": []
+        },
+        {
+          "awbId": 983294,
+          "taskTryStatus": "PENDING",
+          "clientId": null,
+          "taskId": 6,
+          "taskInstanceId": 98197,
+          "taskName": "SEND LABELS TRAZE",
+          "clientName": null,
+          "taskUrlAddress": "/traze/sendLabels",
+          "tries": []
+        }
+      ],
+      "urgencia": "verde",
+      "hoursToEtd": 23.78
+    },
+    {
+      "id": 983229,
+      "awbId": "TERCEROS san juan -luisiana",
+      "airlinePrefix": "985",
+      "shipDate": "2026-08-27",
+      "processedErrors": 0,
+      "rateType": "REGULAR",
+      "consignee": "SUNBURST FARMS INC.",
+      "detailConfirmationRequired": true,
+      "piecesConfirmedActivity": "ACTIVE",
+      "weightConfirmedActivity": "INACTIVE",
+      "awbProducedActivity": "INACTIVE",
+      "invoiceProducedActivity": "ACTIVE",
+      "documentsSendActivity": "INACTIVE",
+      "interfaceSend": "PENDING",
+      "pieces": 663,
+      "fullBoxes": 348.5,
+      "piecesReceived": 0,
+      "fullBoxesReceived": 0,
+      "etd": "2026-08-28T18:50:00",
+      "awbStatus": 5,
+      "awbNumber": "985-63970664",
+      "sede": "CO",
+      "taskInstances": [],
+      "urgencia": "verde",
+      "hoursToEtd": 23.78
     },
     {
       "id": 983135,
@@ -4088,7 +4625,7 @@
         }
       ],
       "urgencia": "verde",
-      "hoursToEtd": 33.1
+      "hoursToEtd": 32.85
     }
   ],
   "erroresEnriquecimiento": []
