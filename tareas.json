@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-15T19:33:56.268Z",
+  "generated_at": "2026-09-15T21:34:00.638Z",
   "diaria": [
     {
       "id": "b77X5rq1xEKx2h8GiMc5YZgAIKC5",
@@ -598,6 +598,16 @@
     }
   ],
   "sin_deposito": [
+    {
+      "id": "1G0ieT9nT0K_uPQ6P1borZgAOpHM",
+      "titulo": "Agregar auditoria tarifa spot",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "sin_deposito"
+    },
     {
       "id": "Xv2sCF1shk2H_CmE3FsoeJgAFDjl",
       "titulo": "Agregar la columna de bodega en reporte  de invoicing",
