@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-16T13:34:05.336Z",
+  "generated_at": "2026-09-16T15:34:01.246Z",
   "diaria": [
     {
       "id": "b77X5rq1xEKx2h8GiMc5YZgAIKC5",
@@ -94,16 +94,6 @@
     {
       "id": "E3ns_RG6XEO6VrdkrDZjiJgANS-u",
       "titulo": "Etiqueta de USA BQ",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "diaria"
-    },
-    {
-      "id": "XT3hKm8CuUCacFs-xZq-a5gAK_re",
-      "titulo": "Enviar documento con adjuntos.",
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
@@ -509,16 +499,6 @@
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "semanal"
-    },
-    {
-      "id": "4047u9rF8kWLVp0ihJl8qJgACMPQ",
-      "titulo": "Test Ticket generar etiquetas bodega a nivel de master - acciones masivas",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
       "fecha_limite": "",
       "prioridad": 5,
       "deposito": "semanal"
