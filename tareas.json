@@ -1,6 +1,46 @@
 {
-  "generated_at": "2026-09-18T21:34:03.989Z",
+  "generated_at": "2026-09-18T23:34:12.977Z",
   "diaria": [
+    {
+      "id": "uGH1yLrYKEOTaDEU6PbfYZgAOHPt",
+      "titulo": "DAEs reservas con PO",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "diaria"
+    },
+    {
+      "id": "CBVvtqaIAUuvpJut_Rs8iJgAK5RF",
+      "titulo": "Documentar servicio DVF",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Moreno, Sebastian / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "diaria"
+    },
+    {
+      "id": "2zucODbqpkiMJV94Tg025pgAKd2q",
+      "titulo": "Testing de movimientos bodega RTS y UNS",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Moreno, Sebastian / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "diaria"
+    },
+    {
+      "id": "h6B_VazUmEu2yk42byIwSZgACnrT",
+      "titulo": "Documentar ingresos con etiquetas reserva",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Moreno, Sebastian / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "diaria"
+    },
     {
       "id": "KanGCHhuk0WXSouVNHfsVpgAEtdE",
       "titulo": "Cerrar mejoras IA con Noe",
@@ -265,7 +305,7 @@
     },
     {
       "id": "FD6dYdIipEG5pklawMCpG5gAA5_U",
-      "titulo": "Prueba trazon FWB",
+      "titulo": "Prueba traxon FWB",
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Moreno, Sebastian / Kuehne + Nagel / Bog ZA-OM",
@@ -411,16 +451,6 @@
       "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
       "fecha_limite": "",
       "prioridad": 5,
-      "deposito": "semanal"
-    },
-    {
-      "id": "OzU0TLJT8kOK3D9PEU_A_JgAFMKB",
-      "titulo": "Asignar Ajuste AWB dashboard: tipo de caja - porcentaje de cumplimiento. observaciones en el ingreso",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Moreno, Sebastian / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 3,
       "deposito": "semanal"
     },
     {
