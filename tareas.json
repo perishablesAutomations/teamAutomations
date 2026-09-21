@@ -1,6 +1,16 @@
 {
-  "generated_at": "2026-09-21T13:34:17.749Z",
+  "generated_at": "2026-09-21T15:34:12.325Z",
   "diaria": [
+    {
+      "id": "4XCp4TpEe0CfRyoTYf7i75gANH2T",
+      "titulo": "Extracción datos factura.",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Moreno, Sebastian / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "diaria"
+    },
     {
       "id": "uGH1yLrYKEOTaDEU6PbfYZgAOHPt",
       "titulo": "DAEs reservas con PO",
@@ -273,6 +283,16 @@
     }
   ],
   "semanal": [
+    {
+      "id": "PdVzB8ilkUqO0KPl3rH_95gAKR5X",
+      "titulo": "Traer datos de factura en CDM",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Moreno, Sebastian / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "semanal"
+    },
     {
       "id": "Od7kpqQRlkGbagZWfBECc5gAIhN-",
       "titulo": "Cliente final en dimensiones",
