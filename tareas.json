@@ -1,42 +1,12 @@
 {
-  "generated_at": "2026-09-22T17:34:17.039Z",
+  "generated_at": "2026-09-22T19:34:25.250Z",
   "diaria": [
-    {
-      "id": "4XCp4TpEe0CfRyoTYf7i75gANH2T",
-      "titulo": "Extracción datos factura.",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Moreno, Sebastian / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "diaria"
-    },
     {
       "id": "uGH1yLrYKEOTaDEU6PbfYZgAOHPt",
       "titulo": "DAEs reservas con PO",
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "diaria"
-    },
-    {
-      "id": "CBVvtqaIAUuvpJut_Rs8iJgAK5RF",
-      "titulo": "Documentar servicio DVF",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Moreno, Sebastian / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "diaria"
-    },
-    {
-      "id": "h6B_VazUmEu2yk42byIwSZgACnrT",
-      "titulo": "Documentar ingresos con etiquetas reserva",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Moreno, Sebastian / Kuehne + Nagel / Bog ZA-OM",
       "fecha_limite": "",
       "prioridad": 5,
       "deposito": "diaria"
