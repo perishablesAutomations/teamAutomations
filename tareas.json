@@ -1,22 +1,32 @@
 {
-  "generated_at": "2026-09-23T19:34:18.092Z",
+  "generated_at": "2026-09-23T21:34:17.854Z",
   "diaria": [
     {
-      "id": "Wud2x7tvM0Geivf478inTZgANmId",
-      "titulo": "Revisar la fecha que crea el sistema cuando de FDP se crea la reserva o se asigna a la guia.",
+      "id": "IQYqTsMIk0aO9tMkelkRCZgAKf8K",
+      "titulo": "Instrucciones bodega",
       "descripcion": "",
       "etiqueta": "",
-      "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
+      "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
       "fecha_limite": "",
       "prioridad": 5,
       "deposito": "diaria"
     },
     {
-      "id": "uGH1yLrYKEOTaDEU6PbfYZgAOHPt",
-      "titulo": "DAEs reservas con PO",
+      "id": "LOILjdr52kmq26V-LN9h9pgAOTsB",
+      "titulo": "Revisar DAEs",
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "diaria"
+    },
+    {
+      "id": "zAhZS4NkK02us3vYrrV9S5gACSff",
+      "titulo": "implementación PO SUNBURST BDC",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
       "fecha_limite": "",
       "prioridad": 5,
       "deposito": "diaria"
@@ -62,36 +72,6 @@
       "deposito": "diaria"
     },
     {
-      "id": "4PpJpwaBSUiVIy-9YjE-eZgAD1Ao",
-      "titulo": "Etiqueta ubicación",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "diaria"
-    },
-    {
-      "id": "ASRCyd0JL0aoLX_DRjFwKJgAPuTq",
-      "titulo": "Columna SR cliente final",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "diaria"
-    },
-    {
-      "id": "Xy8F8KZ61UWd2XSiGLdVRpgAP4Nu",
-      "titulo": "TRM CDM",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "diaria"
-    },
-    {
       "id": "F-lVvCQhSUGkQQars4dw35gALk2f",
       "titulo": "packing charge para CR",
       "descripcion": "",
@@ -132,16 +112,6 @@
       "deposito": "diaria"
     },
     {
-      "id": "oJARsnI9HU-p_C6C5vhqW5gAH_eF",
-      "titulo": "Revisar que en el pop up de ingreso de bodega de finalizar turno no esten los que se encuentran en cola vigentes por que estan borrando los turnos cuando ingresan a esa pantalla",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "diaria"
-    },
-    {
       "id": "76FkiX9aSk6T20GVJD6yWpgAOo5t",
       "titulo": "Permiso de bodega para hacer movimientos parciales",
       "descripcion": "",
@@ -172,26 +142,6 @@
       "deposito": "diaria"
     },
     {
-      "id": "20gOsebB80-1c12Xbue5Y5gAHMcG",
-      "titulo": "Asignar agrupaciones a exportador",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "diaria"
-    },
-    {
-      "id": "E3ns_RG6XEO6VrdkrDZjiJgANS-u",
-      "titulo": "Etiqueta de USA BQ",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "diaria"
-    },
-    {
       "id": "FD2qLQZ5oEmuOgGCQbjGTpgAFP2C",
       "titulo": "Cambio total a 2.0",
       "descripcion": "",
@@ -212,23 +162,23 @@
       "deposito": "diaria"
     },
     {
-      "id": "FSMSvf46UEWu_4gOHcenYJgADetR",
-      "titulo": "Implementación facturas con IA",
+      "id": "Xv2sCF1shk2H_CmE3FsoeJgAFDjl",
+      "titulo": "Agregar la columna de bodega en reporte  de invoicing",
       "descripcion": "",
       "etiqueta": "",
-      "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
+      "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
       "fecha_limite": "",
       "prioridad": 5,
       "deposito": "diaria"
     },
     {
-      "id": "ysO5hq0CFEG4iMV7Wae0zpgADPwD",
-      "titulo": "Back end capacidad bodega.",
+      "id": "O2nK7WQj00yEMLfYwSBM7ZgAGeX_",
+      "titulo": "Agregar en reportes filtro de zona - hablar don Deybe requerimiento Kate",
       "descripcion": "",
       "etiqueta": "",
-      "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
+      "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
       "fecha_limite": "",
-      "prioridad": 3,
+      "prioridad": 5,
       "deposito": "diaria"
     },
     {
@@ -260,19 +210,19 @@
       "fecha_limite": "",
       "prioridad": 5,
       "deposito": "diaria"
-    },
+    }
+  ],
+  "semanal": [
     {
-      "id": "OFzuv_jv0U-tzytJ-FLMNpgANOkE",
-      "titulo": "Testing certificado de origen",
+      "id": "Wud2x7tvM0Geivf478inTZgANmId",
+      "titulo": "Revisar la fecha que crea el sistema cuando de FDP se crea la reserva o se asigna a la guia.",
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
       "fecha_limite": "",
       "prioridad": 5,
-      "deposito": "diaria"
-    }
-  ],
-  "semanal": [
+      "deposito": "semanal"
+    },
     {
       "id": "PdVzB8ilkUqO0KPl3rH_95gAKR5X",
       "titulo": "Traer datos de factura en CDM",
@@ -284,8 +234,48 @@
       "deposito": "semanal"
     },
     {
+      "id": "uGH1yLrYKEOTaDEU6PbfYZgAOHPt",
+      "titulo": "DAEs reservas con PO",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "semanal"
+    },
+    {
+      "id": "4PpJpwaBSUiVIy-9YjE-eZgAD1Ao",
+      "titulo": "Etiqueta ubicación",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "semanal"
+    },
+    {
       "id": "Od7kpqQRlkGbagZWfBECc5gAIhN-",
       "titulo": "Cliente final en dimensiones",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "semanal"
+    },
+    {
+      "id": "ASRCyd0JL0aoLX_DRjFwKJgAPuTq",
+      "titulo": "Columna SR cliente final",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "semanal"
+    },
+    {
+      "id": "Xy8F8KZ61UWd2XSiGLdVRpgAP4Nu",
+      "titulo": "TRM CDM",
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
@@ -314,16 +304,6 @@
       "deposito": "semanal"
     },
     {
-      "id": "Xv2sCF1shk2H_CmE3FsoeJgAFDjl",
-      "titulo": "Agregar la columna de bodega en reporte  de invoicing",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "semanal"
-    },
-    {
       "id": "pfKBpM2cVkqYCBPk3q5a55gAL0fI",
       "titulo": "Lecturas de devolución",
       "descripcion": "",
@@ -339,16 +319,6 @@
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "semanal"
-    },
-    {
-      "id": "O2nK7WQj00yEMLfYwSBM7ZgAGeX_",
-      "titulo": "Agregar en reportes filtro de zona - hablar don Deybe requerimiento Kate",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
       "fecha_limite": "",
       "prioridad": 5,
       "deposito": "semanal"
@@ -469,6 +439,16 @@
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Moreno, Sebastian / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "semanal"
+    },
+    {
+      "id": "OFzuv_jv0U-tzytJ-FLMNpgANOkE",
+      "titulo": "Testing certificado de origen",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
       "fecha_limite": "",
       "prioridad": 5,
       "deposito": "semanal"
