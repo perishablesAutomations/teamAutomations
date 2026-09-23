@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-23T13:34:18.688Z",
+  "generated_at": "2026-09-23T15:34:23.512Z",
   "diaria": [
     {
       "id": "uGH1yLrYKEOTaDEU6PbfYZgAOHPt",
@@ -119,6 +119,16 @@
       "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
       "fecha_limite": "",
       "prioridad": 3,
+      "deposito": "diaria"
+    },
+    {
+      "id": "oJARsnI9HU-p_C6C5vhqW5gAH_eF",
+      "titulo": "Revisar que en el pop up de ingreso de bodega de finalizar turno no esten los que se encuentran en cola vigentes por que estan borrando los turnos cuando ingresan a esa pantalla",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 5,
       "deposito": "diaria"
     },
     {
@@ -269,16 +279,6 @@
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "semanal"
-    },
-    {
-      "id": "oJARsnI9HU-p_C6C5vhqW5gAH_eF",
-      "titulo": "Revisar que en el pop up de ingreso de bodega de finalizar turno no esten los que se encuentran en cola vigentes por que estan borrando los turnos cuando ingresan a esa pantalla",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
       "fecha_limite": "",
       "prioridad": 5,
       "deposito": "semanal"
