@@ -1,6 +1,46 @@
 {
-  "generated_at": "2026-09-25T19:34:23.818Z",
+  "generated_at": "2026-09-25T21:34:33.474Z",
   "diaria": [
+    {
+      "id": "T-Rao58knkCCcGSRDcmiBJgADyBI",
+      "titulo": "Confirmación piezas bodega CDM",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "diaria"
+    },
+    {
+      "id": "72ZMQnn2fUq4DubpDIUePJgAJiUb",
+      "titulo": "Reunión de dimensiones con FM",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "diaria"
+    },
+    {
+      "id": "Yihyj091DUyyo9XtGti6RJgAHGaW",
+      "titulo": "Ajustar nulos con transmitir a Traze",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "diaria"
+    },
+    {
+      "id": "8fzrYjjQwUeybcftJvUwT5gADELI",
+      "titulo": "Ajuste peso wh outbound - inbound",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "diaria"
+    },
     {
       "id": "7zK9WNdMx0GNUTsbL6EnEJgAA6r8",
       "titulo": "correo freshchain job description y kpi",
@@ -13,7 +53,7 @@
     },
     {
       "id": "IQYqTsMIk0aO9tMkelkRCZgAKf8K",
-      "titulo": "Instrucciones bodega",
+      "titulo": "Instrucciones bodega control tower",
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
@@ -82,8 +122,18 @@
       "deposito": "diaria"
     },
     {
-      "id": "F-lVvCQhSUGkQQars4dw35gALk2f",
-      "titulo": "packing charge para CR",
+      "id": "4PpJpwaBSUiVIy-9YjE-eZgAD1Ao",
+      "titulo": "Etiqueta ubicación",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "diaria"
+    },
+    {
+      "id": "Od7kpqQRlkGbagZWfBECc5gAIhN-",
+      "titulo": "Cliente final en dimensiones",
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
@@ -92,8 +142,8 @@
       "deposito": "diaria"
     },
     {
-      "id": "fcoug3OWmUWN2t_Wlg53IJgAPaUf",
-      "titulo": "Envio docs AWBs guias directas.",
+      "id": "Xy8F8KZ61UWd2XSiGLdVRpgAP4Nu",
+      "titulo": "TRM CDM",
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
@@ -182,16 +232,6 @@
       "deposito": "diaria"
     },
     {
-      "id": "O2nK7WQj00yEMLfYwSBM7ZgAGeX_",
-      "titulo": "Agregar en reportes filtro de zona - hablar don Deybe requerimiento Kate",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "diaria"
-    },
-    {
       "id": "n7xwfPU4vEG-VxHffV4_j5gAMAGv",
       "titulo": "Testing transmitir a traze caso con ceros.",
       "descripcion": "",
@@ -224,8 +264,28 @@
   ],
   "semanal": [
     {
-      "id": "8fzrYjjQwUeybcftJvUwT5gADELI",
-      "titulo": "Ajuste peso wh outbound - inbound",
+      "id": "m47O7vjQPkq1IK34ChMXW5gACXKy",
+      "titulo": "Agregar numero factura en CDM paso 1",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "semanal"
+    },
+    {
+      "id": "ByOaEkewaki7zxtH7u-6oZgAFs2l",
+      "titulo": "Mejora endosos - revisar legacy",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "semanal"
+    },
+    {
+      "id": "l_BBsOhyE02-SHNvOnROa5gAH16n",
+      "titulo": "contactos EC",
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
@@ -264,41 +324,11 @@
       "deposito": "semanal"
     },
     {
-      "id": "4PpJpwaBSUiVIy-9YjE-eZgAD1Ao",
-      "titulo": "Etiqueta ubicación",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "semanal"
-    },
-    {
-      "id": "Od7kpqQRlkGbagZWfBECc5gAIhN-",
-      "titulo": "Cliente final en dimensiones",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "semanal"
-    },
-    {
       "id": "ASRCyd0JL0aoLX_DRjFwKJgAPuTq",
       "titulo": "Columna SR cliente final",
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "semanal"
-    },
-    {
-      "id": "Xy8F8KZ61UWd2XSiGLdVRpgAP4Nu",
-      "titulo": "TRM CDM",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
       "fecha_limite": "",
       "prioridad": 5,
       "deposito": "semanal"
