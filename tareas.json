@@ -1,6 +1,16 @@
 {
-  "generated_at": "2026-09-25T21:34:33.474Z",
+  "generated_at": "2026-09-25T23:34:38.706Z",
   "diaria": [
+    {
+      "id": "YT7M9RxgdUWSfzGmKEO-MpgAJcxr",
+      "titulo": "Capacitaciones factura IA",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "diaria"
+    },
     {
       "id": "T-Rao58knkCCcGSRDcmiBJgADyBI",
       "titulo": "Confirmación piezas bodega CDM",
@@ -113,7 +123,7 @@
     },
     {
       "id": "xvbyqo6CvESOAuYPHGenKJgAGg8t",
-      "titulo": "Creación de ubicaciones",
+      "titulo": "Testing Creación de ubicaciones",
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
@@ -162,18 +172,8 @@
       "deposito": "diaria"
     },
     {
-      "id": "b77X5rq1xEKx2h8GiMc5YZgAIKC5",
-      "titulo": "Revisar caso de dimensiones",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 3,
-      "deposito": "diaria"
-    },
-    {
       "id": "76FkiX9aSk6T20GVJD6yWpgAOo5t",
-      "titulo": "Permiso de bodega para hacer movimientos parciales",
+      "titulo": "Testing permiso de bodega para hacer movimientos parciales",
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
