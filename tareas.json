@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-25T17:34:23.087Z",
+  "generated_at": "2026-09-25T19:34:23.818Z",
   "diaria": [
     {
       "id": "7zK9WNdMx0GNUTsbL6EnEJgAA6r8",
@@ -223,6 +223,16 @@
     }
   ],
   "semanal": [
+    {
+      "id": "8fzrYjjQwUeybcftJvUwT5gADELI",
+      "titulo": "Ajuste peso wh outbound - inbound",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "semanal"
+    },
     {
       "id": "Wud2x7tvM0Geivf478inTZgANmId",
       "titulo": "Revisar la fecha que crea el sistema cuando de FDP se crea la reserva o se asigna a la guia.",
