@@ -1,6 +1,26 @@
 {
-  "generated_at": "2026-09-29T19:34:40.867Z",
+  "generated_at": "2026-09-29T21:34:36.162Z",
   "diaria": [
+    {
+      "id": "fgipuM5eT0CxBjqg6FQyZZgAAhIb",
+      "titulo": "Visibilidad ingresos reservas mias HAWB",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "diaria"
+    },
+    {
+      "id": "m4oaLxQRwE6-8VtgVjPS1JgAK4st",
+      "titulo": "Mirar o ajustes tracking con Edilson",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "diaria"
+    },
     {
       "id": "YT7M9RxgdUWSfzGmKEO-MpgAJcxr",
       "titulo": "Capacitaciones factura IA",
@@ -12,28 +32,8 @@
       "deposito": "diaria"
     },
     {
-      "id": "T-Rao58knkCCcGSRDcmiBJgADyBI",
-      "titulo": "Confirmación piezas bodega CDM",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "diaria"
-    },
-    {
       "id": "72ZMQnn2fUq4DubpDIUePJgAJiUb",
       "titulo": "Reunión de dimensiones con FM",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "diaria"
-    },
-    {
-      "id": "Yihyj091DUyyo9XtGti6RJgAHGaW",
-      "titulo": "Ajustar nulos con transmitir a Traze",
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
@@ -92,6 +92,16 @@
       "deposito": "diaria"
     },
     {
+      "id": "uGH1yLrYKEOTaDEU6PbfYZgAOHPt",
+      "titulo": "DAEs reservas con PO",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "diaria"
+    },
+    {
       "id": "KanGCHhuk0WXSouVNHfsVpgAEtdE",
       "titulo": "Cerrar mejoras IA con Noe",
       "descripcion": "",
@@ -132,16 +142,6 @@
       "deposito": "diaria"
     },
     {
-      "id": "4PpJpwaBSUiVIy-9YjE-eZgAD1Ao",
-      "titulo": "Etiqueta ubicación",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "diaria"
-    },
-    {
       "id": "Od7kpqQRlkGbagZWfBECc5gAIhN-",
       "titulo": "Cliente final en dimensiones",
       "descripcion": "",
@@ -152,11 +152,11 @@
       "deposito": "diaria"
     },
     {
-      "id": "Xy8F8KZ61UWd2XSiGLdVRpgAP4Nu",
-      "titulo": "TRM CDM",
+      "id": "ASRCyd0JL0aoLX_DRjFwKJgAPuTq",
+      "titulo": "Columna SR cliente final reivsar nombre agrupación",
       "descripcion": "",
       "etiqueta": "",
-      "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
+      "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
       "fecha_limite": "",
       "prioridad": 5,
       "deposito": "diaria"
@@ -222,16 +222,6 @@
       "deposito": "diaria"
     },
     {
-      "id": "Xv2sCF1shk2H_CmE3FsoeJgAFDjl",
-      "titulo": "Agregar la columna de bodega en reporte  de invoicing",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "diaria"
-    },
-    {
       "id": "n7xwfPU4vEG-VxHffV4_j5gAMAGv",
       "titulo": "Testing transmitir a traze caso con ceros.",
       "descripcion": "",
@@ -264,6 +254,16 @@
   ],
   "semanal": [
     {
+      "id": "8vPE_oKy-0yp0yvX61FgMpgALW-l",
+      "titulo": "Cargar HAWBs con envío docs",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "semanal"
+    },
+    {
       "id": "m47O7vjQPkq1IK34ChMXW5gACXKy",
       "titulo": "Agregar numero factura en CDM paso 1",
       "descripcion": "",
@@ -284,16 +284,6 @@
       "deposito": "semanal"
     },
     {
-      "id": "l_BBsOhyE02-SHNvOnROa5gAH16n",
-      "titulo": "contactos EC",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "semanal"
-    },
-    {
       "id": "Wud2x7tvM0Geivf478inTZgANmId",
       "titulo": "Revisar la fecha que crea el sistema cuando de FDP se crea la reserva o se asigna a la guia.",
       "descripcion": "",
@@ -309,26 +299,6 @@
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Moreno, Sebastian / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "semanal"
-    },
-    {
-      "id": "uGH1yLrYKEOTaDEU6PbfYZgAOHPt",
-      "titulo": "DAEs reservas con PO",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "semanal"
-    },
-    {
-      "id": "ASRCyd0JL0aoLX_DRjFwKJgAPuTq",
-      "titulo": "Columna SR cliente final",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
       "fecha_limite": "",
       "prioridad": 5,
       "deposito": "semanal"
