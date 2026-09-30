@@ -1,6 +1,46 @@
 {
-  "generated_at": "2026-09-30T21:34:41.628Z",
+  "generated_at": "2026-09-30T23:34:46.772Z",
   "diaria": [
+    {
+      "id": "7EudzBt9e0qyDC6suraUA5gAEXFT",
+      "titulo": "Causas facturas",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Moreno, Sebastian / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "diaria"
+    },
+    {
+      "id": "7jyzb-gWMUu3kmmC3O8-cZgAEDQp",
+      "titulo": "Asignar ticket dimensiones",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "diaria"
+    },
+    {
+      "id": "Zqfcp-ZeUU6TzMqH-KIZvZgAAHay",
+      "titulo": "Lista de clientes menos USA",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "diaria"
+    },
+    {
+      "id": "ifC-82goW0ubqYbsFx-bTJgAJ6lY",
+      "titulo": "Pasar a prod cambio DAEs",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "diaria"
+    },
     {
       "id": "OSbrnPeepUWQp6gEVJKVf5gACoLr",
       "titulo": "Etiquetas Fleurametz - camiones",
@@ -17,16 +57,6 @@
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Moreno, Sebastian / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "diaria"
-    },
-    {
-      "id": "bi3dU0hc-kee2n2BnCf2S5gAMoFc",
-      "titulo": "Documentar pantalla de capacidad.",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
       "fecha_limite": "",
       "prioridad": 5,
       "deposito": "diaria"
@@ -62,11 +92,21 @@
       "deposito": "diaria"
     },
     {
-      "id": "6Cd9AAFGKU-6tl5TNTeDepgAFIHJ",
-      "titulo": "tolerncia capacidad ubicación",
+      "id": "6PuXtEU1_USSuzOxg1lKvpgAP-CW",
+      "titulo": "ejecutar new para admin",
       "descripcion": "",
       "etiqueta": "",
-      "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
+      "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "diaria"
+    },
+    {
+      "id": "A3P5Uf_gvE2UfFiK4-vvE5gAPvYF",
+      "titulo": "Inhabilitar Clientes finales sin grupo de envío en envio docs clientes finales mirar con Deybe",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
       "fecha_limite": "",
       "prioridad": 5,
       "deposito": "diaria"
@@ -82,6 +122,26 @@
       "deposito": "diaria"
     },
     {
+      "id": "A51VQj6MdUywyXDsBXWq0JgAEo5E",
+      "titulo": "Endosos masivos EC y seleccionar docs",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "diaria"
+    },
+    {
+      "id": "KvjoQlu3yUGVyLgbukjxFZgAORbu",
+      "titulo": "Reporte de novedad lectura y otras mejora lectura",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "diaria"
+    },
+    {
       "id": "g9AR5glJK02nCxzAMgCTtZgAGL12",
       "titulo": "Incluir No factura CMD Paso1 y en proformas",
       "descripcion": "",
@@ -92,8 +152,18 @@
       "deposito": "diaria"
     },
     {
+      "id": "8vPE_oKy-0yp0yvX61FgMpgALW-l",
+      "titulo": "Cargar HAWBs con envío docs",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "diaria"
+    },
+    {
       "id": "m4oaLxQRwE6-8VtgVjPS1JgAK4st",
-      "titulo": "Mirar o ajustes tracking con Edilson",
+      "titulo": "Aclarar ticket tracking con Sebas",
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
@@ -102,23 +172,23 @@
       "deposito": "diaria"
     },
     {
-      "id": "YT7M9RxgdUWSfzGmKEO-MpgAJcxr",
-      "titulo": "Capacitaciones factura IA",
+      "id": "m47O7vjQPkq1IK34ChMXW5gACXKy",
+      "titulo": "Agregar numero factura en CDM paso 1",
       "descripcion": "",
       "etiqueta": "",
-      "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
+      "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
       "fecha_limite": "",
       "prioridad": 5,
       "deposito": "diaria"
     },
     {
-      "id": "72ZMQnn2fUq4DubpDIUePJgAJiUb",
-      "titulo": "Reunión de dimensiones con FM",
+      "id": "ByOaEkewaki7zxtH7u-6oZgAFs2l",
+      "titulo": "Mejora endosos - revisar legacy",
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
       "fecha_limite": "",
-      "prioridad": 1,
+      "prioridad": 5,
       "deposito": "diaria"
     },
     {
@@ -137,26 +207,6 @@
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "diaria"
-    },
-    {
-      "id": "IQYqTsMIk0aO9tMkelkRCZgAKf8K",
-      "titulo": "Instrucciones bodega control tower",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "diaria"
-    },
-    {
-      "id": "LOILjdr52kmq26V-LN9h9pgAOTsB",
-      "titulo": "Revisar DAEs",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
       "fecha_limite": "",
       "prioridad": 5,
       "deposito": "diaria"
@@ -182,16 +232,6 @@
       "deposito": "diaria"
     },
     {
-      "id": "Od7kpqQRlkGbagZWfBECc5gAIhN-",
-      "titulo": "Cliente final en dimensiones",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "diaria"
-    },
-    {
       "id": "ASRCyd0JL0aoLX_DRjFwKJgAPuTq",
       "titulo": "Columna SR cliente final reivsar nombre agrupación",
       "descripcion": "",
@@ -212,56 +252,6 @@
       "deposito": "diaria"
     },
     {
-      "id": "QsQPgznsyUiZKXbCJwuVTJgAKAa0",
-      "titulo": "Reprogramar parcialmente piezas de bodega a otra master",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "diaria"
-    },
-    {
-      "id": "vVLAmbV5g0qbO-5Ucf7IbJgAJIsY",
-      "titulo": "Testing KPI ocupación de camión",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 3,
-      "deposito": "diaria"
-    },
-    {
-      "id": "FD2qLQZ5oEmuOgGCQbjGTpgAFP2C",
-      "titulo": "Cambio total a 2.0",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 1,
-      "deposito": "diaria"
-    },
-    {
-      "id": "01PgLCePpE6HdZlZACYSzZgAEaBB",
-      "titulo": "Automatización facturas IA",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 3,
-      "deposito": "diaria"
-    },
-    {
-      "id": "n7xwfPU4vEG-VxHffV4_j5gAMAGv",
-      "titulo": "Testing transmitir a traze caso con ceros.",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "diaria"
-    },
-    {
       "id": "s2Y-XNQ4F0yschjacQ9UNZgACDEP",
       "titulo": "Reunión para revisar avances migración",
       "descripcion": "",
@@ -269,6 +259,16 @@
       "asignado": "Moreno, Sebastian / Kuehne + Nagel / Bog ZA-OM",
       "fecha_limite": "",
       "prioridad": 5,
+      "deposito": "diaria"
+    },
+    {
+      "id": "5jI9ZO7d0Emq-Cx2T3SkzpgAOM69",
+      "titulo": "Asegurar funcionalidad confirmar piezas bodega CDM",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 3,
       "deposito": "diaria"
     },
     {
@@ -280,15 +280,25 @@
       "fecha_limite": "",
       "prioridad": 5,
       "deposito": "diaria"
+    },
+    {
+      "id": "2Njg4TNpCUCUHjK5hh4udpgAHzXM",
+      "titulo": "Caso Facturas múltiples",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Moreno, Sebastian / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "diaria"
     }
   ],
   "semanal": [
     {
-      "id": "6PuXtEU1_USSuzOxg1lKvpgAP-CW",
-      "titulo": "ejecutar new para admin",
+      "id": "6Cd9AAFGKU-6tl5TNTeDepgAFIHJ",
+      "titulo": "Tolerancia capacidad ubicación",
       "descripcion": "",
       "etiqueta": "",
-      "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
+      "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
       "fecha_limite": "",
       "prioridad": 5,
       "deposito": "semanal"
@@ -314,68 +324,8 @@
       "deposito": "semanal"
     },
     {
-      "id": "A3P5Uf_gvE2UfFiK4-vvE5gAPvYF",
-      "titulo": "Inhabilitar Clientes finales sin grupo de envío en envio docs clientes finales mirar con Deybe",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "semanal"
-    },
-    {
-      "id": "A51VQj6MdUywyXDsBXWq0JgAEo5E",
-      "titulo": "Endosos masivos EC y seleccionar docs",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "semanal"
-    },
-    {
-      "id": "KvjoQlu3yUGVyLgbukjxFZgAORbu",
-      "titulo": "Reporte de novedad lectura y otras mejora lectura",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "semanal"
-    },
-    {
-      "id": "8vPE_oKy-0yp0yvX61FgMpgALW-l",
-      "titulo": "Cargar HAWBs con envío docs",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "semanal"
-    },
-    {
       "id": "fgipuM5eT0CxBjqg6FQyZZgAAhIb",
       "titulo": "Visibilidad ingresos reservas mismas HAWB preguntar a deybe",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "semanal"
-    },
-    {
-      "id": "m47O7vjQPkq1IK34ChMXW5gACXKy",
-      "titulo": "Agregar numero factura en CDM paso 1",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "semanal"
-    },
-    {
-      "id": "ByOaEkewaki7zxtH7u-6oZgAFs2l",
-      "titulo": "Mejora endosos - revisar legacy",
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
@@ -399,6 +349,16 @@
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Moreno, Sebastian / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "semanal"
+    },
+    {
+      "id": "QsQPgznsyUiZKXbCJwuVTJgAKAa0",
+      "titulo": "Reprogramar parcialmente piezas de bodega a otra master",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
       "fecha_limite": "",
       "prioridad": 5,
       "deposito": "semanal"
@@ -428,7 +388,7 @@
       "titulo": "Lecturas de devolución",
       "descripcion": "",
       "etiqueta": "",
-      "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
+      "asignado": "Moreno, Sebastian / Kuehne + Nagel / Bog ZA-OM",
       "fecha_limite": "",
       "prioridad": 5,
       "deposito": "semanal"
@@ -474,26 +434,6 @@
       "deposito": "semanal"
     },
     {
-      "id": "5jI9ZO7d0Emq-Cx2T3SkzpgAOM69",
-      "titulo": "Testing Documentar casos pendientes confirmar track con bodega",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 3,
-      "deposito": "semanal"
-    },
-    {
-      "id": "zqCilYfYjEeq46ZwpebBu5gAGXw7",
-      "titulo": "Asignación camiones TWI",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "semanal"
-    },
-    {
       "id": "oC3ordsWh0-NEfOhc1SZW5gAP8Et",
       "titulo": "Validación ingresos en liquidación",
       "descripcion": "",
@@ -534,28 +474,8 @@
       "deposito": "semanal"
     },
     {
-      "id": "2Njg4TNpCUCUHjK5hh4udpgAHzXM",
-      "titulo": "Caso Facturas múltiples",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Moreno, Sebastian / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "semanal"
-    },
-    {
       "id": "9ytwFziBEUu49CRp3JVI3pgACAS_",
       "titulo": "Implementar Servicios AWB",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Moreno, Sebastian / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "semanal"
-    },
-    {
-      "id": "9q8y615TT0SZSaWI7Zk4eJgAD9ms",
-      "titulo": "Caso dsitribución y transmision clientes finales CDM",
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Moreno, Sebastian / Kuehne + Nagel / Bog ZA-OM",
@@ -649,16 +569,6 @@
       "deposito": "sin_deposito"
     },
     {
-      "id": "JkwrU02YVkuHbNd7tMeDi5gAHtIf",
-      "titulo": "Sesión con tracking y CCL",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "sin_deposito"
-    },
-    {
       "id": "5-zaO4uKE0eys68SPOb-RZgAOQ9h",
       "titulo": "Nuevo método get labels DVF",
       "descripcion": "",
@@ -741,26 +651,6 @@
     {
       "id": "0mPmvQ2_NEmNavWHNqeK8pgADUMi",
       "titulo": "Caso crear reservas NEW con clientes PO",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Moreno, Sebastian / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "sin_deposito"
-    },
-    {
-      "id": "gbG00l8-m02Wzqdnumusa5gABUAf",
-      "titulo": "Definirlo reporte de histórico de tarifas",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Moreno, Sebastian / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "sin_deposito"
-    },
-    {
-      "id": "SgGIrbgGukWSDiaVtSNTZZgAAZsP",
-      "titulo": "Definir proceso de ubicaciones Bodega",
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Moreno, Sebastian / Kuehne + Nagel / Bog ZA-OM",
