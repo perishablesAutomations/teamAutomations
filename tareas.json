@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-02T01:34:49.916Z",
+  "generated_at": "2026-10-02T05:34:56.837Z",
   "diaria": [
     {
-      "id": "7EudzBt9e0qyDC6suraUA5gAEXFT",
-      "titulo": "Causas facturas",
+      "id": "HNryUonDLU2PyIXHdHjKNJgAH5oL",
+      "titulo": "Probar salidas",
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Moreno, Sebastian / Kuehne + Nagel / Bog ZA-OM",
@@ -252,16 +252,6 @@
       "deposito": "diaria"
     },
     {
-      "id": "s2Y-XNQ4F0yschjacQ9UNZgACDEP",
-      "titulo": "Reunión para revisar avances migración",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Moreno, Sebastian / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "diaria"
-    },
-    {
       "id": "5jI9ZO7d0Emq-Cx2T3SkzpgAOM69",
       "titulo": "Asegurar funcionalidad confirmar piezas bodega CDM",
       "descripcion": "",
@@ -277,16 +267,6 @@
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Sin asignar",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "diaria"
-    },
-    {
-      "id": "2Njg4TNpCUCUHjK5hh4udpgAHzXM",
-      "titulo": "Caso Facturas múltiples",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Moreno, Sebastian / Kuehne + Nagel / Bog ZA-OM",
       "fecha_limite": "",
       "prioridad": 5,
       "deposito": "diaria"
@@ -564,6 +544,16 @@
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "sin_deposito"
+    },
+    {
+      "id": "s2Y-XNQ4F0yschjacQ9UNZgACDEP",
+      "titulo": "Reunión para revisar avances migración",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Moreno, Sebastian / Kuehne + Nagel / Bog ZA-OM",
       "fecha_limite": "",
       "prioridad": 5,
       "deposito": "sin_deposito"
