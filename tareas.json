@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-02T18:29:12.809Z",
+  "generated_at": "2026-10-02T19:28:01.913Z",
   "diaria": [
     {
       "id": "CNi80_B3ekuZRThlm34x6JgADzK8",
@@ -283,6 +283,16 @@
     }
   ],
   "semanal": [
+    {
+      "id": "5NqVAwzV8EeqM1Xyw4J_yJgAKu7_",
+      "titulo": "Formato reservas de MAXICARGO",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "semanal"
+    },
     {
       "id": "6Cd9AAFGKU-6tl5TNTeDepgAFIHJ",
       "titulo": "Tolerancia capacidad ubicación",
