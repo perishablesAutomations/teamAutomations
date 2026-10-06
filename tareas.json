@@ -1,6 +1,26 @@
 {
-  "generated_at": "2026-10-06T02:53:16.542Z",
+  "generated_at": "2026-10-06T04:15:38.990Z",
   "diaria": [
+    {
+      "id": "iTAt8gDAPEy-ZGmAfa134JgAK1nl",
+      "titulo": "Identificar restricciones implementación EC",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "diaria"
+    },
+    {
+      "id": "6krWsr5MekaiKx5fPzKSxZgAHrcE",
+      "titulo": "Mirar ajustes DAE ETD",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "diaria"
+    },
     {
       "id": "CNi80_B3ekuZRThlm34x6JgADzK8",
       "titulo": "inactivar variedades repetidas",
@@ -37,16 +57,6 @@
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "diaria"
-    },
-    {
-      "id": "ifC-82goW0ubqYbsFx-bTJgAJ6lY",
-      "titulo": "Pasar a prod cambio DAEs",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
       "fecha_limite": "",
       "prioridad": 5,
       "deposito": "diaria"
@@ -103,7 +113,27 @@
     },
     {
       "id": "6PuXtEU1_USSuzOxg1lKvpgAP-CW",
-      "titulo": "ejecutar new para admin",
+      "titulo": "Test ejecutar new para admin",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "diaria"
+    },
+    {
+      "id": "-5zrDy751EKvqeY9ieJsIZgAM0Z5",
+      "titulo": "Auditoria clientes preguntar a Deybe",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "diaria"
+    },
+    {
+      "id": "mWI8cq-Vtki0lG_ulJajeZgAOG9q",
+      "titulo": "alerta guardar y completar",
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
@@ -123,7 +153,7 @@
     },
     {
       "id": "19n96GhzE0SZKmUot1eAuJgAFt-N",
-      "titulo": "Total Guias CC y PP",
+      "titulo": "Test Total Guias CC y PP",
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
@@ -153,7 +183,7 @@
     },
     {
       "id": "g9AR5glJK02nCxzAMgCTtZgAGL12",
-      "titulo": "Incluir No factura CMD Paso1 y en proformas",
+      "titulo": "Test Incluir No factura CMD Paso1 y en proformas",
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
@@ -163,7 +193,7 @@
     },
     {
       "id": "8vPE_oKy-0yp0yvX61FgMpgALW-l",
-      "titulo": "Cargar HAWBs con envío docs",
+      "titulo": "Test Cargar HAWBs con envío docs",
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
@@ -173,7 +203,7 @@
     },
     {
       "id": "m4oaLxQRwE6-8VtgVjPS1JgAK4st",
-      "titulo": "Aclarar ticket tracking con Sebas",
+      "titulo": "Documentar ajustes tracking",
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
@@ -222,31 +252,11 @@
       "deposito": "diaria"
     },
     {
-      "id": "uGH1yLrYKEOTaDEU6PbfYZgAOHPt",
-      "titulo": "DAEs reservas con PO",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "diaria"
-    },
-    {
       "id": "N3j42UrBhkKmPV9rhnuO6ZgAHunW",
       "titulo": "Correo avances Juliana",
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "diaria"
-    },
-    {
-      "id": "ASRCyd0JL0aoLX_DRjFwKJgAPuTq",
-      "titulo": "Columna SR cliente final reivsar nombre agrupación",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
       "fecha_limite": "",
       "prioridad": 5,
       "deposito": "diaria"
@@ -299,36 +309,6 @@
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "semanal"
-    },
-    {
-      "id": "-5zrDy751EKvqeY9ieJsIZgAM0Z5",
-      "titulo": "Auditoria clientes preguntar a Deybe",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "semanal"
-    },
-    {
-      "id": "mWI8cq-Vtki0lG_ulJajeZgAOG9q",
-      "titulo": "alerta guardar y completar",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "semanal"
-    },
-    {
-      "id": "fgipuM5eT0CxBjqg6FQyZZgAAhIb",
-      "titulo": "Visibilidad ingresos reservas mismas HAWB preguntar a deybe",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
       "fecha_limite": "",
       "prioridad": 5,
       "deposito": "semanal"
