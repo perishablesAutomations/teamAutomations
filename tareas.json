@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-10-08T18:42:05.408Z",
+  "generated_at": "2026-10-08T19:55:17.186Z",
   "diaria": [
     {
-      "id": "LsOg-iX6J0mVNdF8R0xHvpgAIAXp",
-      "titulo": "Ajuste JSON Consignee - campo nuevo",
+      "id": "CuNQT5TjEEuj88AoaFEzJJgANF8S",
+      "titulo": "prueba ubicar cajas",
       "descripcion": "",
       "etiqueta": "",
-      "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
+      "asignado": "Moreno, Sebastian / Kuehne + Nagel / Bog ZA-OM",
       "fecha_limite": "",
       "prioridad": 5,
       "deposito": "diaria"
@@ -77,6 +77,16 @@
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "diaria"
+    },
+    {
+      "id": "F6bq1pFu4kaJm0DRj6S1-pgAEriu",
+      "titulo": "Documento final alert",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Moreno, Sebastian / Kuehne + Nagel / Bog ZA-OM",
       "fecha_limite": "",
       "prioridad": 5,
       "deposito": "diaria"
