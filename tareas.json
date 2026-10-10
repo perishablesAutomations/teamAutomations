@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-10T01:30:27.497Z",
+  "generated_at": "2026-10-10T08:12:26.942Z",
   "diaria": [
     {
       "id": "LsOg-iX6J0mVNdF8R0xHvpgAIAXp",
@@ -37,6 +37,16 @@
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "diaria"
+    },
+    {
+      "id": "6krWsr5MekaiKx5fPzKSxZgAHrcE",
+      "titulo": "Mirar ajustes DAE ETD",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
       "fecha_limite": "",
       "prioridad": 5,
       "deposito": "diaria"
@@ -217,6 +227,16 @@
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "diaria"
+    },
+    {
+      "id": "8fzrYjjQwUeybcftJvUwT5gADELI",
+      "titulo": "Ajuste peso wh outbound - inbound",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
       "fecha_limite": "",
       "prioridad": 5,
       "deposito": "diaria"
