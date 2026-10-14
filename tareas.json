@@ -1,6 +1,106 @@
 {
-  "generated_at": "2026-10-14T07:24:46.161Z",
+  "generated_at": "2026-10-14T14:52:17.296Z",
   "diaria": [
+    {
+      "id": "odA5mz00wEahYl2rv03QzpgAHq8B",
+      "titulo": "Ajuste nuevo campo XML certificado fitosanitarios",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "diaria"
+    },
+    {
+      "id": "6rPQNCtVWUOl3g2OOLnhK5gAPw1t",
+      "titulo": "Parametrización fleurametz",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "diaria"
+    },
+    {
+      "id": "rXadHYdxGkeqd1lYbDBedpgAEMi1",
+      "titulo": "Agendar sesión Lectura movimientos bodega: Salidas, RTS, UNS",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "diaria"
+    },
+    {
+      "id": "Tqb0gcHkpUezcC8YEtFhP5gAHwEY",
+      "titulo": "ejecutar proceso",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "diaria"
+    },
+    {
+      "id": "LBm9X2ZBA0CwRoRgYRcMXZgANz25",
+      "titulo": "Dashboard managers CCL",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Moreno, Sebastian / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "diaria"
+    },
+    {
+      "id": "G_UtQWsgCEa8rfz9vBo-aZgAC_uj",
+      "titulo": "Ajustar visibilidad ubicación en manage inbounds",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Moreno, Sebastian / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "diaria"
+    },
+    {
+      "id": "ypG6uKtf0kyqmnPfz92MS5gAGWUz",
+      "titulo": "Ver registros ubicación con lectura y liberar ubicación",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Moreno, Sebastian / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "diaria"
+    },
+    {
+      "id": "bx9RWBOCRUyJjZVYqBW1Y5gAATRD",
+      "titulo": "Documentar lectura cajas en ingreso",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Moreno, Sebastian / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "diaria"
+    },
+    {
+      "id": "Dz0CeMMOf062qffbpseoW5gAC5e8",
+      "titulo": "Documentar detalle de ubicación",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Moreno, Sebastian / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "diaria"
+    },
+    {
+      "id": "xM7QR20AGUW9oyLf3HLDWpgAAQ1B",
+      "titulo": "Pruebas para pasar a prod",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Moreno, Sebastian / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "diaria"
+    },
     {
       "id": "LsOg-iX6J0mVNdF8R0xHvpgAIAXp",
       "titulo": "Ajuste JSON Consignee - campo nuevo",
@@ -12,18 +112,8 @@
       "deposito": "diaria"
     },
     {
-      "id": "pZ-xdKR490eFTHjuUBgn9JgALVId",
-      "titulo": "job description",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Moreno, Sebastian / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "diaria"
-    },
-    {
       "id": "Lz8NOPypJ0uhgqa8zlytLZgAPu7S",
-      "titulo": "Comunicadp reforzar cargue facturas USA",
+      "titulo": "Comunicado reforzar cargue facturas USA",
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
@@ -42,48 +132,8 @@
       "deposito": "diaria"
     },
     {
-      "id": "CNi80_B3ekuZRThlm34x6JgADzK8",
-      "titulo": "inactivar variedades repetidas",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "diaria"
-    },
-    {
-      "id": "7jyzb-gWMUu3kmmC3O8-cZgAEDQp",
-      "titulo": "Test ticket dimensiones",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "diaria"
-    },
-    {
-      "id": "OSbrnPeepUWQp6gEVJKVf5gACoLr",
-      "titulo": "Etiquetas Fleurametz - camiones",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "diaria"
-    },
-    {
       "id": "ORmdhHznckiiqe_Q4mojRpgAGpT6",
       "titulo": "Probar etiquetas delaware",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Moreno, Sebastian / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "diaria"
-    },
-    {
-      "id": "HDrY8EODV0e_QcAr7Hrz9pgANBdO",
-      "titulo": "Documentar llenado de campo CDM paso 1 con factura.",
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Moreno, Sebastian / Kuehne + Nagel / Bog ZA-OM",
@@ -264,11 +314,51 @@
   ],
   "semanal": [
     {
-      "id": "5NqVAwzV8EeqM1Xyw4J_yJgAKu7_",
-      "titulo": "Formato reservas de MAXICARGO",
+      "id": "XTe9h196-kaMzVCqCjweH5gADxRr",
+      "titulo": "Tips KNFRESH comunicados internos",
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "semanal"
+    },
+    {
+      "id": "75mEuqmH8kq_GwiYhOrNbJgAKLyE",
+      "titulo": "Ajustes Salidas preguntar vivi",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "semanal"
+    },
+    {
+      "id": "uUddQ8f8lU62GoqmXNdFxpgAIv1i",
+      "titulo": "Ajustes tarifas regulares que no queden canceladas - tarifa spot masiva sin restriccion",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "semanal"
+    },
+    {
+      "id": "CNi80_B3ekuZRThlm34x6JgADzK8",
+      "titulo": "inactivar variedades repetidas",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "semanal"
+    },
+    {
+      "id": "HDrY8EODV0e_QcAr7Hrz9pgANBdO",
+      "titulo": "Documentar llenado de campo CDM paso 1 con factura.",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Moreno, Sebastian / Kuehne + Nagel / Bog ZA-OM",
       "fecha_limite": "",
       "prioridad": 5,
       "deposito": "semanal"
@@ -324,16 +414,6 @@
       "deposito": "semanal"
     },
     {
-      "id": "90Ucsc9JlEO7hPP-NcRG5ZgAHRUT",
-      "titulo": "Revisar pesos en reporte de salidas",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "semanal"
-    },
-    {
       "id": "0jaGBfGKSE-v-6kdFPJdoZgAC7Jt",
       "titulo": "Alerta de bajo stock de guías por aerolínea",
       "descripcion": "",
@@ -346,16 +426,6 @@
     {
       "id": "7MF5KGP2KU6Nsj0nvRsnTZgAEgRE",
       "titulo": "Revisar zona horaria de los estados paletizadora",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "semanal"
-    },
-    {
-      "id": "aETsqvFqzkij-q7xT3ictZgAEj93",
-      "titulo": "Escenarios para cancelar/eliminar lineas traze",
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
@@ -384,16 +454,6 @@
       "deposito": "semanal"
     },
     {
-      "id": "fVXkSZ1z2k2Dw71qUEZfvpgAIrky",
-      "titulo": "Replicar tarifas que no son del consignatario 172-05218754",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "semanal"
-    },
-    {
       "id": "I4gUwpHI50qnDGlJ8DdBQJgAMlma",
       "titulo": "Revisar cuando se excede del peso del coeficiente de bodega, que salga la alerta en el paso 2 el “Cargar pesos WH”",
       "descripcion": "",
@@ -416,6 +476,16 @@
     {
       "id": "OFzuv_jv0U-tzytJ-FLMNpgANOkE",
       "titulo": "Testing certificado de origen",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "semanal"
+    },
+    {
+      "id": "fi3fl0K0cUmCn7JZqjKb7ZgAEifN",
+      "titulo": "Documentar SCAFRESH-3820 - DV report",
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
@@ -468,6 +538,16 @@
     }
   ],
   "sin_deposito": [
+    {
+      "id": "5NqVAwzV8EeqM1Xyw4J_yJgAKu7_",
+      "titulo": "Formato reservas de MAXICARGO",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "sin_deposito"
+    },
     {
       "id": "pT-vaK4lfUG5bYSn4mcxOJgAF50u",
       "titulo": "reporte SISPAP",
@@ -621,16 +701,6 @@
     {
       "id": "uBMNV6SbWk6JCpr-RWT_BZgAFcUD",
       "titulo": "Poner ticket para que el envio de documentos coja el set up de asignacion de brokers del new",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "sin_deposito"
-    },
-    {
-      "id": "fi3fl0K0cUmCn7JZqjKb7ZgAEifN",
-      "titulo": "Documentar SCAFRESH-3820 - DV report",
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
