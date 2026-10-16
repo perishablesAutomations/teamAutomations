@@ -1,12 +1,22 @@
 {
-  "generated_at": "2026-10-16T20:52:22.604Z",
+  "generated_at": "2026-10-16T22:52:31.138Z",
   "diaria": [
     {
-      "id": "3CC2rj2ksUyPF-g4Bbox4JgADAWa",
-      "titulo": "Ticket ajuste de reporte ingreso nuevas columnas",
+      "id": "oOpYBIgB0k6BhuIm69P_U5gAPd-D",
+      "titulo": "replicar caso de reservas galleria con funza",
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "diaria"
+    },
+    {
+      "id": "cdI0v5X7Fk66Be9kb5eib5gABrGd",
+      "titulo": "comunicación masiva tracking",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
       "fecha_limite": "",
       "prioridad": 5,
       "deposito": "diaria"
@@ -22,8 +32,18 @@
       "deposito": "diaria"
     },
     {
-      "id": "6rPQNCtVWUOl3g2OOLnhK5gAPw1t",
-      "titulo": "Parametrización fleurametz",
+      "id": "XTe9h196-kaMzVCqCjweH5gADxRr",
+      "titulo": "Tips KNFRESH comunicados internos",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "diaria"
+    },
+    {
+      "id": "uUddQ8f8lU62GoqmXNdFxpgAIv1i",
+      "titulo": "Ajustes tarifas inactivas/canceladas",
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
@@ -32,8 +52,8 @@
       "deposito": "diaria"
     },
     {
-      "id": "rXadHYdxGkeqd1lYbDBedpgAEMi1",
-      "titulo": "Agendar sesión Lectura movimientos bodega: Salidas, RTS, UNS",
+      "id": "6rPQNCtVWUOl3g2OOLnhK5gAPw1t",
+      "titulo": "Parametrización fleurametz",
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
@@ -142,13 +162,13 @@
       "deposito": "diaria"
     },
     {
-      "id": "sSlDmgm800ahQxVebmO1oJgABM0s",
-      "titulo": "configuración de LATD",
+      "id": "6Cd9AAFGKU-6tl5TNTeDepgAFIHJ",
+      "titulo": "Tolerancia capacidad ubicación",
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
       "fecha_limite": "",
-      "prioridad": 3,
+      "prioridad": 5,
       "deposito": "diaria"
     },
     {
@@ -282,6 +302,16 @@
       "deposito": "diaria"
     },
     {
+      "id": "QsQPgznsyUiZKXbCJwuVTJgAKAa0",
+      "titulo": "Reprogramar parcialmente piezas de bodega a otra master",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "diaria"
+    },
+    {
       "id": "5jI9ZO7d0Emq-Cx2T3SkzpgAOM69",
       "titulo": "Asegurar funcionalidad confirmar piezas bodega CDM",
       "descripcion": "",
@@ -293,7 +323,7 @@
     },
     {
       "id": "CRI9WjTzxUmP0jLViteSyJgAE9R4",
-      "titulo": "Ticket ocultar Generar track desde el escaneo Legacy",
+      "titulo": "Ticket ocultar opciones Legacy",
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
@@ -304,11 +334,21 @@
   ],
   "semanal": [
     {
-      "id": "XTe9h196-kaMzVCqCjweH5gADxRr",
-      "titulo": "Tips KNFRESH comunicados internos",
+      "id": "TyJmWtWpxEO0CfWCDAvYypgAA-6t",
+      "titulo": "Requerimientos DAvid Armas",
       "descripcion": "",
       "etiqueta": "",
-      "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
+      "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "semanal"
+    },
+    {
+      "id": "3CC2rj2ksUyPF-g4Bbox4JgADAWa",
+      "titulo": "Ticket ajuste de reporte ingreso nuevas columnas",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
       "fecha_limite": "",
       "prioridad": 5,
       "deposito": "semanal"
@@ -318,17 +358,7 @@
       "titulo": "Ajustes Salidas preguntar vivi",
       "descripcion": "",
       "etiqueta": "",
-      "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "semanal"
-    },
-    {
-      "id": "uUddQ8f8lU62GoqmXNdFxpgAIv1i",
-      "titulo": "Ajustes tarifas regulares que no queden canceladas - tarifa spot masiva sin restriccion",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
+      "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
       "fecha_limite": "",
       "prioridad": 5,
       "deposito": "semanal"
@@ -354,28 +384,8 @@
       "deposito": "semanal"
     },
     {
-      "id": "6Cd9AAFGKU-6tl5TNTeDepgAFIHJ",
-      "titulo": "Tolerancia capacidad ubicación",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "semanal"
-    },
-    {
       "id": "Wud2x7tvM0Geivf478inTZgANmId",
       "titulo": "Revisar la fecha que crea el sistema cuando de FDP se crea la reserva o se asigna a la guia.",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "semanal"
-    },
-    {
-      "id": "QsQPgznsyUiZKXbCJwuVTJgAKAa0",
-      "titulo": "Reprogramar parcialmente piezas de bodega a otra master",
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
