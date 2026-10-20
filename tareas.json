@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-20T16:36:13.285Z",
+  "generated_at": "2026-10-20T20:05:10.764Z",
   "diaria": [
     {
       "id": "oOpYBIgB0k6BhuIm69P_U5gAPd-D",
@@ -312,6 +312,16 @@
       "deposito": "diaria"
     },
     {
+      "id": "EowMmxmevE6XO2T17wA-F5gAG9hx",
+      "titulo": "Documentar caso de reglas costos automaticos - CORREO MATEO",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "diaria"
+    },
+    {
       "id": "5jI9ZO7d0Emq-Cx2T3SkzpgAOM69",
       "titulo": "Asegurar funcionalidad confirmar piezas bodega CDM",
       "descripcion": "",
@@ -399,16 +409,6 @@
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Moreno, Sebastian / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "semanal"
-    },
-    {
-      "id": "EowMmxmevE6XO2T17wA-F5gAG9hx",
-      "titulo": "Documentar caso de reglas costos automaticos",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
       "fecha_limite": "",
       "prioridad": 5,
       "deposito": "semanal"
