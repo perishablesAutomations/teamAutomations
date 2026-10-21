@@ -1,6 +1,36 @@
 {
-  "generated_at": "2026-10-21T20:53:06.002Z",
+  "generated_at": "2026-10-21T22:53:13.480Z",
   "diaria": [
+    {
+      "id": "JPBQTfLpnUGSdJAfGGGd1pgAOJTM",
+      "titulo": "Manejo de splits",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Moreno, Sebastian / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "diaria"
+    },
+    {
+      "id": "oMnoGOleK0GeNRWGMSVFCJgAJsL0",
+      "titulo": "Pantalla scan log",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Moreno, Sebastian / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "diaria"
+    },
+    {
+      "id": "ypbFqwsoPEaS0qJbnCy4FJgAIuw1",
+      "titulo": "Formato de reservas KALITA",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "diaria"
+    },
     {
       "id": "oOpYBIgB0k6BhuIm69P_U5gAPd-D",
       "titulo": "replicar caso de reservas galleria con funza",
@@ -13,7 +43,7 @@
     },
     {
       "id": "cdI0v5X7Fk66Be9kb5eib5gABrGd",
-      "titulo": "comunicación masiva tracking",
+      "titulo": "Documentar comunicación masiva tracking",
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
@@ -82,56 +112,6 @@
       "deposito": "diaria"
     },
     {
-      "id": "G_UtQWsgCEa8rfz9vBo-aZgAC_uj",
-      "titulo": "Ajustar visibilidad ubicación en manage inbounds",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Moreno, Sebastian / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "diaria"
-    },
-    {
-      "id": "ypG6uKtf0kyqmnPfz92MS5gAGWUz",
-      "titulo": "Ver registros ubicación con lectura y liberar ubicación",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Moreno, Sebastian / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "diaria"
-    },
-    {
-      "id": "bx9RWBOCRUyJjZVYqBW1Y5gAATRD",
-      "titulo": "Documentar lectura cajas en ingreso",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Moreno, Sebastian / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "diaria"
-    },
-    {
-      "id": "Dz0CeMMOf062qffbpseoW5gAC5e8",
-      "titulo": "Documentar detalle de ubicación",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Moreno, Sebastian / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "diaria"
-    },
-    {
-      "id": "LsOg-iX6J0mVNdF8R0xHvpgAIAXp",
-      "titulo": "Ajuste JSON Consignee - campo nuevo",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "diaria"
-    },
-    {
       "id": "Lz8NOPypJ0uhgqa8zlytLZgAPu7S",
       "titulo": "Comunicado reforzar cargue facturas USA",
       "descripcion": "",
@@ -147,6 +127,16 @@
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "diaria"
+    },
+    {
+      "id": "5NqVAwzV8EeqM1Xyw4J_yJgAKu7_",
+      "titulo": "Formato reservas de MAXICARGO",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
       "fecha_limite": "",
       "prioridad": 5,
       "deposito": "diaria"
@@ -183,7 +173,7 @@
     },
     {
       "id": "-5zrDy751EKvqeY9ieJsIZgAM0Z5",
-      "titulo": "Auditoria clientes preguntar a Deybe",
+      "titulo": "Test clientes auditoria",
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
@@ -194,16 +184,6 @@
     {
       "id": "mWI8cq-Vtki0lG_ulJajeZgAOG9q",
       "titulo": "alerta guardar y completar",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "diaria"
-    },
-    {
-      "id": "A3P5Uf_gvE2UfFiK4-vvE5gAPvYF",
-      "titulo": "Inhabilitar Clientes finales sin grupo de envío en envio docs clientes finales mirar con Deybe",
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
@@ -263,7 +243,7 @@
     },
     {
       "id": "m4oaLxQRwE6-8VtgVjPS1JgAK4st",
-      "titulo": "Documentar ajustes tracking",
+      "titulo": "Testing ajustes tracking",
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
@@ -298,7 +278,7 @@
       "etiqueta": "",
       "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
       "fecha_limite": "",
-      "prioridad": 5,
+      "prioridad": 9,
       "deposito": "diaria"
     },
     {
@@ -318,6 +298,16 @@
       "etiqueta": "",
       "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
       "fecha_limite": "",
+      "prioridad": 9,
+      "deposito": "diaria"
+    },
+    {
+      "id": "s2Y-XNQ4F0yschjacQ9UNZgACDEP",
+      "titulo": "Reunión para revisar avances migración",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Moreno, Sebastian / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
       "prioridad": 5,
       "deposito": "diaria"
     },
@@ -332,8 +322,8 @@
       "deposito": "diaria"
     },
     {
-      "id": "CRI9WjTzxUmP0jLViteSyJgAE9R4",
-      "titulo": "Ticket ocultar opciones Legacy",
+      "id": "9ytwFziBEUu49CRp3JVI3pgACAS_",
+      "titulo": "Implementar Servicios AWB",
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
@@ -343,16 +333,6 @@
     }
   ],
   "semanal": [
-    {
-      "id": "ypbFqwsoPEaS0qJbnCy4FJgAIuw1",
-      "titulo": "Formato de reservas KALITA",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "semanal"
-    },
     {
       "id": "TyJmWtWpxEO0CfWCDAvYypgAA-6t",
       "titulo": "Requerimientos DAvid Armas",
@@ -388,7 +368,7 @@
       "titulo": "inactivar variedades repetidas",
       "descripcion": "",
       "etiqueta": "",
-      "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
+      "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
       "fecha_limite": "",
       "prioridad": 5,
       "deposito": "semanal"
@@ -408,7 +388,17 @@
       "titulo": "Revisar la fecha que crea el sistema cuando de FDP se crea la reserva o se asigna a la guia.",
       "descripcion": "",
       "etiqueta": "",
-      "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
+      "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "semanal"
+    },
+    {
+      "id": "1G0ieT9nT0K_uPQ6P1borZgAOpHM",
+      "titulo": "Agregar auditoria tarifa spot",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
       "fecha_limite": "",
       "prioridad": 5,
       "deposito": "semanal"
@@ -424,21 +414,11 @@
       "deposito": "semanal"
     },
     {
-      "id": "0jaGBfGKSE-v-6kdFPJdoZgAC7Jt",
-      "titulo": "Alerta de bajo stock de guías por aerolínea",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "semanal"
-    },
-    {
       "id": "7MF5KGP2KU6Nsj0nvRsnTZgAEgRE",
       "titulo": "Revisar zona horaria de los estados paletizadora",
       "descripcion": "",
       "etiqueta": "",
-      "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
+      "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
       "fecha_limite": "",
       "prioridad": 5,
       "deposito": "semanal"
@@ -469,16 +449,6 @@
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "semanal"
-    },
-    {
-      "id": "9ytwFziBEUu49CRp3JVI3pgACAS_",
-      "titulo": "Implementar Servicios AWB",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Moreno, Sebastian / Kuehne + Nagel / Bog ZA-OM",
       "fecha_limite": "",
       "prioridad": 5,
       "deposito": "semanal"
@@ -549,16 +519,6 @@
   ],
   "sin_deposito": [
     {
-      "id": "5NqVAwzV8EeqM1Xyw4J_yJgAKu7_",
-      "titulo": "Formato reservas de MAXICARGO",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "sin_deposito"
-    },
-    {
       "id": "pT-vaK4lfUG5bYSn4mcxOJgAF50u",
       "titulo": "reporte SISPAP",
       "descripcion": "",
@@ -574,36 +534,6 @@
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "sin_deposito"
-    },
-    {
-      "id": "1G0ieT9nT0K_uPQ6P1borZgAOpHM",
-      "titulo": "Agregar auditoria tarifa spot",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "sin_deposito"
-    },
-    {
-      "id": "s2Y-XNQ4F0yschjacQ9UNZgACDEP",
-      "titulo": "Reunión para revisar avances migración",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Moreno, Sebastian / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "sin_deposito"
-    },
-    {
-      "id": "5-zaO4uKE0eys68SPOb-RZgAOQ9h",
-      "titulo": "Nuevo método get labels DVF",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Moreno, Sebastian / Kuehne + Nagel / Bog ZA-OM",
       "fecha_limite": "",
       "prioridad": 5,
       "deposito": "sin_deposito"
