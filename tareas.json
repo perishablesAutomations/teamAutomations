@@ -1,6 +1,26 @@
 {
-  "generated_at": "2026-10-26T14:53:41.695Z",
+  "generated_at": "2026-10-26T19:48:23.685Z",
   "diaria": [
+    {
+      "id": "PWMTp-38CkaLsQHnMl3HuZgAO3YC",
+      "titulo": "Actualizar las direcciones de los documentos con la direccion NUEVAS",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "diaria"
+    },
+    {
+      "id": "mWXJ98ZtwE-9bIRiLSTPz5gAB1mz",
+      "titulo": "Inclusion columnas reporte booking",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "diaria"
+    },
     {
       "id": "UdHzurjLJEGckFldeupxkJgAOPBb",
       "titulo": "Etiquetas por defecto / reservas bodega",
