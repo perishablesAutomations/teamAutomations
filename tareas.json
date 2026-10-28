@@ -1,6 +1,56 @@
 {
-  "generated_at": "2026-10-28T20:53:43.086Z",
+  "generated_at": "2026-10-28T22:53:37.838Z",
   "diaria": [
+    {
+      "id": "PujWVv4uyEiMKQ7d_qv0EJgAN-wv",
+      "titulo": "Valiar caso especial automatico parcializaciones",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "diaria"
+    },
+    {
+      "id": "MRYtpt-OJ0qQSStmTZkohpgAD1IW",
+      "titulo": "Verificar validacion arrival de no poder si no hay deparure",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Moreno, Sebastian / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "diaria"
+    },
+    {
+      "id": "HITXIRvrbkuXGa130Gq2lpgAJJTw",
+      "titulo": "Facturas IA clientes USA",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "diaria"
+    },
+    {
+      "id": "dSE4zx4fREWwEACkgFs5GJgAGwV2",
+      "titulo": "Final alert pdf",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "diaria"
+    },
+    {
+      "id": "zm8-Nx8upkilBAm65AuWWJgAAxxu",
+      "titulo": "Ticket etiquetas bodega con piezas bodega",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "diaria"
+    },
     {
       "id": "ekO01WFS1kCkcIGf3q9A5JgALRXv",
       "titulo": "Verificacion de pesos paso 2 / Coeficiente de bodega",
@@ -17,16 +67,6 @@
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "diaria"
-    },
-    {
-      "id": "mWXJ98ZtwE-9bIRiLSTPz5gAB1mz",
-      "titulo": "Inclusion columnas reporte booking",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
       "fecha_limite": "",
       "prioridad": 5,
       "deposito": "diaria"
@@ -72,31 +112,11 @@
       "deposito": "diaria"
     },
     {
-      "id": "cdI0v5X7Fk66Be9kb5eib5gABrGd",
-      "titulo": "Documentar comunicación masiva tracking",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "diaria"
-    },
-    {
       "id": "odA5mz00wEahYl2rv03QzpgAHq8B",
       "titulo": "Ajuste nuevo campo XML certificado fitosanitarios",
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "diaria"
-    },
-    {
-      "id": "XTe9h196-kaMzVCqCjweH5gADxRr",
-      "titulo": "Tips KNFRESH comunicados internos",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
       "fecha_limite": "",
       "prioridad": 5,
       "deposito": "diaria"
@@ -162,16 +182,6 @@
       "deposito": "diaria"
     },
     {
-      "id": "5NqVAwzV8EeqM1Xyw4J_yJgAKu7_",
-      "titulo": "Formato reservas de MAXICARGO",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "diaria"
-    },
-    {
       "id": "ORmdhHznckiiqe_Q4mojRpgAGpT6",
       "titulo": "Probar etiquetas delaware",
       "descripcion": "",
@@ -197,16 +207,6 @@
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "diaria"
-    },
-    {
-      "id": "-5zrDy751EKvqeY9ieJsIZgAM0Z5",
-      "titulo": "Test clientes auditoria",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
       "fecha_limite": "",
       "prioridad": 5,
       "deposito": "diaria"
@@ -364,26 +364,6 @@
   ],
   "semanal": [
     {
-      "id": "dSE4zx4fREWwEACkgFs5GJgAGwV2",
-      "titulo": "Final alert pdf",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "semanal"
-    },
-    {
-      "id": "zm8-Nx8upkilBAm65AuWWJgAAxxu",
-      "titulo": "Ticket etiquetas bodega con piezas bodega",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "semanal"
-    },
-    {
       "id": "TyJmWtWpxEO0CfWCDAvYypgAA-6t",
       "titulo": "Requerimientos DAvid Armas",
       "descripcion": "",
@@ -436,16 +416,6 @@
     {
       "id": "Wud2x7tvM0Geivf478inTZgANmId",
       "titulo": "Revisar la fecha que crea el sistema cuando de FDP se crea la reserva o se asigna a la guia.",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "semanal"
-    },
-    {
-      "id": "1G0ieT9nT0K_uPQ6P1borZgAOpHM",
-      "titulo": "Agregar auditoria tarifa spot",
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
@@ -509,16 +479,6 @@
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "semanal"
-    },
-    {
-      "id": "fi3fl0K0cUmCn7JZqjKb7ZgAEifN",
-      "titulo": "Documentar SCAFRESH-3820 - DV report",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
       "fecha_limite": "",
       "prioridad": 5,
       "deposito": "semanal"
@@ -694,6 +654,16 @@
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "sin_deposito"
+    },
+    {
+      "id": "fi3fl0K0cUmCn7JZqjKb7ZgAEifN",
+      "titulo": "Documentar SCAFRESH-3820 - DV report",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
       "fecha_limite": "",
       "prioridad": 5,
       "deposito": "sin_deposito"
