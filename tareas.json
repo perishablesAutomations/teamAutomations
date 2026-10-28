@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-28T16:53:37.065Z",
+  "generated_at": "2026-10-28T18:53:34.532Z",
   "diaria": [
     {
       "id": "ekO01WFS1kCkcIGf3q9A5JgALRXv",
@@ -363,6 +363,26 @@
     }
   ],
   "semanal": [
+    {
+      "id": "dSE4zx4fREWwEACkgFs5GJgAGwV2",
+      "titulo": "Final alert pdf",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "semanal"
+    },
+    {
+      "id": "zm8-Nx8upkilBAm65AuWWJgAAxxu",
+      "titulo": "Ticket etiquetas bodega con piezas bodega",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "semanal"
+    },
     {
       "id": "TyJmWtWpxEO0CfWCDAvYypgAA-6t",
       "titulo": "Requerimientos DAvid Armas",
