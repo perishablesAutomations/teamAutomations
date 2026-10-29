@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-29T20:14:46.201Z",
+  "generated_at": "2026-10-29T20:53:41.803Z",
   "diaria": [
     {
       "id": "MRYtpt-OJ0qQSStmTZkohpgAD1IW",
@@ -263,6 +263,16 @@
     }
   ],
   "semanal": [
+    {
+      "id": "VfBcgPnAZ0GVLJC3FjGx95gANc1U",
+      "titulo": "Ajuste tarifas con rutas intermedias - caso Jaime",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "semanal"
+    },
     {
       "id": "Hog7lJy6OUmGRQ0-rG4XCJgAKaL8",
       "titulo": "Incluir columna de peso volumen de la bodega",
