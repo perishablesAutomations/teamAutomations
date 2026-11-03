@@ -1,6 +1,56 @@
 {
-  "generated_at": "2026-11-03T20:54:13.958Z",
+  "generated_at": "2026-11-03T22:54:17.353Z",
   "diaria": [
+    {
+      "id": "FsFOJl230ESYBzzQHReXLZgAPjsy",
+      "titulo": "Continental borrador etiqueta integrada",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "diaria"
+    },
+    {
+      "id": "l3dfZxhcXESq_35YXyCcp5gAFr4u",
+      "titulo": "Ajustes DAEs",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "diaria"
+    },
+    {
+      "id": "8foI58h-HUSBaZHs4eD_MJgAJsyP",
+      "titulo": "Revisar la confirmacion en cero de legacy por confirmacion paso 1 CDM",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 1,
+      "deposito": "diaria"
+    },
+    {
+      "id": "NIEU-EUtnkeP2c3msvCSxJgAFth6",
+      "titulo": "Test 4476",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "diaria"
+    },
+    {
+      "id": "wAK9ykwE-kOCP1-om_X_hpgALL6-",
+      "titulo": "Ejecutar new aplique para individual",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "diaria"
+    },
     {
       "id": "Wnu85sctsU6o3_6Jog98qpgAOcXc",
       "titulo": "Auditoria grupo de envío",
@@ -47,16 +97,6 @@
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "diaria"
-    },
-    {
-      "id": "ekO01WFS1kCkcIGf3q9A5JgALRXv",
-      "titulo": "Verificacion de pesos paso 2 / Coeficiente de bodega",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
       "fecha_limite": "",
       "prioridad": 5,
       "deposito": "diaria"
@@ -142,6 +182,16 @@
       "deposito": "diaria"
     },
     {
+      "id": "m47O7vjQPkq1IK34ChMXW5gACXKy",
+      "titulo": "Entregar numero factura en CDM paso 1",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "diaria"
+    },
+    {
       "id": "s2Y-XNQ4F0yschjacQ9UNZgACDEP",
       "titulo": "Reunión para revisar avances migración",
       "descripcion": "",
@@ -150,9 +200,49 @@
       "fecha_limite": "",
       "prioridad": 5,
       "deposito": "diaria"
+    },
+    {
+      "id": "a9k3I_pkb0uCpUTgRaWoJJgAPOUf",
+      "titulo": "Prueba prorrateo con peso fisico y volumen WH y comapara con el legacy.",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "diaria"
+    },
+    {
+      "id": "I4gUwpHI50qnDGlJ8DdBQJgAMlma",
+      "titulo": "Revisar cuando se excede del peso del coeficiente de bodega, que salga la alerta en el paso 2 el “Cargar pesos WH”",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "diaria"
     }
   ],
   "semanal": [
+    {
+      "id": "39SbsOapfUiwaiYP6CVJWpgADnA8",
+      "titulo": "Mejorar envio clientes finales",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "semanal"
+    },
+    {
+      "id": "CLd2qy6OaU6DxaFYvdWhMpgAFxqZ",
+      "titulo": "Asignar ticket SCAFRESH-4310",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "semanal"
+    },
     {
       "id": "F1P-oXAVn0Wx8WWd_spqSpgAMDk0",
       "titulo": "Viable que la tarifa tome el tipo de carga?",
@@ -188,7 +278,7 @@
       "titulo": "Revisar parcial el caso especial automatico",
       "descripcion": "",
       "etiqueta": "",
-      "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
+      "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
       "fecha_limite": "",
       "prioridad": 5,
       "deposito": "semanal"
@@ -258,7 +348,7 @@
       "titulo": "Ticket ajuste de reporte ingreso nuevas columnas",
       "descripcion": "",
       "etiqueta": "",
-      "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
+      "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
       "fecha_limite": "",
       "prioridad": 5,
       "deposito": "semanal"
@@ -324,16 +414,6 @@
       "deposito": "semanal"
     },
     {
-      "id": "6PuXtEU1_USSuzOxg1lKvpgAP-CW",
-      "titulo": "Test ejecutar new para admin",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "semanal"
-    },
-    {
       "id": "mWI8cq-Vtki0lG_ulJajeZgAOG9q",
       "titulo": "alerta guardar y completar",
       "descripcion": "",
@@ -341,16 +421,6 @@
       "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
       "fecha_limite": "",
       "prioridad": 5,
-      "deposito": "semanal"
-    },
-    {
-      "id": "19n96GhzE0SZKmUot1eAuJgAFt-N",
-      "titulo": "Test Total Guias CC y PP",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 1,
       "deposito": "semanal"
     },
     {
@@ -366,36 +436,6 @@
     {
       "id": "KvjoQlu3yUGVyLgbukjxFZgAORbu",
       "titulo": "Test de novedad lectura y otras mejora lectura",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "semanal"
-    },
-    {
-      "id": "g9AR5glJK02nCxzAMgCTtZgAGL12",
-      "titulo": "Test Incluir No factura CMD Paso1 y en proformas",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 1,
-      "deposito": "semanal"
-    },
-    {
-      "id": "8vPE_oKy-0yp0yvX61FgMpgALW-l",
-      "titulo": "Test Cargar HAWBs con envío docs",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "semanal"
-    },
-    {
-      "id": "m47O7vjQPkq1IK34ChMXW5gACXKy",
-      "titulo": "Agregar numero factura en CDM paso 1",
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
@@ -449,46 +489,6 @@
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "semanal"
-    },
-    {
-      "id": "5jI9ZO7d0Emq-Cx2T3SkzpgAOM69",
-      "titulo": "Asegurar funcionalidad confirmar piezas bodega CDM",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 3,
-      "deposito": "semanal"
-    },
-    {
-      "id": "oC3ordsWh0-NEfOhc1SZW5gAP8Et",
-      "titulo": "Validación ingresos en liquidación",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "semanal"
-    },
-    {
-      "id": "a9k3I_pkb0uCpUTgRaWoJJgAPOUf",
-      "titulo": "Prueba prorrateo con peso fisico y volumen WH y comapara con el legacy.",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "semanal"
-    },
-    {
-      "id": "I4gUwpHI50qnDGlJ8DdBQJgAMlma",
-      "titulo": "Revisar cuando se excede del peso del coeficiente de bodega, que salga la alerta en el paso 2 el “Cargar pesos WH”",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
       "fecha_limite": "",
       "prioridad": 5,
       "deposito": "semanal"
@@ -584,16 +584,6 @@
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "sin_deposito"
-    },
-    {
-      "id": "esUFmw91vE6Lmk6PoG91WpgACVr_",
-      "titulo": "Test exportadores a consignee - atar agrupaciones con check todos los eportadores",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
       "fecha_limite": "",
       "prioridad": 5,
       "deposito": "sin_deposito"
