@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-03T18:40:31.028Z",
+  "generated_at": "2026-11-03T18:54:02.023Z",
   "diaria": [
     {
       "id": "MRYtpt-OJ0qQSStmTZkohpgAD1IW",
@@ -263,6 +263,16 @@
     }
   ],
   "semanal": [
+    {
+      "id": "F1P-oXAVn0Wx8WWd_spqSpgAMDk0",
+      "titulo": "Viable que la tarifa tome el tipo de carga?",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "semanal"
+    },
     {
       "id": "VfBcgPnAZ0GVLJC3FjGx95gANc1U",
       "titulo": "Ajuste tarifas con rutas intermedias - caso Jaime",
