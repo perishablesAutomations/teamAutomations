@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-04T16:54:11.636Z",
+  "generated_at": "2026-11-05T03:13:24.682Z",
   "diaria": [
     {
       "id": "FsFOJl230ESYBzzQHReXLZgAPjsy",
@@ -335,7 +335,7 @@
     },
     {
       "id": "3CC2rj2ksUyPF-g4Bbox4JgADAWa",
-      "titulo": "Ticket ajuste de reporte ingreso nuevas columnas",
+      "titulo": "Ticket ajuste de reporte ingreso bodega",
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
@@ -355,7 +355,7 @@
     },
     {
       "id": "75mEuqmH8kq_GwiYhOrNbJgAKLyE",
-      "titulo": "Ajustes Salidas preguntar vivi",
+      "titulo": "Ajustes Salidas bodega",
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
@@ -369,16 +369,6 @@
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "semanal"
-    },
-    {
-      "id": "CNi80_B3ekuZRThlm34x6JgADzK8",
-      "titulo": "inactivar variedades repetidas",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
       "fecha_limite": "",
       "prioridad": 5,
       "deposito": "semanal"
@@ -474,16 +464,6 @@
       "deposito": "semanal"
     },
     {
-      "id": "7MF5KGP2KU6Nsj0nvRsnTZgAEgRE",
-      "titulo": "Revisar zona horaria de los estados paletizadora",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "semanal"
-    },
-    {
       "id": "9ytwFziBEUu49CRp3JVI3pgACAS_",
       "titulo": "Implementar Servicios AWB",
       "descripcion": "",
@@ -554,6 +534,16 @@
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "sin_deposito"
+    },
+    {
+      "id": "CNi80_B3ekuZRThlm34x6JgADzK8",
+      "titulo": "inactivar variedades repetidas",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
       "fecha_limite": "",
       "prioridad": 5,
       "deposito": "sin_deposito"
