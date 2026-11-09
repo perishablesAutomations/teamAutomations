@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-09T20:54:53.896Z",
+  "generated_at": "2026-11-09T22:54:52.947Z",
   "diaria": [
     {
       "id": "FsFOJl230ESYBzzQHReXLZgAPjsy",
@@ -57,6 +57,16 @@
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "diaria"
+    },
+    {
+      "id": "4iceDlZYSU698S_n_NOeP5gAKFGa",
+      "titulo": "Ajuste devoluciones por lectura",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
       "fecha_limite": "",
       "prioridad": 5,
       "deposito": "diaria"
@@ -289,16 +299,6 @@
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "semanal"
-    },
-    {
-      "id": "4iceDlZYSU698S_n_NOeP5gAKFGa",
-      "titulo": "Ajuste devoluciones por lectura",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
       "fecha_limite": "",
       "prioridad": 5,
       "deposito": "semanal"
