@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-09T16:54:48.309Z",
+  "generated_at": "2026-11-09T18:54:46.976Z",
   "diaria": [
     {
       "id": "FsFOJl230ESYBzzQHReXLZgAPjsy",
@@ -223,6 +223,16 @@
     }
   ],
   "semanal": [
+    {
+      "id": "UCIbghGGXkaNeiTq8giHF5gAJfLV",
+      "titulo": "Comunicado cambios pantalla recepción de cajas",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "semanal"
+    },
     {
       "id": "39SbsOapfUiwaiYP6CVJWpgADnA8",
       "titulo": "Mejorar envio clientes finales",
