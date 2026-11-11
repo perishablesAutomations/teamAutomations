@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-11T14:55:06.817Z",
+  "generated_at": "2026-11-11T16:55:06.850Z",
   "diaria": [
     {
       "id": "FsFOJl230ESYBzzQHReXLZgAPjsy",
@@ -233,6 +233,16 @@
     }
   ],
   "semanal": [
+    {
+      "id": "WquGPd6Ul0W1CsC3tVDEsJgAEN5w",
+      "titulo": "Ticket factura proforma, esta sacando lineas con piezas en cero",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "semanal"
+    },
     {
       "id": "29sLjpLQ402HfrK605CPkpgAPJBf",
       "titulo": "Revisar la columna ON TIME del reporte de performance de aerolineas - angelica correo",
