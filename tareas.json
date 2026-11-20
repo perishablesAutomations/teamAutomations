@@ -1,6 +1,26 @@
 {
-  "generated_at": "2026-11-20T20:55:46.995Z",
+  "generated_at": "2026-11-20T22:55:40.214Z",
   "diaria": [
+    {
+      "id": "R32BN99a5ES86FNVvP6DxJgAHuI3",
+      "titulo": "Ticket ingreso manual con movil",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Moreno, Sebastian / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "diaria"
+    },
+    {
+      "id": "HyLX3q0snEqP5bExOu_abpgAJy_V",
+      "titulo": "Alerta guías utilizadas sin librear",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Moreno, Sebastian / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "diaria"
+    },
     {
       "id": "6TxuqngZtkOEZmZHs66LXZgAFFzw",
       "titulo": "Parametrizacion fleurametz",
