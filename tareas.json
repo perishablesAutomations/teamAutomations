@@ -1,6 +1,16 @@
 {
-  "generated_at": "2026-11-23T15:13:07.535Z",
+  "generated_at": "2026-11-23T16:55:40.715Z",
   "diaria": [
+    {
+      "id": "uNJ1wgW5MEGzPvPJOyJunJgAJn8g",
+      "titulo": "Corte doble tarifa",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "diaria"
+    },
     {
       "id": "R32BN99a5ES86FNVvP6DxJgAHuI3",
       "titulo": "Ticket ingreso manual con movil",
