@@ -1,6 +1,16 @@
 {
-  "generated_at": "2026-11-24T20:55:57.915Z",
+  "generated_at": "2026-11-24T22:55:49.375Z",
   "diaria": [
+    {
+      "id": "nw2thwbMSE6y_u7eq088LpgACkOC",
+      "titulo": "Clasificar hallazgos visita EC",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "diaria"
+    },
     {
       "id": "4WUfvlgvXUC6-gW0S2tmi5gABw5P",
       "titulo": "Documentar caso pesos y piezas reporte de reservas",
@@ -13,20 +23,10 @@
     },
     {
       "id": "uNJ1wgW5MEGzPvPJOyJunJgAJn8g",
-      "titulo": "Corte doble tarifa",
+      "titulo": "Para Test Corte doble tarifa",
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "diaria"
-    },
-    {
-      "id": "R32BN99a5ES86FNVvP6DxJgAHuI3",
-      "titulo": "Ticket ingreso manual con movil",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Moreno, Sebastian / Kuehne + Nagel / Bog ZA-OM",
       "fecha_limite": "",
       "prioridad": 5,
       "deposito": "diaria"
@@ -46,7 +46,7 @@
       "titulo": "Parametrizacion fleurametz",
       "descripcion": "",
       "etiqueta": "",
-      "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
+      "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
       "fecha_limite": "",
       "prioridad": 5,
       "deposito": "diaria"
@@ -72,28 +72,8 @@
       "deposito": "diaria"
     },
     {
-      "id": "YPmwVZY4pE2QY5zuJJkM15gAIxPZ",
-      "titulo": "Ajustes etiquetas integradas ingreso",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "diaria"
-    },
-    {
-      "id": "39SbsOapfUiwaiYP6CVJWpgADnA8",
-      "titulo": "Mejorar envio clientes finales",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "diaria"
-    },
-    {
-      "id": "wAK9ykwE-kOCP1-om_X_hpgALL6-",
-      "titulo": "TEST Ejecutar new aplique para individual",
+      "id": "WquGPd6Ul0W1CsC3tVDEsJgAEN5w",
+      "titulo": "Ticket factura proforma, esta sacando lineas con piezas en cero",
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
@@ -142,16 +122,6 @@
       "deposito": "diaria"
     },
     {
-      "id": "6rPQNCtVWUOl3g2OOLnhK5gAPw1t",
-      "titulo": "Parametrización fleurametz",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "diaria"
-    },
-    {
       "id": "Tqb0gcHkpUezcC8YEtFhP5gAHwEY",
       "titulo": "ejecutar proceso",
       "descripcion": "",
@@ -164,16 +134,6 @@
     {
       "id": "LBm9X2ZBA0CwRoRgYRcMXZgANz25",
       "titulo": "Dashboard managers CCL",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Moreno, Sebastian / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "diaria"
-    },
-    {
-      "id": "ORmdhHznckiiqe_Q4mojRpgAGpT6",
-      "titulo": "Probar etiquetas delaware",
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Moreno, Sebastian / Kuehne + Nagel / Bog ZA-OM",
@@ -197,16 +157,6 @@
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "diaria"
-    },
-    {
-      "id": "m47O7vjQPkq1IK34ChMXW5gACXKy",
-      "titulo": "Entregar numero factura en CDM paso 1",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
       "fecha_limite": "",
       "prioridad": 5,
       "deposito": "diaria"
@@ -246,16 +196,6 @@
     {
       "id": "hr1nHN71OUKPtqRVpCQrwJgABE_N",
       "titulo": "Resumen de tipo de cajas CDM paso 1 para colombia",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "semanal"
-    },
-    {
-      "id": "WquGPd6Ul0W1CsC3tVDEsJgAEN5w",
-      "titulo": "Ticket factura proforma, esta sacando lineas con piezas en cero",
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
