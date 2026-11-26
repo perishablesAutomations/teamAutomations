@@ -1,9 +1,29 @@
 {
-  "generated_at": "2026-11-26T16:55:55.873Z",
+  "generated_at": "2026-11-26T18:56:05.864Z",
   "diaria": [
     {
+      "id": "tDEHzEIOSU-8N1bBY8S49JgAE9MG",
+      "titulo": "Test Envío de pre alertas broker adicional",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "diaria"
+    },
+    {
+      "id": "t-7Our59m0-xJ_5peiE1rZgAI8ok",
+      "titulo": "Test bug destinatarios envios masivos eventos track",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "diaria"
+    },
+    {
       "id": "98zcpINWMkiFMnIZP9yxvJgAFNIt",
-      "titulo": "Que se vea reflejado la cantidad de HAWB confirmadas en el paso 3 CDM",
+      "titulo": "Test cantidad de HAWB confirmadas en el paso 3 CDM",
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
@@ -23,7 +43,7 @@
     },
     {
       "id": "4WUfvlgvXUC6-gW0S2tmi5gABw5P",
-      "titulo": "Documentar caso pesos y piezas reporte de reservas",
+      "titulo": "Test caso pesos y piezas reporte de reservas",
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
@@ -113,17 +133,7 @@
     },
     {
       "id": "zm8-Nx8upkilBAm65AuWWJgAAxxu",
-      "titulo": "Ticket etiquetas bodega con piezas bodega",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "diaria"
-    },
-    {
-      "id": "ypbFqwsoPEaS0qJbnCy4FJgAIuw1",
-      "titulo": "TEST Formatos de reservas aerolínea",
+      "titulo": "Test etiquetas bodega con piezas bodega",
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
@@ -157,16 +167,6 @@
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "diaria"
-    },
-    {
-      "id": "m4oaLxQRwE6-8VtgVjPS1JgAK4st",
-      "titulo": "Testing ajustes tracking",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
       "fecha_limite": "",
       "prioridad": 5,
       "deposito": "diaria"
@@ -214,16 +214,6 @@
       "deposito": "semanal"
     },
     {
-      "id": "29sLjpLQ402HfrK605CPkpgAPJBf",
-      "titulo": "Revisar la columna ON TIME del reporte de performance de aerolineas - angelica correo",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "semanal"
-    },
-    {
       "id": "UCIbghGGXkaNeiTq8giHF5gAJfLV",
       "titulo": "Comunicado cambios pantalla recepción de cajas",
       "descripcion": "",
@@ -239,16 +229,6 @@
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Gualdron, Deybe / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "semanal"
-    },
-    {
-      "id": "Wnu85sctsU6o3_6Jog98qpgAOcXc",
-      "titulo": "TEST Auditoria grupo de envío",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
       "fecha_limite": "",
       "prioridad": 5,
       "deposito": "semanal"
@@ -294,6 +274,16 @@
       "deposito": "semanal"
     },
     {
+      "id": "ypbFqwsoPEaS0qJbnCy4FJgAIuw1",
+      "titulo": "TEST Formatos de reservas aerolínea",
+      "descripcion": "",
+      "etiqueta": "",
+      "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
+      "fecha_limite": "",
+      "prioridad": 5,
+      "deposito": "semanal"
+    },
+    {
       "id": "oOpYBIgB0k6BhuIm69P_U5gAPd-D",
       "titulo": "replicar caso de reservas galleria con funza",
       "descripcion": "",
@@ -305,7 +295,7 @@
     },
     {
       "id": "3CC2rj2ksUyPF-g4Bbox4JgADAWa",
-      "titulo": "Ticket ajuste de reporte ingreso bodega",
+      "titulo": "Test ajuste de reporte ingreso bodega",
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
@@ -319,16 +309,6 @@
       "descripcion": "",
       "etiqueta": "",
       "asignado": "Triana, Viviana / Kuehne + Nagel / Bog ZA-OM",
-      "fecha_limite": "",
-      "prioridad": 5,
-      "deposito": "semanal"
-    },
-    {
-      "id": "75mEuqmH8kq_GwiYhOrNbJgAKLyE",
-      "titulo": "TEST Ajustes Salidas bodega",
-      "descripcion": "",
-      "etiqueta": "",
-      "asignado": "Urquijo, Stefany / Kuehne + Nagel / Bog NP-APP",
       "fecha_limite": "",
       "prioridad": 5,
       "deposito": "semanal"
